@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://high-seller.de/sitemap.xml

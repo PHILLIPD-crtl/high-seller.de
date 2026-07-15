@@ -1,0 +1,145 @@
+# netlify.toml — Highseller Immobilien & Finanzen
+
+[build]
+  publish = "."
+
+[functions]
+  directory = "netlify/functions"
+  node_bundler = "esbuild"
+
+# ---------------------------------------------------------------------------
+# Saubere URLs für die Immobilienangebote
+# ---------------------------------------------------------------------------
+
+# Übersichtsseite: /immobilienangebote -> bestehende Angebotsseite
+[[redirects]]
+  from = "/immobilienangebote"
+  to = "/immobilien-angebote.html"
+  status = 200
+
+# Detailseiten mit SEO-URL: /immobilien/<slug> -> serverseitig gerenderte Seite
+[[redirects]]
+  from = "/immobilien/:slug"
+  to = "/.netlify/functions/property?slug=:slug"
+  status = 200
+
+# ---------------------------------------------------------------------------
+# 301-Weiterleitungen von alten URLs der vorherigen Website
+# Google hat diese URLs noch im Index -> dauerhaft auf die aktuellen Seiten leiten
+# ---------------------------------------------------------------------------
+
+[[redirects]]
+  from = "/makler-bewerbung"
+  to = "/karriere"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/agb-dokument"
+  to = "/impressum"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/datenschutzerklaerung-highseller-immobilien"
+  to = "/datenschutz"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/kontaktformular"
+  to = "/kontakt"
+  status = 301
+  force = true
+
+# Verkaufte Referenzobjekte: alte, noch im Google-Index befindliche URLs
+# dauerhaft auf die aktuelle Referenzseite leiten (SEO-Signale erhalten).
+[[redirects]]
+  from = "/verkaufte-immobilien-koeln"
+  to = "/verkaufte-objekte.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/verkaufte-immobilien-koeln/*"
+  to = "/verkaufte-objekte.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/verkaufte-immobilien-koeln.html"
+  to = "/verkaufte-objekte.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/verkaufte-immobilien"
+  to = "/verkaufte-objekte.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/verkaufte-immobilien/*"
+  to = "/verkaufte-objekte.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/verkaufte-objekte"
+  to = "/verkaufte-objekte.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/referenzen"
+  to = "/verkaufte-objekte.html"
+  status = 301
+  force = true
+
+# ---------------------------------------------------------------------------
+# Caching
+# ---------------------------------------------------------------------------
+
+# Bilder lange cachen (immutable Dateinamen)
+[[headers]]
+  for = "/assets/img/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/assets/icons/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+# Selbstgehostete Schriften lange cachen (immutable Dateinamen)
+[[headers]]
+  for = "/assets/fonts/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+# CSS/JS mit Cache-Busting (?v=) versehen -> ebenfalls lange cachebar
+[[headers]]
+  for = "/css/*"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"
+
+[[headers]]
+  for = "/js/*"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"
+
+# Lokale Immobilien-Datenquelle: kurz cachen, damit Änderungen zügig live sind
+[[headers]]
+  for = "/src/data/*"
+  [headers.values]
+    Cache-Control = "public, max-age=300"
+
+# Sicherheits-Header für alle Seiten
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    X-Frame-Options = "SAMEORIGIN"
+    Permissions-Policy = "camera=(), microphone=(), geolocation=()"
+    Content-Security-Policy = "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com https://www.google-analytics.com https://ssl.google-analytics.com https://tagmanager.google.com https://maps.googleapis.com https://maps.gstatic.com https://www.google.com https://www.gstatic.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://tagmanager.google.com; img-src 'self' data: blob: https:; font-src 'self' data: https://fonts.gstatic.com; connect-src 'self' https://www.googletagmanager.com https://www.google-analytics.com https://ssl.google-analytics.com https://region1.google-analytics.com https://analytics.google.com https://stats.g.doubleclick.net https://maps.googleapis.com; frame-src 'self' https://www.youtube.com https://www.youtube-nocookie.com https://www.google.com https://maps.google.com; media-src 'self' https:; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'self'"

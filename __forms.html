@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="robots" content="noindex">
+<title>Formularregistrierung (Netlify)</title>
+</head>
+<body>
+<!--
+  Diese Datei dient ausschließlich dazu, dass der Netlify-Build alle Formulare
+  erkennt, die per JavaScript abgeschickt werden (Rechner) oder erst zur
+  Laufzeit von einer Function gerendert werden (Objektanfrage).
+  Sie ist für Besucher nicht verlinkt.
+-->
+
+<form name="immobilienbewertung" data-netlify="true" netlify-honeypot="website" hidden>
+  <input type="hidden" name="form-name" value="immobilienbewertung">
+  <input name="name"><input name="telefon"><input name="email"><input name="leistung">
+  <input name="objektart"><input name="objektadresse"><textarea name="nachricht"></textarea>
+  <textarea name="finanzierungsdaten"></textarea><input name="quelle"><input name="zeitpunkt">
+  <input name="datenschutz"><input name="website"><input name="subject">
+</form>
+
+<form name="budgetrechner" data-netlify="true" netlify-honeypot="website" hidden>
+  <input type="hidden" name="form-name" value="budgetrechner">
+  <input name="name"><input name="telefon"><input name="email"><input name="leistung">
+  <textarea name="nachricht"></textarea><textarea name="finanzierungsdaten"></textarea>
+  <input name="quelle"><input name="zeitpunkt"><input name="datenschutz"><input name="website"><input name="subject">
+</form>
+
+<form name="objektanfrage" data-netlify="true" netlify-honeypot="website" hidden>
+  <input type="hidden" name="form-name" value="objektanfrage">
+  <input name="name"><input name="telefon"><input name="email"><textarea name="nachricht"></textarea>
+  <input name="objekt"><input name="objekt-id"><input name="objekt-url">
+  <input name="datenschutz"><input name="quelle"><input name="website"><input name="subject">
+</form>
+
+<form name="karriere" data-netlify="true" netlify-honeypot="website" enctype="multipart/form-data" hidden>
+  <input type="hidden" name="form-name" value="karriere">
+  <input name="vorname"><input name="nachname"><input name="email"><input name="telefon">
+  <input name="bereich"><textarea name="nachricht"></textarea>
+  <input type="file" name="lebenslauf">
+  <input name="datenschutz"><input name="quelle"><input name="zeitpunkt"><input name="website"><input name="subject">
+</form>
+
+</body>
+</html>

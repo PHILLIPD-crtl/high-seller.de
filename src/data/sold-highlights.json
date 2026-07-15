@@ -1,0 +1,37 @@
+{
+  "_hinweis": "Verkaufserfolge (Erfolgsfakten) für den Bereich 'Verkaufte Objekte'. WICHTIG: Es duerfen KEINE Fakten frei erfunden werden. Ein konkreter Erfolgsfakt (z. B. Verkaufszeit, Verkaufspreis, Interessentenzahl) wird auf der Website NUR angezeigt, wenn hier ein Eintrag mit passender Objekt-ID hinterlegt UND 'verified': true gesetzt ist. Fehlt ein bestaetigter Eintrag, zeigt die Karte ausschliesslich die neutrale Aussage 'Erfolgreich durch Highseller Immobilien & Finanzen vermittelt.'",
+  "_anleitung": "Schluessel = Objekt-ID aus Propstack (dieselbe id, die die Karte verwendet). Nur bestaetigte, tatsaechlich zutreffende Angaben eintragen und 'verified' auf true setzen. Felder, die leer bleiben, werden nicht angezeigt.",
+  "_felder": {
+    "soldInDays": "Number – tatsaechliche Vermarktungsdauer in Tagen (nur wenn bestaetigt).",
+    "salePrice": "Number – tatsaechlich erzielter Verkaufspreis in Euro.",
+    "askingPrice": "Number – urspruenglicher Angebotspreis in Euro.",
+    "location": "String – Ort.",
+    "district": "String – Stadtteil / Lage.",
+    "propertyType": "String – Objektart.",
+    "livingArea": "Number – Wohnflaeche in m².",
+    "plotArea": "Number – Grundstuecksflaeche in m².",
+    "rooms": "Number – Zimmeranzahl.",
+    "resultText": "String – kurzer, hochwertiger Erfolgsfakt (z. B. 'Innerhalb von 14 Tagen erfolgreich verkauft').",
+    "challengeText": "String – kurze Beschreibung der Herausforderung (optional).",
+    "strategyText": "String – kurze Beschreibung der Vermarktungsstrategie (optional).",
+    "verified": "Boolean – MUSS true sein, damit konkrete Erfolgsfakten angezeigt werden."
+  },
+  "_beispiel_zum_kopieren": {
+    "PROPSTACK-OBJEKT-ID-HIER-EINTRAGEN": {
+      "soldInDays": 14,
+      "salePrice": null,
+      "askingPrice": null,
+      "location": "Köln",
+      "district": "Sülz",
+      "propertyType": "Eigentumswohnung",
+      "livingArea": null,
+      "plotArea": null,
+      "rooms": null,
+      "resultText": "Innerhalb von 14 Tagen erfolgreich verkauft",
+      "challengeText": "",
+      "strategyText": "",
+      "verified": false
+    }
+  },
+  "highlights": {}
+}

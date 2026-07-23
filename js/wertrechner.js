@@ -46,6 +46,14 @@
   var NACHFRAGE = { top: 1.05, gut: 1.02, mittel: 1.0, einfach: 0.97 };
   var ERTRAGSFAKTOR = { top: 26, gut: 24, mittel: 22, einfach: 19 }; // Kaufpreisfaktor (Jahresnettokaltmiete)
 
+  /* ---- Anleger-/Finanzierungsprüfung bei vermieteten Objekten ----
+     Ein Käufer finanziert den Kaufpreis über eine Annuität (Zins + Tilgung).
+     Die Kaltmiete muss diese Bankrate weitgehend tragen, sonst rechnet sich
+     der Kauf für einen Investor nicht. Der ausgewiesene Wert wird daher auf
+     einen anlegergerechten Betrag gedeckelt. */
+  var ZINS = 0.045, TILGUNG = 0.02, ANNUITAET = ZINS + TILGUNG; // 6,5 % p. a. (4,5 % Zins + 2 % Tilgung)
+  var DECKUNG = 0.85; // Kaltmiete soll ~85 % der Annuität tragen (leicht negativer Cashflow akzeptiert)
+
   var ZUSTAND = { renovierungsbeduerftig: 0.88, gepflegt: 1.0, modernisiert: 1.07, hochwertig: 1.12, luxurioes: 1.18 };
   var ENERGIE = { "A+": 1.04, "A": 1.04, "B": 1.02, "C": 1.02, "D": 1.0, "E": 0.98, "F": 0.98, "G": 0.95, "H": 0.95, "": 1.0 };
   var FEAT = {
@@ -248,11 +256,26 @@
         val += extra;
       }
     }
+    // ---- Anlegerprüfung: bei vermieteten Wohnungen/MFH darf der Wert nicht höher
+    //      liegen, als die Kaltmiete über die Annuität (6,5 %) tragen kann. ----
+    var kalt = num("wz-kaltmiete");
+    var rented = (state.vermietet === "ja" && kalt > 0 && (t === "wohnung" || t === "mfh"));
+    var anleger = 0, annuMonat = 0, deckung = 0, capped = false;
+    if (rented) {
+      anleger = (kalt * 12) / (ANNUITAET * DECKUNG); // Wert, bei dem die Kaltmiete ~85 % der Bankrate trägt
+      if (anleger < val) { val = anleger; capped = true; }
+      annuMonat = (val * ANNUITAET) / 12;            // resultierende monatliche Bankrate beim angesetzten Wert
+      deckung = annuMonat > 0 ? (kalt / annuMonat) : 0; // Anteil der Bankrate, den die Miete deckt
+      method = "Ertragswert · Anlegerprüfung (6,5 % Annuität)";
+    }
+
     var mid = Math.round(val / 1000) * 1000;
     var low = Math.round(val * 0.95 / 1000) * 1000;
     var high = Math.round(val * 1.08 / 1000) * 1000;
     return { low: low, mid: mid, high: high, method: method, area: areaSel.value, tier: a.tier,
-             fZ: fZ, fA: fA, fF: fF, fE: fE, fN: fN };
+             fZ: fZ, fA: fA, fF: fF, fE: fE, fN: fN,
+             rented: rented, capped: capped, kaltmiete: kalt,
+             annuMonat: annuMonat, anleger: anleger, deckung: deckung };
   }
 
   /* ---- Lead-Kategorie ---- */
@@ -286,13 +309,18 @@
 
     // Ergebnis anzeigen
     $("#res-range").innerHTML = euro0.format(r.low) + ' <span class="sep">–</span> ' + euro0.format(r.high);
-    $("#res-mid").textContent = "Mittlerer Indikationswert: ca. " + euro0.format(r.mid) + " · Methode: " + r.method;
+    $("#res-mid").textContent = "Durchschnittlicher Marktwert: ca. " + euro0.format(r.mid) + " · Methode: " + r.method;
     var fx = [
       ["Lage / Stadtteil", r.area + " (" + r.tier + ")"],
       ["Zustand", labelZustand(state.zustand)],
       ["Ausstattung", "+" + Math.round((r.fF - 1) * 100) + " %"],
       ["Energie", str("wz-energie") || "k. A."]
     ];
+    if (r.rented) {
+      fx.push(["Kaltmiete", euro0.format(r.kaltmiete) + " / Monat"]);
+      fx.push(["Bankrate (6,5 % Annuität)", "ca. " + euro0.format(r.annuMonat) + " / Monat"]);
+      fx.push(["Mietdeckung der Rate", Math.round(r.deckung * 100) + " %"]);
+    }
     $("#res-factors").innerHTML = fx.map(function (f) {
       return '<div class="rf"><span>' + f[0] + '</span><b>' + f[1] + '</b></div>';
     }).join("");
@@ -324,10 +352,10 @@
       "Wohnfläche: " + (num("wz-wohnflaeche") || "-") + " m²  |  Grundstück: " + (num("wz-grundstueck") || "-") + " m²",
       "Baujahr: " + (str("wz-baujahr") || "-") + "  |  Zimmer: " + (str("wz-zimmer") || "-"),
       "Zustand: " + labelZustand(state.zustand) + "  |  Energie: " + (str("wz-energie") || "-"),
-      "Vermietet: " + state.vermietet + (num("wz-kaltmiete") ? ("  |  Kaltmiete: " + num("wz-kaltmiete") + " €/Monat") : ""),
+      "Vermietet: " + state.vermietet + (num("wz-kaltmiete") ? ("  |  Kaltmiete: " + num("wz-kaltmiete") + " €/Monat") : "") + (r.rented ? ("  |  Bankrate (6,5 % Annuität) ca. " + euro0.format(r.annuMonat) + "/Monat, Mietdeckung " + Math.round(r.deckung * 100) + " %") : ""),
       "Ausstattung: " + feats,
       "Verkaufsabsicht: " + (state.zeitraum || "-") + "  |  Status: " + (state.status || "-"),
-      "INDIKATION: " + euro0.format(r.low) + " bis " + euro0.format(r.high) + " (Mitte ca. " + euro0.format(r.mid) + ")"
+      "INDIKATION: " + euro0.format(r.low) + " bis " + euro0.format(r.high) + " (Ø Marktwert ca. " + euro0.format(r.mid) + ")"
     ].join("\n");
   }
 

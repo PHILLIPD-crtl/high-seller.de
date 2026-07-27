@@ -66,7 +66,7 @@ p{margin:0 0 1em}
   display:grid;place-items:center;transition:opacity .5s,visibility .5s}
 #loader.hide{opacity:0;visibility:hidden}
 .loader__box{display:flex;flex-direction:column;align-items:center;gap:20px;padding:24px}
-.loader__logo{width:min(260px,62vw);aspect-ratio:852/602;opacity:0;animation:fadeUp .7s var(--ease) forwards}
+.loader__logo{width:min(260px,62vw);aspect-ratio:2280/1629;opacity:0;animation:fadeUp .7s var(--ease) forwards}
 .loader__bar{width:160px;height:3px;border-radius:3px;background:rgba(255,255,255,.16);overflow:hidden}
 .loader__bar i{display:block;height:100%;width:40%;border-radius:3px;background:linear-gradient(90deg,#3F7BDD,#9Fc0ff);
   animation:load 1.1s var(--ease) infinite}

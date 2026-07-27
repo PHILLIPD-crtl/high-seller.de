@@ -101,6 +101,12 @@
 # ---------------------------------------------------------------------------
 
 # Bilder lange cachen (immutable Dateinamen)
+#
+# ACHTUNG: "immutable" heisst, Browser fragen ein Jahr lang nicht nach einer
+# neueren Fassung - auch hartes Neuladen hilft nicht zuverlaessig. Wer den
+# INHALT einer Bilddatei aendert, muss ihr deshalb einen NEUEN DATEINAMEN
+# geben und die Verweise umstellen. Eine Datei unter gleichem Namen zu
+# ersetzen wirkt live nur bei Erstbesuchern.
 [[headers]]
   for = "/assets/img/*"
   [headers.values]

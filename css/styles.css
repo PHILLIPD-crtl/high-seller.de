@@ -1520,3 +1520,115 @@ body{background:var(--bg)}
 .rv-more:hover{text-decoration:underline}
 /* Pause der Marquee bei Berührung (Touch) zusätzlich zum Hover */
 .review-marquee.is-touched .review-marquee__track{animation-play-state:paused}
+
+/* ==========================================================================
+   REDESIGN v23 — Handy-Ansicht: kompakter, ruhiger, kein seitliches Wackeln
+   --------------------------------------------------------------------------
+   Ausgangslage (gemessen bei 390 px Viewport): 28 Bildschirmhoehen Laenge,
+   scrollWidth 425 statt 390 px, h2 mit 27 px, 64 px Polster ueber und unter
+   jedem der 15 Abschnitte. Das wirkte gross und unuebersichtlich.
+   ========================================================================== */
+@media(max-width:560px){
+
+  /* --- 1) Seitlicher Ueberlauf ------------------------------------------
+     Die Signatur am Inhaberfoto ist absolut positioniert und ragt per
+     right:-12px bewusst aus dem Rahmen - auf dem Desktop ein Effekt, auf
+     dem Handy der Grund, warum sich die Seite seitlich schieben liess. */
+  .founder__media{max-width:100%}
+  .founder__media .sig{right:6px;bottom:-12px;max-width:calc(100% - 12px);
+    padding:12px 14px}
+  .founder__media .sig b{font-size:.95rem}
+  .founder__media .sig span{font-size:.72rem}
+
+  /* --- 2) Schriftgroessen: eine Stufe kompakter -------------------------
+     Auf 390 px Breite wirken 34/27/21 px zu wuchtig; jede Ueberschrift
+     verbraucht drei Zeilen. Die Groessen kommen aus clamp()-Regeln, deren
+     Mindestwert auf dem Handy greift - deshalb hier gezielt die konkreten
+     Selektoren, nicht das allgemeine h1/h2. */
+  .hero h1,.hero--photo h1,.page-hero h1{font-size:1.74rem;line-height:1.18;
+    letter-spacing:-.015em;max-width:none}
+  .headline{font-size:1.34rem;line-height:1.26;max-width:none}
+  .prose h2,.pd-block h2,.pd-card h2{font-size:1.22rem}
+  h3{font-size:1.06rem;line-height:1.32}
+  .lead{font-size:1rem;line-height:1.52}
+  .hero__sub{font-size:1rem;line-height:1.5;margin-bottom:22px}
+  .page-hero p{font-size:1rem;line-height:1.5}
+  p{font-size:.98rem;line-height:1.55}
+  .eyebrow{font-size:.7rem;letter-spacing:.11em}
+  .result-range{font-size:1.7rem}
+
+  /* Das Hero-Foto ist absichtlich breiter als sein Rahmen (Bildwirkung),
+     ragte dadurch aber 10 px ueber den Bildschirmrand. */
+  .hero__photo{overflow:hidden}
+  .hero__photo img{max-width:100%}
+
+  /* --- 3) Abstaende: der groesste Hebel fuer die Laenge ------------------ */
+  .section{padding:42px 0}
+  .section h2{margin-bottom:.4em}
+  .container{padding:0 16px}
+
+  /* --- 4) Karten und Listen kompakter ---------------------------------- */
+  .card,.leistung,.step{padding:16px}
+  .checks-list li{padding:7px 0}
+  .checks-list li span{font-size:.94rem;line-height:1.45}
+
+  /* --- 5) Schaltflaechen: volle Breite, aber flacher ------------------- */
+  .btn{padding:13px 18px;font-size:.95rem}
+
+  /* --- 6) Leistungen zweispaltig ---------------------------------------
+     12 Karten untereinander waren 2609 px = gut drei Bildschirmhoehen. Die
+     Texte sind kurz (rund 57 Zeichen), sie vertragen die halbe Breite. */
+  .cards{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+  .cards .card{padding:14px 12px}
+  .cards .card__icon{width:40px;height:40px;border-radius:11px}
+  .cards .card__icon svg{width:20px;height:20px}
+  .cards .card h3{font-size:.95rem;line-height:1.25;margin-bottom:4px}
+  .cards .card p{font-size:.82rem;line-height:1.4}
+
+  /* --- 7) Ansprechpartner: verdeckten Text freilegen --------------------
+     Bestehender Fehler auf dem Handy: Der Namensbalken (.member__info)
+     liegt mit position:absolute ueber dem Zitat und verdeckt dessen letzte
+     Zeile. Auf schmalem Schirm laesst man ihn deshalb normal mitfliessen
+     statt zu ueberlagern - der Verlauf darueber entfaellt mit.
+
+     Die Portraitfotos bleiben im Hochformat. Ein flacheres Format haette
+     630 px gespart, schneidet aber die Gesichter an, weil jedes Foto
+     anders aufgebaut ist. */
+  .team .member__info{position:static;background:var(--navy);
+    border-radius:0 0 14px 14px;padding:14px 16px 16px}
+  .team .member__info::before,
+  .team .member__info::after{display:none}
+  .team .member__intro{font-size:.94rem;line-height:1.5}
+  .team .member{overflow:hidden;border-radius:14px}
+
+  /* --- 8) Kontaktbereich straffen -------------------------------------- */
+  .contact-info{gap:14px}
+  .contact-row{padding:10px 0}
+  .contact-trust{gap:10px;font-size:.85rem}
+
+  /* --- 9) Bilder in Rastern zwingen, sich zu verkleinern ----------------
+     Zellen in Grid und Flexbox haben min-width:auto und schrumpfen deshalb
+     nie unter die Eigenbreite ihres Inhalts. Ein Foto mit 1600 px Breite
+     sprengt so den Bildschirm - auf "Immobilie verkaufen" war die Seite
+     dadurch 522 statt 390 px breit. min-width:0 hebt das auf. */
+  .value-split,.value-split>*,
+  .founder,.founder>*,
+  .split,.split>*,
+  .media-frame{min-width:0}
+  .media-frame{width:100%;max-width:100%}
+  .media-frame img{width:100%;height:100%;object-fit:cover}
+
+  /* --- 10) Schaltflaechen und Tabellen einfangen ------------------------
+     Gleiche Ursache wie oben: Flex-Elemente schrumpfen wegen min-width:auto
+     nicht unter ihre Inhaltsbreite. Auf den beiden Rechnerseiten sprengten
+     dadurch Buttons (313 px in einem 95-px-Kasten) und eine Tabelle das
+     Layout auf 561 px Seitenbreite. */
+  .btn{min-width:0;max-width:100%}
+  table{width:100%;max-width:100%;table-layout:fixed}
+  td,th{overflow-wrap:anywhere}
+  .checkbox{width:100%;min-width:0}
+  .checkbox span{min-width:0;overflow-wrap:anywhere}
+
+  /* Sicherheitsnetz: nichts darf breiter werden als der Bildschirm. */
+  html,body{overflow-x:hidden}
+}

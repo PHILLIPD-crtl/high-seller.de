@@ -464,8 +464,10 @@
           form.scrollIntoView({ behavior: "smooth", block: "center" });
         })
         .catch(function () {
-          // Fallback: E-Mail-Programm öffnen
-          setStatus("error", "Der direkte Versand ist momentan nicht möglich. Wir öffnen Ihr E-Mail-Programm, bitte die Nachricht abschicken.");
+          /* Fallback: E-Mail-Programm oeffnen. Die Telefonnummer gehoert in
+             die Meldung - wer hier strandet, hat kein eingerichtetes
+             Mailprogramm oder bricht ab, und beides kostet den Kontakt. */
+          setStatus("error", "Der direkte Versand ist momentan nicht möglich. Wir öffnen Ihr E-Mail-Programm, bitte die Nachricht abschicken. Sie erreichen uns auch telefonisch unter +49 162 8811110.");
           mailtoFallback(data);
         })
         .then(function () {

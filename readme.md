@@ -1,4 +1,64 @@
-# Highseller Immobilien & Finanzen — Website (Stand v29)
+# Highseller Immobilien & Finanzen — Website (Stand v38)
+
+## Was in v37–v38 umgesetzt wurde
+
+### Kontaktleiste auf dem Handy (Audit 1.3)
+Die Leiste am unteren Rand gab es bereits, sie bot aber nur Anruf und WhatsApp —
+ausgerechnet die kostenlose Bewertung, der Geschäftszweck der Seite, fehlte.
+Jetzt drei Ziele, die Bewertung zuerst und farblich abgesetzt. Auf der
+Bewertungsseite springt sie in den Rechner statt auf die eigene Seite.
+Dazu drei Punkte, die vorher fehlten: `env(safe-area-inset-bottom)` (die Leiste
+lag auf iPhones mit Home-Indicator teils unter dessen Balken), Einblenden erst
+ab 600 px Scrolltiefe (im Hero stehen dieselben Aufrufe bereits groß; ohne
+JavaScript bleibt sie dauerhaft sichtbar) und ein GA-Ereignis je Klick, das nur
+nach Einwilligung tatsächlich sendet. Geprüft bei 320/360/390/430 px.
+
+### Politur (Audit 3.1, 3.3, 3.8)
+- **Einblendungen von 401 auf 228 Elemente**: eine Bewegung je Abschnitt statt
+  einer je Karte. Die gestaffelten Verzögerungen (`data-d`) sind damit
+  gegenstandslos und entfallen.
+- **Vertrauen am Absendeknopf**: kostenlos, Antwort in der Regel binnen 24
+  Stunden, keine Weitergabe an Dritte — direkt dort, wo Eigentümer zögern.
+- **Fehlerfall nennt die Telefonnummer**. Wer beim mailto-Rückfall strandet, hat
+  oft kein eingerichtetes Mailprogramm; ohne Nummer ist der Kontakt weg.
+
+### Entdopplung der Stadtteilseiten mit amtlichen Wohnkennzahlen (Audit 2.1)
+Zweite amtliche Quelle nach den Bodenrichtwerten: **Statistischer Datenkatalog
+der Stadt Köln** (Amt für Stadtentwicklung und Statistik, Stand 2025) mit
+Wohnungsbestand, mittlerer Wohnfläche, Haushaltsstruktur, Fertigstellungen,
+Förderquote und Durchschnittsalter. Daten in
+`src/data/stadtteile-wohnkennzahlen.json` samt Pflegehinweis.
+
+Jede Seite bekommt daraus einen eigenen Absatz mit Vergleich zum Kölner Mittel
+und einer Folgerung für Verkäufer. **Die Daten bestimmen, welcher von vier
+Blickwinkeln erscheint**, je Blickwinkel stehen drei Fassungen bereit — sonst
+wäre daraus derselbe Fehler geworden wie beim ersten Marktdaten-Anlauf, wo
+gleicher Text auf 20 Seiten die Duplikation von 41,6 auf 45,5 % trieb.
+
+Gemessen über 5-Wort-Folgen im redaktionellen Inhalt, ohne Menü, Fußzeile,
+Cookie-Banner und Wertrechner-Kacheln:
+
+| | vorher | jetzt |
+|---|---|---|
+| Duplikation im Schnitt | 15,6 % | **8,9 %** |
+| Seitenpaare über 20 % | 99 von 190 | **0** |
+| Wörter je Seite | 485 | **582** |
+
+Nach der bisherigen Messweise, die den Cookie-Banner mitzählt: 37,4 → 29,3 %.
+Dieser Rest ist Boilerplate und auf allen Seiten technisch identisch.
+
+**Zwei Fallen dabei:**
+- Sechs Stadtteilnamen (Porz, Mülheim, Nippes, Ehrenfeld, Lindenthal,
+  Rodenkirchen) sind zugleich Stadtbezirksnamen. Wer nur nach dem Namen sucht,
+  schreibt Bezirkszahlen auf die Stadtteilseite — Rodenkirchen hätte 58.536
+  statt 9.557 Wohnungen gehabt. Immer `RAUMEBENE=Stadtteile` filtern.
+- Neubau darf nicht absolut bewertet werden: 568 Fertigstellungen sind in
+  Marienburg 12,9 % des Bestands, in der Innenstadt wären sie ein Rundungsfehler.
+  Der Text misst die Quote am eigenen Bestand und nennt bei Sprüngen das Vorjahr.
+
+**Weiterhin offen und nur vom Kunden lösbar:** die unbelegten „500+ begleitete
+Vorgänge" und „Zugang zu 750 Banken" im Hero (§ 5a UWG), sowie Search Console
+einrichten und Sitemap einreichen.
 
 ## Was in v25–v29 umgesetzt wurde (Audit-Umsetzung)
 

@@ -400,12 +400,31 @@ body.nav-open .mobile-menu{transform:none;visibility:visible}
   transition:transform .2s}
 .fab-wa:hover{transform:scale(1.07);color:#fff}
 .fab-wa svg{width:28px;height:28px}
-.mobile-bar{position:fixed;left:0;right:0;bottom:0;z-index:840;display:grid;grid-template-columns:1fr 1fr;
-  background:#fff;border-top:1px solid var(--border);box-shadow:0 -6px 24px rgba(12,23,38,.1)}
-.mobile-bar a{display:flex;align-items:center;justify-content:center;gap:8px;padding:14px;font-weight:600;font-size:.95rem}
-.mobile-bar svg{width:19px;height:19px}
+/* Kontaktleiste unten. Drei Ziele statt zwei: Die Bewertung ist der
+   Geschaeftszweck der Seite und fehlte hier bisher - unten standen nur Anruf
+   und WhatsApp. Eingeblendet wird erst ab 600 px Scrolltiefe (js/main.js),
+   weil im Hero dieselben Aufrufe bereits gross stehen. Ohne JavaScript bleibt
+   die Leiste dauerhaft sichtbar, deshalb haengt die Verschiebung an .js.
+   env(safe-area-inset-bottom): sonst liegt die Leiste auf iPhones mit
+   Home-Indicator teilweise unter dessen Balken. */
+.mobile-bar{position:fixed;left:0;right:0;bottom:0;z-index:840;display:grid;grid-template-columns:1.3fr 1fr 1fr;
+  background:#fff;border-top:1px solid var(--border);box-shadow:0 -6px 24px rgba(12,23,38,.1);
+  padding-bottom:env(safe-area-inset-bottom)}
+.js .mobile-bar{transform:translateY(115%);transition:transform .3s var(--ease)}
+.js .mobile-bar.is-in{transform:none}
+.mobile-bar a{display:flex;align-items:center;justify-content:center;gap:7px;padding:14px 6px;
+  font-weight:600;font-size:.9rem;white-space:nowrap;min-height:52px}
+.mobile-bar svg{width:19px;height:19px;flex:none}
+.mobile-bar .rate{background:#2D77CB;color:#fff}
+.mobile-bar .rate:hover{background:var(--gold-2);color:#fff}
 .mobile-bar .call{color:var(--navy);border-right:1px solid var(--border)}
 .mobile-bar .wa{color:var(--wa-d)}
+/* Sehr schmale Geraete (iPhone SE, 320 px): "WhatsApp" passt sonst nicht
+   neben das Symbol, ohne dass die Leiste umbricht. */
+@media(max-width:369px){
+  .mobile-bar a{font-size:.79rem;gap:5px;padding:14px 4px}
+  .mobile-bar svg{width:17px;height:17px}
+}
 
 /* ---------- Cookie banner ---------- */
 /* ---------- Cookie-Consent (DSGVO) ---------- */
@@ -508,7 +527,7 @@ body.cc-lock{overflow:hidden}
   body{padding-bottom:0}
 }
 @media(max-width:979px){
-  body{padding-bottom:54px}
+  body{padding-bottom:calc(54px + env(safe-area-inset-bottom))}
   .skyline{height:70px}
 }
 @media(prefers-reduced-motion:reduce){
@@ -771,7 +790,7 @@ body.cc-lock{overflow:hidden}
   .mobile-menu{display:flex!important}
   .mobile-bar{display:grid!important}
   .fab-wa{display:none!important}
-  body{padding-bottom:54px}
+  body{padding-bottom:calc(54px + env(safe-area-inset-bottom))}
 }
 @media(min-width:1120px){
   .nav{display:flex}

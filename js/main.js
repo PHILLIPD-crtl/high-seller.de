@@ -119,6 +119,31 @@
       setTimeout(alleZeigen, 3000);
     }
 
+    /* ---- Kontaktleiste unten (Handy) ----
+       Erst ab 600 px Scrolltiefe einblenden: Im Hero stehen dieselben Aufrufe
+       bereits gross, dort waere die Leiste nur verdeckte Flaeche. Ohne JS
+       bleibt sie sichtbar - die Verschiebung haengt im CSS an .js. */
+    var leiste = doc.querySelector(".mobile-bar");
+    if (leiste) {
+      var SCHWELLE = 600;
+      var leisteZeigen = function () {
+        leiste.classList.toggle("is-in", (window.pageYOffset || doc.documentElement.scrollTop) > SCHWELLE);
+      };
+      leisteZeigen();
+      /* Bewusst nicht ueber on(): dort fehlt der dritte Parameter, und
+         passive:true haelt das Scrollen auf schwachen Geraeten fluessig. */
+      window.addEventListener("scroll", leisteZeigen, { passive: true });
+      /* Klicks messen - gtag existiert nur nach Einwilligung als echtes Tag,
+         davor ist es die Warteschlange und der Aufruf bleibt folgenlos. */
+      on(leiste, "click", function (e) {
+        var a = e.target.closest ? e.target.closest("a") : null;
+        if (!a || typeof window.gtag !== "function") return;
+        window.gtag("event", "kontaktleiste_klick", {
+          ziel: a.className || "", link_text: (a.textContent || "").trim()
+        });
+      });
+    }
+
     /* ---- FAQ: Accordion ---- */
     $$(".faq-q").forEach(function (btn) {
       on(btn, "click", function () {

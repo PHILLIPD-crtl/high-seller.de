@@ -2035,3 +2035,42 @@ summary:focus-visible,
 .stadtteil-profil h3{font-size:1.05rem;margin:22px 0 8px}
 .stadtteil-profil h3:first-child{margin-top:0}
 .stadtteil-profil p{font-size:.97rem;line-height:1.65;color:var(--body);margin:0}
+
+/* ==========================================================================
+   v35 — Marktdaten-Tabelle (marktdaten-koeln.html)
+   --------------------------------------------------------------------------
+   Eine aeltere Handy-Regel setzt table{width:100%;table-layout:fixed} und
+   presst damit fuenf Spalten in 358 px — Woerter brechen mitten im Wort.
+   Hier gilt stattdessen eine Mindestbreite; der umgebende Container hat
+   overflow-x:auto, die Tabelle laesst sich also seitlich wischen.
+   ========================================================================== */
+.marktdaten-tabelle{width:100%;border-collapse:collapse;font-size:.92rem}
+.marktdaten-tabelle th,.marktdaten-tabelle td{
+  padding:10px 12px;text-align:right;border-bottom:1px solid var(--border);
+  white-space:nowrap}
+.marktdaten-tabelle th:first-child,.marktdaten-tabelle td:first-child{
+  text-align:left;white-space:normal}
+.marktdaten-tabelle thead th{
+  font-size:.76rem;letter-spacing:.04em;text-transform:uppercase;
+  color:var(--slate-2);font-weight:600;border-bottom:2px solid var(--border);
+  vertical-align:bottom}
+.marktdaten-tabelle tbody tr:hover{background:var(--bg-soft)}
+.marktdaten-tabelle td b{font-family:var(--f-display);font-size:1.02rem;color:var(--ink)}
+.marktdaten-tabelle a{font-weight:600}
+
+@media(max-width:760px){
+  /* Mindestbreite erzwingt das Wischen statt des Umbruchs mitten im Wort.
+     table-layout:auto hebt die alte fixed-Regel gezielt fuer diese Tabelle auf.
+     overflow-wrap:normal ebenso: Eine aeltere Regel setzt td,th auf "anywhere",
+     wodurch "Koeln-Bayenthal" mitten im Wort umbrach. */
+  .marktdaten-tabelle{min-width:620px;table-layout:auto;max-width:none;width:auto}
+  .marktdaten-tabelle th,.marktdaten-tabelle td{
+    padding:9px 10px;font-size:.86rem;overflow-wrap:normal;word-break:normal}
+  .marktdaten-tabelle th:first-child,.marktdaten-tabelle td:first-child{
+    min-width:150px;white-space:nowrap}
+}
+/* Wischhinweis, solange seitlich noch Inhalt liegt */
+.tabelle-wisch{position:relative}
+.tabelle-wisch::after{content:"Seitlich wischen für alle Spalten";
+  display:block;font-size:.76rem;color:var(--slate-2);margin-top:8px}
+@media(min-width:761px){.tabelle-wisch::after{display:none}}

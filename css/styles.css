@@ -2093,3 +2093,15 @@ summary:focus-visible,
 .tabelle-wisch::after{content:"Seitlich wischen für alle Spalten";
   display:block;font-size:.76rem;color:var(--slate-2);margin-top:8px}
 @media(min-width:761px){.tabelle-wisch::after{display:none}}
+
+/* ==========================================================================
+   v38 — Wohnkennzahlen der Stadtteile
+   --------------------------------------------------------------------------
+   Der Kurzbeleg steht bewusst im Fliesstext und nicht als eigene Zeile: Eine
+   zweite Quellenzeile je Seite war auf 20 Stadtteilseiten wortgleich und hat
+   die Textduplikation messbar erhoeht. Klein und grau gesetzt, damit er den
+   Absatz nicht dominiert.
+   ========================================================================== */
+.stadtteil-wohnen{margin-top:26px}
+.stadtteil-wohnen h3{margin-bottom:8px}
+.quelle-inline{display:inline-block;margin-left:2px;font-size:.82rem;color:var(--slate-2)}

@@ -128,6 +128,29 @@ Stadtteilseiten. Dafür braucht es Bodenrichtwerte aus BORIS NRW beziehungsweise
 dem Grundstücksmarktbericht Köln sowie stadtteilspezifische Angaben zu Bebauung
 und Lage. Geschätzte Zahlen wären hier derselbe Fehler wie die unbelegten „500+".
 
+### Suchbegriffe der Stadtteilseiten (v32)
+Die Titel zielten ausschliesslich auf "Immobilienmakler Koeln-X". Von fuenf
+Kernbegriffen (bewerten, Wert, Verkauf, Preis, Makler) deckte der Titel genau
+einen ab — wer "Immobilienwert Lindenthal" suchte, fand nichts, obwohl die
+Leistung auf der Seite steht.
+
+- Titel um den Bewertungsteil erweitert, drei Fassungen rotierend. Das
+  etablierte Hauptwort bleibt vorn, sonst braechen vorhandene Platzierungen
+  fuer "Immobilienmakler Koeln-X" weg. Alle 49-60 Zeichen, keine Dopplung,
+  og:title und twitter:title mitgezogen.
+- Die Ueberschrift im Wertrechner-Block traegt auf allen 20 Seiten Stadtteil
+  plus Wert- oder Bewertungsbegriff.
+- **Falle dabei:** Auf Bayenthal, Klettenberg und Niehl erzeugte die Rotation
+  exakt dieselbe H2 wie der bereits vorhandene Abschluss-Aufruf am Seitenende.
+  Die Auswahl weicht jetzt aus, wenn eine Fassung anderswo auf der Seite steht.
+- **Testfalle:** Der iframe-Cache lieferte beim Nachpruefen hartnaeckig die
+  alten Titel, obwohl Dateien und Server bereits korrekt waren. Nach Aenderungen
+  an Titeln oder Metadaten direkt an den Dateien oder per curl pruefen, nicht
+  ueber einen wiederverwendeten iframe.
+
+Die uebrigen Unterseiten blieben unveraendert: eigene Suchintention, Ortsbezug
+vorhanden, Laenge passend. Dort "Immobilienwert" hineinzuzwingen wuerde schaden.
+
 ### Kleinere Punkte
 - `preconnect`/`dns-prefetch` auf `images.propstack.de` — nur auf den drei Seiten,
   die Objektbilder laden.

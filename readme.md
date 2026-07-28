@@ -1,4 +1,175 @@
-# Highseller Immobilien & Finanzen — Website (Stand v11)
+# Highseller Immobilien & Finanzen — Website (Stand v29)
+
+## Was in v25–v29 umgesetzt wurde (Audit-Umsetzung)
+
+### Rechtlich (Stufe 0)
+- **Google Analytics lud ohne Einwilligung** — der schwerwiegendste Punkt. In allen
+  45 Dateien stand `gtag.js` fest im `<head>` und lief unabhängig vom Cookie-Banner,
+  während die Datenschutzerklärung das Gegenteil behauptete (§ 25 TDDDG).
+  Bemerkenswert: Die Consent-Logik in `js/main.js` war bereits korrekt gebaut —
+  `loadAnalytics()` lief nur nach Zustimmung. Der `<head>`-Block lief einfach daneben her.
+  Jetzt: **Google Consent Mode v2** mit `default: denied` vor allem anderen, Tag wird
+  erst nach Zustimmung nachgeladen, bei Widerruf `update: denied` plus Löschen von
+  `_ga`, `_ga_*`, `_gid`. Consent-Key **`hs_consent_v2` → `hs_consent_v3`**, weil die
+  alte Zustimmung unter falscher Beschreibung eingeholt wurde — alle Besucher werden
+  einmal neu gefragt. Datenschutzerklärung beschreibt jetzt exakt dieses Verhalten.
+- **Seite ohne JavaScript unsichtbar**: `.reveal{opacity:0}` wurde nur per JS
+  aufgehoben. Jetzt ist sichtbar der Grundzustand, die Animation hängt an einer
+  `js`-Klasse. Zusätzlich in `main.js`: kein IntersectionObserver → sofort zeigen,
+  „Bewegung reduzieren" → sofort zeigen, und ein 3-Sekunden-Netz.
+- **Maps-Hinweis unlesbar**: `.section--navy .map-consent p` färbte den Text hell,
+  der Kartenplatzhalter hat aber immer einen hellen Kasten. 1,75:1 → **7,14:1**.
+- `prefers-reduced-motion`: Der globale Block existierte bereits (anders als im
+  Audit angenommen) und wurde um `animation-iteration-count` und Pseudoelemente ergänzt.
+
+### Performance (Stufe 1)
+- **Bilder auf WebP mit `srcset`**: 26 Bilder in vier Breiten (480/960/1280/1600 bzw.
+  1920), 98 Dateien, JPEG bleibt Rückfall. Erzeugt mit PIL, nicht im Browser.
+  Gemessen über 19 Seiten: **8183 KB → 2980 KB auf dem Handy (−64 %)**, −61 % am Desktop.
+  Die 1280er Stufe ist bewusst dabei: Ein 390-px-Handy mit 3-fachem Display braucht
+  rund 1170 Bildpunkte und hätte sonst zur 1600er gegriffen.
+- **Logos als WebP**: Die SVGs waren keine echten Vektoren, sondern Auto-Trace-Pfade
+  aus einem PNG. Brotli ist aktiv, also gingen nicht 460 KB über die Leitung, sondern
+  70 + 85 KB — jetzt **19 + 31 KB**. Im Zoom ist das WebP sogar sauberer als das SVG,
+  weil die Trace-Artefakte wegfallen. SVG bleibt als Rückfall im `<picture>`.
+- **Hero-Preload** lädt nicht mehr das 250-KB-JPEG, sondern per `imagesrcset` die
+  passende WebP-Größe.
+- **Hero auf breiten Schirmen**: Rechts steht ab 1180 px ein Einstieg in den
+  Wertrechner (Objektart wählen → springt in den Rechner und wählt dort vor). Das
+  stärkste Element der Seite lag vorher anderthalb Bildschirmhöhen tiefer.
+- Ein Sticky-CTA war **bereits vorhanden** (`.mobile-bar`), anders als im Audit vermerkt.
+
+### Drei Layout-Fehler, die dabei auffielen
+Alle drei haben dieselbe Wurzel — **`min-width:auto` auf Grid- und Flex-Kindern**:
+- Qualifikations-Karten sprengten zwischen 640 und 860 px die Seite (825 statt 760 px),
+  weil „Immobiliardarlehensvermittler" seine Spalte auf 325 px aufblies.
+- Der Budgetrechner lief bei 600 px auf 767 px, weil eine Schaltfläche in einer 187 px
+  schmalen Karte ihre Eigenbreite hielt.
+- Die `min-width:0`-Regeln standen bisher **nur** im 560-px-Block und wurden auf alle
+  Breiten gehoben.
+- Dazu ein Fehler, den erst der Umstieg auf `<picture>` erzeugt hat: `.media-frame`
+  hat `aspect-ratio` und streckte sich auf die Zeilenhöhe der Nachbarspalte — daraus
+  rechnete es 866 statt 431 px Breite zurück. Behoben mit `width:100%` am Rahmen,
+  plus `picture{display:contents}`, damit das Element gar nicht erst als eigene Box
+  ins Layout eingreift.
+Geprüft über 108 Kombinationen aus 12 Seiten und 9 Breiten (320–1920 px): kein Überlauf.
+
+### Barrierefreiheit & Auszeichnung (Stufe 2)
+- **Sichtbarer Tastaturfokus** (2.3): Es gab drei `outline:none`-Stellen, davon eine
+  ganz ohne Ersatz (Newsletter im Footer). Jetzt durchgehende `:focus-visible`-Regeln
+  mit heller Variante auf den dunklen Flächen. Auf der Startseite geprüft: alle
+  **112** fokussierbaren Elemente haben einen sichtbaren Rahmen. Der sechsstufige
+  Wertrechner wurde per Tastatur durchlaufen — Kacheln wählbar, Pflichtfeldprüfung
+  meldet verständlich („Bitte geben Sie eine gültige Postleitzahl an").
+- **Schema.org** (2.7): `geo` mit echten Koordinaten (über OpenStreetMap für
+  „Im Zollhafen 18" ermittelt, nicht geschätzt) und `sameAs` mit sechs geprüften
+  Profilen in alle neun `RealEstateAgent`-Blöcke. `BreadcrumbList` auf 11 weiteren
+  Seiten ergänzt — abgeleitet aus dem **sichtbaren** Brotkrumenpfad, damit Anzeige
+  und Auszeichnung nicht auseinanderlaufen. Kein `aggregateRating`.
+  `openingHoursSpecification` und `FAQPage` waren entgegen dem Audit bereits vorhanden.
+- **Brotkrumen vereinheitlicht**: Ehrenfeld nutzte „Start › Standorte ›", die anderen
+  19 Stadtteilseiten „Start › Köln ›". Ehrenfeld angeglichen — eine Datei statt 19.
+- Validierung über alle Seiten: 43 BreadcrumbList, 20 FAQPage, 9 RealEstateAgent,
+  2 JobPosting, **0 Fehler**.
+
+### Gemessen (Lighthouse, mobil)
+| | live (alter Stand) | lokal (neu) |
+|---|---|---|
+| Accessibility | 100 | 100 |
+| Best Practices | 92 | 96 |
+| SEO | 100 | 100 |
+| Fehler | 2 | 1 (lokales Artefakt) |
+
+Beide Fehler der Live-Seite waren **Google Analytics**: Der Tag feuerte ohne
+Einwilligung und wurde dabei von der eigenen CSP blockiert. Der verbleibende
+Fehler lokal ist ein 404 auf die Netlify-Function, die der Testserver nicht kennt.
+
+Performance lokal unter Slow 4G und 4-facher CPU-Drosselung:
+**LCP 770 ms** (Ziel < 2500), **CLS 0.00** (Ziel < 0,1). Achtung: TTFB war dabei
+0,6 ms, weil localhost. Live kommt die Serverlatenz dazu — realistisch eher
+900–1100 ms, weiterhin klar im grünen Bereich.
+
+**CSP-Fehler gefunden und behoben**: `connect-src` erlaubte
+`region1.google-analytics.com`, GA4 sendet aber an `region1.analytics.google.com`
+— andere Reihenfolge der Namensteile, deshalb blockiert. Das wäre nach der
+Consent-Umstellung bei jedem zustimmenden Besucher aufgetreten. Jetzt über
+Platzhalter (`*.analytics.google.com`) abgedeckt.
+
+### Sichtbarkeit (Stufe 2.1 / 3.6)
+Gemessen statt geschätzt — und die Lage ist schlechter als im Audit vermerkt:
+
+**Textduplikation zwischen den 20 Stadtteilseiten** (5-Wort-Folgen, Hauptinhalt
+ohne Menü und Fußzeile): Durchschnitt **43,3 %**, Spitzen über 52 %,
+**alle 190 Seitenpaare** liegen über 20 %. Das Audit nannte 31 % für ein Paar.
+Seitenlänge 481–708 Wörter. Das ist Doorway-Page-Gebiet — Google kann das als
+geringwertig einstufen und die ganze Domain mit abwerten.
+
+**Technisch war dagegen wenig zu holen** — das war bereits sauber:
+keine doppelten Titel oder Beschreibungen, alle 44 Beschreibungen in guter Länge,
+überall genau eine H1, canonical und `lang` vollständig, robots.txt korrekt mit
+Sitemap-Verweis.
+
+Was umgesetzt wurde:
+- **`lastmod` in der Sitemap** — fehlte bei allen 45 Einträgen komplett.
+- **Interne Verlinkung der Stadtteile nach amtlichem Stadtbezirk**: von 34 auf
+  **99 Querverweise** (1,7 → 5,0 je Seite). Die Zuordnung ist symmetrisch
+  aufgebaut, sonst hängen Randlagen wie Porz und Pesch in der Luft — beide hatten
+  vorher **null** eingehende Querverweise. Jetzt hat jede Seite mindestens zwei.
+- **`RealEstateAgent` auf 15 weiteren Stadtteilseiten**: Nur 5 von 20 hatten eine
+  Firmenauszeichnung mit `areaServed`. Für lokale Suchanfragen ein echter Nachteil.
+  Jetzt 24 Blöcke site-weit, alle mit `geo` und `sameAs`.
+- **Eigene 404-Seite** (`404.html`): Es gab keine. Wer auf einem toten Link landete,
+  sah die englische Netlify-Standardseite — ohne Logo, Navigation oder Telefonnummer.
+  Jetzt im Seitendesign mit Anruf-Schaltfläche und vier häufig gesuchten Zielen,
+  `noindex,follow` und ohne canonical.
+
+Offen und **nur mit echten Daten lösbar**: die inhaltliche Entdopplung der
+Stadtteilseiten. Dafür braucht es Bodenrichtwerte aus BORIS NRW beziehungsweise
+dem Grundstücksmarktbericht Köln sowie stadtteilspezifische Angaben zu Bebauung
+und Lage. Geschätzte Zahlen wären hier derselbe Fehler wie die unbelegten „500+".
+
+### Kleinere Punkte
+- `preconnect`/`dns-prefetch` auf `images.propstack.de` — nur auf den drei Seiten,
+  die Objektbilder laden.
+- `twitter:title`, `twitter:description`, `twitter:image` auf allen 44 Seiten ergänzt.
+- Datenschutz: **Netlify** und **Propstack** namentlich benannt, inklusive
+  Drittlandübermittlung und Auftragsverarbeitung.
+
+## Was in v24 umgesetzt wurde
+- **Klebender Kopf repariert (site-weit)**: `body{overflow-x:hidden}` machte den
+  Body zu einem eigenen Scrollbereich — darin greift `position:sticky` nicht mehr.
+  Der Header scrollte deshalb auf **jeder** Seite und in **jeder** Breite weg,
+  obwohl er als sticky angelegt war. Jetzt `overflow-x:clip` (schneidet genauso ab,
+  ohne Scrollbereich); `hidden` bleibt als Rückfall für ältere Browser davor stehen.
+- **Unsichtbare Schaltflächen behoben**: `.btn--ghost` ist für helle Flächen gebaut
+  (fast schwarze Schrift, kein Hintergrund) und stand auf dunklem Navy — Kontrast
+  1,05:1. Betroffen: Anruf-Button im Handy-Menü (44 Seiten), die beiden
+  Karten-Schaltflächen im Kontaktbereich der Startseite, Telefon-Button auf der
+  Ehrenfeld-Seite. Behoben über Kontextregeln (`.mobile-menu`, `.section--navy`,
+  `.usp-card`, `.hero`, `.page-hero`, `.footer`), nicht Fundstelle für Fundstelle.
+  Ebenso: Widerrufs-Hinweis in der dunklen `.usp-card` des Budgetrechners,
+  `.eyebrow--gold` im `.valuation-band`, `.value-points` auf dunklem Grund,
+  `.footer__disc` und `.footer-newsletter__eyebrow` (lagen bei 3,87 bzw. 4,18).
+  Nachgemessen im Browser bei 390 px: alle 44 Seiten ohne Text unter 4,5:1.
+- **Sprungleiste auf der Startseite** (`.jumpbar`, nur unter 1120 px): klebt unter
+  dem Kopf, markiert den Abschnitt, in dem man gerade steht, und springt auf Tipp
+  dorthin. Grund: 24 Bildschirmhöhen Länge ohne jeden Wegweiser.
+- **Qualifikations-Karten auf dem Handy zweispaltig**: eine ältere Regel stellte
+  diesen Block bis 640 px auf eine Spalte — 1514 px für sechs kurze Karten.
+  Jetzt 714 px.
+- **Karriere**: zwei ausgeschriebene Stellen (Akquisiteur, Immobilienmakler) mit
+  Aufgaben, Anforderungen und Direktbewerbung; Klick auf „Auf diese Stelle
+  bewerben" wählt die Stelle im Formular vor. JobPosting-Auszeichnung für Google
+  Jobs, Titel und Beschreibung angepasst.
+- **Impressum**: Abschnitt „Verbraucherstreitbeilegung / Universalschlichtungs-
+  stelle" entfernt. **Datenschutz**: Stand auf den 28. Juli 2026 gesetzt.
+- **LinkedIn-Symbol entfernt** (44 Seiten): verwies auf `linkedin.com` statt auf ein
+  Profil. Alle übrigen Profil-Links live geprüft und in Ordnung; der YouTube-Kanal
+  ist bestätigt, sein „noch eintragen"-Vermerk im Markup ist weg.
+- **Weiterleitungen geprüft**: alle 23 Regeln aus `_redirects` und `netlify.toml`
+  live gegen high-seller.de getestet, alle 44 Seiten liefern Status 200. Es war
+  keine Weiterleitung defekt — der Eindruck kam von den unsichtbaren Schaltflächen
+  und dem nicht klebenden Kopf.
 
 ## Was in v11 umgesetzt wurde
 - **Header-Responsive**: Zusammenquetschen im Bereich 1120–1320 px behoben

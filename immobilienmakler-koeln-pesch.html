@@ -2,14 +2,19 @@
 <html lang="de">
 <head>
 <meta charset="UTF-8">
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-24CQ7EWJZ3"></script>
+<!-- Einwilligung zuerst: Google Consent Mode v2.
+     Der Analytics-Tag wird NICHT hier geladen, sondern erst von js/main.js,
+     nachdem die Kategorie "statistics" bestaetigt wurde. Diese Defaults muessen
+     trotzdem vor allem anderen stehen, damit ein spaeter geladener Tag sie kennt. -->
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-24CQ7EWJZ3');
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('consent','default',{
+  ad_storage:'denied', ad_user_data:'denied', ad_personalization:'denied',
+  analytics_storage:'denied', functionality_storage:'granted',
+  security_storage:'granted', wait_for_update:500
+});
+document.documentElement.classList.add('js');
 </script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Immobilienmakler Köln-Pesch | Highseller</title>
@@ -23,6 +28,9 @@
 <meta property="og:url" content="https://high-seller.de/immobilienmakler-koeln-pesch.html">
 <meta property="og:locale" content="de_DE">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Immobilienmakler Köln-Pesch | Highseller">
+<meta name="twitter:description" content="Immobilienmakler in Köln-Pesch: Familienhäuser und Wohnungen in ruhiger Lage im Norden verkaufen und bewerten. Geprüfte Käufer, Begleitung bis zum Notar.">
+<meta name="twitter:image" content="https://high-seller.de/assets/img/og-image.jpg">
 <link rel="icon" href="favicon.ico" sizes="any">
 <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32.png">
 <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
@@ -30,13 +38,14 @@
 <link rel="preload" as="font" type="font/woff2" href="assets/fonts/inter-latin.woff2" crossorigin>
 <link rel="preload" as="font" type="font/woff2" href="assets/fonts/spacegrotesk-latin.woff2" crossorigin>
 <link rel="stylesheet" href="assets/fonts/fonts.css?v=1">
-<link rel="stylesheet" href="css/styles.css?v=23">
+<link rel="stylesheet" href="css/styles.css?v=31">
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Start", "item": "https://high-seller.de/"}, {"@type": "ListItem", "position": 2, "name": "Immobilienmakler Köln", "item": "https://high-seller.de/immobilienmakler-koeln.html"}, {"@type": "ListItem", "position": 3, "name": "Köln-Pesch", "item": "https://high-seller.de/immobilienmakler-koeln-pesch.html"}]}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Wie schnell verkauft sich ein Reihenhaus in Pesch?", "acceptedAnswer": {"@type": "Answer", "text": "Bei marktgerechtem Preis oft innerhalb weniger Wochen. Häuser in Pesch sind knapp. Mit geprüften Interessenten aus unserer Käuferkartei verkürzen wir die Vermarktung zusätzlich."}}, {"@type": "Question", "name": "Bewertet Highseller auch Immobilien im benachbarten Umland?", "acceptedAnswer": {"@type": "Answer", "text": "Ja, neben Pesch betreuen wir das gesamte Kölner Umland, vom Rhein-Erft-Kreis über Pulheim bis Leverkusen. Die Bewertung ist überall kostenlos und unverbindlich."}}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "RealEstateAgent", "name": "Highseller Immobilien & Finanzen. Immobilienmakler Köln-Pesch", "image": "https://high-seller.de/assets/img/logo.png", "url": "https://high-seller.de/immobilienmakler-koeln-pesch.html", "telephone": "+49 162 8811110", "email": "info@high-seller.de", "address": {"@type": "PostalAddress", "streetAddress": "Im Zollhafen 18, Kranhaus 1", "postalCode": "50678", "addressLocality": "Köln", "addressCountry": "DE"}, "areaServed": {"@type": "Place", "name": "Köln-Pesch"}, "geo": {"@type": "GeoCoordinates", "latitude": 50.9274066, "longitude": 6.9662166}, "sameAs": ["https://www.instagram.com/highseller.immobilien/", "https://www.tiktok.com/@baris.oelmez", "https://www.youtube.com/@highsellerimmobilien", "https://www.immobilienscout24.de/anbieter/profil/highseller-immobilien-und-finanzen", "https://www.immowelt.de/profil/156e7c6439c042c6a6bc0f736075b070", "https://www.kleinanzeigen.de/pro/Highseller-Immobilien-Baris-Oelmez"]}</script>
 </head>
 <body>
 <header class="header"><div class="header__inner">
-  <a href="index.html" class="brand" aria-label="Highseller Immobilien & Finanzen. Startseite"><img decoding="async" src="assets/img/logo-farbig-quer.svg" alt="Highseller Immobilien & Finanzen Logo" width="3981" height="1569"></a>
+  <a href="index.html" class="brand" aria-label="Highseller Immobilien & Finanzen. Startseite"><picture><source type="image/webp" srcset="assets/img/logo-quer-430.webp"><img decoding="async" src="assets/img/logo-farbig-quer.svg" alt="Highseller Immobilien & Finanzen Logo" width="3981" height="1569"></picture></a>
   <nav class="nav" aria-label="Hauptnavigation">
     <a href="index.html">Startseite</a>
     <div class="has-mega"><a href="immobilie-verkaufen.html">Immobilie verkaufen</a>
@@ -154,9 +163,24 @@
     <p>Ja, neben Pesch betreuen wir das gesamte Kölner Umland, vom Rhein-Erft-Kreis über Pulheim bis Leverkusen. Die Bewertung ist überall kostenlos und unverbindlich.</p>
     <p style="margin-top:20px">Weitere Antworten finden Sie in unseren <a href="faq.html">häufigen Fragen</a>, oder Sie <a href="kontakt.html">sprechen direkt mit uns</a>.</p>
   </div>
-  <div class="reveal" style="margin-top:26px">
-    <p style="font-weight:600;color:var(--ink);margin-bottom:10px">Weitere Standorte:</p>
-    <div style="display:flex;flex-wrap:wrap;gap:10px"><a class="btn btn--ghost" href="immobilienmakler-koeln-niehl.html">Köln-Niehl</a> <a class="btn btn--ghost" href="immobilienmakler-koeln.html">Alle Standorte</a> <a class="btn btn--gold" href="immobilie-bewerten.html">Immobilie in Köln-Pesch bewerten</a></div>
+</div></section>
+<section class="section"><div class="container">
+  <div class="valuation-band reveal wertband">
+    <span class="eyebrow eyebrow--gold">Kostenlose Immobilienbewertung</span>
+    <h2 class="headline" style="max-width:24ch">Was zahlt der Markt in Köln-Pesch?</h2>
+    <p class="lead" style="max-width:58ch;margin-bottom:20px">Eine erste Orientierung für Pesch bekommen Sie hier in sechs Schritten — ohne Kosten und ohne Verpflichtung:</p>
+    <div class="wertband__arten">
+        <a class="wertband__art" href="immobilie-bewerten.html?art=wohnung"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 21V6l8-3 8 3v15"/><path d="M9 7h2M13 7h2M9 11h2M13 11h2M9 15h2M13 15h2M11 21v-3h2v3"/></svg><span>Eigentumswohnung</span></a>
+        <a class="wertband__art" href="immobilie-bewerten.html?art=efh"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 11l9-7 9 7"/><path d="M5.5 9.5V20h13V9.5"/><path d="M10 20v-5h4v5"/></svg><span>Einfamilienhaus</span></a>
+        <a class="wertband__art" href="immobilie-bewerten.html?art=dhh"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M2 11l6-6 6 6"/><path d="M4 10v10h16V10l-5-5"/><path d="M12 20V10"/></svg><span>Doppelhaushälfte</span></a>
+        <a class="wertband__art" href="immobilie-bewerten.html?art=grundstueck"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 20h18"/><path d="M4 20V9l8-5 8 5v11"/><path d="M9 20v-6h6v6"/></svg><span>Grundstück</span></a>
+    </div>
+    <a class="wertband__alle" href="immobilie-bewerten.html">Andere Objektart wählen<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+  </div>
+</div></section>
+<section class="section section--soft"><div class="container">  <div class="reveal" style="margin-top:26px">
+    <p style="font-weight:600;color:var(--ink);margin-bottom:10px">Auch tätig im Stadtbezirk Chorweiler und Umgebung:</p>
+    <div style="display:flex;flex-wrap:wrap;gap:10px"><a class="btn btn--ghost" href="immobilienmakler-koeln-nippes.html">Köln-Nippes</a> <a class="btn btn--ghost" href="immobilienmakler-koeln-weidenpesch.html">Köln-Weidenpesch</a> <a class="btn btn--ghost" href="immobilienmakler-koeln-niehl.html">Köln-Niehl</a> <a class="btn btn--ghost" href="immobilienmakler-koeln-ehrenfeld.html">Köln-Ehrenfeld</a> <a class="btn btn--ghost" href="immobilienmakler-koeln.html">Alle Standorte</a> <a class="btn btn--gold" href="immobilie-bewerten.html">Immobilie in Köln-Pesch bewerten</a></div>
   </div>
 </div></section>
 
@@ -193,14 +217,13 @@
   </div>
   <div class="footer__top">
     <div class="footer__brand">
-      <img decoding="async" src="assets/img/logo-farbig-quer.svg" alt="Highseller Immobilien & Finanzen" width="3981" height="1569">
+      <picture><source type="image/webp" srcset="assets/img/logo-quer-430.webp"><img decoding="async" src="assets/img/logo-farbig-quer.svg" alt="Highseller Immobilien & Finanzen" width="3981" height="1569"></picture>
       <p class="footer__claim">Immobilienverkauf, Baufinanzierung und Käuferprüfung aus einer Hand. Für Eigentümer, Käufer und Kapitalanleger in Köln und Umgebung.</p>
       <div class="socials">
         <a href="https://www.instagram.com/highseller.immobilien/" target="_blank" rel="noopener" aria-label="Instagram: highseller.immobilien" class="ig"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
         <a href="https://www.tiktok.com/@baris.oelmez" target="_blank" rel="noopener" aria-label="TikTok: baris.oelmez" class="tt"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 3c.3 2.1 1.7 3.8 3.8 4.1v3c-1.4 0-2.7-.4-3.8-1.1v6.4a5.4 5.4 0 1 1-5.4-5.4c.3 0 .6 0 .9.1v3.1a2.4 2.4 0 1 0 1.7 2.3V3z"/></svg></a>
-        <a href="https://www.linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn: Baris Ölmez" class="li" data-profile-todo="LinkedIn-Profil-URL bestätigen"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM9 9h3.8v1.7h.05c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.78 2.65 4.78 6.1V21h-4v-5.4c0-1.3 0-2.95-1.8-2.95-1.8 0-2.08 1.4-2.08 2.85V21H9z"/></svg></a>
         <a href="https://wa.me/491628811110?text=Hallo%20Highseller%2C%20ich%20interessiere%20mich%20f%C3%BCr%20eine%20Beratung." aria-label="WhatsApp: Nachricht an Highseller Immobilien" class="wa"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163a11.867 11.867 0 0 1-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.817 11.817 0 0 1 8.413 3.488 11.824 11.824 0 0 1 3.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 0 1-5.688-1.448L.057 24zM6.654 20.193c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 0 0 1.51 5.26l-.999 3.648 3.738-.989z"/></svg></a>
-      <a href="https://www.youtube.com/@highsellerimmobilien" target="_blank" rel="noopener" aria-label="YouTube: Highseller Immobilien" class="yt" data-profile-todo="Finalen YouTube-Kanal-Link von Highseller Immobilien hier eintragen"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.5 6.2a3 3 0 0 0-2.11-2.12C19.5 3.55 12 3.55 12 3.55s-7.5 0-9.39.53A3 3 0 0 0 .5 6.2 31.3 31.3 0 0 0 0 12a31.3 31.3 0 0 0 .5 5.8 3 3 0 0 0 2.11 2.12c1.89.53 9.39.53 9.39.53s7.5 0 9.39-.53A3 3 0 0 0 23.5 17.8 31.3 31.3 0 0 0 24 12a31.3 31.3 0 0 0-.5-5.8zM9.6 15.6V8.4l6.25 3.6z"/></svg></a></div>
+      <a href="https://www.youtube.com/@highsellerimmobilien" target="_blank" rel="noopener" aria-label="YouTube: Highseller Immobilien" class="yt"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.5 6.2a3 3 0 0 0-2.11-2.12C19.5 3.55 12 3.55 12 3.55s-7.5 0-9.39.53A3 3 0 0 0 .5 6.2 31.3 31.3 0 0 0 0 12a31.3 31.3 0 0 0 .5 5.8 3 3 0 0 0 2.11 2.12c1.89.53 9.39.53 9.39.53s7.5 0 9.39-.53A3 3 0 0 0 23.5 17.8 31.3 31.3 0 0 0 24 12a31.3 31.3 0 0 0-.5-5.8zM9.6 15.6V8.4l6.25 3.6z"/></svg></a></div>
       <div class="portals">
         <a href="https://www.immobilienscout24.de/anbieter/profil/highseller-immobilien-und-finanzen" target="_blank" rel="noopener noreferrer" data-portal-link="immoscout"><span class="dot" style="background:#00D9A3"></span>ImmoScout24</a>
         <a href="https://www.immowelt.de/profil/156e7c6439c042c6a6bc0f736075b070" target="_blank" rel="noopener noreferrer" data-portal-link="immowelt"><span class="dot" style="background:#FFD508"></span>Immowelt</a>
@@ -303,7 +326,7 @@
     </div>
   </div>
 </div>
-<script src="js/main.js?v=15" defer></script>
+<script src="js/main.js?v=20" defer></script>
 
 </body>
 </html>

@@ -2,14 +2,19 @@
 <html lang="de">
 <head>
 <meta charset="UTF-8">
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-24CQ7EWJZ3"></script>
+<!-- Einwilligung zuerst: Google Consent Mode v2.
+     Der Analytics-Tag wird NICHT hier geladen, sondern erst von js/main.js,
+     nachdem die Kategorie "statistics" bestaetigt wurde. Diese Defaults muessen
+     trotzdem vor allem anderen stehen, damit ein spaeter geladener Tag sie kennt. -->
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-24CQ7EWJZ3');
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('consent','default',{
+  ad_storage:'denied', ad_user_data:'denied', ad_personalization:'denied',
+  analytics_storage:'denied', functionality_storage:'granted',
+  security_storage:'granted', wait_for_update:500
+});
+document.documentElement.classList.add('js');
 </script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Verkaufte Objekte | Referenzen | Highseller Immobilien Köln</title>
@@ -23,19 +28,24 @@
 <meta property="og:url" content="https://high-seller.de/verkaufte-objekte.html">
 <meta property="og:locale" content="de_DE">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Verkaufte Objekte | Referenzen | Highseller Immobilien Köln">
+<meta name="twitter:description" content="Verkaufte Immobilien in Köln und Umgebung: Referenzen von Highseller. Häuser, Wohnungen und Villen, erfolgreich und diskret vermittelt.">
+<meta name="twitter:image" content="https://high-seller.de/assets/img/og-image.jpg">
 <link rel="icon" href="favicon.ico" sizes="any">
 <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32.png">
 <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
 <meta name="theme-color" content="#0B1A30">
 <link rel="preload" as="font" type="font/woff2" href="assets/fonts/inter-latin.woff2" crossorigin>
 <link rel="preload" as="font" type="font/woff2" href="assets/fonts/spacegrotesk-latin.woff2" crossorigin>
+<link rel="preconnect" href="https://images.propstack.de" crossorigin>
+<link rel="dns-prefetch" href="https://images.propstack.de">
 <link rel="stylesheet" href="assets/fonts/fonts.css?v=1">
-<link rel="stylesheet" href="css/styles.css?v=23">
+<link rel="stylesheet" href="css/styles.css?v=31">
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Start", "item": "https://high-seller.de/"}, {"@type": "ListItem", "position": 2, "name": "Verkaufte Objekte", "item": "https://high-seller.de/verkaufte-objekte.html"}]}</script>
 </head>
 <body>
 <header class="header"><div class="header__inner">
-  <a href="index.html" class="brand" aria-label="Highseller Immobilien & Finanzen. Startseite"><img decoding="async" src="assets/img/logo-farbig-quer.svg" alt="Highseller Immobilien & Finanzen Logo" width="3981" height="1569"></a>
+  <a href="index.html" class="brand" aria-label="Highseller Immobilien & Finanzen. Startseite"><picture><source type="image/webp" srcset="assets/img/logo-quer-430.webp"><img decoding="async" src="assets/img/logo-farbig-quer.svg" alt="Highseller Immobilien & Finanzen Logo" width="3981" height="1569"></picture></a>
   <nav class="nav" aria-label="Hauptnavigation">
     <a href="index.html">Startseite</a>
     <div class="has-mega"><a href="immobilie-verkaufen.html">Immobilie verkaufen</a>
@@ -112,7 +122,7 @@
     <a class="btn btn--wa btn--block" href="https://wa.me/491628811110?text=Hallo%20Highseller%2C%20ich%20interessiere%20mich%20f%C3%BCr%20eine%20Beratung." target="_blank" rel="noopener">Per WhatsApp schreiben</a>
     <a class="btn btn--ghost btn--block" href="tel:+491628811110">+49 162 8811110 anrufen</a>
   </div>
-</div><main><section class="page-hero page-hero--img"><div class="page-hero__bg"><img decoding="async" src="assets/img/referenz-verkaufte-immobilie-koeln.jpg" alt="Erfolgreich verkaufte Immobilie in Köln am Abend mit Hausmodell und Schlüsseln" loading="eager" width="1600" height="1067"></div>
+</div><main><section class="page-hero page-hero--img"><div class="page-hero__bg"><picture><source type="image/webp" srcset="assets/img/referenz-verkaufte-immobilie-koeln-480.webp 480w, assets/img/referenz-verkaufte-immobilie-koeln-960.webp 960w, assets/img/referenz-verkaufte-immobilie-koeln-1280.webp 1280w, assets/img/referenz-verkaufte-immobilie-koeln-1600.webp 1600w" sizes="(max-width:760px) 92vw, (max-width:1180px) 50vw, 620px"><img decoding="async" src="assets/img/referenz-verkaufte-immobilie-koeln.jpg" alt="Erfolgreich verkaufte Immobilie in Köln am Abend mit Hausmodell und Schlüsseln" loading="eager" width="1600" height="1067"></picture></div>
   <div class="container hero__inner reveal in">
     <div class="breadcrumb"><a href="index.html">Start</a> › Verkaufte Objekte</div>
     <h1>Verkaufte Objekte: Unsere Referenzen in Köln und Umgebung</h1>
@@ -128,7 +138,7 @@
 
 <section class="section section--soft"><div class="container">
   <div class="value-split">
-    <div class="media-frame reveal"><img decoding="async" src="assets/img/vertragsabschluss-immobilienmakler-koeln.jpg" alt="Erfolgreicher Vertragsabschluss beim Immobilienmakler Highseller in Köln" loading="lazy" width="1600" height="1066"></div>
+    <div class="media-frame reveal"><picture><source type="image/webp" srcset="assets/img/vertragsabschluss-immobilienmakler-koeln-480.webp 480w, assets/img/vertragsabschluss-immobilienmakler-koeln-960.webp 960w, assets/img/vertragsabschluss-immobilienmakler-koeln-1280.webp 1280w, assets/img/vertragsabschluss-immobilienmakler-koeln-1600.webp 1600w" sizes="(max-width:760px) 92vw, (max-width:1180px) 50vw, 620px"><img decoding="async" src="assets/img/vertragsabschluss-immobilienmakler-koeln.jpg" alt="Erfolgreicher Vertragsabschluss beim Immobilienmakler Highseller in Köln" loading="lazy" width="1600" height="1066"></picture></div>
     <div class="reveal" data-d="1">
       <span class="eyebrow eyebrow--gold">Warum Eigentümer uns vertrauen</span>
       <h2 class="headline">Hinter jeder Referenz steht ein zufriedener Eigentümer</h2>
@@ -176,14 +186,13 @@
   </div>
   <div class="footer__top">
     <div class="footer__brand">
-      <img decoding="async" src="assets/img/logo-farbig-quer.svg" alt="Highseller Immobilien & Finanzen" width="3981" height="1569">
+      <picture><source type="image/webp" srcset="assets/img/logo-quer-430.webp"><img decoding="async" src="assets/img/logo-farbig-quer.svg" alt="Highseller Immobilien & Finanzen" width="3981" height="1569"></picture>
       <p class="footer__claim">Immobilienverkauf, Baufinanzierung und Käuferprüfung aus einer Hand. Für Eigentümer, Käufer und Kapitalanleger in Köln und Umgebung.</p>
       <div class="socials">
         <a href="https://www.instagram.com/highseller.immobilien/" target="_blank" rel="noopener" aria-label="Instagram: highseller.immobilien" class="ig"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
         <a href="https://www.tiktok.com/@baris.oelmez" target="_blank" rel="noopener" aria-label="TikTok: baris.oelmez" class="tt"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 3c.3 2.1 1.7 3.8 3.8 4.1v3c-1.4 0-2.7-.4-3.8-1.1v6.4a5.4 5.4 0 1 1-5.4-5.4c.3 0 .6 0 .9.1v3.1a2.4 2.4 0 1 0 1.7 2.3V3z"/></svg></a>
-        <a href="https://www.linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn: Baris Ölmez" class="li" data-profile-todo="LinkedIn-Profil-URL bestätigen"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM9 9h3.8v1.7h.05c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.78 2.65 4.78 6.1V21h-4v-5.4c0-1.3 0-2.95-1.8-2.95-1.8 0-2.08 1.4-2.08 2.85V21H9z"/></svg></a>
         <a href="https://wa.me/491628811110?text=Hallo%20Highseller%2C%20ich%20interessiere%20mich%20f%C3%BCr%20eine%20Beratung." aria-label="WhatsApp: Nachricht an Highseller Immobilien" class="wa"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163a11.867 11.867 0 0 1-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.817 11.817 0 0 1 8.413 3.488 11.824 11.824 0 0 1 3.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 0 1-5.688-1.448L.057 24zM6.654 20.193c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 0 0 1.51 5.26l-.999 3.648 3.738-.989z"/></svg></a>
-      <a href="https://www.youtube.com/@highsellerimmobilien" target="_blank" rel="noopener" aria-label="YouTube: Highseller Immobilien" class="yt" data-profile-todo="Finalen YouTube-Kanal-Link von Highseller Immobilien hier eintragen"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.5 6.2a3 3 0 0 0-2.11-2.12C19.5 3.55 12 3.55 12 3.55s-7.5 0-9.39.53A3 3 0 0 0 .5 6.2 31.3 31.3 0 0 0 0 12a31.3 31.3 0 0 0 .5 5.8 3 3 0 0 0 2.11 2.12c1.89.53 9.39.53 9.39.53s7.5 0 9.39-.53A3 3 0 0 0 23.5 17.8 31.3 31.3 0 0 0 24 12a31.3 31.3 0 0 0-.5-5.8zM9.6 15.6V8.4l6.25 3.6z"/></svg></a></div>
+      <a href="https://www.youtube.com/@highsellerimmobilien" target="_blank" rel="noopener" aria-label="YouTube: Highseller Immobilien" class="yt"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.5 6.2a3 3 0 0 0-2.11-2.12C19.5 3.55 12 3.55 12 3.55s-7.5 0-9.39.53A3 3 0 0 0 .5 6.2 31.3 31.3 0 0 0 0 12a31.3 31.3 0 0 0 .5 5.8 3 3 0 0 0 2.11 2.12c1.89.53 9.39.53 9.39.53s7.5 0 9.39-.53A3 3 0 0 0 23.5 17.8 31.3 31.3 0 0 0 24 12a31.3 31.3 0 0 0-.5-5.8zM9.6 15.6V8.4l6.25 3.6z"/></svg></a></div>
       <div class="portals">
         <a href="https://www.immobilienscout24.de/anbieter/profil/highseller-immobilien-und-finanzen" target="_blank" rel="noopener noreferrer" data-portal-link="immoscout"><span class="dot" style="background:#00D9A3"></span>ImmoScout24</a>
         <a href="https://www.immowelt.de/profil/156e7c6439c042c6a6bc0f736075b070" target="_blank" rel="noopener noreferrer" data-portal-link="immowelt"><span class="dot" style="background:#FFD508"></span>Immowelt</a>
@@ -286,7 +295,7 @@
     </div>
   </div>
 </div>
-<script src="js/main.js?v=15" defer></script>
+<script src="js/main.js?v=20" defer></script>
 <script src="js/property-source.js?v=13" defer></script>
 <script src="js/verkaufte.js?v=1" defer></script>
 

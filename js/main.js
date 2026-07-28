@@ -97,17 +97,26 @@
     });
     on(doc, "keydown", function (e) { if (e.key === "Escape") doc.body.classList.remove("nav-open"); });
 
-    /* ---- Reveal-Animationen ---- */
+    /* ---- Reveal-Animationen ----
+       Drei Sicherungen, weil unsichtbarer Inhalt schlimmer ist als ein
+       fehlender Effekt: kein Observer verfuegbar, Nutzer moechte weniger
+       Bewegung, oder der Observer feuert wider Erwarten nicht. */
     var revealEls = $$(".reveal");
-    if ("IntersectionObserver" in window && revealEls.length) {
+    function alleZeigen() { revealEls.forEach(function (el) { el.classList.add("in"); }); }
+    var wenigerBewegung = window.matchMedia &&
+      window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+    if (wenigerBewegung || !("IntersectionObserver" in window) || !revealEls.length) {
+      alleZeigen();
+    } else {
       var io = new IntersectionObserver(function (entries) {
         entries.forEach(function (en) {
           if (en.isIntersecting) { en.target.classList.add("in"); io.unobserve(en.target); }
         });
       }, { threshold: 0.12, rootMargin: "0px 0px -8% 0px" });
       revealEls.forEach(function (el) { io.observe(el); });
-    } else {
-      revealEls.forEach(function (el) { el.classList.add("in"); });
+      // Rueckfall: Was nach drei Sekunden noch verborgen ist, wird gezeigt.
+      setTimeout(alleZeigen, 3000);
     }
 
     /* ---- FAQ: Accordion ---- */
@@ -172,7 +181,11 @@
      marketing (externe Medien: YouTube, Google Maps, Meta Pixel …).
      Kein externer Dienst wird ohne aktive Einwilligung geladen. Die Auswahl
      wird lokal gespeichert und ist über die Cookie-Einstellungen widerrufbar. */
-  var CONSENT_KEY = "hs_consent_v2";
+  /* v3 seit 2026-07-28: Bis dahin lud Google Analytics fest im <head> jeder
+     Seite — also auch bei abgelehnter Statistik. Die unter v2 eingeholte
+     Zustimmung beschrieb damit nicht, was tatsaechlich passierte, und wird
+     deshalb nicht uebernommen. Bestehende Besucher werden einmal neu gefragt. */
+  var CONSENT_KEY = "hs_consent_v3";
   // Google-Analytics-4-Mess-ID. Wird erst nach Einwilligung in die Kategorie
   // "statistics" geladen (siehe applyConsent/loadAnalytics). Ohne ID kein Tracking.
   var GA_ID = "G-24CQ7EWJZ3";
@@ -199,7 +212,7 @@
 
   function applyConsent() {
     var c = Consent.current();
-    if (c.statistics) loadAnalytics();
+    if (c.statistics) loadAnalytics(); else unloadAnalytics();
     if (c.marketing) { $$(".map-wrap").forEach(loadMap); loadEmbeds(); }
   }
 
@@ -232,21 +245,49 @@
     });
   }
 
+  /* gtag ist bereits im <head> jeder Seite definiert (Consent Mode v2, alle
+     Kategorien auf "denied"). Hier nur absichern, falls das Inline-Skript
+     einmal fehlt — niemals neu definieren, sonst ginge die Warteschlange
+     der bereits gesetzten Defaults verloren. */
+  window.dataLayer = window.dataLayer || [];
+  if (typeof window.gtag !== "function") {
+    window.gtag = function () { window.dataLayer.push(arguments); };
+  }
+
   function loadAnalytics() {
-    if (analyticsLoaded || !GA_ID) return; // ohne ID / ohne Einwilligung kein Tracking
+    if (!GA_ID) return;
+    // Einwilligung an Google melden. Muss auch dann laufen, wenn der Tag schon
+    // geladen ist (Widerruf und erneute Zustimmung in derselben Sitzung).
+    window.gtag("consent", "update", { analytics_storage: "granted" });
+    if (analyticsLoaded) return;
     analyticsLoaded = true;
     // Offizielles Google-Tag (gtag.js) — asynchron nachladen
     var s = doc.createElement("script");
     s.async = true; s.src = "https://www.googletagmanager.com/gtag/js?id=" + GA_ID;
     doc.head.appendChild(s);
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { window.dataLayer.push(arguments); }
-    window.gtag = gtag; // global verfügbar für spätere Events
-    gtag("js", new Date());
+    window.gtag("js", new Date());
     // Standard-Konfiguration: sendet auf jeder (voll geladenen) Seite einen page_view.
     // Da die Website eine klassische Multi-Page-Site ist, wird jeder Seitenwechsel
     // als vollständiger Seitenaufruf gemessen.
-    gtag("config", GA_ID, { anonymize_ip: true });
+    window.gtag("config", GA_ID, { anonymize_ip: true });
+  }
+
+  /* Widerruf: Google die Rücknahme melden und die bereits gesetzten
+     Analytics-Cookies entfernen. Ohne das Löschen bliebe die Kennung des
+     Besuchers ein Jahr lang im Browser stehen. */
+  function unloadAnalytics() {
+    window.gtag("consent", "update", { analytics_storage: "denied" });
+    var namen = doc.cookie.split(";").map(function (c) { return c.split("=")[0].trim(); })
+      .filter(function (n) { return n === "_ga" || n === "_gid" || n.indexOf("_ga_") === 0; });
+    var hosts = [location.hostname, "." + location.hostname];
+    var basis = location.hostname.replace(/^www\./, "");
+    hosts.push(basis, "." + basis);
+    namen.forEach(function (n) {
+      hosts.forEach(function (h) {
+        doc.cookie = n + "=; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/; domain=" + h;
+      });
+      doc.cookie = n + "=; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/";
+    });
   }
 
   function initCookies() {
@@ -440,4 +481,110 @@
                "&body=" + encodeURIComponent(lines.join("\n"));
     window.location.href = href;
   }
+
+  /* Karriere: Klick auf eine Stellenanzeige wählt die Stelle im Formular vor,
+     damit die Zuordnung nicht beim Sprung zum Formular verloren geht. */
+  $$("[data-stelle]").forEach(function (link) {
+    on(link, "click", function () {
+      var sel = $("#bereich");
+      if (sel) sel.value = link.getAttribute("data-stelle");
+    });
+  });
+
+  /* Einstiege in den Wertrechner.
+     --------------------------------------------------------------------------
+     Zwei Wege führen hinein: die Karte im Hero derselben Seite (data-wert-start)
+     und die Stadtteilseiten, die per Adressparameter ?art=… herüberschicken.
+     Beide wählen am Ende dieselbe Kachel im echten Rechner an — der Zustand
+     lebt ausschließlich in wertrechner.js, sonst laufen die Stellen auseinander. */
+  /* Rückgabe ist bewusst das ERGEBNIS, nicht nur "Kachel gefunden": main.js wird
+     vor wertrechner.js geladen. Ein Klick zu früh verpufft, weil der Zuhörer dort
+     noch nicht registriert ist — die Kachel bliebe stumm zurück. */
+  function wertrechnerVorwaehlen(art, springen) {
+    var kachel = $('.tile[data-type="' + art + '"]');
+    if (!kachel) return false;
+    kachel.click();
+    if (springen) {
+      var rechner = $("#wertrechner");
+      if (rechner) rechner.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+    return kachel.classList.contains("sel");
+  }
+
+  $$("[data-wert-start]").forEach(function (btn) {
+    on(btn, "click", function () {
+      wertrechnerVorwaehlen(btn.getAttribute("data-wert-start"), true);
+    });
+  });
+
+  /* Ankunft von einer Stadtteilseite: /immobilie-bewerten.html?art=efh
+     Nur bekannte Werte zulassen — der Parameter kommt aus der Adresszeile. */
+  (function () {
+    var treffer = /[?&]art=([a-z]+)/.exec(location.search);
+    if (!treffer) return;
+    var erlaubt = ["wohnung", "efh", "dhh", "reihenhaus", "mfh", "grundstueck", "gewerbe"];
+    if (erlaubt.indexOf(treffer[1]) === -1) return;
+    // Der Rechner baut sich erst auf; deshalb kurz warten statt sofort zugreifen.
+    var versuche = 0;
+    (function probieren() {
+      if (wertrechnerVorwaehlen(treffer[1], false)) return;
+      if (++versuche < 20) setTimeout(probieren, 100);
+    })();
+  })();
+
+  /* ==========================================================================
+     Sprungleiste (Handy): markiert den Abschnitt, in dem man gerade steht.
+     --------------------------------------------------------------------------
+     Bewusst kein IntersectionObserver: Die Abschnitte sind teils höher als der
+     Bildschirm, teils niedriger, und mehrere sind gleichzeitig sichtbar. Ein
+     Observer müsste dann doch entscheiden, welcher davon "der aktuelle" ist.
+     Hier gilt schlicht: der letzte Abschnitt, dessen Oberkante die Leiste
+     bereits passiert hat.
+     ========================================================================== */
+  /* Kopfhöhe als CSS-Variable — unabhängig von der Sprungleiste, weil auch
+     jede andere Seite sie für den Abstand bei Ankersprüngen braucht. */
+  (function () {
+    var kopf = $(".header");
+    if (!kopf) return;
+    function setzen() {
+      doc.documentElement.style.setProperty("--header-h", kopf.offsetHeight + "px");
+    }
+    setzen();
+    on(window, "resize", setzen);
+    if (window.ResizeObserver) new ResizeObserver(setzen).observe(kopf);
+  })();
+
+  (function () {
+    var bar = $("#jumpbar");
+    if (!bar) return;
+
+    var links = $$("a", bar);
+    var ziele = links.map(function (a) { return $(a.getAttribute("href")); });
+    var aktiv = -1;
+    function markieren() {
+      var grenze = bar.getBoundingClientRect().bottom + 8;
+      var jetzt = -1;
+      for (var i = 0; i < ziele.length; i++) {
+        if (ziele[i] && ziele[i].getBoundingClientRect().top <= grenze) jetzt = i;
+      }
+      if (jetzt === aktiv) return;
+      if (aktiv > -1) links[aktiv].classList.remove("is-hier");
+      aktiv = jetzt;
+      if (aktiv < 0) return;
+      var a = links[aktiv];
+      a.classList.add("is-hier");
+      // aktiven Chip in Sicht holen, ohne die Seite selbst zu verschieben
+      var spur = a.parentElement;
+      var soll = a.offsetLeft - (spur.clientWidth - a.offsetWidth) / 2;
+      spur.scrollTo({ left: Math.max(0, soll), behavior: "smooth" });
+    }
+
+    var wartet = false;
+    on(window, "scroll", function () {
+      if (wartet) return;
+      wartet = true;
+      requestAnimationFrame(function () { markieren(); wartet = false; });
+    });
+    markieren();
+  })();
 })();

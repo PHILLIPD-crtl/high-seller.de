@@ -2,14 +2,19 @@
 <html lang="de">
 <head>
 <meta charset="UTF-8">
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-24CQ7EWJZ3"></script>
+<!-- Einwilligung zuerst: Google Consent Mode v2.
+     Der Analytics-Tag wird NICHT hier geladen, sondern erst von js/main.js,
+     nachdem die Kategorie "statistics" bestaetigt wurde. Diese Defaults muessen
+     trotzdem vor allem anderen stehen, damit ein spaeter geladener Tag sie kennt. -->
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-24CQ7EWJZ3');
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('consent','default',{
+  ad_storage:'denied', ad_user_data:'denied', ad_personalization:'denied',
+  analytics_storage:'denied', functionality_storage:'granted',
+  security_storage:'granted', wait_for_update:500
+});
+document.documentElement.classList.add('js');
 </script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Datenschutz | Highseller Immobilien & Finanzen</title>
@@ -23,6 +28,9 @@
 <meta property="og:url" content="https://high-seller.de/datenschutz.html">
 <meta property="og:locale" content="de_DE">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Datenschutz | Highseller Immobilien & Finanzen">
+<meta name="twitter:description" content="Datenschutzerklärung von Highseller Immobilien & Finanzen Köln: Kontaktformular, Cookies, Google Maps, Bewertungen und Ihre Rechte nach DSGVO.">
+<meta name="twitter:image" content="https://high-seller.de/assets/img/og-image.jpg">
 <link rel="icon" href="favicon.ico" sizes="any">
 <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32.png">
 <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
@@ -30,12 +38,13 @@
 <link rel="preload" as="font" type="font/woff2" href="assets/fonts/inter-latin.woff2" crossorigin>
 <link rel="preload" as="font" type="font/woff2" href="assets/fonts/spacegrotesk-latin.woff2" crossorigin>
 <link rel="stylesheet" href="assets/fonts/fonts.css?v=1">
-<link rel="stylesheet" href="css/styles.css?v=23">
+<link rel="stylesheet" href="css/styles.css?v=31">
 
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Start", "item": "https://high-seller.de/"}, {"@type": "ListItem", "position": 2, "name": "Datenschutz", "item": "https://high-seller.de/datenschutz.html"}]}</script>
 </head>
 <body>
 <header class="header"><div class="header__inner">
-  <a href="index.html" class="brand" aria-label="Highseller Immobilien & Finanzen. Startseite"><img decoding="async" src="assets/img/logo-farbig-quer.svg" alt="Highseller Immobilien & Finanzen Logo" width="3981" height="1569"></a>
+  <a href="index.html" class="brand" aria-label="Highseller Immobilien & Finanzen. Startseite"><picture><source type="image/webp" srcset="assets/img/logo-quer-430.webp"><img decoding="async" src="assets/img/logo-farbig-quer.svg" alt="Highseller Immobilien & Finanzen Logo" width="3981" height="1569"></picture></a>
   <nav class="nav" aria-label="Hauptnavigation">
     <a href="index.html">Startseite</a>
     <div class="has-mega"><a href="immobilie-verkaufen.html">Immobilie verkaufen</a>
@@ -130,7 +139,13 @@
   <p>Wir verarbeiten personenbezogene Daten nur, soweit dies zur Bereitstellung einer funktionsfähigen Website sowie unserer Inhalte und Leistungen erforderlich ist oder Sie eingewilligt haben. Rechtsgrundlagen sind insbesondere Art. 6 Abs. 1 lit. a (Einwilligung), lit. b (Vertrag/vorvertragliche Maßnahmen) und lit. f (berechtigtes Interesse) DSGVO.</p>
 
   <h2>3. Hosting &amp; Serverlogfiles</h2>
-  <p>Beim Aufruf der Website werden durch den Hostingprovider automatisch Informationen in sogenannten Serverlogfiles erfasst (z. B. IP-Adresse, Datum und Uhrzeit, abgerufene Datei, übertragene Datenmenge, Browsertyp). Dies dient dem sicheren und stabilen Betrieb (Art. 6 Abs. 1 lit. f DSGVO).</p>
+  <p>Diese Website wird gehostet von der Netlify, Inc., 512 2nd Street, Suite 200, San Francisco, CA 94107, USA. Beim Aufruf der Website werden durch den Hostingprovider automatisch Informationen in sogenannten Serverlogfiles erfasst (z. B. IP-Adresse, Datum und Uhrzeit, abgerufene Datei, übertragene Datenmenge, Browsertyp). Dies dient dem sicheren und stabilen Betrieb (Art. 6 Abs. 1 lit. f DSGVO).</p>
+  <p>Da Netlify ein US-Anbieter ist, können dabei Daten in die USA übermittelt werden. Die Übermittlung stützen wir auf die EU-Standardvertragsklauseln beziehungsweise auf die Zertifizierung des Anbieters nach dem EU-US Data Privacy Framework. Mit dem Anbieter besteht ein Vertrag über die Auftragsverarbeitung nach Art. 28 DSGVO.</p>
+  <p>Über den Hostingprovider werden außerdem die Absendungen unserer Formulare verarbeitet und als E-Mail an uns weitergeleitet.</p>
+
+  <h2>3a. Immobilienangebote (Propstack)</h2>
+  <p>Für die Verwaltung und Darstellung unserer Immobilienangebote nutzen wir die Maklersoftware Propstack der Propstack GmbH. Die Objektdaten werden über unseren Server abgerufen. Die zu den Angeboten gehörenden <strong>Objektfotos werden direkt von Servern des Anbieters</strong> (<code>images.propstack.de</code>) in Ihren Browser geladen. Dabei wird Ihre IP-Adresse technisch bedingt an den Anbieter übertragen.</p>
+  <p>Rechtsgrundlage ist unser berechtigtes Interesse an einer aktuellen und effizienten Darstellung unseres Angebots (Art. 6 Abs. 1 lit. f DSGVO). Mit dem Anbieter besteht ein Vertrag über die Auftragsverarbeitung nach Art. 28 DSGVO. Diese Übertragung findet nur auf den Seiten statt, auf denen Immobilienangebote dargestellt werden.</p>
 
   <h2>4. Kontaktaufnahme &amp; Kontaktformular</h2>
   <p>Wenn Sie uns über das Formular, per E-Mail, Telefon oder WhatsApp kontaktieren, verarbeiten wir die von Ihnen mitgeteilten Daten (z. B. Name, Telefonnummer, E-Mail, Angaben zur Immobilie und Ihre Nachricht) zur Bearbeitung Ihrer Anfrage. Rechtsgrundlage ist Art. 6 Abs. 1 lit. b bzw. lit. f DSGVO. Die Daten werden gelöscht, sobald sie für die Erreichung des Zwecks nicht mehr erforderlich sind und keine gesetzlichen Aufbewahrungspflichten entgegenstehen.</p>
@@ -157,6 +172,7 @@
   <h2>11. Tracking / Webanalyse – Google Analytics 4 (optional)</h2>
   <p>Sofern Sie in die Kategorie „Statistik“ einwilligen, nutzen wir Google Analytics 4, einen Webanalysedienst der Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Irland. Google Analytics verwendet Cookies bzw. vergleichbare Technologien sowie eine Analyse-ID (Mess-ID), um die Nutzung unserer Website statistisch auszuwerten und sie dadurch laufend zu verbessern.</p>
   <p>Die Erhebung und Verarbeitung erfolgt ausschließlich auf Grundlage Ihrer Einwilligung (Art. 6 Abs. 1 lit. a DSGVO). Ohne Ihre Einwilligung wird der Google-Analytics-Code nicht geladen und es findet kein Tracking statt. Der Analysedienst wird technisch erst nach aktiver Zustimmung im Cookie Hinweis nachgeladen. Die IP-Adresse wird bei Google Analytics 4 gekürzt bzw. anonymisiert verarbeitet.</p>
+  <p>Technisch setzen wir dafür den Google Consent Mode v2 ein: Bereits beim Seitenaufruf wird die Einwilligung für alle Kategorien standardmäßig auf „abgelehnt“ gesetzt. Erst wenn Sie der Kategorie „Statistik“ zustimmen, wird das Google-Tag überhaupt geladen. Widerrufen Sie Ihre Einwilligung über die „Cookie Einstellungen“ im Footer, wird die Ablehnung an Google übermittelt und die bereits gesetzten Analytics-Cookies (<code>_ga</code>, <code>_ga_*</code>, <code>_gid</code>) werden gelöscht.</p>
   <p>Dabei können Daten auch an Server der Google LLC in den USA übertragen werden. Für diese Übermittlung stützen wir uns auf die EU-Standardvertragsklauseln bzw. den EU-US Data Privacy Framework. Ihre Einwilligung können Sie jederzeit mit Wirkung für die Zukunft über die „Cookie Einstellungen“ im Footer widerrufen. Weitere Informationen finden Sie in der <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Datenschutzerklärung von Google</a>.</p>
 
   <h2>12. Ihre Rechte</h2>
@@ -169,7 +185,7 @@
   <h2>13. Datensicherheit</h2>
   <p>Wir setzen eine SSL-/TLS-Verschlüsselung ein, um die Übertragung Ihrer Daten zu schützen (erkennbar an „https“ in der Adresszeile).</p>
 
-  <p style="margin-top:24px;color:var(--slate-2);font-size:.85rem">Stand dieser Datenschutzerklärung: 27. Juli 2026</p>
+  <p style="margin-top:24px;color:var(--slate-2);font-size:.85rem">Stand dieser Datenschutzerklärung: 28. Juli 2026</p>
 </div></div></section></main>
 <footer class="footer"><div class="container">
   <div class="footer-newsletter">
@@ -194,14 +210,13 @@
   </div>
   <div class="footer__top">
     <div class="footer__brand">
-      <img decoding="async" src="assets/img/logo-farbig-quer.svg" alt="Highseller Immobilien & Finanzen" width="3981" height="1569">
+      <picture><source type="image/webp" srcset="assets/img/logo-quer-430.webp"><img decoding="async" src="assets/img/logo-farbig-quer.svg" alt="Highseller Immobilien & Finanzen" width="3981" height="1569"></picture>
       <p class="footer__claim">Immobilienverkauf, Baufinanzierung und Käuferprüfung aus einer Hand. Für Eigentümer, Käufer und Kapitalanleger in Köln und Umgebung.</p>
       <div class="socials">
         <a href="https://www.instagram.com/highseller.immobilien/" target="_blank" rel="noopener" aria-label="Instagram: highseller.immobilien" class="ig"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
         <a href="https://www.tiktok.com/@baris.oelmez" target="_blank" rel="noopener" aria-label="TikTok: baris.oelmez" class="tt"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 3c.3 2.1 1.7 3.8 3.8 4.1v3c-1.4 0-2.7-.4-3.8-1.1v6.4a5.4 5.4 0 1 1-5.4-5.4c.3 0 .6 0 .9.1v3.1a2.4 2.4 0 1 0 1.7 2.3V3z"/></svg></a>
-        <a href="https://www.linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn: Baris Ölmez" class="li" data-profile-todo="LinkedIn-Profil-URL bestätigen"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM9 9h3.8v1.7h.05c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.78 2.65 4.78 6.1V21h-4v-5.4c0-1.3 0-2.95-1.8-2.95-1.8 0-2.08 1.4-2.08 2.85V21H9z"/></svg></a>
         <a href="https://wa.me/491628811110?text=Hallo%20Highseller%2C%20ich%20interessiere%20mich%20f%C3%BCr%20eine%20Beratung." aria-label="WhatsApp: Nachricht an Highseller Immobilien" class="wa"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163a11.867 11.867 0 0 1-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.817 11.817 0 0 1 8.413 3.488 11.824 11.824 0 0 1 3.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 0 1-5.688-1.448L.057 24zM6.654 20.193c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 0 0 1.51 5.26l-.999 3.648 3.738-.989z"/></svg></a>
-      <a href="https://www.youtube.com/@highsellerimmobilien" target="_blank" rel="noopener" aria-label="YouTube: Highseller Immobilien" class="yt" data-profile-todo="Finalen YouTube-Kanal-Link von Highseller Immobilien hier eintragen"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.5 6.2a3 3 0 0 0-2.11-2.12C19.5 3.55 12 3.55 12 3.55s-7.5 0-9.39.53A3 3 0 0 0 .5 6.2 31.3 31.3 0 0 0 0 12a31.3 31.3 0 0 0 .5 5.8 3 3 0 0 0 2.11 2.12c1.89.53 9.39.53 9.39.53s7.5 0 9.39-.53A3 3 0 0 0 23.5 17.8 31.3 31.3 0 0 0 24 12a31.3 31.3 0 0 0-.5-5.8zM9.6 15.6V8.4l6.25 3.6z"/></svg></a></div>
+      <a href="https://www.youtube.com/@highsellerimmobilien" target="_blank" rel="noopener" aria-label="YouTube: Highseller Immobilien" class="yt"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.5 6.2a3 3 0 0 0-2.11-2.12C19.5 3.55 12 3.55 12 3.55s-7.5 0-9.39.53A3 3 0 0 0 .5 6.2 31.3 31.3 0 0 0 0 12a31.3 31.3 0 0 0 .5 5.8 3 3 0 0 0 2.11 2.12c1.89.53 9.39.53 9.39.53s7.5 0 9.39-.53A3 3 0 0 0 23.5 17.8 31.3 31.3 0 0 0 24 12a31.3 31.3 0 0 0-.5-5.8zM9.6 15.6V8.4l6.25 3.6z"/></svg></a></div>
       <div class="portals">
         <a href="https://www.immobilienscout24.de/anbieter/profil/highseller-immobilien-und-finanzen" target="_blank" rel="noopener noreferrer" data-portal-link="immoscout"><span class="dot" style="background:#00D9A3"></span>ImmoScout24</a>
         <a href="https://www.immowelt.de/profil/156e7c6439c042c6a6bc0f736075b070" target="_blank" rel="noopener noreferrer" data-portal-link="immowelt"><span class="dot" style="background:#FFD508"></span>Immowelt</a>
@@ -304,7 +319,7 @@
     </div>
   </div>
 </div>
-<script src="js/main.js?v=15" defer></script>
+<script src="js/main.js?v=20" defer></script>
 
 </body>
 </html>

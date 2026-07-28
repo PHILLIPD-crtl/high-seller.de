@@ -20,10 +20,25 @@
 }
 *,*::before,*::after{box-sizing:border-box}
 html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+/* overflow-x doppelt: "hidden" macht body zu einem eigenen Scrollbereich, und
+   darin klebt position:sticky nicht mehr am Bildschirm - der Kopf scrollte
+   dadurch auf jeder Seite weg. "clip" schneidet genauso ab, ohne einen
+   Scrollbereich zu erzeugen, sticky funktioniert wieder. Die erste Zeile bleibt
+   als Rueckfall fuer aeltere Browser stehen, die "clip" noch nicht kennen. */
 body{margin:0;font-family:var(--f-body);color:var(--body);background:var(--bg);
-  font-size:17px;line-height:1.65;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+  font-size:17px;line-height:1.65;-webkit-font-smoothing:antialiased;
+  overflow-x:hidden;overflow-x:clip}
 body.nav-open{overflow:hidden}
-img{max-width:100%;display:block;height:auto}
+img{max-width:100%;display:block;height:auto;min-width:0}
+/* picture wird beim Umstieg auf WebP um jedes Bild gelegt. Als eigene Box
+   zerstoert es bestehende Layouts: Es reicht weder Hoehe noch Breite des
+   Rahmens durch, wodurch Container mit aspect-ratio (media-frame, Teamfotos,
+   Logo, Ladebildschirm) ihre Groesse falsch zurueckrechnen - auf "Immobilie
+   verkaufen" wurde die Seite dadurch 1426 statt 1024 px breit.
+   display:contents nimmt picture vollstaendig aus dem Box-Modell; das img
+   verhaelt sich wieder exakt wie vorher, ohne dass eine einzige bestehende
+   Bildregel angefasst werden muss. */
+picture{display:contents}
 a{color:var(--blue-ink);text-decoration:none}
 a:hover{color:var(--blue-d)}
 h1,h2,h3,h4{font-family:var(--f-display);color:var(--ink);line-height:1.12;font-weight:600;margin:0 0 .5em}
@@ -452,11 +467,16 @@ body.cc-lock{overflow:hidden}
 }
 
 /* ---------- Reveal ---------- */
-.reveal{opacity:0;transform:translateY(22px);transition:opacity .6s var(--ease),transform .6s var(--ease)}
-.reveal.in{opacity:1;transform:none}
-.reveal[data-d="1"]{transition-delay:.08s}
-.reveal[data-d="2"]{transition-delay:.16s}
-.reveal[data-d="3"]{transition-delay:.24s}
+/* Einblend-Effekt: Sichtbar ist der Grundzustand. Die Klasse .js setzt das
+   Inline-Skript im <head> jeder Seite. Faellt JavaScript aus - Fehler, Blocker,
+   alter Browser - bleibt die Seite dadurch vollstaendig lesbar, statt unterhalb
+   des ersten Bildschirms unsichtbar zu sein. */
+.reveal{opacity:1;transform:none}
+.js .reveal{opacity:0;transform:translateY(22px);transition:opacity .6s var(--ease),transform .6s var(--ease)}
+.js .reveal.in{opacity:1;transform:none}
+.js .reveal[data-d="1"]{transition-delay:.08s}
+.js .reveal[data-d="2"]{transition-delay:.16s}
+.js .reveal[data-d="3"]{transition-delay:.24s}
 
 /* ---------- Responsive ---------- */
 @media(min-width:560px){
@@ -492,9 +512,15 @@ body.cc-lock{overflow:hidden}
   .skyline{height:70px}
 }
 @media(prefers-reduced-motion:reduce){
-  *{animation-duration:.001ms!important;transition-duration:.001ms!important}
-  html{scroll-behavior:auto}
-  .reveal{opacity:1;transform:none}
+  /* Auch Pseudoelemente: Sheen, Marquee und Skeleton laufen ueber ::before
+     und ::after und blieben sonst in Bewegung. iteration-count stoppt
+     Endlosschleifen, die eine kurze Dauer allein nur beschleunigt haette. */
+  *,*::before,*::after{
+    animation-duration:.001ms!important;
+    animation-iteration-count:1!important;
+    transition-duration:.001ms!important}
+  html{scroll-behavior:auto!important}
+  .reveal,.js .reveal{opacity:1!important;transform:none!important}
 }
 
 /* ==========================================================================
@@ -551,7 +577,13 @@ body.cc-lock{overflow:hidden}
   padding:11px 4px 11px 16px;border:0}
 
 /* ---------- Medien / Bild-Slots ---------- */
-.media-frame{position:relative;border-radius:var(--radius-lg);overflow:hidden;box-shadow:var(--shadow);background:var(--bg-soft)}
+/* width:100% ist hier Pflicht, nicht Kosmetik: Zusammen mit aspect-ratio und
+   der Standard-Streckung in Grid-Zeilen wuerde sonst die HOEHE der Nachbar-
+   spalte die Breite bestimmen (auf "Immobilie verkaufen" 866 statt 431 px, die
+   Seite lief dadurch auf 1426 px auf). Mit fester Breite folgt die Hoehe aus
+   dem Seitenverhaeltnis - herum, wie es gemeint ist. */
+.media-frame{position:relative;width:100%;max-width:100%;min-width:0;
+  border-radius:var(--radius-lg);overflow:hidden;box-shadow:var(--shadow);background:var(--bg-soft)}
 .media-frame img{width:100%;height:100%;object-fit:cover;display:block}
 .media-frame--ratio{aspect-ratio:4/3}
 .media-frame--tall{aspect-ratio:3/4}
@@ -897,7 +929,10 @@ body.cc-lock{overflow:hidden}
 .section--navy .contact-row div{color:#F2F5FA}
 .section--navy .contact-row a:hover{color:var(--gold)}
 .section--navy .contact-row .ic{background:rgba(255,255,255,.08);color:#C9D6EA}
-.section--navy .map-consent p{color:#A9BCDC}
+/* Der Kartenplatzhalter hat IMMER einen hellen Kasten (--bg-soft), auch wenn er
+   in einer navy-Sektion steht. Die helle Schrift von hier ergab 1,75:1 und war
+   praktisch unlesbar - ausgerechnet beim Datenschutzhinweis vor dem Laden. */
+.section--navy .map-consent p{color:#4A5568}
 
 /* ---------- Formulare: Kontrast & Klarheit ---------- */
 .field label{font-size:.9rem;color:var(--ink)}
@@ -1629,6 +1664,340 @@ body{background:var(--bg)}
   .checkbox{width:100%;min-width:0}
   .checkbox span{min-width:0;overflow-wrap:anywhere}
 
-  /* Sicherheitsnetz: nichts darf breiter werden als der Bildschirm. */
-  html,body{overflow-x:hidden}
+  /* Sicherheitsnetz: nichts darf breiter werden als der Bildschirm.
+     "clip" statt "hidden", sonst klebt der Kopf nicht mehr (siehe body oben). */
+  html,body{overflow-x:hidden;overflow-x:clip}
+}
+
+/* ==========================================================================
+   v24 — Stellenanzeigen (Karriere)
+   ========================================================================== */
+.jobs{display:grid;grid-template-columns:1fr;gap:20px}
+@media(min-width:860px){.jobs{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.job{display:flex;flex-direction:column;min-width:0;background:var(--card);
+  border:1px solid var(--border);border-radius:var(--radius);padding:28px;
+  box-shadow:var(--shadow-sm);transition:transform .22s var(--ease),box-shadow .22s,border-color .22s}
+.job:hover{transform:translateY(-4px);box-shadow:var(--shadow);border-color:var(--blue-line)}
+.job__head{display:flex;align-items:center;gap:14px;margin-bottom:14px}
+.job__ic{width:48px;height:48px;flex:none;border-radius:14px;display:grid;place-items:center;
+  background:var(--blue-soft);color:var(--blue)}
+.job__ic svg{width:24px;height:24px}
+.job h3{font-size:1.25rem;margin:0;min-width:0;overflow-wrap:break-word}
+.job__tags{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:16px}
+.job__tags span{font-size:.78rem;font-weight:600;color:var(--gold-2);
+  background:var(--gold-soft);border:1px solid var(--gold-line);border-radius:999px;padding:5px 12px}
+.job p{font-size:.95rem;color:var(--body);margin-bottom:18px}
+.job h4{font-family:var(--f-body);font-size:.76rem;letter-spacing:.11em;text-transform:uppercase;
+  color:var(--slate-2);font-weight:600;margin:0 0 11px}
+.job ul{list-style:none;margin:0 0 22px;padding:0;display:grid;gap:9px}
+.job li{display:flex;gap:10px;align-items:flex-start;font-size:.93rem;line-height:1.5;color:var(--body)}
+.job li svg{width:18px;height:18px;flex:none;margin-top:3px;color:var(--gold-2)}
+.job .btn{margin-top:auto;align-self:flex-start}
+@media(max-width:560px){
+  .job{padding:18px}
+  .job h3{font-size:1.08rem;line-height:1.25}
+  .job__ic{width:40px;height:40px;border-radius:11px}
+  .job__ic svg{width:20px;height:20px}
+  .job .btn{width:100%;justify-content:center}
+}
+
+/* ==========================================================================
+   v24 — Sichtbarkeit: .btn--ghost auf dunklen Flaechen
+   --------------------------------------------------------------------------
+   .btn--ghost ist fuer HELLE Flaechen gebaut: kein Hintergrund, heller Rand,
+   fast schwarze Schrift (--ink #0C1726). Auf den dunklen Navy-Flaechen
+   (#0B1A30 bis #0E2442) ergibt das rund 1,1:1 Kontrast - der Rand blieb
+   sichtbar, die Schrift nicht. Der Button wirkte dadurch LEER.
+
+   Betraf unter anderem den Anruf-Button im Handy-Menue (auf 44 Seiten), die
+   Kartenschaltflaechen im Kontaktbereich der Startseite und den Telefon-
+   Button auf der Ehrenfeld-Seite. Statt jede Fundstelle im HTML einzeln zu
+   aendern, wird die Schrift hier je dunklem Kontext nachgezogen - so bleibt
+   auch kuenftiges Markup an diesen Stellen automatisch lesbar.
+   ========================================================================== */
+.mobile-menu .btn--ghost,
+.section--navy .btn--ghost,
+.usp-card .btn--ghost,
+.hero .btn--ghost,
+.page-hero .btn--ghost,
+.footer .btn--ghost{
+  background:rgba(255,255,255,.07);border-color:rgba(255,255,255,.38);color:#fff}
+.mobile-menu .btn--ghost:hover,
+.section--navy .btn--ghost:hover,
+.usp-card .btn--ghost:hover,
+.hero .btn--ghost:hover,
+.page-hero .btn--ghost:hover,
+.footer .btn--ghost:hover{
+  background:rgba(255,255,255,.15);border-color:rgba(255,255,255,.72);color:#fff}
+
+/* Gegenstueck: .btn--ghost-dark ist fuer DUNKLE Flaechen gebaut (weisse
+   Schrift). Auf weissem Grund waere er unsichtbar. Der Cookie-Banner hatte
+   dafuer bereits eine Ausnahme; hier die uebrigen hellen Flaechen ergaenzen,
+   damit derselbe Fehler nicht an anderer Stelle wieder auftaucht. */
+.cc__modal .btn--ghost-dark,
+.section--soft .btn--ghost-dark,
+.prose .btn--ghost-dark{
+  background:#F8FAFC;border-color:#CBD5E1;color:#0F172A}
+.cc__modal .btn--ghost-dark:hover,
+.section--soft .btn--ghost-dark:hover,
+.prose .btn--ghost-dark:hover{
+  background:#EEF2F7;border-color:#94A3B8;color:#0F172A}
+
+/* Widerrufs-Hinweis: liegt im Budgetrechner in der dunklen .usp-card, sonst
+   auf heller Flaeche. Die Grundfarben (--slate-2 / --blue-ink) sind fuer hell
+   gedacht und waren dort dunkelblau auf dunkelblau, also unlesbar.
+
+   Bewusst NUR .usp-card: ueber .section--navy mitzufassen waere falsch, denn
+   im Kontaktbereich der Startseite steht derselbe Hinweis in einem weissen
+   Formularkasten INNERHALB der navy-Sektion - dort wuerde Aufhellen ihn
+   unsichtbar machen. Der Hintergrund entscheidet, nicht die Sektion. */
+.usp-card .revocation-hint{color:#B6C6DE}
+.usp-card .revocation-hint a{color:#fff}
+
+/* Weitere Textfarben, die fuer helle Flaechen gebaut sind und auf dunklen
+   Kaesten unlesbar wurden. Gleiche Ursache wie oben. */
+.valuation-band .eyebrow,
+.valuation-band .eyebrow--gold{color:#8FB8EE}
+.section--navy .value-points li,
+.usp-card .value-points li,
+.valuation-band .value-points li{color:#C6D5EA}
+.section--navy .value-points svg,
+.usp-card .value-points svg,
+.valuation-band .value-points svg{color:#7FC9A0}
+
+/* Footer: beide Werte lagen knapp unter den geforderten 4,5:1 (3,87 und
+   4,18). Kleine Schrift auf dunklem Grund - hier reicht ein Ton heller. */
+.footer__disc{color:#8593AC}
+.footer-newsletter__eyebrow{color:#6FA8E8}
+
+/* ==========================================================================
+   v24 — Handy: Fläche dort zurückholen, wo sie leer war
+   --------------------------------------------------------------------------
+   Gemessen bei 390 px: Die Startseite lief über 25 Bildschirmhoehen. Der
+   groesste Anteil ging nicht an Text, sondern an Karten, die viel Rahmen fuer
+   wenige Woerter aufziehen - bei den Qualifikations-Karten fast 6 px Hoehe je
+   Schriftzeichen. Hier wird nur das Polster verkleinert; kein Inhalt entfaellt.
+   ========================================================================== */
+@media(max-width:560px){
+
+  /* Qualifikationen: Eine Regel weiter oben stellt diesen Block bis 640 px auf
+     EINE Spalte, obwohl die Grundregel zweispaltig ist. Vier Karten mit je zwei
+     Zeilen brauchten dadurch 1,8 Bildschirmhoehen. Zurueck auf zwei Spalten. */
+  #auszeichnungen .credentials{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+  #auszeichnungen .credential{padding:16px 12px 14px;border-radius:14px}
+  /* "Immobiliardarlehensvermittler" ist laenger als die halbe Bildschirm-
+     breite und lief sonst aus der Karte heraus. */
+  #auszeichnungen .credential b{font-size:.95rem;line-height:1.25;margin-bottom:3px;
+    hyphens:auto;-webkit-hyphens:auto;overflow-wrap:break-word}
+  #auszeichnungen .credential span{font-size:.8rem;line-height:1.35}
+  #auszeichnungen .credential__img{height:56px;margin-bottom:10px}
+  #auszeichnungen .credential__img img{max-height:56px;max-width:110px}
+  .credential .ic{width:36px;height:36px;margin-bottom:8px}
+  .credential .ic svg{width:17px;height:17px}
+}
+
+/* ==========================================================================
+   v24 — Sprungleiste (nur Handy und kleine Tablets)
+   --------------------------------------------------------------------------
+   Die Startseite laeuft auf dem Handy ueber gut 20 Bildschirmhoehen. Ohne
+   Wegweiser bleibt nur Scrollen. Die Leiste klebt unter dem Header, zeigt per
+   Markierung den Abschnitt, in dem man gerade ist, und springt auf Tipp dorthin.
+
+   Sie sitzt NICHT im Header, sondern als eigenes Element davor im Fluss: Der
+   Header hat eine feste Innenhoehe, an der auch das Hamburger-Menue haengt
+   (inset:74px). Ihn hoeher zu machen haette das Menue verschoben. Der noetige
+   Abstand nach oben kommt deshalb aus --header-h, gesetzt in js/main.js.
+   ========================================================================== */
+.jumpbar{display:none}
+@media(max-width:1119px){
+  .jumpbar{display:block;position:sticky;top:var(--header-h,74px);z-index:870;
+    background:rgba(11,26,48,.97);backdrop-filter:saturate(140%) blur(10px);
+    border-bottom:1px solid rgba(255,255,255,.09)}
+  body.nav-open .jumpbar{display:none}
+  .jumpbar__track{display:flex;gap:6px;overflow-x:auto;scrollbar-width:none;
+    padding:8px clamp(12px,4vw,20px);scroll-behavior:smooth;
+    -webkit-overflow-scrolling:touch}
+  .jumpbar__track::-webkit-scrollbar{display:none}
+  .jumpbar a{flex:none;color:#B9CAE6;font-size:.85rem;font-weight:600;
+    padding:7px 14px;border-radius:999px;border:1px solid rgba(255,255,255,.14);
+    background:rgba(255,255,255,.05);white-space:nowrap;transition:.2s var(--ease)}
+  .jumpbar a:hover{color:#fff;border-color:rgba(255,255,255,.34)}
+  /* aktueller Abschnitt: der eigentliche Orientierungsgewinn */
+  .jumpbar a.is-hier{background:#2D77CB;border-color:#2D77CB;color:#fff}
+  /* Sprungziele muessen unter Header UND Leiste rutschen, sonst verdeckt der
+     Balken die Ueberschrift, auf die gerade gesprungen wurde. */
+  main section[id]{scroll-margin-top:calc(var(--header-h,74px) + 48px)}
+}
+
+/* Sprungziele: Seit der Kopf wieder klebt (overflow-x:clip statt hidden),
+   wuerde er beim Sprung auf einen Anker dessen Ueberschrift verdecken.
+   Gilt fuer alle Seiten und Breiten; auf dem Handy kommt die Sprungleiste
+   oben noch dazu, deshalb dort der groessere Wert weiter oben im v24-Block. */
+[id]{scroll-margin-top:calc(var(--header-h,94px) + 16px)}
+
+/* ==========================================================================
+   v25 — Hero: Einstieg in den Wertrechner (ab 1180 px)
+   --------------------------------------------------------------------------
+   Auf breiten Schirmen stand der gesamte Hero-Text links und die rechte Haelfte
+   war nur Foto. Statt die Textspalte nur zu begrenzen, steht dort jetzt das
+   staerkste Element der Seite: der Wertrechner. Er lag vorher rund anderthalb
+   Bildschirmhoehen tiefer und wurde von vielen nie gesehen.
+
+   Unter 1180 px bleibt die Karte aus - dort folgt der vollstaendige Rechner
+   ohnehin unmittelbar auf den Hero, eine Vorschau waere reine Dopplung.
+   ========================================================================== */
+.hero-wert{display:none}
+@media(min-width:1180px){
+  .hero--photo .hero__inner{display:grid;grid-template-columns:minmax(0,1fr) 380px;
+    gap:clamp(32px,4vw,64px);align-items:center}
+  .hero--photo .hero__content{max-width:none}
+
+  .hero-wert{display:block;background:rgba(255,255,255,.97);
+    backdrop-filter:saturate(140%) blur(6px);
+    border:1px solid rgba(255,255,255,.5);border-radius:var(--radius-lg);
+    padding:26px 24px 20px;box-shadow:var(--shadow-lg)}
+  .hero-wert__k{display:block;font-size:.7rem;letter-spacing:.15em;text-transform:uppercase;
+    color:var(--gold-2);font-weight:700;margin-bottom:8px}
+  .hero-wert h2{font-size:1.42rem;line-height:1.2;margin:0 0 8px;color:var(--ink)}
+  .hero-wert>p{font-size:.9rem;line-height:1.5;color:var(--slate-2);margin:0 0 16px}
+
+  .hero-wert__arten{display:grid;grid-template-columns:1fr 1fr;gap:9px;margin-bottom:14px}
+  .hero-wert__arten button{display:flex;flex-direction:column;align-items:center;gap:7px;
+    padding:14px 8px;border:1.5px solid var(--border);border-radius:var(--radius-sm);
+    background:#fff;cursor:pointer;font-family:var(--f-body);font-weight:600;
+    font-size:.82rem;line-height:1.2;color:var(--ink);text-align:center;
+    transition:.18s var(--ease)}
+  .hero-wert__arten svg{width:26px;height:26px;color:var(--blue);flex:none}
+  .hero-wert__arten button:hover{border-color:var(--gold);background:var(--gold-soft);
+    transform:translateY(-2px)}
+  .hero-wert__arten button:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+
+  .hero-wert__alle{display:inline-flex;align-items:center;gap:6px;font-size:.86rem;
+    font-weight:600;color:var(--blue-ink);margin-bottom:14px}
+  .hero-wert__alle svg{width:15px;height:15px;transition:transform .2s}
+  .hero-wert__alle:hover svg{transform:translateX(3px)}
+
+  .hero-wert__fuss{display:flex;align-items:flex-start;gap:7px;font-size:.76rem;
+    line-height:1.45;color:var(--slate-2);margin:0;padding-top:13px;
+    border-top:1px solid var(--border)}
+  .hero-wert__fuss svg{width:14px;height:14px;color:#2E8B57;flex:none;margin-top:1px}
+}
+/* Sehr breite Schirme: Hero-Inhalt nicht auseinanderziehen */
+@media(min-width:1600px){
+  .hero--photo .hero__inner{grid-template-columns:minmax(0,1fr) 400px}
+  .hero--photo .hero__content{max-width:760px}
+}
+
+/* Qualifikations-Karten: Zwischen 640 und 860 px sprengte dieser Block die
+   Seite (bei 760 px war sie 825 statt 760 px breit). Ursache ist die
+   min-width:auto-Falle: "1fr" heisst minmax(auto,1fr), und "auto" ist
+   mindestens so breit wie das laengste nicht umbrechbare Wort - hier
+   "Immobiliardarlehensvermittler". Die mittlere Spalte wurde dadurch 325 statt
+   rund 213 px breit. minmax(0,1fr) hebt das Minimum auf, die Silbentrennung
+   sorgt zusaetzlich dafuer, dass das Wort ueberhaupt umbrechen darf. */
+.credentials{grid-template-columns:repeat(2,minmax(0,1fr))}
+@media(min-width:640px){#auszeichnungen .credentials{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(min-width:860px){.credentials{grid-template-columns:repeat(4,minmax(0,1fr))}}
+.credential{min-width:0}
+.credential b{overflow-wrap:break-word;hyphens:auto;-webkit-hyphens:auto}
+
+/* Raster-Zellen duerfen schrumpfen - auf JEDER Breite, nicht nur auf dem Handy.
+   Diese Regeln standen bisher nur im 560-px-Block. Dadurch sprengte etwa der
+   Budgetrechner zwischen 600 und 760 px die Seite (767 statt 600 px): Die
+   Ergebnistabelle in der .usp-card hielt ihre Spalte auf Eigenbreite fest.
+   min-width:auto ist der Standardwert von Grid- und Flex-Kindern und der Grund
+   fuer praktisch jeden seitlichen Ueberlauf auf dieser Seite. */
+.split,.split>*,
+.value-split,.value-split>*,
+.founder,.founder>*,
+.contact-grid,.contact-grid>*,
+.cards,.cards>*,
+.usp-card,.media-frame{min-width:0}
+.usp-card table{width:100%;max-width:100%;table-layout:fixed}
+.usp-card td,.usp-card th{overflow-wrap:anywhere}
+
+/* Schaltflaechen duerfen ebenfalls auf jeder Breite schrumpfen, nicht nur unter
+   560 px. In der schmalen Ergebnis-Karte der beiden Rechner (rund 187 px) hielt
+   ein Button seine Eigenbreite von 324 px und schob die Seite auf 682 statt
+   600 px. white-space:normal erlaubt dem Text dort umzubrechen, statt ihn
+   abzuschneiden - "Per WhatsApp schreiben" passt sonst schlicht nicht hinein. */
+.btn{min-width:0;max-width:100%}
+.usp-card .btn,.wizard .btn,.btn--block{white-space:normal;text-align:center}
+
+/* ==========================================================================
+   v29 — Sichtbarer Tastaturfokus
+   --------------------------------------------------------------------------
+   Es gab drei Stellen mit outline:none, aber nur vier :focus-visible-Regeln.
+   Wer mit der Tabulatortaste bedient - Screenreader-Nutzung, motorische
+   Einschraenkung, oder schlicht ohne Maus - sah stellenweise nicht, wo er
+   gerade steht. Beim sechsstufigen Wertrechner faellt damit das wichtigste
+   Element der Seite aus.
+
+   :focus-visible statt :focus, damit ein Mausklick keinen Rahmen hinterlaesst.
+   ========================================================================== */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible,
+summary:focus-visible,
+[tabindex]:focus-visible{
+  outline:3px solid var(--gold);
+  outline-offset:2px;
+  border-radius:4px}
+
+/* Auf den dunklen Flaechen ist das Blau des Systems zu schwach - dort weiss. */
+.header a:focus-visible,.header button:focus-visible,
+.mobile-menu a:focus-visible,.mobile-menu button:focus-visible,
+.jumpbar a:focus-visible,
+.hero a:focus-visible,.hero button:focus-visible,
+.page-hero a:focus-visible,
+.section--navy a:focus-visible,.section--navy button:focus-visible,
+.usp-card a:focus-visible,.usp-card button:focus-visible,
+.footer a:focus-visible,.footer button:focus-visible,
+.mobile-bar a:focus-visible{
+  outline:3px solid #fff;outline-offset:2px}
+
+/* Formularfelder: outline:none ist dort in Ordnung, solange ein gleichwertiger
+   Ersatz da ist. Beim Newsletter im Footer fehlte er ersatzlos. */
+.footer-newsletter__row:focus-within{outline:3px solid var(--gold);outline-offset:3px}
+.footer-newsletter__row input[type=email]:focus-visible{outline:none}
+.field input:focus-visible,.field select:focus-visible,.field textarea:focus-visible{
+  outline:3px solid var(--gold);outline-offset:1px}
+
+/* Auswahl-Kacheln des Wertrechners: Der Fokusrahmen muss den bereits
+   ausgewaehlten Zustand ueberstrahlen, sonst sind beide nicht zu trennen. */
+.tile:focus-visible,.seg:focus-visible,.chip:focus-visible,.faq-q:focus-visible{
+  outline:3px solid var(--gold);outline-offset:2px;position:relative;z-index:1}
+
+/* ==========================================================================
+   v31 — Wertrechner-Einstieg auf den Stadtteilseiten
+   --------------------------------------------------------------------------
+   Der Rechner selbst liegt nur auf der Startseite und auf "Immobilie bewerten".
+   Von den 20 Stadtteilseiten fuehrte bisher nur ein gewoehnlicher Textlink
+   dorthin. Der Einstieg mit Objektart-Auswahl gibt dem wichtigsten Element der
+   Seite einen starken internen Verweis und uebergibt die Auswahl per
+   Adressparameter, damit der Besucher nicht zweimal dasselbe angeben muss.
+   ========================================================================== */
+.wertband__arten{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;
+  margin-bottom:18px;max-width:520px}
+@media(min-width:720px){.wertband__arten{grid-template-columns:repeat(4,minmax(0,1fr));max-width:none}}
+.wertband__art{display:flex;flex-direction:column;align-items:center;justify-content:center;
+  gap:8px;min-height:96px;padding:16px 10px;border-radius:var(--radius-sm);
+  border:1px solid rgba(255,255,255,.22);background:rgba(255,255,255,.07);
+  color:#fff;font-weight:600;font-size:.86rem;line-height:1.25;text-align:center;
+  transition:.18s var(--ease)}
+.wertband__art svg{width:26px;height:26px;color:#9FC4F2;flex:none;transition:.18s}
+.wertband__art:hover{background:rgba(255,255,255,.16);border-color:rgba(255,255,255,.45);
+  color:#fff;transform:translateY(-2px)}
+.wertband__art:hover svg{color:#fff}
+.wertband__art:focus-visible{outline:3px solid #fff;outline-offset:2px}
+.wertband__alle{display:inline-flex;align-items:center;gap:7px;color:#C7D9F2;
+  font-weight:600;font-size:.9rem}
+.wertband__alle svg{width:16px;height:16px;transition:transform .2s}
+.wertband__alle:hover{color:#fff}
+.wertband__alle:hover svg{transform:translateX(3px)}
+@media(max-width:560px){
+  .wertband__art{min-height:84px;padding:12px 8px;font-size:.8rem}
+  .wertband__art svg{width:22px;height:22px}
 }

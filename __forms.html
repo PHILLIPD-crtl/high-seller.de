@@ -2,14 +2,19 @@
 <html lang="de">
 <head>
 <meta charset="UTF-8">
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-24CQ7EWJZ3"></script>
+<!-- Einwilligung zuerst: Google Consent Mode v2.
+     Der Analytics-Tag wird NICHT hier geladen, sondern erst von js/main.js,
+     nachdem die Kategorie "statistics" bestaetigt wurde. Diese Defaults muessen
+     trotzdem vor allem anderen stehen, damit ein spaeter geladener Tag sie kennt. -->
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-24CQ7EWJZ3');
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('consent','default',{
+  ad_storage:'denied', ad_user_data:'denied', ad_personalization:'denied',
+  analytics_storage:'denied', functionality_storage:'granted',
+  security_storage:'granted', wait_for_update:500
+});
+document.documentElement.classList.add('js');
 </script>
 <meta name="robots" content="noindex">
 <title>Formularregistrierung (Netlify)</title>

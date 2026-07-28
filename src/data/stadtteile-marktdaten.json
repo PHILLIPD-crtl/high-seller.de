@@ -1,0 +1,300 @@
+{
+ "_quellen": {
+  "bodenrichtwert": {
+   "name": "BORIS NRW, Datensatz BRW_2026_Polygon",
+   "stichtag": "2026-01-01",
+   "url": "https://www.boris.nrw.de/",
+   "download": "https://www.opengeodata.nrw.de/produkte/infrastruktur_bauen_wohnen/boris/BRW/BRW_EPSG25832_Shape.zip",
+   "hinweis": "Amtlich gibt es keinen Bodenrichtwert je Stadtteil, nur Zonenwerte. Ausgewiesen wird deshalb die Spanne ueber alle Wohnbauzonen (ENTW=B, Nutzung WA/WR/WB) plus Median und Zonenzahl."
+  },
+  "kaufpreis": {
+   "name": "Grundstuecksmarktbericht 2026 fuer die Stadt Koeln, Gutachterausschuss",
+   "zeitraum": "2025-01-01 bis 2025-12-31",
+   "url": "https://www.gars.nrw/images/user/GA_K%C3%B6ln/GMB2026_Digitalversion.pdf",
+   "hinweis": "Notarielle Kaufpreise, keine Angebotspreise. Arithmetisches Mittel Euro je m2 Wohnflaeche, Weiterverkauf (Bestand). Nur Stadtteile mit mindestens drei auswertbaren Vertraegen."
+  },
+  "beschreibung": "Bebauung und Lage: deutschsprachige Wikipedia, abgerufen 2026-07-28. Beschreibender Text, kein Beleg fuer Zahlen."
+ },
+ "stadtteile": {
+  "lindenthal": {
+   "brw": [
+    1220,
+    2520
+   ],
+   "brwMedian": 2120,
+   "brwZonen": 10,
+   "wv": 5569,
+   "wvN": 144,
+   "neubau": null,
+   "neubauN": 0,
+   "bebauung": "Villenbebauung ab 1846, in den 1920er und 1930er Jahren erweitert um Bauten der Neuen Sachlichkeit — unter anderem von Wilhelm Riphahn — nach Gartenstadtprinzip. Nach 1945 auf rund 85 Prozent zerstörter Fläche wiederaufgebaut.",
+   "lage": "Stadtbahn 1, 7 und 13, Bus 136, 142 und 146, dazu Aachener Straße und Dürener Straße als Achsen. Universität und Universitätsklinikum prägen den Stadtteil, ebenso Liebfrauenschule und Apostelgymnasium. Im Westen der Kölner Stadtwald mit 205 Hektar und dem Lindenthaler Tierpark."
+  },
+  "suelz": {
+   "brw": [
+    1430,
+    2610
+   ],
+   "brwMedian": 1740,
+   "brwZonen": 6,
+   "wv": 5055,
+   "wvN": 121,
+   "neubau": null,
+   "neubauN": 0,
+   "bebauung": "Im Kern zweigeschossige Arbeiterwohnhäuser des 19. Jahrhunderts, später ergänzt um Genossenschaftsbauten mit begrünten Innenhöfen. Im Süden bürgerliche Villen um 1900, im Osten Backsteinhäuser mit Gärten aus den Jahren 1930 bis 1955.",
+   "lage": "Stadtbahn 9, 13 und 18 über Luxemburger und Zülpicher Straße, Bus 130, 131, 134 und 142. Drei Gymnasien im Veedel: Elisabeth-von-Thüringen, Schiller und Hildegard von Bingen. Beethovenpark und Decksteiner Weiher, beide von Fritz Encke angelegt."
+  },
+  "ehrenfeld": {
+   "brw": [
+    960,
+    1200
+   ],
+   "brwMedian": 1200,
+   "brwZonen": 3,
+   "wv": 5078,
+   "wvN": 112,
+   "neubau": 7149,
+   "neubauN": 141,
+   "bebauung": "Gründerzeitliche Bürgerhäuser und schmale Dreifensterhäuser prägen das Straßenbild, dazwischen Industriedenkmäler wie der Heliosturm von 1885. In den Kriegsbaulücken stehen Mietshäuser der 1950er und 1960er Jahre.",
+   "lage": "Stadtbahn 3, 4, 5 und 13 mit dem Knoten Venloer Straße/Gürtel, dazu der Bahnhof Köln-Ehrenfeld mit S 12, S 19 und mehreren Regionallinien. Leo-Amann-Park und der angrenzende Grüngürtel als Freiflächen, Kulturszene in umgenutzten Industriebauten."
+  },
+  "rodenkirchen": {
+   "brw": [
+    930,
+    2280
+   ],
+   "brwMedian": 1545,
+   "brwZonen": 10,
+   "wv": 4790,
+   "wvN": 79,
+   "neubau": 7699,
+   "neubauN": 18,
+   "bebauung": "Heterogen gewachsen: Villen des frühen 20. Jahrhunderts, darunter eine burgähnliche Jugendstilvilla von 1904, Wohngebäude im Bauhausstil und große Anlagen wie der Wohnpark Rodenkirchen, die das dörfliche Gepräge abgelöst haben.",
+   "lage": "Stadtbahn 16 und 17 als Verbindung zwischen Innenstadt und Bonn, Bus 130, 131, 134 und 135, Anschluss an die A 555. Forstbotanischer Garten, Friedenswald und das Rheinufer mit Leinpfad; der Grüngürtel bildet die Zäsur zur Stadt."
+  },
+  "nippes": {
+   "brw": [
+    1100,
+    1840
+   ],
+   "brwMedian": 1620,
+   "brwZonen": 5,
+   "wv": 4590,
+   "wvN": 141,
+   "neubau": 7532,
+   "neubauN": 25,
+   "bebauung": "Viele Gründerzeit- und Jugendstilfassaden an Schwerinstraße, Leipziger Platz und Eisenachstraße. Auf dem früheren Gummiwerksgelände ist seit 2015 mit dem Clouth-Quartier ein Neubaugebiet mit über 1.000 Wohneinheiten entstanden.",
+   "lage": "S 6 und S 11, Stadtbahn 12, 13 und 15, dazu sechs Buslinien. Das Leonardo-da-Vinci-Gymnasium betreibt ein Planetarium und zwei Sternwarten. Nippeser Tälchen, Lohsepark und Johannes-Giesberts-Park als Grünflächen, Wochenmarkt am Wilhelmplatz seit rund 1900."
+  },
+  "marienburg": {
+   "brw": [
+    2100,
+    2100
+   ],
+   "brwMedian": 2100,
+   "brwZonen": 1,
+   "wv": 5684,
+   "wvN": 47,
+   "neubau": 9888,
+   "neubauN": 11,
+   "bebauung": "Geschlossenes Villenviertel, im Wesentlichen zwischen 1895 und 1925 bebaut. Die Spanne reicht vom späten Historismus über Jugendstil und Expressionismus bis zur Moderne, mit Bauten von Joseph Maria Olbrich, Paul Bonatz und Dominikus Böhm. Im Zweiten Weltkrieg weitgehend unzerstört.",
+   "lage": "Stadtbahn 16 und 17, Bus 106, 130, 132 und 134, Anschluss an A 4 und A 555. Südpark, Fritz-Encke-Volkspark und die Rheinuferpromenade; der Bismarckturm von 1902 steht am Bayenthalgürtel."
+  },
+  "klettenberg": {
+   "brw": [
+    1590,
+    1650
+   ],
+   "brwMedian": 1620,
+   "brwZonen": 2,
+   "wv": 5339,
+   "wvN": 49,
+   "neubau": null,
+   "neubauN": 0,
+   "bebauung": "Planmäßig aus einem Guss entstanden: Anfang des 20. Jahrhunderts nach dem Fluchtlinienplan Siebengebirgsallee auf ehemaligen Sand- und Kiesgruben, als Erweiterung von Sülz.",
+   "lage": "Stadtbahn 18 über die Luxemburger Straße sowie Linie 13, Bus 130, 131 und 134. Der Klettenbergpark von 1905 bis 1907 nach Entwurf von Fritz Encke bietet Weiher, Rosengarten und Wasserfall; der Erholungsflächenanteil liegt bei über 42 Prozent."
+  },
+  "braunsfeld": {
+   "brw": [
+    1050,
+    1950
+   ],
+   "brwMedian": 1820,
+   "brwZonen": 5,
+   "wv": 5128,
+   "wvN": 37,
+   "neubau": null,
+   "neubauN": 6,
+   "bebauung": "Villen am Stadtwald aus dem späten 19. Jahrhundert, Wohnbebauung entlang der Aachener Straße, dazu Gewerbe und Industrie westlich und nördlich von Melaten.",
+   "lage": "Stadtbahn 1, 7 und 13 auf der Aachener Straße, Bus 140, 172 und 173, am Nordwestrand der S-Bahn-Halt Technologiepark mit S 12 und S 19. Melaten-Friedhof von 1804 und der Stadtwald als Freiflächen."
+  },
+  "junkersdorf": {
+   "brw": [
+    970,
+    2360
+   ],
+   "brwMedian": 1890,
+   "brwZonen": 10,
+   "wv": 4414,
+   "wvN": 103,
+   "neubau": null,
+   "neubauN": 3,
+   "bebauung": "Vornehme Einfamilienhäuser im Bauhausstil ab den späten 1920er Jahren, eine große Wohnsiedlung der 1930er im Äußeren Grüngürtel und moderne Wohnhochhäuser, etwa am Wiener Weg.",
+   "lage": "Stadtbahn 1 werktags im Zehn-Minuten-Takt, dazu sechs Buslinien und Anschluss an A 1 und A 4 am Kreuz Köln-West. Der Äußere Grüngürtel grenzt unmittelbar an; St. Pankratius ist erstmals 1223 erwähnt."
+  },
+  "bayenthal": {
+   "brw": [
+    2370,
+    2930
+   ],
+   "brwMedian": 2830,
+   "brwZonen": 3,
+   "wv": 5921,
+   "wvN": 30,
+   "neubau": 7579,
+   "neubauN": 14,
+   "bebauung": "Im 19. Jahrhundert vom Weiler zum Industrievorort geworden. Drei denkmalwerte Großbauten des Historismus prägen die Straßenzüge, St. Matthias wurde nach dem Krieg von Dominikus Böhm wiederaufgebaut. An der Alteburger Straße stehen Arbeiterwohnhäuser der Industriezeit, das frühere Maschinenbau-Areal ist heute Wohnnutzung.",
+   "lage": "Stadtbahn 16 und 17, fünf Buslinien, Bundesstraßen 9 und 51. Das Erzbischöfliche Irmgardis-Gymnasium liegt an der Schillerstraße, das Rheinufer am Bayenthalgürtel."
+  },
+  "zollstock": {
+   "brw": [
+    1010,
+    1590
+   ],
+   "brwMedian": 1300,
+   "brwZonen": 2,
+   "wv": 4368,
+   "wvN": 114,
+   "neubau": null,
+   "neubauN": 0,
+   "bebauung": "Geprägt vom Siedlungsbau der 1920er und 1950er Jahre durch Baugenossenschaften, teils nach Entwürfen von Wilhelm Riphahn. Wegen der ersten Bewohner heißt ein Quartier umgangssprachlich bis heute Schutzmannshausen.",
+   "lage": "Stadtbahn 12 und sechs Buslinien. Im Stadtteil liegen ein Berufskolleg, die Europaschule Zollstock-Raderthal und zwei Grundschulen. Vorgebirgspark, Rosenzweigpark und Südfriedhof als Grün; der SC Fortuna Köln spielt im Südstadion."
+  },
+  "deutz": {
+   "brw": [
+    1260,
+    1720
+   ],
+   "brwMedian": 1420,
+   "brwZonen": 6,
+   "wv": 4690,
+   "wvN": 40,
+   "neubau": null,
+   "neubauN": 0,
+   "bebauung": "Neuromanische Kirchen, Industriebauten des frühen 20. Jahrhunderts und Wohnungsbau der Zwischenkriegszeit, unter anderem von Wilhelm Riphahn. Nach Schleifung der Festung ab etwa 1907 planmäßig erweitert, erkennbar am symmetrischen Von-Sandt-Platz.",
+   "lage": "Stadtbahn 1, 3, 4, 7 und 9, dazu der Bahnhof Köln Messe/Deutz mit S-Bahn, Regional- und Fernverkehr. Koelnmesse, Lanxess Arena und RTL Deutschland in den früheren Rheinhallen. Rheinpark mit Tanzbrunnen, Poller Wiesen und Seilbahn."
+  },
+  "innenstadt": {
+   "brw": [
+    1650,
+    3100
+   ],
+   "brwMedian": 1950,
+   "brwZonen": 13,
+   "wv": 5766,
+   "wvN": 216,
+   "neubau": 8698,
+   "neubauN": 39,
+   "bebauung": "Römischer Ursprung, mittelalterlicher Mauerring von 1180 bis 1220. Nach Schleifung der Festung ab 1881 entstand die Neustadt mit den Kölner Ringen als halbkreisförmiger Prachtboulevard, geplant von Josef Stübben. Im Krieg stark zerstört und in gemischten Bauepochen wiederaufgebaut.",
+   "lage": "Dichtestes Netz der Stadt mit acht Stadtbahnlinien, sieben Buslinien und dem Bahnhof Köln Süd nahe Barbarossaplatz. Volksgarten und Aachener Weiher im Inneren Grüngürtel. Ein Höhenkonzept begrenzt Neubauhöhen zugunsten der Domsilhouette."
+  },
+  "muelheim": {
+   "brw": [
+    530,
+    1090
+   ],
+   "brwMedian": 820,
+   "brwZonen": 9,
+   "wv": 3747,
+   "wvN": 118,
+   "neubau": null,
+   "neubauN": 0,
+   "bebauung": "Barocke Reste an der Mülheimer Freiheit, im Übrigen überwiegend Nachkriegswiederaufbau; St. Clemens wurde 1960 umgestaltet.",
+   "lage": "Bahnhof Köln-Mülheim mit RE 1, RE 5, RB 48, S 6 und S 11, Stadtbahn 3, 4, 13 und 18 mit dem Knoten Wiener Platz, dazu zahlreiche Buslinien und die Mülheimer Brücke. Drei Gymnasien und eine Gesamtschule; das Carlswerk ist heute Medienstandort."
+  },
+  "porz": {
+   "brw": [
+    730,
+    1020
+   ],
+   "brwMedian": 790,
+   "brwZonen": 5,
+   "wv": 3140,
+   "wvN": 72,
+   "neubau": null,
+   "neubauN": 0,
+   "bebauung": "Prägend ist die denkmalgeschützte Germania-Siedlung von 1899 bis 1903 mit Direktorenvilla samt Park, Meisterhäusern sowie Angestellten- und Arbeiterhäusern.",
+   "lage": "Stadtbahn 7, sieben Buslinien und der Bahnhof Porz (Rhein) mit S 12, RE 8 und RE 9. Rechtsrheinisch am Steilufer des Weißer Rheinbogens gelegen; Rathaus, Finanzamt und Krankenhaus machen den Ort zum Zentrum des Stadtbezirks."
+  },
+  "niehl": {
+   "brw": [
+    1000,
+    1350
+   ],
+   "brwMedian": 1180,
+   "brwZonen": 5,
+   "wv": 3949,
+   "wvN": 75,
+   "neubau": 7006,
+   "neubauN": 15,
+   "bebauung": "Vom Fischerdorf zum Industrievorort gewachsen. Die Wohnbebauung liegt im Süden und Westen und schließt nahtlos an die Nachbarstadtteile an, im Norden dominiert Großindustrie.",
+   "lage": "Stadtbahn 12, 13 und 16, Bus 124 und 147. Erich-Kästner-Gymnasium und zwei Grundschulen. Die Ford-Werke sind seit 1929 hier ansässig, Niehl I ist der größte Kölner Rheinhafen. Alt St. Katharina von 1260 mit romanischem Westturm."
+  },
+  "weidenpesch": {
+   "brw": [
+    900,
+    1240
+   ],
+   "brwMedian": 1130,
+   "brwZonen": 5,
+   "wv": 3578,
+   "wvN": 51,
+   "neubau": 5819,
+   "neubauN": 53,
+   "bebauung": "Zwei Bauwellen prägen den Stadtteil: die 1920er und 1930er Jahre um Mollwitz-, Lobositz- und Zorndorfstraße sowie die 1950er Jahre mit sehr umfangreichem Wohnungsbau.",
+   "lage": "Stadtbahn 12 und 15 an der Neusser Straße, die Innenstadt ist in rund 15 Minuten erreichbar, dazu Bus 121, 122 und 140. Der Weidenpescher Park umfasst 55 Hektar und beherbergt die Galopprennbahn von 1897; im Westen liegt der Nordfriedhof."
+  },
+  "hoehenhaus": {
+   "brw": [
+    620,
+    920
+   ],
+   "brwMedian": 770,
+   "brwZonen": 9,
+   "wv": 3317,
+   "wvN": 26,
+   "neubau": null,
+   "neubauN": 0,
+   "bebauung": "Gemischt über mehrere Epochen, darunter die Finnensiedlung und die Siedlung Emberg, dazu historische Höfe wie Gut Schönrath und Rodderhof sowie denkmalgeschützte Bauten des späten 19. Jahrhunderts.",
+   "lage": "Stadtbahn 4 mit zwei Haltestellen, sechs Buslinien und die S 11 am Haltepunkt Köln-Holweide an der Stadtteilgrenze. Gesamtschule, drei Grundschulen, Förderschule und eine Berufskolleg-Dependance. Höhenfelder See als Naherholung."
+  },
+  "duennwald": {
+   "brw": [
+    600,
+    830
+   ],
+   "brwMedian": 780,
+   "brwZonen": 7,
+   "wv": 3571,
+   "wvN": 12,
+   "neubau": null,
+   "neubauN": 0,
+   "bebauung": "Die Basilika St. Nikolaus stammt von 1117, der katholische Kirchbau von 1958, die evangelische Tersteegen-Kirche von 1937/38. Die Hornpottsiedlung steht als Ensemble unter Denkmalschutz.",
+   "lage": "Stadtbahn 4 mit den Haltestellen Leuchterstraße und Odenthaler Straße, fünf Buslinien, Berliner Straße als Hauptachse. Der Dünnwalder Wald ist Landschaftsschutzgebiet, dazu Wildpark, Arboretum und das historische Waldbad."
+  },
+  "pesch": {
+   "brw": [
+    640,
+    940
+   ],
+   "brwMedian": 855,
+   "brwZonen": 4,
+   "wv": 2984,
+   "wvN": 18,
+   "neubau": null,
+   "neubauN": 0,
+   "bebauung": "Aus verstreuten Höfen ab den 1960er Jahren zur Trabantensiedlung ausgebaut: Einfamilienhäuser gemischt mit mehreren Wohnblöcken, teils Hochhäusern, nahe den damals neuen Autobahnen.",
+   "lage": "Keine Stadtbahnanbindung — bei der Erschließung wurden keine Trassen freigehalten. Erschlossen wird der Stadtteil über fünf Buslinien. Schulzentrum mit Grundschule und Gymnasium. Pescher See, Escher See und das Naherholungsgebiet Stöckheimer Höfe auf rekultivierten Kiesgruben."
+  }
+ }
+}

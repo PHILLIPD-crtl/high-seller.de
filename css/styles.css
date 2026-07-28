@@ -2001,3 +2001,37 @@ summary:focus-visible,
   .wertband__art{min-height:84px;padding:12px 8px;font-size:.8rem}
   .wertband__art svg{width:22px;height:22px}
 }
+
+/* ==========================================================================
+   v33 — Marktdaten-Block auf den Stadtteilseiten
+   --------------------------------------------------------------------------
+   Amtliche Zahlen mit Stichtag, Fallzahl und Quelle. Als Definitionsliste
+   ausgezeichnet, damit Wert und Bezeichnung auch maschinell zusammengehoeren.
+   ========================================================================== */
+.marktdaten{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);
+  padding:clamp(18px,3vw,26px);margin:20px 0 6px;box-shadow:var(--shadow-sm)}
+.marktdaten h3{font-size:1.05rem;margin:0 0 16px}
+.marktdaten dl{display:grid;gap:14px;margin:0}
+@media(min-width:640px){.marktdaten dl{grid-template-columns:1fr 1fr;gap:18px 24px}}
+.marktdaten dl>div{min-width:0;padding-left:14px;border-left:3px solid var(--gold-line)}
+.marktdaten dt{font-size:.78rem;letter-spacing:.06em;text-transform:uppercase;
+  color:var(--slate-2);font-weight:600;margin-bottom:5px}
+.marktdaten dd{margin:0;display:flex;flex-direction:column;gap:3px}
+.marktdaten dd b{font-family:var(--f-display);font-size:1.32rem;line-height:1.15;color:var(--ink);
+  overflow-wrap:break-word}
+.marktdaten dd span{font-size:.82rem;line-height:1.45;color:var(--slate-2)}
+.marktdaten__quelle{font-size:.76rem;line-height:1.55;color:var(--slate-2);
+  margin:16px 0 0;padding-top:13px;border-top:1px solid var(--border)}
+.marktdaten__quelle a{text-decoration:underline;text-underline-offset:2px}
+@media(max-width:560px){
+  .marktdaten dd b{font-size:1.18rem}
+  .marktdaten h3{font-size:1rem}
+}
+
+/* Stadtteilprofil: was den Ort baulich und infrastrukturell ausmacht.
+   Je Stadtteil eigener Text — der eigentliche Hebel gegen die Textgleichheit
+   zwischen den zwanzig Seiten. */
+.stadtteil-profil{margin:26px 0 6px}
+.stadtteil-profil h3{font-size:1.05rem;margin:22px 0 8px}
+.stadtteil-profil h3:first-child{margin-top:0}
+.stadtteil-profil p{font-size:.97rem;line-height:1.65;color:var(--body);margin:0}

@@ -1,4 +1,159 @@
-# Highseller Immobilien & Finanzen — Website (Stand v38)
+# Highseller Immobilien & Finanzen — Website (Stand v39)
+
+## Was in v39 umgesetzt wurde
+
+### Alte Domain: highseller-immobilien.koeln
+
+**Das war der eigentliche Fund.** In `netlify.toml` und `_redirects` standen
+Regeln für alte Adressen wie `/karriere-seite` oder `/kontaktformular`, ohne
+Angabe eines Hosts. Sie sahen nach einer erledigten Domainumstellung aus, waren
+aber wirkungslos: Diese Pfade gab es auf high-seller.de nie. Sie gehören zur
+Vorgängerseite unter **highseller-immobilien.koeln**.
+
+Diese Domain gibt es noch. Sie zeigt auf Strato (81.169.145.160) und antwortet
+dort auf **jeder** Adresse mit einem nackten 404, auch auf `/` und
+`/robots.txt`. Google führt die alten Seiten noch, jeder Klick darauf landet
+im Nichts, und die aufgebauten Verweise laufen ins Leere. Belegt ist die alte
+Navigation über einen Schnappschuss des Internet Archive vom 21.02.2025;
+daraus stammen zwei bisher fehlende Adressen: `/impressum` und `/kalender`.
+
+Der Nachbardomain **highseller-immobilien.de** ist eine Squarespace-Seite, die
+auf „privat" steht (`noindex`, Anmeldemaske auf jeder Adresse). Sie schadet
+nicht, ist aber auch kein Ziel.
+
+In `netlify.toml` liegen jetzt **42 Regeln für die alte Domain**: je Host (Apex
+und `www`) 20 unterseitengenaue Zuordnungen, die 17 alte Seiten in allen
+belegten Schreibweisen abdecken, dazu je eine Auffangregel auf die Startseite.
+Alle nennen den Host vollständig, und das heißt: ein einziger Sprung von der
+alten Adresse auf ihr neues Ziel, statt des Umwegs über Netlifys automatische
+Alias-Umleitung.
+
+Die Auffangregel muss die **letzte** ihrer Gruppe bleiben, sonst verschluckt
+sie die genauen Zuordnungen darüber. Und die ganze Gruppe muss **vor** allen
+hostlosen Regeln stehen, sonst lieferte Netlify den Inhalt der neuen Seite
+unter der alten Domain aus und erzeugte damit genau die Doppelung, die der
+Abschnitt darunter beseitigt.
+
+**Diese Regeln greifen erst nach zwei Schritten, die nur der Domaininhaber
+ausführen kann:**
+
+1. In Netlify unter *Project „high-seller" → Domain management → Add domain
+   alias* sowohl `highseller-immobilien.koeln` als auch
+   `www.highseller-immobilien.koeln` eintragen.
+2. Bei Strato die DNS-Einträge umstellen. Für die nackte Domain ein
+   ALIAS-/ANAME-Eintrag auf `high-seller.netlify.app`, falls Strato das nicht
+   anbietet ersatzweise ein A-Eintrag auf Netlifys Lastverteiler
+   `75.2.60.5`. Für `www` ein CNAME auf `high-seller.netlify.app`. Die
+   Umstellung kann bis zu einen Tag brauchen.
+
+Danach zur Kontrolle:
+`curl -sI https://highseller-immobilien.koeln/karriere-seite | grep -i location`
+muss `https://high-seller.de/karriere.html` liefern.
+
+**Falle:** `_redirects` wird von Netlify **vor** `netlify.toml` ausgewertet.
+Die pfadbasierten Regeln, die dort standen, hätten die neuen Host-Regeln
+überholt und wegen ihres relativen Ziels von
+`highseller-immobilien.koeln/karriere-seite` auf
+`highseller-immobilien.koeln/karriere.html` geleitet — der Besucher wäre auf
+der alten Domain hängengeblieben. Deshalb ist `_redirects` jetzt leer und
+enthält nur noch diese Warnung. **Alle Weiterleitungen gehören in
+`netlify.toml`.**
+
+### Eine Seite, eine Adresse
+
+Netlify lieferte jede Seite unter zwei Adressen mit Status 200 aus, also
+`/kontakt` **und** `/kontakt.html`. Für Suchmaschinen sind das zwei Seiten mit
+identischem Inhalt, die um dieselbe Suchanfrage konkurrieren. Nachgemessen
+live: `/kontakt`, `/karriere`, `/immobilienmakler-koeln` und `/index.html`
+lieferten alle 200.
+
+Maßgeblich ist die `.html`-Fassung — alle canonical-Angaben, die `sitemap.xml`
+und sämtliche internen Verweise zeigen darauf. Die endungslose Adresse leitet
+jetzt dauerhaft dorthin, `/index.html` auf die Wurzel. 44 Seiten betroffen.
+`force = true` ist dabei nötig, sonst hält Netlify die endungslose Adresse für
+eine vorhandene Datei und übergeht die Regel.
+
+`/immobilienangebote` war ein Sonderfall derselben Doppelung: eine interne
+Umschreibung mit Status 200 auf `immobilien-angebote.html`, und **beide**
+Adressen standen in der `sitemap.xml`. Die kurze Adresse bleibt gültig, leitet
+jetzt aber weiter und ist aus der Sitemap entfernt. `/immobilien/<slug>` bleibt
+eine Umschreibung mit 200: diese Seiten erzeugt die Function, sie existieren
+unter keiner zweiten Adresse.
+
+**Beim Anlegen einer neuen Seite** gehört eine Entdopplungsregel in
+`netlify.toml`, sonst ist die Seite sofort wieder doppelt erreichbar.
+
+### Verkaufte Objekte stehen jetzt im Quelltext
+
+An der entscheidenden Stelle der Referenzseite stand nur ein leeres
+`<div data-sold></div>`; die Objekte kamen erst per JavaScript aus Propstack.
+Google sah eine Seite ohne Referenzen, und sobald Propstack nicht erreichbar
+war oder ein Objekt dort verschwand, war der Beleg weg.
+
+Die zehn tatsächlich als „Verkauft" geführten Objekte stehen jetzt fest im
+Quelltext, die Bilder liegen selbst gehostet im Projekt, eine `ItemList` nach
+schema.org beschreibt die Liste maschinenlesbar. Die Momentaufnahme liegt in
+`src/data/verkaufte-objekte.json` und bleibt gültig, auch wenn Propstack
+ausfällt.
+
+Bewusst **nicht** übernommen:
+
+- **Die Straßenadresse.** Propstack liefert sie („Rodderweg 50"), aber das sind
+  verkaufte Privatimmobilien. Ort und Stadtteil genügen als Referenz.
+- **Der Preis.** Propstack führt den *Angebots-*, nicht den erzielten Preis.
+  Ihn als Verkaufserfolg auszuweisen wäre eine Behauptung ins Blaue (§ 5a UWG).
+  Dieselbe Regel galt schon in `sold-highlights.json`.
+- **Die Propstack-Titel.** Dort steht Vermarktungstext bis hin zu
+  Preisnachlässen („Von 149.000,-Euro auf 125.000,-Euro"). Die Überschrift
+  bildet sich stattdessen aus Objektart und Ort.
+
+**Falle:** Propstack füllt `district` unzuverlässig — mal leer, mal
+„Nordrhein-Westfalen", mal der Ort selbst. Die geprüften Stadtteile stehen
+deshalb unter `kuratiert` in der JSON-Datei und überdauern jede
+Aktualisierung. Ein neues Objekt meldet das Werkzeug, trägt aber nichts ein.
+
+Aktualisieren: `python3 tools/verkaufte-objekte-aktualisieren.py`. Danach die
+Änderung ansehen, besonders die Stadtteile, und committen. `js/verkaufte.js`
+ist entfallen.
+
+### Bewertungen sichtbar belegt
+
+Der wichtigste Beleg der Seite stand nur im JavaScript: der Block mit Wertung
+und Anzahl trug `display:none`, und `showFallback()` blendete ihn bei einer
+Störung ganz aus — ausgerechnet dann, wenn der Besucher nach einem Beleg
+sucht. Wertung (5,0) und Anzahl (53) stehen jetzt mit Stand und Quellenverweis
+fest im Quelltext; `js/reviews.js` aktualisiert sie beim Abruf und blendet
+nichts mehr aus.
+
+**Bewusst ohne `aggregateRating` in den strukturierten Daten.** Google wertet
+Bewertungen über das eigene Unternehmen auf der eigenen Seite als
+„self-serving" und schließt solche Seiten von den Sterne-Auszeichnungen aus;
+`review` und `aggregateRating` an `LocalBusiness` sind laut Google nur für
+Seiten gedacht, die *andere* Betriebe bewerten. Der Beleg steht deshalb als
+lesbarer Text mit Verweis auf das Google-Profil.
+
+### Vertrauenszeile auf der Startseite
+
+Direkt über dem ersten langen Inhaltsblock stehen jetzt vier nachprüfbare
+Angaben: Google-Wertung 5,0, Anzahl 53, Erlaubnisse nach § 34c und § 34i GewO,
+Standort Kranhaus 1. Jede verweist auf ihre Quelle. Die Leiste darüber
+(`.trust-bar`) wirbt mit Eigenschaften, diese Zeile belegt Zahlen — deshalb
+kleinere Schrift, keine großen Zahlen, kein Rahmen in der Akzentfarbe. Die
+Trennlinien entstehen aus `gap:1px` auf farbigem Grund und passen sich damit
+jedem Umbruch von selbst an.
+
+### Weiterhin offen und nur vom Kunden lösbar
+
+- **Die beiden Schritte zur Domain oben.** Ohne sie bleibt
+  highseller-immobilien.koeln bei Strato, und keine der 42 Regeln greift.
+- **„500+ begleitete Vorgänge"** (Hero, Trust-Leiste, Referenzseite) und
+  **„Zugang zu 750+ Banken"** (46 Seiten) sind unverändert unbelegt (§ 5a UWG).
+  Beide Zahlen lassen sich von außen nicht prüfen und wurden deshalb weder
+  belegt noch geschönt. Belegbar sind bislang nur die 53 Google-Bewertungen
+  und die zehn in Propstack als verkauft geführten Objekte.
+- **Search Console einrichten und Sitemap einreichen.** Nach der
+  Domainumstellung dort zusätzlich die alte Domain als Property anlegen und
+  die Adressänderung melden, sonst dauert die Übernahme unnötig lange.
 
 ## Was in v37–v38 umgesetzt wurde
 

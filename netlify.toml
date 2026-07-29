@@ -1,4 +1,21 @@
 # netlify.toml — Highseller Immobilien & Finanzen
+#
+# REIHENFOLGE IST HIER BEDEUTUNG, NICHT GESCHMACK.
+# Netlify nimmt die erste Regel, die passt, und hoert dann auf. Die Gruppen
+# unten stehen deshalb in genau dieser Folge:
+#
+#   1. alte Domain (mit Hostangabe)   - muss zuerst kommen, sonst wuerden die
+#                                       hostlosen Regeln darunter den Inhalt
+#                                       der neuen Seite unter der ALTEN Domain
+#                                       ausliefern und damit doppeln
+#   2. interne Umschreibungen (200)   - saubere Adressen fuer die Angebote
+#   3. alte Pfade ohne Hostangabe     - Sicherheitsnetz
+#   4. Entdoppelung .html             - eine Seite, eine Adresse
+#
+# Saemtliche Weiterleitungen stehen bewusst NUR in dieser Datei. Es gibt
+# zusaetzlich ein _redirects, das Netlify VOR dieser Datei auswertet; stuenden
+# dort weiterhin pfadbasierte Regeln, wuerden sie die Host-Regeln aus Gruppe 1
+# ueberholen und Besucher auf der alten Domain festhalten.
 
 [build]
   publish = "."
@@ -8,52 +25,407 @@
   node_bundler = "esbuild"
 
 # ---------------------------------------------------------------------------
-# Saubere URLs für die Immobilienangebote
+# 1. ALTE DOMAIN highseller-immobilien.koeln
+# ---------------------------------------------------------------------------
+# Die Vorgaengerseite lag auf highseller-immobilien.koeln (Strato). Sie ist
+# abgeschaltet und antwortet dort auf JEDER Adresse mit einem nackten 404 -
+# alte Verweise und noch vorhandene Google-Treffer laufen also ins Leere.
+#
+# VORAUSSETZUNG, sonst greift keine einzige dieser Regeln: Die Domain muss in
+# Netlify als Domain-Alias des Projekts "high-seller" eingetragen und ihr DNS
+# von Strato auf Netlify umgestellt sein. Solange die Domain auf
+# 81.169.145.160 zeigt, beantwortet Strato die Anfragen und Netlify sieht sie
+# nie. Die Schritte stehen in readme.md unter "Alte Domain".
+#
+# Die Regeln nennen den Host vollstaendig. Dadurch springt eine alte Adresse in
+# EINEM Schritt auf ihr neues Ziel statt ueber den Umweg der automatischen
+# Alias-Umleitung. http braucht keine eigenen Regeln, weil Netlify fuer eigene
+# Domains ohnehin auf https zwingt, bevor die Regeln ausgewertet werden.
+
+# --- highseller-immobilien.koeln ---
+
+[[redirects]]
+  from = "https://highseller-immobilien.koeln/immobilie-verkaufen-koeln"
+  to = "https://high-seller.de/immobilie-verkaufen.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://highseller-immobilien.koeln/immobilien-kaufen-koeln-umgebung"
+  to = "https://high-seller.de/immobilien-angebote.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://highseller-immobilien.koeln/baufinanzierung-koeln"
+  to = "https://high-seller.de/baufinanzierung.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://highseller-immobilien.koeln/karriere-seite"
+  to = "https://high-seller.de/karriere.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://highseller-immobilien.koeln/makler-bewerbung"
+  to = "https://high-seller.de/karriere.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://highseller-immobilien.koeln/datenschutzerklaerung"
+  to = "https://high-seller.de/datenschutz.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://highseller-immobilien.koeln/datenschutzerklaerung-highseller-immobilien"
+  to = "https://high-seller.de/datenschutz.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://highseller-immobilien.koeln/widerrufsbelehrung"
+  to = "https://high-seller.de/widerruf.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://highseller-immobilien.koeln/agb"
+  to = "https://high-seller.de/impressum.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://highseller-immobilien.koeln/agb-dokument"
+  to = "https://high-seller.de/impressum.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://highseller-immobilien.koeln/baris-olmez"
+  to = "https://high-seller.de/ueber-uns.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://highseller-immobilien.koeln/serhad-mendekli"
+  to = "https://high-seller.de/ueber-uns.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://highseller-immobilien.koeln/kontaktformular"
+  to = "https://high-seller.de/kontakt.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://highseller-immobilien.koeln/kalender"
+  to = "https://high-seller.de/kontakt.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://highseller-immobilien.koeln/verkaufte-immobilien-koeln"
+  to = "https://high-seller.de/verkaufte-objekte.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://highseller-immobilien.koeln/verkaufte-immobilien-koeln.html"
+  to = "https://high-seller.de/verkaufte-objekte.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://highseller-immobilien.koeln/verkaufte-immobilien-koeln/*"
+  to = "https://high-seller.de/verkaufte-objekte.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://highseller-immobilien.koeln/verkaufte-immobilien"
+  to = "https://high-seller.de/verkaufte-objekte.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://highseller-immobilien.koeln/verkaufte-immobilien/*"
+  to = "https://high-seller.de/verkaufte-objekte.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://highseller-immobilien.koeln/referenzen"
+  to = "https://high-seller.de/verkaufte-objekte.html"
+  status = 301
+  force = true
+
+# Alles Uebrige von highseller-immobilien.koeln auf die Startseite. Diese Regel
+# MUSS die letzte ihrer Gruppe sein, sonst verschluckt sie die genauen
+# Zuordnungen darueber.
+
+[[redirects]]
+  from = "https://highseller-immobilien.koeln/*"
+  to = "https://high-seller.de/"
+  status = 301
+  force = true
+
+# --- www.highseller-immobilien.koeln ---
+
+[[redirects]]
+  from = "https://www.highseller-immobilien.koeln/immobilie-verkaufen-koeln"
+  to = "https://high-seller.de/immobilie-verkaufen.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://www.highseller-immobilien.koeln/immobilien-kaufen-koeln-umgebung"
+  to = "https://high-seller.de/immobilien-angebote.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://www.highseller-immobilien.koeln/baufinanzierung-koeln"
+  to = "https://high-seller.de/baufinanzierung.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://www.highseller-immobilien.koeln/karriere-seite"
+  to = "https://high-seller.de/karriere.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://www.highseller-immobilien.koeln/makler-bewerbung"
+  to = "https://high-seller.de/karriere.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://www.highseller-immobilien.koeln/datenschutzerklaerung"
+  to = "https://high-seller.de/datenschutz.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://www.highseller-immobilien.koeln/datenschutzerklaerung-highseller-immobilien"
+  to = "https://high-seller.de/datenschutz.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://www.highseller-immobilien.koeln/widerrufsbelehrung"
+  to = "https://high-seller.de/widerruf.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://www.highseller-immobilien.koeln/agb"
+  to = "https://high-seller.de/impressum.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://www.highseller-immobilien.koeln/agb-dokument"
+  to = "https://high-seller.de/impressum.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://www.highseller-immobilien.koeln/baris-olmez"
+  to = "https://high-seller.de/ueber-uns.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://www.highseller-immobilien.koeln/serhad-mendekli"
+  to = "https://high-seller.de/ueber-uns.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://www.highseller-immobilien.koeln/kontaktformular"
+  to = "https://high-seller.de/kontakt.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://www.highseller-immobilien.koeln/kalender"
+  to = "https://high-seller.de/kontakt.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://www.highseller-immobilien.koeln/verkaufte-immobilien-koeln"
+  to = "https://high-seller.de/verkaufte-objekte.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://www.highseller-immobilien.koeln/verkaufte-immobilien-koeln.html"
+  to = "https://high-seller.de/verkaufte-objekte.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://www.highseller-immobilien.koeln/verkaufte-immobilien-koeln/*"
+  to = "https://high-seller.de/verkaufte-objekte.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://www.highseller-immobilien.koeln/verkaufte-immobilien"
+  to = "https://high-seller.de/verkaufte-objekte.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://www.highseller-immobilien.koeln/verkaufte-immobilien/*"
+  to = "https://high-seller.de/verkaufte-objekte.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://www.highseller-immobilien.koeln/referenzen"
+  to = "https://high-seller.de/verkaufte-objekte.html"
+  status = 301
+  force = true
+
+# Alles Uebrige von www.highseller-immobilien.koeln auf die Startseite. Diese Regel
+# MUSS die letzte ihrer Gruppe sein, sonst verschluckt sie die genauen
+# Zuordnungen darueber.
+
+[[redirects]]
+  from = "https://www.highseller-immobilien.koeln/*"
+  to = "https://high-seller.de/"
+  status = 301
+  force = true
+
+# ---------------------------------------------------------------------------
+# 2. Saubere Adressen fuer die Immobilienangebote
 # ---------------------------------------------------------------------------
 
-# Übersichtsseite: /immobilienangebote -> bestehende Angebotsseite
+# Uebersichtsseite.
+#
+# Das war bis hierher eine interne Umschreibung mit Status 200, und genau das
+# war eine Doppelung: dieselbe Angebotsseite lieferte sowohl unter
+# /immobilienangebote als auch unter /immobilien-angebote.html eine vollwertige
+# Seite aus, und BEIDE Adressen standen in der sitemap.xml. Die kurze Adresse
+# bleibt gueltig, sie leitet jetzt aber weiter, statt den Inhalt ein zweites
+# Mal auszuliefern. Aus der Sitemap ist sie entfernt.
 [[redirects]]
   from = "/immobilienangebote"
   to = "/immobilien-angebote.html"
-  status = 200
+  status = 301
+  force = true
 
-# Detailseiten mit SEO-URL: /immobilien/<slug> -> serverseitig gerenderte Seite
+# Detailseiten mit sprechender Adresse: /immobilien/<slug>.
+#
+# Hier bleibt es bei der Umschreibung mit 200: diese Seiten werden von der
+# Function erzeugt und existieren unter keiner zweiten Adresse. Es gibt also
+# nichts zu entdoppeln.
 [[redirects]]
   from = "/immobilien/:slug"
   to = "/.netlify/functions/property?slug=:slug"
   status = 200
 
 # ---------------------------------------------------------------------------
-# 301-Weiterleitungen von alten URLs der vorherigen Website
-# Google hat diese URLs noch im Index -> dauerhaft auf die aktuellen Seiten leiten
+# 3. Dieselben alten Pfade, ohne Hostangabe
 # ---------------------------------------------------------------------------
+# Sicherheitsnetz fuer zwei Faelle. Erstens, falls die alte Domain nicht ueber
+# Netlify, sondern bei Strato pfaderhaltend auf high-seller.de umgebogen wird -
+# dann kommen die alten Pfade hier an. Zweitens fuer alte Verweise, die jemand
+# haendisch auf die neue Domain umgeschrieben hat.
 
 [[redirects]]
-  from = "/makler-bewerbung"
-  to = "/karriere"
+  from = "/immobilie-verkaufen-koeln"
+  to = "/immobilie-verkaufen.html"
   status = 301
   force = true
 
 [[redirects]]
-  from = "/agb-dokument"
-  to = "/impressum"
+  from = "/immobilien-kaufen-koeln-umgebung"
+  to = "/immobilien-angebote.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/baufinanzierung-koeln"
+  to = "/baufinanzierung.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/karriere-seite"
+  to = "/karriere.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/makler-bewerbung"
+  to = "/karriere.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/datenschutzerklaerung"
+  to = "/datenschutz.html"
   status = 301
   force = true
 
 [[redirects]]
   from = "/datenschutzerklaerung-highseller-immobilien"
-  to = "/datenschutz"
+  to = "/datenschutz.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/widerrufsbelehrung"
+  to = "/widerruf.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/agb"
+  to = "/impressum.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/agb-dokument"
+  to = "/impressum.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/baris-olmez"
+  to = "/ueber-uns.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/serhad-mendekli"
+  to = "/ueber-uns.html"
   status = 301
   force = true
 
 [[redirects]]
   from = "/kontaktformular"
-  to = "/kontakt"
+  to = "/kontakt.html"
   status = 301
   force = true
 
-# Verkaufte Referenzobjekte: alte, noch im Google-Index befindliche URLs
-# dauerhaft auf die aktuelle Referenzseite leiten (SEO-Signale erhalten).
+[[redirects]]
+  from = "/kalender"
+  to = "/kontakt.html"
+  status = 301
+  force = true
+
 [[redirects]]
   from = "/verkaufte-immobilien-koeln"
   to = "/verkaufte-objekte.html"
@@ -61,13 +433,13 @@
   force = true
 
 [[redirects]]
-  from = "/verkaufte-immobilien-koeln/*"
+  from = "/verkaufte-immobilien-koeln.html"
   to = "/verkaufte-objekte.html"
   status = 301
   force = true
 
 [[redirects]]
-  from = "/verkaufte-immobilien-koeln.html"
+  from = "/verkaufte-immobilien-koeln/*"
   to = "/verkaufte-objekte.html"
   status = 301
   force = true
@@ -85,14 +457,298 @@
   force = true
 
 [[redirects]]
+  from = "/referenzen"
+  to = "/verkaufte-objekte.html"
+  status = 301
+  force = true
+
+# ---------------------------------------------------------------------------
+# 4. Entdoppelung: eine Seite, eine Adresse
+# ---------------------------------------------------------------------------
+# Netlify liefert jede Seite unter zwei Adressen mit Status 200 aus, also
+# /kontakt UND /kontakt.html. Fuer Suchmaschinen sind das zwei Seiten mit
+# identischem Inhalt, und beide konkurrieren um dieselbe Suchanfrage.
+#
+# Massgeblich ist die .html-Fassung: alle canonical-Angaben, die sitemap.xml
+# und saemtliche internen Verweise zeigen darauf. Deshalb geht die endungslose
+# Adresse dauerhaft auf die .html-Fassung.
+#
+# force = true ist noetig, weil Netlify die endungslose Adresse sonst als
+# bereits vorhandene Datei ansieht und die Regel stillschweigend uebergeht.
+#
+# BEIM ANLEGEN EINER NEUEN SEITE hier eine Regel ergaenzen, sonst ist die neue
+# Seite sofort wieder unter zwei Adressen erreichbar.
+
+# Startseite: die .html-Fassung auf das nackte Wurzelverzeichnis, denn das
+# canonical der Startseite lautet https://high-seller.de/ .
+
+[[redirects]]
+  from = "/index.html"
+  to = "/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/baufinanzierung"
+  to = "/baufinanzierung.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/baufinanzierungsrechner"
+  to = "/baufinanzierungsrechner.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/budget-rechner"
+  to = "/budget-rechner.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/datenschutz"
+  to = "/datenschutz.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/faq"
+  to = "/faq.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/immobilie-bewerten"
+  to = "/immobilie-bewerten.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/immobilie-verkaufen"
+  to = "/immobilie-verkaufen.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/immobilien-angebote"
+  to = "/immobilien-angebote.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/immobilienmakler-koeln"
+  to = "/immobilienmakler-koeln.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/immobilienmakler-koeln-bayenthal"
+  to = "/immobilienmakler-koeln-bayenthal.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/immobilienmakler-koeln-braunsfeld"
+  to = "/immobilienmakler-koeln-braunsfeld.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/immobilienmakler-koeln-deutz"
+  to = "/immobilienmakler-koeln-deutz.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/immobilienmakler-koeln-duennwald"
+  to = "/immobilienmakler-koeln-duennwald.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/immobilienmakler-koeln-ehrenfeld"
+  to = "/immobilienmakler-koeln-ehrenfeld.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/immobilienmakler-koeln-hoehenhaus"
+  to = "/immobilienmakler-koeln-hoehenhaus.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/immobilienmakler-koeln-innenstadt"
+  to = "/immobilienmakler-koeln-innenstadt.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/immobilienmakler-koeln-junkersdorf"
+  to = "/immobilienmakler-koeln-junkersdorf.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/immobilienmakler-koeln-klettenberg"
+  to = "/immobilienmakler-koeln-klettenberg.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/immobilienmakler-koeln-lindenthal"
+  to = "/immobilienmakler-koeln-lindenthal.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/immobilienmakler-koeln-marienburg"
+  to = "/immobilienmakler-koeln-marienburg.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/immobilienmakler-koeln-muelheim"
+  to = "/immobilienmakler-koeln-muelheim.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/immobilienmakler-koeln-niehl"
+  to = "/immobilienmakler-koeln-niehl.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/immobilienmakler-koeln-nippes"
+  to = "/immobilienmakler-koeln-nippes.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/immobilienmakler-koeln-pesch"
+  to = "/immobilienmakler-koeln-pesch.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/immobilienmakler-koeln-porz"
+  to = "/immobilienmakler-koeln-porz.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/immobilienmakler-koeln-rodenkirchen"
+  to = "/immobilienmakler-koeln-rodenkirchen.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/immobilienmakler-koeln-suelz"
+  to = "/immobilienmakler-koeln-suelz.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/immobilienmakler-koeln-weidenpesch"
+  to = "/immobilienmakler-koeln-weidenpesch.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/immobilienmakler-koeln-zollstock"
+  to = "/immobilienmakler-koeln-zollstock.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/impressum"
+  to = "/impressum.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/kaeuferkartei"
+  to = "/kaeuferkartei.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/karriere"
+  to = "/karriere.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/kontakt"
+  to = "/kontakt.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/marktdaten-koeln"
+  to = "/marktdaten-koeln.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/ratgeber"
+  to = "/ratgeber.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/ratgeber-erbimmobilie-verkaufen"
+  to = "/ratgeber-erbimmobilie-verkaufen.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/ratgeber-haus-verkaufen-koeln"
+  to = "/ratgeber-haus-verkaufen-koeln.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/ratgeber-immobilienbewertung"
+  to = "/ratgeber-immobilienbewertung.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/tippgeberprovision"
+  to = "/tippgeberprovision.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/ueber-uns"
+  to = "/ueber-uns.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/unterlagen-checkliste"
+  to = "/unterlagen-checkliste.html"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/verkaufte-objekte"
   to = "/verkaufte-objekte.html"
   status = 301
   force = true
 
 [[redirects]]
-  from = "/referenzen"
-  to = "/verkaufte-objekte.html"
+  from = "/widerruf"
+  to = "/widerruf.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/wissen"
+  to = "/wissen.html"
   status = 301
   force = true
 

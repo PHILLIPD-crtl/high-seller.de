@@ -142,18 +142,85 @@ kleinere Schrift, keine großen Zahlen, kein Rahmen in der Akzentfarbe. Die
 Trennlinien entstehen aus `gap:1px` auf farbigem Grund und passen sich damit
 jedem Umbruch von selbst an.
 
+### Netlifys Pretty URLs abgeschaltet
+
+Das war die zweite Hälfte des Doppelungsproblems und fiel erst beim Nachmessen
+der Live-Seite auf. „Pretty URLs" ist bei Netlify **standardmäßig an** und
+schreibt beim Deploy jeden internen Verweis um: Im Quelltext steht
+`href="kontakt.html"`, live kam `href='/kontakt'` an. Alle internen Verweise
+zeigten damit auf die endungslose Adresse, während canonical und `sitemap.xml`
+auf die `.html`-Fassung zeigen — und beide antworteten mit 200.
+
+Mit den Entdopplungsregeln allein wäre daraus ein neues Problem geworden: Jeder
+Menüklick hätte erst eine 301 abgeholt. Deshalb `pretty_urls = false`.
+
+**Merkhilfe:** Wer die Weiterleitungen prüft, muss den **ausgelieferten**
+Quelltext ansehen (`curl`), nicht die Datei im Projekt. Netlify verändert das
+HTML zwischen beidem.
+
+### Die letzten drei Stadtteil-Paare entdoppelt
+
+Der Wohnkennzahlen-Absatz wechselt harte Zahlen mit deutenden Sätzen ab. Die
+Zahlen sind je Stadtteil verschieden, die Deutungssätze stammen aus einem
+kleinen Vorrat — haben zwei Veedel ähnliche Werte, greifen sie zur selben
+Fassung. Daraus entstanden die drei verbliebenen Seitenpaare über 20 %.
+
+Je Gruppe bleibt ein Vorkommen unverändert, nämlich das, auf das die
+Formulierung am genauesten passt; die übrigen zwölf Stellen haben eine eigene,
+an den echten Zahlen geprüfte Fassung bekommen.
+
+**Drei der alten Sätze waren dabei sachlich schief** — die Entdopplung hat
+also nicht nur Text verändert, sondern Fehler behoben:
+
+- Niehl: Förderquote 7,8 % gegen 6,2 % ist nicht „nahe am städtischen Wert",
+  sondern darüber.
+- Bayenthal: 3,4 % gegen 6,2 % ist deutlich darunter, ebenfalls nicht „nahe".
+- Porz: 46 % Einpersonenhaushalte gegen 52 % ist gerade **keine** ausgeglichene
+  Mischung, sondern ein Familienüberhang. Der alte Satz behauptete das
+  Gegenteil der Daten.
+
+| | vorher | jetzt |
+|---|---|---|
+| Duplikation im Mittel | 9,9 % | **9,4 %** |
+| höchster Wert | 21,5 % | **20,0 %** |
+| Seitenpaare über 20 % | 3 | **0** |
+
+Skript: `tools/stadtteile-deutungssaetze-entdoppeln.py` — es hält fest, welche
+Fassung zu welchem Stadtteil gehört und warum.
+
+### Gemessener Stand der Sichtbarkeit (29.07.2026)
+
+Alle 46 Sitemap-Adressen live abgerufen: 46 von 46 mit Status 200, keine
+Umleitung, alle `index,follow`, alle mit genau einer H1, canonical und
+strukturierten Daten, keine fehlende Beschreibung (125–165 Zeichen), 683 bis
+2886 Wörter je Seite. Lighthouse mobil gegen die Live-Startseite: SEO 100,
+Best Practices 100, Barrierefreiheit 97 → nach der Unterstreichung der
+Fließtext-Verweise 100.
+
+Doppelte Titel und Beschreibungen gab es genau einmal: `/immobilienangebote`
+gegen `/immobilien-angebote.html`. Behoben.
+
 ### Weiterhin offen und nur vom Kunden lösbar
 
 - **Die beiden Schritte zur Domain oben.** Ohne sie bleibt
   highseller-immobilien.koeln bei Strato, und keine der 42 Regeln greift.
+  Einen Domain-Alias kann man **nur** über die Netlify-Oberfläche eintragen;
+  weder das MCP noch die hier verfügbaren Werkzeuge können das.
 - **„500+ begleitete Vorgänge"** (Hero, Trust-Leiste, Referenzseite) und
   **„Zugang zu 750+ Banken"** (46 Seiten) sind unverändert unbelegt (§ 5a UWG).
   Beide Zahlen lassen sich von außen nicht prüfen und wurden deshalb weder
   belegt noch geschönt. Belegbar sind bislang nur die 53 Google-Bewertungen
   und die zehn in Propstack als verkauft geführten Objekte.
-- **Search Console einrichten und Sitemap einreichen.** Nach der
-  Domainumstellung dort zusätzlich die alte Domain als Property anlegen und
-  die Adressänderung melden, sonst dauert die Übernahme unnötig lange.
+- **Search Console ist angebunden**, anders als hier bis v38 vermerkt:
+  `GSC_SA_KEY` und `GSC_STATUS_TOKEN` liegen seit dem 15.07.2026 in den
+  Netlify-Umgebungsvariablen, die Function `gsc-status` fragt
+  `sc-domain:high-seller.de` ab. Beide Variablen sind als geheim markiert und
+  lassen sich nicht mehr auslesen — wer den Status abrufen will, braucht den
+  Token aus einer eigenen Aufzeichnung:
+  `curl "https://high-seller.de/.netlify/functions/gsc-status?key=<TOKEN>"`.
+  Nach der Domainumstellung dort zusätzlich die alte Domain als Property
+  anlegen und die Adressänderung melden, sonst dauert die Übernahme unnötig
+  lange.
 
 ## Was in v37–v38 umgesetzt wurde
 

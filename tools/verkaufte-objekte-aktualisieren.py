@@ -266,7 +266,8 @@ def karte(rec, hl):
         '<div class="listing__body">'
         f'<span class="listing__type">{esc(rec["objektart"])}</span>'
         f'<h3 class="listing__title">{esc(titel)}</h3>'
-        f'<p class="listing__place">{esc(o)}</p>'
+        # Keine eigene Ortszeile: der Ort steht bereits in der Ueberschrift,
+        # eine Wiederholung direkt darunter liest sich wie ein Fehler.
         f'{energie}'
         + (f'<div class="listing__facts">{fakten_html}</div>' if fakten_html else "")
         + f'<div class="listing__success{" is-verified" if bestaetigt else ""}">{abzeichen}'

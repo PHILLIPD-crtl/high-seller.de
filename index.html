@@ -46,7 +46,7 @@ document.documentElement.classList.add('js');
 <link rel="preload" as="image" fetchpriority="high"
       imagesrcset="assets/img/hero-koeln-abend-480.webp 480w, assets/img/hero-koeln-abend-960.webp 960w, assets/img/hero-koeln-abend-1280.webp 1280w, assets/img/hero-koeln-abend-1920.webp 1920w"
       imagesizes="100vw" href="assets/img/hero-koeln-abend-960.webp">
-<link rel="stylesheet" href="css/styles.css?v=38">
+<link rel="stylesheet" href="css/styles.css?v=39">
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "RealEstateAgent", "name": "Highseller Immobilien & Finanzen", "image": "https://high-seller.de/assets/img/og-image.jpg", "@id": "https://high-seller.de/", "url": "https://high-seller.de/", "telephone": "+49 162 8811110", "email": "info@high-seller.de", "priceRange": "€€", "address": {"@type": "PostalAddress", "streetAddress": "Im Zollhafen 18, Kranhaus 1", "postalCode": "50678", "addressLocality": "Köln", "addressRegion": "NRW", "addressCountry": "DE"}, "areaServed": [{"@type": "City", "name": "Köln"}, {"@type": "City", "name": "Hürth"}, {"@type": "City", "name": "Frechen"}, {"@type": "City", "name": "Pulheim"}, {"@type": "City", "name": "Brühl"}, {"@type": "City", "name": "Wesseling"}, {"@type": "City", "name": "Leverkusen"}, {"@type": "City", "name": "Bergisch Gladbach"}, {"@type": "AdministrativeArea", "name": "Rhein-Erft-Kreis"}], "founder": {"@type": "Person", "name": "Baris Ölmez"}, "openingHoursSpecification": [{"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"], "opens": "09:00", "closes": "18:00"}], "makesOffer": [{"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Immobilienverkauf"}}, {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Immobilienbewertung"}}, {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Immobilienvermittlung"}}, {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Baufinanzierung"}}, {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Finanzierungsberatung"}}, {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Käuferprüfung"}}], "geo": {"@type": "GeoCoordinates", "latitude": 50.9274066, "longitude": 6.9662166}, "sameAs": ["https://www.instagram.com/highseller.immobilien/", "https://www.tiktok.com/@baris.oelmez", "https://www.youtube.com/@highsellerimmobilien", "https://www.immobilienscout24.de/anbieter/profil/highseller-immobilien-und-finanzen", "https://www.immowelt.de/profil/156e7c6439c042c6a6bc0f736075b070", "https://www.kleinanzeigen.de/pro/Highseller-Immobilien-Baris-Oelmez"]}</script>
 </head>
 <body>
@@ -190,7 +190,45 @@ try{if(sessionStorage.getItem("hs_loaded")){document.getElementById("loader").st
   <div class="tb"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 15a6 6 0 1 0 0-12 6 6 0 0 0 0 12zM8.5 13.5L7 22l5-3 5 3-1.5-8.5"/></svg><small>Ausgezeichnete Servicequalität</small></div>
   <div class="tb"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-4.5-7-11a7 7 0 0 1 14 0c0 6.5-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg><small>Regionale Expertise in Köln</small></div>
   <div class="tb"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 21h18M4 10h16M5 10V7l7-4 7 4v3M7 10v8M12 10v8M17 10v8"/></svg><small>Verkauf &amp; Finanzierung aus einer Hand</small></div>
-</div></div>
+</div>
+<!-- Vertrauenszeile: vier Angaben, die sich nachpruefen lassen, bevor der
+     Besucher in den langen Bewertungsblock einsteigt. Jede verweist auf ihre
+     Quelle: die beiden Google-Werte auf das Google-Profil, die Zulassungen auf
+     das Impressum, der Standort auf die Kontaktseite.
+     Wertung und Anzahl stehen fest im Quelltext, damit sie auch ohne
+     JavaScript und fuer Suchmaschinen lesbar sind; js/reviews.js schreibt sie
+     beim Abruf auf den tagesaktuellen Stand. -->
+<div class="trustline">
+  <a class="trustline__i" href="https://search.google.com/local/reviews?placeid=ChIJee8v30G_8IQRtnGkH8lyO3Y" target="_blank" rel="noopener noreferrer">
+    <span class="trustline__ic trustline__ic--g" aria-hidden="true"><svg viewBox="0 0 24 24"><path fill="#4285F4" d="M23.5 12.3c0-.9-.1-1.5-.3-2.2H12v4.1h6.5c-.1 1.1-.8 2.7-2.4 3.8l3.7 2.9c2.2-2 3.7-5 3.7-8.6z"/><path fill="#34A853" d="M12 24c3.2 0 5.9-1.1 7.9-2.9l-3.7-2.9c-1 .7-2.4 1.2-4.2 1.2-3.1 0-5.8-2.1-6.8-5l-3.9 3C3.3 21.3 7.3 24 12 24z"/><path fill="#FBBC05" d="M5.2 14.4c-.2-.7-.4-1.5-.4-2.4s.2-1.7.4-2.4l-3.9-3C.5 8.2 0 10 0 12s.5 3.8 1.3 5.4l3.9-3z"/><path fill="#EA4335" d="M12 4.6c1.8 0 3 .8 3.7 1.4l3.3-3.2C17.9 1 15.2 0 12 0 7.3 0 3.3 2.7 1.3 6.6l3.9 3c1-2.9 3.7-5 6.8-5z"/></svg></span>
+    <span class="trustline__b">
+      <span class="trustline__v"><span data-gr-score>5,0</span> von 5<span class="star-row" role="img" aria-label="5 von 5 Sternen"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg></span></span>
+      <small class="trustline__l">Google-Bewertung, direkt bei Google nachlesbar</small>
+    </span>
+  </a>
+  <a class="trustline__i" href="https://search.google.com/local/reviews?placeid=ChIJee8v30G_8IQRtnGkH8lyO3Y" target="_blank" rel="noopener noreferrer">
+    <span class="trustline__ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg></span>
+    <span class="trustline__b">
+      <span class="trustline__v"><span data-gr-count>53</span> Bewertungen</span>
+      <small class="trustline__l">von Kundinnen und Kunden bei Google abgegeben</small>
+    </span>
+  </a>
+  <a class="trustline__i" href="impressum.html">
+    <span class="trustline__ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 15a6 6 0 1 0 0-12 6 6 0 0 0 0 12zM8.5 13.5L7 22l5-3 5 3-1.5-8.5"/></svg></span>
+    <span class="trustline__b">
+      <span class="trustline__v">§ 34c und § 34i GewO</span>
+      <small class="trustline__l">Erlaubnis als Immobilienmakler und Darlehensvermittler</small>
+    </span>
+  </a>
+  <a class="trustline__i" href="kontakt.html">
+    <span class="trustline__ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 21s-7-4.5-7-11a7 7 0 0 1 14 0c0 6.5-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg></span>
+    <span class="trustline__b">
+      <span class="trustline__v">Kranhaus 1, Köln</span>
+      <small class="trustline__l">Im Zollhafen 18, 50678 Köln, Termine vor Ort</small>
+    </span>
+  </a>
+</div>
+</div>
 <section class="section" id="immobilienbewertung"><div class="container">
   <div class="section-head section-head--center reveal">
     <span class="eyebrow eyebrow--gold">Kostenlose Immobilienbewertung</span>
@@ -451,10 +489,19 @@ try{if(sessionStorage.getItem("hs_loaded")){document.getElementById("loader").st
   <div class="section-head section-head--center reveal"><span class="eyebrow eyebrow--gold">Google-Bewertungen</span>
     <h2 class="headline" style="margin-inline:auto">Google-Bewertungen unserer Kundinnen und Kunden</h2>
     <p class="lead">Das sagen Eigentümer, Käufer und Finanzierungskunden über Highseller Immobilien &amp; Finanzen. Alle Bewertungen stammen unverändert von Google.</p></div>
-  <div class="gr-summary" id="google-rating-summary" style="display:none">
-    <span class="score" id="gr-score"></span>
-    <span class="star-row" id="gr-stars" aria-hidden="true"></span>
-    <span class="meta" id="gr-meta"></span>
+  <!-- Wertung und Anzahl stehen fest im Quelltext, nicht mehr nur im
+       JavaScript. Vorher stand hier ein leerer Block mit display:none - fuer
+       Suchmaschinen und ohne JavaScript war der wichtigste Beleg der Seite
+       damit unsichtbar. js/reviews.js aktualisiert die Werte beim Abruf.
+       Bewusst OHNE aggregateRating in den strukturierten Daten: Google zaehlt
+       Bewertungen ueber das eigene Unternehmen auf der eigenen Seite als
+       "self-serving" und schliesst sie von den Sterne-Auszeichnungen aus.
+       Der Beleg steht deshalb als lesbarer Text mit Quellenverweis. -->
+  <div class="gr-summary" id="google-rating-summary">
+    <span class="score" id="gr-score">5,0</span>
+    <span class="star-row" id="gr-stars" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg></span>
+    <span class="meta" id="gr-meta">basierend auf <span data-gr-count>53</span> Google-Bewertungen</span>
+    <small class="gr-summary__stand">Stand Juli 2026. Die Zahl wird bei jedem Aufruf direkt bei Google abgefragt, die Bewertungen sind dort unter unserem Unternehmensprofil einsehbar.</small>
   </div>
   <div class="reviews" id="google-reviews"></div>
   <div class="reviews-cta">
@@ -675,7 +722,7 @@ try{if(sessionStorage.getItem("hs_loaded")){document.getElementById("loader").st
 </div>
 <script src="js/main.js?v=21" defer></script>
 <script src="js/wertrechner.js?v=12" defer></script>
-<script src="js/reviews.js?v=16" defer></script>
+<script src="js/reviews.js?v=17" defer></script>
 <script src="js/property-source.js?v=14" defer></script>
 <script src="js/immobilien.js?v=14" defer></script>
 

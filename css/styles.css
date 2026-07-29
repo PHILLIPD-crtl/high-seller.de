@@ -2105,3 +2105,43 @@ summary:focus-visible,
 .stadtteil-wohnen{margin-top:26px}
 .stadtteil-wohnen h3{margin-bottom:8px}
 .quelle-inline{display:inline-block;margin-left:2px;font-size:.82rem;color:var(--slate-2)}
+
+/* ==========================================================================
+   Vertrauenszeile (v39)
+   --------------------------------------------------------------------------
+   Vier nachpruefbare Angaben direkt ueber dem ersten langen Inhaltsblock der
+   Startseite: Google-Wertung, Anzahl der Bewertungen, Zulassungen, Standort.
+
+   Bewusst nuechtern gehalten. Die Leiste darueber (.trust-bar) wirbt mit
+   Eigenschaften; diese Zeile belegt Zahlen und verweist bei jeder Angabe auf
+   ihre Quelle. Deshalb kleinere Schrift, keine grossen Zahlen, kein Gold-
+   Rahmen.
+
+   Die Trennlinien entstehen aus gap:1px auf farbigem Grund. Das passt sich
+   jedem Umbruch von selbst an, anders als Rahmen an einzelnen Zellen, die bei
+   zwei- und vierspaltiger Anordnung jeweils anders gesetzt werden muessten.
+   ========================================================================== */
+.trustline{display:grid;grid-template-columns:1fr;gap:1px;background:var(--border);
+  border:1px solid var(--border);border-radius:var(--radius);overflow:hidden;
+  box-shadow:var(--shadow-sm);margin-top:16px}
+@media(min-width:680px){.trustline{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:1040px){.trustline{grid-template-columns:repeat(4,1fr)}}
+.trustline__i{display:flex;align-items:center;gap:12px;padding:15px 18px;background:#fff;
+  color:var(--body);text-decoration:none;min-width:0}
+a.trustline__i{transition:background .2s var(--ease)}
+a.trustline__i:hover,a.trustline__i:focus-visible{background:var(--gold-soft)}
+.trustline__ic{flex:none;width:34px;height:34px;border-radius:10px;display:grid;place-items:center;
+  background:var(--gold-soft);color:var(--gold-2)}
+.trustline__ic svg{width:18px;height:18px}
+.trustline__ic--g{background:#fff;border:1px solid var(--border)}
+.trustline__ic--g svg{width:17px;height:17px}
+.trustline__b{min-width:0}
+.trustline__v{display:flex;align-items:center;gap:7px;flex-wrap:wrap;
+  font-family:var(--f-display);font-size:1.02rem;font-weight:700;color:var(--ink);line-height:1.25}
+.trustline__v .star-row svg{width:14px;height:14px}
+.trustline__l{display:block;font-size:.79rem;color:var(--slate-2);line-height:1.35;margin-top:2px}
+
+/* Google-Wertung im Bewertungsbereich: steht jetzt fest im Quelltext und wird
+   von js/reviews.js nur noch aktualisiert. Der Zusatz nennt den Stand, damit
+   eine zwischenzeitlich gestiegene Zahl nicht als falsche Angabe dasteht. */
+.gr-summary__stand{display:block;width:100%;font-size:.78rem;color:var(--slate-2);margin-top:4px}

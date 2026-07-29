@@ -2145,3 +2145,16 @@ a.trustline__i:hover,a.trustline__i:focus-visible{background:var(--gold-soft)}
    von js/reviews.js nur noch aktualisiert. Der Zusatz nennt den Stand, damit
    eine zwischenzeitlich gestiegene Zahl nicht als falsche Angabe dasteht. */
 .gr-summary__stand{display:block;width:100%;font-size:.78rem;color:var(--slate-2);margin-top:4px}
+
+/* Verweise im Fliesstext unterstreichen (v39)
+   --------------------------------------------------------------------------
+   Lighthouse bemaengelte "link-in-text-block": Ein Verweis mitten im Absatz
+   ("Referenzen ansehen" im Ablauf-Abschnitt) unterschied sich nur durch seine
+   Farbe vom umgebenden Text. Wer Farben schlecht unterscheidet, erkennt ihn
+   dann nicht als Verweis.
+
+   Bewusst eng gefasst auf .lead und Absaetze innerhalb von .section-head:
+   Schaltflaechen, Navigation, Fusszeile und Kartenverweise sind durch Form,
+   Ort oder Umrandung bereits als anklickbar erkennbar und bleiben glatt. */
+.lead a:not(.btn),
+.section-head p a:not(.btn){text-decoration:underline;text-underline-offset:3px}

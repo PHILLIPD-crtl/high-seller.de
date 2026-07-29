@@ -20,6 +20,23 @@
 [build]
   publish = "."
 
+# Netlifys "Pretty URLs" ist standardmaessig AN und schreibt beim Deploy jeden
+# internen Verweis um: aus href="kontakt.html" wird href='/kontakt'. Im
+# Quelltext des Projekts steht ueberall die .html-Fassung, live kam bisher
+# ueberall die endungslose an.
+#
+# Das war die zweite Haelfte des Doppelungsproblems. Solange beide Adressen
+# mit 200 antworteten, verteilte sich jede Seite auf zwei Adressen: die
+# endungslose, auf die alle internen Verweise zeigten, und die .html-Fassung,
+# auf die canonical und sitemap.xml zeigen.
+#
+# Mit den Entdopplungsregeln weiter unten waere daraus ein zweites Problem
+# geworden: JEDER Menueklick haette erst eine 301 abgeholt. Deshalb hier aus.
+# Damit bleiben die Verweise so, wie sie im Quelltext stehen - .html, gleich
+# dem canonical, gleich der Sitemap, gleich dem, was Google indexiert hat.
+[build.processing.html]
+  pretty_urls = false
+
 [functions]
   directory = "netlify/functions"
   node_bundler = "esbuild"

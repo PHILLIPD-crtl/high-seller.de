@@ -1,4 +1,34 @@
-# Highseller Immobilien & Finanzen — Website (Stand v38)
+# Highseller Immobilien & Finanzen — Website (Stand v40)
+
+## Was in v40 umgesetzt wurde
+
+### Neues Teamfoto von Serhad Mendekli
+Das bisherige Foto war eine Innenaufnahme vor Fensterfront und fiel damit aus der
+Bildsprache der Seite heraus — Baris Ölmez steht auf seinem Portrait draußen vor
+der Bebauung im Zollhafen. Das neue Foto ist an derselben Stelle entstanden und
+zeigt dasselbe Gebäude im Hintergrund, die beiden Kacheln wirken jetzt als Serie.
+
+Der Zuschnitt ist nicht mittig gesetzt, sondern an Baris' Portrait ausgerichtet:
+Kopf füllt rund 39 % der Bildhöhe, Oberkante bei etwa 14 %, Gesichtsmitte bei
+61 % der Breite. Ohne diese Ausrichtung stehen zwei Personen unterschiedlich groß
+nebeneinander, was im Team-Raster sofort auffällt. Ausgangsdatei war eine
+HEIC-Aufnahme mit 3024×4032; ausgeliefert werden wie bei allen Teamfotos
+820×1040 als JPEG plus zwei WebP-Größen (400 und 820 Pixel breit).
+
+**Wichtig — neuer Dateiname statt Ersetzen.** Die Dateien heißen
+`team-serhad-2026.jpg`, `team-serhad-2026-400.webp` und
+`team-serhad-2026-820.webp`. `netlify.toml` liefert `/assets/img/*` mit
+`max-age=31536000, immutable` aus; Browser fragen dort ein Jahr lang nicht nach
+einer neueren Fassung, auch ein harter Reload greift bei `immutable` nicht
+zuverlässig. Wer den Inhalt einer Bilddatei ändert, muss ihr deshalb einen neuen
+Namen geben — eine Datei unter gleichem Namen zu überschreiben wirkt live nur bei
+Erstbesuchern.
+
+Die alten `team-serhad.*` liegen vorerst weiter im Repository, weil der offene
+Branch `seo/domain-duplikate-vertrauen` sie noch referenziert. Sie können
+gelöscht werden, sobald dieser Branch gemergt ist. Verwiesen wird auf das neue
+Foto in `index.html` und `ueber-uns.html`; geprüft wurde bei 1440 px und mit
+Geräteemulation bei 390×844×3, in beiden Fällen ohne Überlauf.
 
 ## Was in v37–v38 umgesetzt wurde
 

@@ -708,6 +708,108 @@
   force = true
 
 [[redirects]]
+  from = "/immobilienmakler-koeln-blumenberg"
+  to = "/immobilienmakler-koeln-blumenberg.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/immobilienmakler-koeln-buchforst"
+  to = "/immobilienmakler-koeln-buchforst.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/immobilienmakler-koeln-elsdorf"
+  to = "/immobilienmakler-koeln-elsdorf.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/immobilienmakler-koeln-fuehlingen"
+  to = "/immobilienmakler-koeln-fuehlingen.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/immobilienmakler-koeln-godorf"
+  to = "/immobilienmakler-koeln-godorf.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/immobilienmakler-koeln-hahnwald"
+  to = "/immobilienmakler-koeln-hahnwald.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/immobilienmakler-koeln-immendorf"
+  to = "/immobilienmakler-koeln-immendorf.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/immobilienmakler-koeln-langel"
+  to = "/immobilienmakler-koeln-langel.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/immobilienmakler-koeln-libur"
+  to = "/immobilienmakler-koeln-libur.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/immobilienmakler-koeln-lindweiler"
+  to = "/immobilienmakler-koeln-lindweiler.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/immobilienmakler-koeln-merkenich"
+  to = "/immobilienmakler-koeln-merkenich.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/immobilienmakler-koeln-meschenich"
+  to = "/immobilienmakler-koeln-meschenich.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/immobilienmakler-koeln-roggendorf-thenhoven"
+  to = "/immobilienmakler-koeln-roggendorf-thenhoven.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/immobilienmakler-koeln-stammheim"
+  to = "/immobilienmakler-koeln-stammheim.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/immobilienmakler-koeln-vogelsang"
+  to = "/immobilienmakler-koeln-vogelsang.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/immobilienmakler-koeln-volkhoven-weiler"
+  to = "/immobilienmakler-koeln-volkhoven-weiler.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/immobilienmakler-koeln-worringen"
+  to = "/immobilienmakler-koeln-worringen.html"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/immobilienmakler-koeln-suelz"
   to = "/immobilienmakler-koeln-suelz.html"
   status = 301

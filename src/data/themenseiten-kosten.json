@@ -95,5 +95,53 @@
   "bullet1": "Prüfung von Teilungserklärung und Gemeinschaftsordnung",
   "bullet2": "Frühzeitige Klärung einer Veräußerungsbeschränkung",
   "bullet3": "Beschaffung von Protokollen und Wirtschaftsplan"
+ },
+ "grunderwerbsteuer-nrw": {
+  "titel": "Grunderwerbsteuer in NRW | 6,5 Prozent, Fristen, Ausnahmen",
+  "h1": "Grunderwerbsteuer in Nordrhein-Westfalen",
+  "besch": "Grunderwerbsteuer NRW: 6,5 Prozent, wer zahlt, Fristen, Ausnahmen bei Verwandten und Erbschaft. Für Köln erklärt.",
+  "kurz": "In Nordrhein-Westfalen liegt der Steuersatz bei 6,5 Prozent — bundesweit im oberen Bereich.",
+  "a1": "Die Grunderwerbsteuer beträgt in Nordrhein-Westfalen 6,5 Prozent des Kaufpreises. Bei einer Wohnung für 400.000 Euro sind das 26.000 Euro, die zusätzlich zum Kaufpreis aufzubringen sind und die Banken in aller Regel nicht mitfinanzieren. Der Steuersatz ist Ländersache; NRW liegt gemeinsam mit dem Saarland, Schleswig-Holstein, Brandenburg und Thüringen an der Spitze, Bayern erhebt 3,5 Prozent.",
+  "a2": "Schuldner sind nach dem Gesetz Käufer und Verkäufer gemeinsam, im Kaufvertrag wird sie aber praktisch immer dem Käufer auferlegt. Das Finanzamt hält sich zunächst an den im Vertrag Genannten; zahlt dieser nicht, kann es sich an den anderen wenden. Für Verkäufer heißt das: Ein Restrisiko bleibt, bis die Steuer gezahlt ist. Erst danach erteilt das Finanzamt die Unbedenklichkeitsbescheinigung, ohne die keine Eigentumsumschreibung im Grundbuch erfolgt.",
+  "a3": "Bemessungsgrundlage ist die gesamte Gegenleistung, nicht nur der reine Kaufpreis. Mitverkauftes bewegliches Inventar — Einbauküche, Markise, Sauna — gehört nicht dazu und kann im Vertrag gesondert ausgewiesen werden. Bei einer Küche im Wert von 15.000 Euro spart das rund 975 Euro Steuer. Das Finanzamt akzeptiert das, solange die Werte realistisch sind; überhöhte Ansätze werden gestrichen.",
+  "faq1_f": "Gibt es Ausnahmen von der Grunderwerbsteuer?",
+  "faq1_a": "Ja, nach § 3 GrEStG. Steuerfrei sind der Erwerb durch Erbschaft oder Schenkung, der Erwerb zwischen Ehegatten und eingetragenen Lebenspartnern, der Erwerb zwischen Verwandten in gerader Linie — also Eltern und Kindern, Großeltern und Enkeln — sowie Grundstücke unter einem Wert von 2.500 Euro. Geschwister sind nicht befreit, Schwiegerkinder ebenfalls nicht. Bei der Vermögensauseinandersetzung nach Scheidung greift eine eigene Befreiung.",
+  "faq2_f": "Wann muss die Steuer gezahlt werden?",
+  "faq2_a": "Der Notar meldet den Kaufvertrag binnen zwei Wochen dem Finanzamt. Der Steuerbescheid kommt üblicherweise nach vier bis acht Wochen, die Zahlungsfrist beträgt einen Monat. Erst nach Zahlung erteilt das Finanzamt die Unbedenklichkeitsbescheinigung an den Notar — sie ist Voraussetzung für die Eigentumsumschreibung. Wer die Zahlung verzögert, verzögert die eigene Eintragung.",
+  "bullet1": "Inventar im Vertrag gesondert ausgewiesen, wo es zulässig ist",
+  "bullet2": "Realistische Kostenaufstellung vor der Kaufentscheidung",
+  "bullet3": "Abstimmung des Zeitplans mit Notar und Finanzamt"
+ },
+ "wertgutachten-immobilie-koeln": {
+  "titel": "Wertgutachten für Immobilien in Köln | Arten & Kosten",
+  "h1": "Wertgutachten: wann Sie eines brauchen",
+  "besch": "Wertgutachten Immobilie: Unterschied zu Maklereinschätzung, Vollgutachten, Kurzgutachten, Kosten und wann Gerichte eines verlangen.",
+  "kurz": "Nicht jede Bewertung ist ein Gutachten — und nicht jeder Zweck braucht eines.",
+  "a1": "Für den normalen Verkauf genügt eine fundierte Maklereinschätzung. Sie stützt sich auf Vergleichspreise, amtliche Bodenrichtwerte und die Marktkenntnis vor Ort und kostet Sie bei uns nichts. Ein Verkehrswertgutachten nach § 194 BauGB ist etwas anderes: Es folgt der ImmoWertV, dokumentiert Verfahren und Herleitung vollständig und wird von einem öffentlich bestellten oder zertifizierten Sachverständigen erstellt.",
+  "a2": "Ein solches Gutachten brauchen Sie in bestimmten Situationen: bei Erbauseinandersetzungen mit Streit unter Miterben, im Zugewinnausgleich, bei Betreuungsfällen, wenn das Betreuungsgericht die Angemessenheit prüft, gegenüber dem Finanzamt zum Nachweis eines niedrigeren gemeinen Werts, und in Gerichtsverfahren. Eine Maklereinschätzung wird dort in der Regel nicht anerkannt.",
+  "a3": "Die Kosten richten sich nach Aufwand und Objektwert und liegen für ein Vollgutachten meist im mittleren vierstelligen Bereich, für ein Kurzgutachten deutlich darunter. Zu unterscheiden sind drei Verfahren: das Vergleichswertverfahren bei Eigentumswohnungen und Reihenhäusern, das Sachwertverfahren bei selbstgenutzten Ein- und Zweifamilienhäusern, das Ertragswertverfahren bei vermieteten Objekten. Welches passt, bestimmt der Zweck.",
+  "faq1_f": "Ist die Maklereinschätzung weniger wert?",
+  "faq1_a": "Für den Verkauf nicht — im Gegenteil. Sie stützt sich auf tatsächlich erzielte Preise vergleichbarer Objekte und auf die Nachfrage, die wir täglich sehen. Ein Gutachten arbeitet stärker nach Verfahrensvorschrift und liegt beim Marktwert nicht selten daneben, weil es standardisierte Faktoren verwendet. Was ein Gutachten leistet, ist etwas anderes: eine dokumentierte, gerichtsfeste Herleitung.",
+  "faq2_f": "Akzeptiert das Finanzamt jedes Gutachten?",
+  "faq2_a": "Nein. Für den Nachweis eines niedrigeren gemeinen Werts nach § 198 BewG verlangt die Finanzverwaltung ein Gutachten des örtlich zuständigen Gutachterausschusses oder eines öffentlich bestellten und vereidigten beziehungsweise nach DIN EN ISO/IEC 17024 zertifizierten Sachverständigen. Auch ein zeitnaher Verkauf im gewöhnlichen Geschäftsverkehr kann als Nachweis dienen — das ist oft der einfachere Weg.",
+  "bullet1": "Kostenlose Einschätzung für den Verkauf",
+  "bullet2": "Vermittlung eines zertifizierten Sachverständigen, wo nötig",
+  "bullet3": "Klärung vorab, welche Form Ihr Zweck verlangt"
+ },
+ "vorfaelligkeitsentschaedigung-koeln": {
+  "titel": "Vorfälligkeitsentschädigung beim Immobilienverkauf",
+  "h1": "Vorfälligkeitsentschädigung: wann sie anfällt",
+  "besch": "Vorfälligkeitsentschädigung: Berechnung, Höhe, Ausnahmen und wann Banken keine verlangen dürfen. Für Verkäufer in Köln erklärt.",
+  "kurz": "Wer während der Zinsbindung verkauft, zahlt der Bank den entgangenen Zins.",
+  "a1": "Lösen Sie ein Darlehen vor Ablauf der Zinsbindung ab, verlangt die Bank eine Vorfälligkeitsentschädigung. Sie ersetzt den Zinsschaden — die Differenz zwischen dem vereinbarten Zins und dem, was die Bank bei Wiederanlage erzielen kann. Bei niedrigen Marktzinsen und langer Restlaufzeit wird das schnell fünfstellig: Bei 300.000 Euro Restschuld, fünf Jahren Restbindung und zwei Prozentpunkten Zinsdifferenz sind rund 25.000 bis 30.000 Euro realistisch.",
+  "a2": "Es gibt Fälle, in denen keine Entschädigung anfällt. Nach zehn Jahren ab vollständiger Auszahlung dürfen Sie mit sechsmonatiger Frist kündigen, § 489 Abs. 1 Nr. 2 BGB — dieses Recht ist unabdingbar. Bei fehlerhafter Widerrufsbelehrung kann ein Widerruf möglich sein. Auch ein berechtigtes Interesse an der Ablösung, etwa beim Verkauf wegen Umzugs oder Scheidung, verpflichtet die Bank zur Zustimmung — allerdings gegen Entschädigung.",
+  "a3": "Rechnen lohnt sich. Der Bundesgerichtshof hat mehrfach über die zulässige Berechnungsmethode entschieden, und Verbraucherzentralen prüfen Abrechnungen gegen Gebühr — Fehler zugunsten der Bank sind häufig. Ebenso lohnt der Blick auf Alternativen: Manche Banken lassen zu, dass das Darlehen auf ein neues Objekt übertragen wird. Das setzt allerdings voraus, dass Sie zeitnah wieder kaufen.",
+  "faq1_f": "Kann ich die Entschädigung vom Verkaufserlös abziehen?",
+  "faq1_a": "Wirtschaftlich ja, sie wird bei der Ablösung aus dem Kaufpreis beglichen. Steuerlich ist sie bei vermieteten Objekten unter Umständen als Werbungskosten abziehbar, bei selbstgenutzten grundsätzlich nicht. Wenn der Verkauf innerhalb der Spekulationsfrist steuerpflichtig ist, mindert sie als Veräußerungskosten den zu versteuernden Gewinn. Für Ihren Fall klärt das der Steuerberater.",
+  "faq2_f": "Lohnt es sich, mit dem Verkauf zu warten?",
+  "faq2_a": "Manchmal. Läuft die Zinsbindung in absehbarer Zeit aus oder nähern Sie sich der Zehnjahresgrenze nach § 489 BGB, kann Warten mehrere tausend Euro sparen. Dem steht gegenüber, was der Markt in dieser Zeit macht und ob Sie den Zeitpunkt frei wählen können. Wir rechnen beide Varianten mit Ihnen durch, bevor Sie sich entscheiden — als Darlehensvermittler nach § 34i GewO ist das unser Feld.",
+  "bullet1": "Berechnung der Entschädigung vor der Verkaufsentscheidung",
+  "bullet2": "Prüfung von Kündigungsrechten nach § 489 BGB",
+  "bullet3": "Vergleich mit Übertragung des Darlehens auf ein neues Objekt"
  }
 }

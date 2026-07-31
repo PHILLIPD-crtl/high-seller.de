@@ -1,0 +1,521 @@
+{
+ "_hinweis": "Amtliche Zuordnung Stadtteil zu Stadtbezirk. Quelle: Stadt Koeln, Offene Daten, Stadtteilgrenzen. Erzeugt von tools/stadtteildaten/bodenrichtwerte.py-Datenbestand.",
+ "stadtteile": {
+  "stammheim": {
+   "name": "Stammheim",
+   "nummer": "908",
+   "bezirk": "Mülheim",
+   "bezirkNr": "9"
+  },
+  "ossendorf": {
+   "name": "Ossendorf",
+   "nummer": "406",
+   "bezirk": "Ehrenfeld",
+   "bezirkNr": "4"
+  },
+  "neuehrenfeld": {
+   "name": "Neuehrenfeld",
+   "nummer": "402",
+   "bezirk": "Ehrenfeld",
+   "bezirkNr": "4"
+  },
+  "ehrenfeld": {
+   "name": "Ehrenfeld",
+   "nummer": "401",
+   "bezirk": "Ehrenfeld",
+   "bezirkNr": "4"
+  },
+  "seeberg": {
+   "name": "Seeberg",
+   "nummer": "603",
+   "bezirk": "Chorweiler",
+   "bezirkNr": "6"
+  },
+  "zollstock": {
+   "name": "Zollstock",
+   "nummer": "205",
+   "bezirk": "Rodenkirchen",
+   "bezirkNr": "2"
+  },
+  "raderberg": {
+   "name": "Raderberg",
+   "nummer": "203",
+   "bezirk": "Rodenkirchen",
+   "bezirkNr": "2"
+  },
+  "suelz": {
+   "name": "Sülz",
+   "nummer": "302",
+   "bezirk": "Lindenthal",
+   "bezirkNr": "3"
+  },
+  "marienburg": {
+   "name": "Marienburg",
+   "nummer": "202",
+   "bezirk": "Rodenkirchen",
+   "bezirkNr": "2"
+  },
+  "elsdorf": {
+   "name": "Elsdorf",
+   "nummer": "708",
+   "bezirk": "Porz",
+   "bezirkNr": "7"
+  },
+  "gremberghoven": {
+   "name": "Gremberghoven",
+   "nummer": "704",
+   "bezirk": "Porz",
+   "bezirkNr": "7"
+  },
+  "urbach": {
+   "name": "Urbach",
+   "nummer": "707",
+   "bezirk": "Porz",
+   "bezirkNr": "7"
+  },
+  "grengel": {
+   "name": "Grengel",
+   "nummer": "709",
+   "bezirk": "Porz",
+   "bezirkNr": "7"
+  },
+  "humboldt-gremberg": {
+   "name": "Humboldt/Gremberg",
+   "nummer": "801",
+   "bezirk": "Kalk",
+   "bezirkNr": "8"
+  },
+  "brueck": {
+   "name": "Brück",
+   "nummer": "807",
+   "bezirk": "Kalk",
+   "bezirkNr": "8"
+  },
+  "buchforst": {
+   "name": "Buchforst",
+   "nummer": "902",
+   "bezirk": "Mülheim",
+   "bezirkNr": "9"
+  },
+  "buchheim": {
+   "name": "Buchheim",
+   "nummer": "903",
+   "bezirk": "Mülheim",
+   "bezirkNr": "9"
+  },
+  "dellbrueck": {
+   "name": "Dellbrück",
+   "nummer": "905",
+   "bezirk": "Mülheim",
+   "bezirkNr": "9"
+  },
+  "duennwald": {
+   "name": "Dünnwald",
+   "nummer": "907",
+   "bezirk": "Mülheim",
+   "bezirkNr": "9"
+  },
+  "flittard": {
+   "name": "Flittard",
+   "nummer": "909",
+   "bezirk": "Mülheim",
+   "bezirkNr": "9"
+  },
+  "hoehenberg": {
+   "name": "Höhenberg",
+   "nummer": "804",
+   "bezirk": "Kalk",
+   "bezirkNr": "8"
+  },
+  "hoehenhaus": {
+   "name": "Höhenhaus",
+   "nummer": "906",
+   "bezirk": "Mülheim",
+   "bezirkNr": "9"
+  },
+  "holweide": {
+   "name": "Holweide",
+   "nummer": "904",
+   "bezirk": "Mülheim",
+   "bezirkNr": "9"
+  },
+  "merheim": {
+   "name": "Merheim",
+   "nummer": "806",
+   "bezirk": "Kalk",
+   "bezirkNr": "8"
+  },
+  "muelheim": {
+   "name": "Mülheim",
+   "nummer": "901",
+   "bezirk": "Mülheim",
+   "bezirkNr": "9"
+  },
+  "neubrueck": {
+   "name": "Neubrück",
+   "nummer": "809",
+   "bezirk": "Kalk",
+   "bezirkNr": "8"
+  },
+  "ostheim": {
+   "name": "Ostheim",
+   "nummer": "805",
+   "bezirk": "Kalk",
+   "bezirkNr": "8"
+  },
+  "rath-heumar": {
+   "name": "Rath/Heumar",
+   "nummer": "808",
+   "bezirk": "Kalk",
+   "bezirkNr": "8"
+  },
+  "vingst": {
+   "name": "Vingst",
+   "nummer": "803",
+   "bezirk": "Kalk",
+   "bezirkNr": "8"
+  },
+  "esch-auweiler": {
+   "name": "Esch/Auweiler",
+   "nummer": "607",
+   "bezirk": "Chorweiler",
+   "bezirkNr": "6"
+  },
+  "lindweiler": {
+   "name": "Lindweiler",
+   "nummer": "605",
+   "bezirk": "Chorweiler",
+   "bezirkNr": "6"
+  },
+  "longerich": {
+   "name": "Longerich",
+   "nummer": "506",
+   "bezirk": "Nippes",
+   "bezirkNr": "5"
+  },
+  "pesch": {
+   "name": "Pesch",
+   "nummer": "606",
+   "bezirk": "Chorweiler",
+   "bezirkNr": "6"
+  },
+  "riehl": {
+   "name": "Riehl",
+   "nummer": "503",
+   "bezirk": "Nippes",
+   "bezirkNr": "5"
+  },
+  "roggendorf-thenhoven": {
+   "name": "Roggendorf/Thenhoven",
+   "nummer": "611",
+   "bezirk": "Chorweiler",
+   "bezirkNr": "6"
+  },
+  "worringen": {
+   "name": "Worringen",
+   "nummer": "612",
+   "bezirk": "Chorweiler",
+   "bezirkNr": "6"
+  },
+  "vogelsang": {
+   "name": "Vogelsang",
+   "nummer": "404",
+   "bezirk": "Ehrenfeld",
+   "bezirkNr": "4"
+  },
+  "blumenberg": {
+   "name": "Blumenberg",
+   "nummer": "610",
+   "bezirk": "Chorweiler",
+   "bezirkNr": "6"
+  },
+  "bocklemuend-mengenich": {
+   "name": "Bocklemünd/Mengenich",
+   "nummer": "405",
+   "bezirk": "Ehrenfeld",
+   "bezirkNr": "4"
+  },
+  "bilderstoeckchen": {
+   "name": "Bilderstöckchen",
+   "nummer": "507",
+   "bezirk": "Nippes",
+   "bezirkNr": "5"
+  },
+  "chorweiler": {
+   "name": "Chorweiler",
+   "nummer": "609",
+   "bezirk": "Chorweiler",
+   "bezirkNr": "6"
+  },
+  "mauenheim": {
+   "name": "Mauenheim",
+   "nummer": "502",
+   "bezirk": "Nippes",
+   "bezirkNr": "5"
+  },
+  "weidenpesch": {
+   "name": "Weidenpesch",
+   "nummer": "505",
+   "bezirk": "Nippes",
+   "bezirkNr": "5"
+  },
+  "heimersdorf": {
+   "name": "Heimersdorf",
+   "nummer": "604",
+   "bezirk": "Chorweiler",
+   "bezirkNr": "6"
+  },
+  "volkhoven-weiler": {
+   "name": "Volkhoven/Weiler",
+   "nummer": "608",
+   "bezirk": "Chorweiler",
+   "bezirkNr": "6"
+  },
+  "altstadt-nord": {
+   "name": "Altstadt/Nord",
+   "nummer": "103",
+   "bezirk": "Innenstadt",
+   "bezirkNr": "1"
+  },
+  "poll": {
+   "name": "Poll",
+   "nummer": "701",
+   "bezirk": "Porz",
+   "bezirkNr": "7"
+  },
+  "neustadt-sued": {
+   "name": "Neustadt/Süd",
+   "nummer": "102",
+   "bezirk": "Innenstadt",
+   "bezirkNr": "1"
+  },
+  "westhoven": {
+   "name": "Westhoven",
+   "nummer": "702",
+   "bezirk": "Porz",
+   "bezirkNr": "7"
+  },
+  "porz": {
+   "name": "Porz",
+   "nummer": "706",
+   "bezirk": "Porz",
+   "bezirkNr": "7"
+  },
+  "ensen": {
+   "name": "Ensen",
+   "nummer": "703",
+   "bezirk": "Porz",
+   "bezirkNr": "7"
+  },
+  "finkenberg": {
+   "name": "Finkenberg",
+   "nummer": "716",
+   "bezirk": "Porz",
+   "bezirkNr": "7"
+  },
+  "bayenthal": {
+   "name": "Bayenthal",
+   "nummer": "201",
+   "bezirk": "Rodenkirchen",
+   "bezirkNr": "2"
+  },
+  "wahnheide": {
+   "name": "Wahnheide",
+   "nummer": "710",
+   "bezirk": "Porz",
+   "bezirkNr": "7"
+  },
+  "wahn": {
+   "name": "Wahn",
+   "nummer": "711",
+   "bezirk": "Porz",
+   "bezirkNr": "7"
+  },
+  "zuendorf": {
+   "name": "Zündorf",
+   "nummer": "714",
+   "bezirk": "Porz",
+   "bezirkNr": "7"
+  },
+  "libur": {
+   "name": "Libur",
+   "nummer": "713",
+   "bezirk": "Porz",
+   "bezirkNr": "7"
+  },
+  "raderthal": {
+   "name": "Raderthal",
+   "nummer": "204",
+   "bezirk": "Rodenkirchen",
+   "bezirkNr": "2"
+  },
+  "langel": {
+   "name": "Langel",
+   "nummer": "715",
+   "bezirk": "Porz",
+   "bezirkNr": "7"
+  },
+  "klettenberg": {
+   "name": "Klettenberg",
+   "nummer": "301",
+   "bezirk": "Lindenthal",
+   "bezirkNr": "3"
+  },
+  "lind": {
+   "name": "Lind",
+   "nummer": "712",
+   "bezirk": "Porz",
+   "bezirkNr": "7"
+  },
+  "eil": {
+   "name": "Eil",
+   "nummer": "705",
+   "bezirk": "Porz",
+   "bezirkNr": "7"
+  },
+  "kalk": {
+   "name": "Kalk",
+   "nummer": "802",
+   "bezirk": "Kalk",
+   "bezirkNr": "8"
+  },
+  "deutz": {
+   "name": "Deutz",
+   "nummer": "105",
+   "bezirk": "Innenstadt",
+   "bezirkNr": "1"
+  },
+  "rondorf": {
+   "name": "Rondorf",
+   "nummer": "206",
+   "bezirk": "Rodenkirchen",
+   "bezirkNr": "2"
+  },
+  "junkersdorf": {
+   "name": "Junkersdorf",
+   "nummer": "306",
+   "bezirk": "Lindenthal",
+   "bezirkNr": "3"
+  },
+  "loevenich": {
+   "name": "Lövenich",
+   "nummer": "308",
+   "bezirk": "Lindenthal",
+   "bezirkNr": "3"
+  },
+  "weiden": {
+   "name": "Weiden",
+   "nummer": "307",
+   "bezirk": "Lindenthal",
+   "bezirkNr": "3"
+  },
+  "hahnwald": {
+   "name": "Hahnwald",
+   "nummer": "207",
+   "bezirk": "Rodenkirchen",
+   "bezirkNr": "2"
+  },
+  "immendorf": {
+   "name": "Immendorf",
+   "nummer": "212",
+   "bezirk": "Rodenkirchen",
+   "bezirkNr": "2"
+  },
+  "suerth": {
+   "name": "Sürth",
+   "nummer": "210",
+   "bezirk": "Rodenkirchen",
+   "bezirkNr": "2"
+  },
+  "rodenkirchen": {
+   "name": "Rodenkirchen",
+   "nummer": "208",
+   "bezirk": "Rodenkirchen",
+   "bezirkNr": "2"
+  },
+  "weiss": {
+   "name": "Weiß",
+   "nummer": "209",
+   "bezirk": "Rodenkirchen",
+   "bezirkNr": "2"
+  },
+  "godorf": {
+   "name": "Godorf",
+   "nummer": "211",
+   "bezirk": "Rodenkirchen",
+   "bezirkNr": "2"
+  },
+  "muengersdorf": {
+   "name": "Müngersdorf",
+   "nummer": "305",
+   "bezirk": "Lindenthal",
+   "bezirkNr": "3"
+  },
+  "neustadt-nord": {
+   "name": "Neustadt/Nord",
+   "nummer": "104",
+   "bezirk": "Innenstadt",
+   "bezirkNr": "1"
+  },
+  "braunsfeld": {
+   "name": "Braunsfeld",
+   "nummer": "304",
+   "bezirk": "Lindenthal",
+   "bezirkNr": "3"
+  },
+  "widdersdorf": {
+   "name": "Widdersdorf",
+   "nummer": "309",
+   "bezirk": "Lindenthal",
+   "bezirkNr": "3"
+  },
+  "lindenthal": {
+   "name": "Lindenthal",
+   "nummer": "303",
+   "bezirk": "Lindenthal",
+   "bezirkNr": "3"
+  },
+  "meschenich": {
+   "name": "Meschenich",
+   "nummer": "213",
+   "bezirk": "Rodenkirchen",
+   "bezirkNr": "2"
+  },
+  "nippes": {
+   "name": "Nippes",
+   "nummer": "501",
+   "bezirk": "Nippes",
+   "bezirkNr": "5"
+  },
+  "altstadt-sued": {
+   "name": "Altstadt/Süd",
+   "nummer": "101",
+   "bezirk": "Innenstadt",
+   "bezirkNr": "1"
+  },
+  "merkenich": {
+   "name": "Merkenich",
+   "nummer": "601",
+   "bezirk": "Chorweiler",
+   "bezirkNr": "6"
+  },
+  "bickendorf": {
+   "name": "Bickendorf",
+   "nummer": "403",
+   "bezirk": "Ehrenfeld",
+   "bezirkNr": "4"
+  },
+  "fuehlingen": {
+   "name": "Fühlingen",
+   "nummer": "602",
+   "bezirk": "Chorweiler",
+   "bezirkNr": "6"
+  },
+  "niehl": {
+   "name": "Niehl",
+   "nummer": "504",
+   "bezirk": "Nippes",
+   "bezirkNr": "5"
+  }
+ }
+}

@@ -1,573 +1,177 @@
 {
- "suelz": {
+ "altstadt-sued": {
   "_ebene": "Stadtteil",
-  "_raum": "302 / Sülz",
+  "_raum": "101 / Altstadt/Süd",
   "einwohner": {
-   "wert": 36652.0,
+   "wert": 27851.0,
    "jahr": 2025
   },
   "durchschnittsalter": {
-   "wert": 41.60576730692,
+   "wert": 42.3180496212,
    "jahr": 2025
   },
   "haushalte": {
-   "wert": 22166.0,
+   "wert": 18438.0,
    "jahr": 2025
   },
   "anteilEinpersonen": {
-   "wert": 61.377786,
+   "wert": 70.419785,
    "jahr": 2025
   },
   "anteilMitKindern": {
-   "wert": 13.317694,
+   "wert": 7.424883,
    "jahr": 2025
   },
   "wohnungen": {
-   "wert": 22626.0,
+   "wert": 18610.0,
    "jahr": 2025
   },
   "wohnflaecheJeWohnung": {
-   "wert": 69.10160876867,
+   "wert": 60.53261687265,
    "jahr": 2025
   },
   "wohnflaecheJeEinwohner": {
-   "wert": 42.65778129434,
+   "wert": 40.4478115687,
    "jahr": 2025
   },
   "neubauWohnungen": {
-   "wert": 40.0,
+   "wert": -37.0,
    "jahr": 2025
   },
   "anteilGefoerdert": {
-   "wert": 0.782285,
+   "wert": 3.315421,
    "jahr": 2025
   }
  },
- "lindenthal": {
+ "neustadt-sued": {
   "_ebene": "Stadtteil",
-  "_raum": "303 / Lindenthal",
+  "_raum": "102 / Neustadt/Süd",
   "einwohner": {
-   "wert": 31037.0,
+   "wert": 37306.0,
    "jahr": 2025
   },
   "durchschnittsalter": {
-   "wert": 42.13804222917,
+   "wert": 40.29919449954,
    "jahr": 2025
   },
   "haushalte": {
-   "wert": 17406.0,
+   "wert": 24451.0,
    "jahr": 2025
   },
   "anteilEinpersonen": {
-   "wert": 59.30139,
+   "wert": 68.451188,
    "jahr": 2025
   },
   "anteilMitKindern": {
-   "wert": 13.794094,
+   "wert": 9.864627,
    "jahr": 2025
   },
   "wohnungen": {
-   "wert": 19090.0,
+   "wert": 24411.0,
    "jahr": 2025
   },
   "wohnflaecheJeWohnung": {
-   "wert": 78.15128339445,
+   "wert": 65.13440661997,
    "jahr": 2025
   },
   "wohnflaecheJeEinwohner": {
-   "wert": 48.06869220608,
+   "wert": 42.62038278025,
    "jahr": 2025
   },
   "neubauWohnungen": {
-   "wert": 54.0,
+   "wert": 99.0,
    "jahr": 2025
   },
   "anteilGefoerdert": {
-   "wert": 0.476689,
+   "wert": 1.450165,
    "jahr": 2025
   }
  },
- "klettenberg": {
+ "altstadt-nord": {
   "_ebene": "Stadtteil",
-  "_raum": "301 / Klettenberg",
+  "_raum": "103 / Altstadt/Nord",
   "einwohner": {
-   "wert": 10466.0,
+   "wert": 18333.0,
    "jahr": 2025
   },
   "durchschnittsalter": {
-   "wert": 43.94819733741,
+   "wert": 42.83887888871,
    "jahr": 2025
   },
   "haushalte": {
-   "wert": 5710.0,
+   "wert": 11988.0,
    "jahr": 2025
   },
   "anteilEinpersonen": {
-   "wert": 53.23993,
+   "wert": 70.904238,
    "jahr": 2025
   },
   "anteilMitKindern": {
-   "wert": 17.863398,
+   "wert": 6.556557,
    "jahr": 2025
   },
   "wohnungen": {
-   "wert": 5693.0,
+   "wert": 12586.0,
    "jahr": 2025
   },
   "wohnflaecheJeWohnung": {
-   "wert": 81.82908835412,
+   "wert": 61.88391863976,
    "jahr": 2025
   },
   "wohnflaecheJeEinwohner": {
-   "wert": 44.5110835085,
+   "wert": 42.48464517537,
    "jahr": 2025
   },
   "neubauWohnungen": {
-   "wert": 9.0,
+   "wert": 20.0,
    "jahr": 2025
   },
   "anteilGefoerdert": {
-   "wert": 0.0,
+   "wert": 1.334816,
    "jahr": 2025
   }
  },
- "junkersdorf": {
+ "neustadt-nord": {
   "_ebene": "Stadtteil",
-  "_raum": "306 / Junkersdorf",
+  "_raum": "104 / Neustadt/Nord",
   "einwohner": {
-   "wert": 15211.0,
+   "wert": 28923.0,
    "jahr": 2025
   },
   "durchschnittsalter": {
-   "wert": 42.92934937436,
+   "wert": 41.98316507047,
    "jahr": 2025
   },
   "haushalte": {
-   "wert": 7745.0,
+   "wert": 18533.0,
    "jahr": 2025
   },
   "anteilEinpersonen": {
-   "wert": 47.96643,
+   "wert": 65.321319,
    "jahr": 2025
   },
   "anteilMitKindern": {
-   "wert": 19.573919,
+   "wert": 10.786165,
    "jahr": 2025
   },
   "wohnungen": {
-   "wert": 7769.0,
+   "wert": 18325.0,
    "jahr": 2025
   },
   "wohnflaecheJeWohnung": {
-   "wert": 103.02020852105,
+   "wert": 69.3973260573,
    "jahr": 2025
   },
   "wohnflaecheJeEinwohner": {
-   "wert": 52.61744789955,
+   "wert": 43.9686754486,
    "jahr": 2025
   },
   "neubauWohnungen": {
-   "wert": 43.0,
+   "wert": 227.0,
    "jahr": 2025
   },
   "anteilGefoerdert": {
-   "wert": 1.248551,
-   "jahr": 2025
-  }
- },
- "braunsfeld": {
-  "_ebene": "Stadtteil",
-  "_raum": "304 / Braunsfeld",
-  "einwohner": {
-   "wert": 12573.0,
-   "jahr": 2025
-  },
-  "durchschnittsalter": {
-   "wert": 42.76409104165,
-   "jahr": 2025
-  },
-  "haushalte": {
-   "wert": 7036.0,
-   "jahr": 2025
-  },
-  "anteilEinpersonen": {
-   "wert": 55.116543,
-   "jahr": 2025
-  },
-  "anteilMitKindern": {
-   "wert": 15.974986,
-   "jahr": 2025
-  },
-  "wohnungen": {
-   "wert": 6949.0,
-   "jahr": 2025
-  },
-  "wohnflaecheJeWohnung": {
-   "wert": 84.90718088934,
-   "jahr": 2025
-  },
-  "wohnflaecheJeEinwohner": {
-   "wert": 46.92754314802,
-   "jahr": 2025
-  },
-  "neubauWohnungen": {
-   "wert": 187.0,
-   "jahr": 2025
-  },
-  "anteilGefoerdert": {
-   "wert": 0.690746,
-   "jahr": 2025
-  }
- },
- "ehrenfeld": {
-  "_ebene": "Stadtteil",
-  "_raum": "401 / Ehrenfeld",
-  "einwohner": {
-   "wert": 39467.0,
-   "jahr": 2025
-  },
-  "durchschnittsalter": {
-   "wert": 39.80191679124,
-   "jahr": 2025
-  },
-  "haushalte": {
-   "wert": 23741.0,
-   "jahr": 2025
-  },
-  "anteilEinpersonen": {
-   "wert": 63.442989,
-   "jahr": 2025
-  },
-  "anteilMitKindern": {
-   "wert": 12.657428,
-   "jahr": 2025
-  },
-  "wohnungen": {
-   "wert": 24496.0,
-   "jahr": 2025
-  },
-  "wohnflaecheJeWohnung": {
-   "wert": 62.07654310908,
-   "jahr": 2025
-  },
-  "wohnflaecheJeEinwohner": {
-   "wert": 38.52907492335,
-   "jahr": 2025
-  },
-  "neubauWohnungen": {
-   "wert": 320.0,
-   "jahr": 2025
-  },
-  "anteilGefoerdert": {
-   "wert": 5.93158,
-   "jahr": 2025
-  }
- },
- "nippes": {
-  "_ebene": "Stadtteil",
-  "_raum": "501 / Nippes",
-  "einwohner": {
-   "wert": 37088.0,
-   "jahr": 2025
-  },
-  "durchschnittsalter": {
-   "wert": 42.10587656385,
-   "jahr": 2025
-  },
-  "haushalte": {
-   "wert": 21233.0,
-   "jahr": 2025
-  },
-  "anteilEinpersonen": {
-   "wert": 57.60844,
-   "jahr": 2025
-  },
-  "anteilMitKindern": {
-   "wert": 16.300099,
-   "jahr": 2025
-  },
-  "wohnungen": {
-   "wert": 21067.0,
-   "jahr": 2025
-  },
-  "wohnflaecheJeWohnung": {
-   "wert": 69.94251673233,
-   "jahr": 2025
-  },
-  "wohnflaecheJeEinwohner": {
-   "wert": 39.72926553063,
-   "jahr": 2025
-  },
-  "neubauWohnungen": {
-   "wert": 195.0,
-   "jahr": 2025
-  },
-  "anteilGefoerdert": {
-   "wert": 3.977785,
-   "jahr": 2025
-  }
- },
- "weidenpesch": {
-  "_ebene": "Stadtteil",
-  "_raum": "505 / Weidenpesch",
-  "einwohner": {
-   "wert": 13663.0,
-   "jahr": 2025
-  },
-  "durchschnittsalter": {
-   "wert": 44.30461221303,
-   "jahr": 2025
-  },
-  "haushalte": {
-   "wert": 7728.0,
-   "jahr": 2025
-  },
-  "anteilEinpersonen": {
-   "wert": 55.939441,
-   "jahr": 2025
-  },
-  "anteilMitKindern": {
-   "wert": 15.243271,
-   "jahr": 2025
-  },
-  "wohnungen": {
-   "wert": 7591.0,
-   "jahr": 2025
-  },
-  "wohnflaecheJeWohnung": {
-   "wert": 69.26043999473,
-   "jahr": 2025
-  },
-  "wohnflaecheJeEinwohner": {
-   "wert": 38.48027519578,
-   "jahr": 2025
-  },
-  "neubauWohnungen": {
-   "wert": 15.0,
-   "jahr": 2025
-  },
-  "anteilGefoerdert": {
-   "wert": 5.585561,
-   "jahr": 2025
-  }
- },
- "niehl": {
-  "_ebene": "Stadtteil",
-  "_raum": "504 / Niehl",
-  "einwohner": {
-   "wert": 20270.0,
-   "jahr": 2025
-  },
-  "durchschnittsalter": {
-   "wert": 43.45477717481,
-   "jahr": 2025
-  },
-  "haushalte": {
-   "wert": 10581.0,
-   "jahr": 2025
-  },
-  "anteilEinpersonen": {
-   "wert": 50.902561,
-   "jahr": 2025
-  },
-  "anteilMitKindern": {
-   "wert": 17.786599,
-   "jahr": 2025
-  },
-  "wohnungen": {
-   "wert": 10248.0,
-   "jahr": 2025
-  },
-  "wohnflaecheJeWohnung": {
-   "wert": 73.75341530055,
-   "jahr": 2025
-  },
-  "wohnflaecheJeEinwohner": {
-   "wert": 37.28786383818,
-   "jahr": 2025
-  },
-  "neubauWohnungen": {
-   "wert": 41.0,
-   "jahr": 2025
-  },
-  "anteilGefoerdert": {
-   "wert": 7.757611,
-   "jahr": 2025
-  }
- },
- "pesch": {
-  "_ebene": "Stadtteil",
-  "_raum": "606 / Pesch",
-  "einwohner": {
-   "wert": 7826.0,
-   "jahr": 2025
-  },
-  "durchschnittsalter": {
-   "wert": 46.43158488798,
-   "jahr": 2025
-  },
-  "haushalte": {
-   "wert": 3753.0,
-   "jahr": 2025
-  },
-  "anteilEinpersonen": {
-   "wert": 38.902212,
-   "jahr": 2025
-  },
-  "anteilMitKindern": {
-   "wert": 22.328804,
-   "jahr": 2025
-  },
-  "wohnungen": {
-   "wert": 3661.0,
-   "jahr": 2025
-  },
-  "wohnflaecheJeWohnung": {
-   "wert": 100.45042338159,
-   "jahr": 2025
-  },
-  "wohnflaecheJeEinwohner": {
-   "wert": 46.99067211858,
-   "jahr": 2025
-  },
-  "neubauWohnungen": {
-   "wert": 0.0,
-   "jahr": 2024
-  },
-  "anteilGefoerdert": {
-   "wert": 0.573613,
-   "jahr": 2025
-  }
- },
- "muelheim": {
-  "_ebene": "Stadtteil",
-  "_raum": "901 / Mülheim",
-  "einwohner": {
-   "wert": 43182.0,
-   "jahr": 2025
-  },
-  "durchschnittsalter": {
-   "wert": 40.43121941241,
-   "jahr": 2025
-  },
-  "haushalte": {
-   "wert": 23192.0,
-   "jahr": 2025
-  },
-  "anteilEinpersonen": {
-   "wert": 55.907209,
-   "jahr": 2025
-  },
-  "anteilMitKindern": {
-   "wert": 17.0188,
-   "jahr": 2025
-  },
-  "wohnungen": {
-   "wert": 22158.0,
-   "jahr": 2025
-  },
-  "wohnflaecheJeWohnung": {
-   "wert": 64.27836447333,
-   "jahr": 2025
-  },
-  "wohnflaecheJeEinwohner": {
-   "wert": 32.98318743921,
-   "jahr": 2025
-  },
-  "neubauWohnungen": {
-   "wert": 189.0,
-   "jahr": 2025
-  },
-  "anteilGefoerdert": {
-   "wert": 5.99332,
-   "jahr": 2025
-  }
- },
- "hoehenhaus": {
-  "_ebene": "Stadtteil",
-  "_raum": "906 / Höhenhaus",
-  "einwohner": {
-   "wert": 15883.0,
-   "jahr": 2025
-  },
-  "durchschnittsalter": {
-   "wert": 43.74363050641,
-   "jahr": 2025
-  },
-  "haushalte": {
-   "wert": 7289.0,
-   "jahr": 2025
-  },
-  "anteilEinpersonen": {
-   "wert": 38.702154,
-   "jahr": 2025
-  },
-  "anteilMitKindern": {
-   "wert": 23.43257,
-   "jahr": 2025
-  },
-  "wohnungen": {
-   "wert": 7291.0,
-   "jahr": 2025
-  },
-  "wohnflaecheJeWohnung": {
-   "wert": 87.91345494445,
-   "jahr": 2025
-  },
-  "wohnflaecheJeEinwohner": {
-   "wert": 40.35616697098,
-   "jahr": 2025
-  },
-  "neubauWohnungen": {
-   "wert": 75.0,
-   "jahr": 2025
-  },
-  "anteilGefoerdert": {
-   "wert": 13.633246,
-   "jahr": 2025
-  }
- },
- "duennwald": {
-  "_ebene": "Stadtteil",
-  "_raum": "907 / Dünnwald",
-  "einwohner": {
-   "wert": 11604.0,
-   "jahr": 2025
-  },
-  "durchschnittsalter": {
-   "wert": 43.00970211421,
-   "jahr": 2025
-  },
-  "haushalte": {
-   "wert": 5420.0,
-   "jahr": 2025
-  },
-  "anteilEinpersonen": {
-   "wert": 41.863469,
-   "jahr": 2025
-  },
-  "anteilMitKindern": {
-   "wert": 24.114391,
-   "jahr": 2025
-  },
-  "wohnungen": {
-   "wert": 5666.0,
-   "jahr": 2025
-  },
-  "wohnflaecheJeWohnung": {
-   "wert": 84.4721143664,
-   "jahr": 2025
-  },
-  "wohnflaecheJeEinwohner": {
-   "wert": 41.24603584971,
-   "jahr": 2025
-  },
-  "neubauWohnungen": {
-   "wert": 34.0,
-   "jahr": 2025
-  },
-  "anteilGefoerdert": {
-   "wert": 14.084009,
+   "wert": 1.3206,
    "jahr": 2025
   }
  },
@@ -703,47 +307,91 @@
    "jahr": 2025
   }
  },
- "rodenkirchen": {
+ "raderberg": {
   "_ebene": "Stadtteil",
-  "_raum": "208 / Rodenkirchen",
+  "_raum": "203 / Raderberg",
   "einwohner": {
-   "wert": 18251.0,
+   "wert": 6751.0,
    "jahr": 2025
   },
   "durchschnittsalter": {
-   "wert": 46.63440816028,
+   "wert": 41.38052387301,
    "jahr": 2025
   },
   "haushalte": {
-   "wert": 8883.0,
+   "wert": 3507.0,
    "jahr": 2025
   },
   "anteilEinpersonen": {
-   "wert": 49.127547,
+   "wert": 52.979755,
    "jahr": 2025
   },
   "anteilMitKindern": {
-   "wert": 19.284026,
+   "wert": 17.907043,
    "jahr": 2025
   },
   "wohnungen": {
-   "wert": 9557.0,
+   "wert": 3990.0,
    "jahr": 2025
   },
   "wohnflaecheJeWohnung": {
-   "wert": 95.02134561055,
+   "wert": 69.54586466165,
    "jahr": 2025
   },
   "wohnflaecheJeEinwohner": {
-   "wert": 49.75721878253,
+   "wert": 41.10324396386,
    "jahr": 2025
   },
   "neubauWohnungen": {
-   "wert": 40.0,
+   "wert": 234.0,
    "jahr": 2025
   },
   "anteilGefoerdert": {
-   "wert": 1.726483,
+   "wert": 5.914786,
+   "jahr": 2025
+  }
+ },
+ "raderthal": {
+  "_ebene": "Stadtteil",
+  "_raum": "204 / Raderthal",
+  "einwohner": {
+   "wert": 5358.0,
+   "jahr": 2025
+  },
+  "durchschnittsalter": {
+   "wert": 44.15696155282,
+   "jahr": 2025
+  },
+  "haushalte": {
+   "wert": 2732.0,
+   "jahr": 2025
+  },
+  "anteilEinpersonen": {
+   "wert": 46.412884,
+   "jahr": 2025
+  },
+  "anteilMitKindern": {
+   "wert": 19.106881,
+   "jahr": 2025
+  },
+  "wohnungen": {
+   "wert": 2717.0,
+   "jahr": 2025
+  },
+  "wohnflaecheJeWohnung": {
+   "wert": 84.43246227457,
+   "jahr": 2025
+  },
+  "wohnflaecheJeEinwohner": {
+   "wert": 42.81504292647,
+   "jahr": 2025
+  },
+  "neubauWohnungen": {
+   "wert": 14.0,
+   "jahr": 2025
+  },
+  "anteilGefoerdert": {
+   "wert": 2.649981,
    "jahr": 2025
   }
  },
@@ -791,6 +439,2074 @@
    "jahr": 2025
   }
  },
+ "rondorf": {
+  "_ebene": "Stadtteil",
+  "_raum": "206 / Rondorf",
+  "einwohner": {
+   "wert": 9375.0,
+   "jahr": 2025
+  },
+  "durchschnittsalter": {
+   "wert": 46.09494222222,
+   "jahr": 2025
+  },
+  "haushalte": {
+   "wert": 4485.0,
+   "jahr": 2025
+  },
+  "anteilEinpersonen": {
+   "wert": 40.06689,
+   "jahr": 2025
+  },
+  "anteilMitKindern": {
+   "wert": 21.092531,
+   "jahr": 2025
+  },
+  "wohnungen": {
+   "wert": 4456.0,
+   "jahr": 2025
+  },
+  "wohnflaecheJeWohnung": {
+   "wert": 101.73698384201,
+   "jahr": 2025
+  },
+  "wohnflaecheJeEinwohner": {
+   "wert": 48.35626666667,
+   "jahr": 2025
+  },
+  "neubauWohnungen": {
+   "wert": 24.0,
+   "jahr": 2025
+  },
+  "anteilGefoerdert": {
+   "wert": 6.059245,
+   "jahr": 2025
+  }
+ },
+ "hahnwald": {
+  "_ebene": "Stadtteil",
+  "_raum": "207 / Hahnwald",
+  "einwohner": {
+   "wert": 1940.0,
+   "jahr": 2025
+  },
+  "durchschnittsalter": {
+   "wert": 46.64003436426,
+   "jahr": 2025
+  },
+  "haushalte": {
+   "wert": 850.0,
+   "jahr": 2025
+  },
+  "anteilEinpersonen": {
+   "wert": 31.058824,
+   "jahr": 2025
+  },
+  "anteilMitKindern": {
+   "wert": 26.0,
+   "jahr": 2025
+  },
+  "wohnungen": {
+   "wert": 854.0,
+   "jahr": 2025
+  },
+  "wohnflaecheJeWohnung": {
+   "wert": 224.20960187354,
+   "jahr": 2025
+  },
+  "wohnflaecheJeEinwohner": {
+   "wert": 98.69845360825,
+   "jahr": 2025
+  },
+  "neubauWohnungen": {
+   "wert": 17.0,
+   "jahr": 2025
+  },
+  "anteilGefoerdert": {
+   "wert": 0.0,
+   "jahr": 2025
+  }
+ },
+ "rodenkirchen": {
+  "_ebene": "Stadtteil",
+  "_raum": "208 / Rodenkirchen",
+  "einwohner": {
+   "wert": 18251.0,
+   "jahr": 2025
+  },
+  "durchschnittsalter": {
+   "wert": 46.63440816028,
+   "jahr": 2025
+  },
+  "haushalte": {
+   "wert": 8883.0,
+   "jahr": 2025
+  },
+  "anteilEinpersonen": {
+   "wert": 49.127547,
+   "jahr": 2025
+  },
+  "anteilMitKindern": {
+   "wert": 19.284026,
+   "jahr": 2025
+  },
+  "wohnungen": {
+   "wert": 9557.0,
+   "jahr": 2025
+  },
+  "wohnflaecheJeWohnung": {
+   "wert": 95.02134561055,
+   "jahr": 2025
+  },
+  "wohnflaecheJeEinwohner": {
+   "wert": 49.75721878253,
+   "jahr": 2025
+  },
+  "neubauWohnungen": {
+   "wert": 40.0,
+   "jahr": 2025
+  },
+  "anteilGefoerdert": {
+   "wert": 1.726483,
+   "jahr": 2025
+  }
+ },
+ "weiss": {
+  "_ebene": "Stadtteil",
+  "_raum": "209 / Weiß",
+  "einwohner": {
+   "wert": 5905.0,
+   "jahr": 2025
+  },
+  "durchschnittsalter": {
+   "wert": 46.71339260514,
+   "jahr": 2025
+  },
+  "haushalte": {
+   "wert": 2808.0,
+   "jahr": 2025
+  },
+  "anteilEinpersonen": {
+   "wert": 39.992877,
+   "jahr": 2025
+  },
+  "anteilMitKindern": {
+   "wert": 22.934473,
+   "jahr": 2025
+  },
+  "wohnungen": {
+   "wert": 2818.0,
+   "jahr": 2025
+  },
+  "wohnflaecheJeWohnung": {
+   "wert": 106.01561391057,
+   "jahr": 2025
+  },
+  "wohnflaecheJeEinwohner": {
+   "wert": 50.59305673158,
+   "jahr": 2025
+  },
+  "neubauWohnungen": {
+   "wert": 12.0,
+   "jahr": 2025
+  },
+  "anteilGefoerdert": {
+   "wert": 0.851667,
+   "jahr": 2025
+  }
+ },
+ "suerth": {
+  "_ebene": "Stadtteil",
+  "_raum": "210 / Sürth",
+  "einwohner": {
+   "wert": 10895.0,
+   "jahr": 2025
+  },
+  "durchschnittsalter": {
+   "wert": 45.16020345724,
+   "jahr": 2025
+  },
+  "haushalte": {
+   "wert": 5221.0,
+   "jahr": 2025
+  },
+  "anteilEinpersonen": {
+   "wert": 42.118368,
+   "jahr": 2025
+  },
+  "anteilMitKindern": {
+   "wert": 22.332886,
+   "jahr": 2025
+  },
+  "wohnungen": {
+   "wert": 5185.0,
+   "jahr": 2025
+  },
+  "wohnflaecheJeWohnung": {
+   "wert": 97.83992285439,
+   "jahr": 2025
+  },
+  "wohnflaecheJeEinwohner": {
+   "wert": 46.56264341441,
+   "jahr": 2025
+  },
+  "neubauWohnungen": {
+   "wert": 63.0,
+   "jahr": 2025
+  },
+  "anteilGefoerdert": {
+   "wert": 3.413693,
+   "jahr": 2025
+  }
+ },
+ "godorf": {
+  "_ebene": "Stadtteil",
+  "_raum": "211 / Godorf",
+  "einwohner": {
+   "wert": 2839.0,
+   "jahr": 2025
+  },
+  "durchschnittsalter": {
+   "wert": 41.35913467183,
+   "jahr": 2025
+  },
+  "haushalte": {
+   "wert": 1309.0,
+   "jahr": 2025
+  },
+  "anteilEinpersonen": {
+   "wert": 42.551566,
+   "jahr": 2025
+  },
+  "anteilMitKindern": {
+   "wert": 21.695951,
+   "jahr": 2025
+  },
+  "wohnungen": {
+   "wert": 1198.0,
+   "jahr": 2025
+  },
+  "wohnflaecheJeWohnung": {
+   "wert": 88.75041736227,
+   "jahr": 2025
+  },
+  "wohnflaecheJeEinwohner": {
+   "wert": 37.45086297992,
+   "jahr": 2025
+  },
+  "neubauWohnungen": {
+   "wert": 5.0,
+   "jahr": 2025
+  },
+  "anteilGefoerdert": {
+   "wert": 3.75626,
+   "jahr": 2025
+  }
+ },
+ "immendorf": {
+  "_ebene": "Stadtteil",
+  "_raum": "212 / Immendorf",
+  "einwohner": {
+   "wert": 1997.0,
+   "jahr": 2025
+  },
+  "durchschnittsalter": {
+   "wert": 42.98898347521,
+   "jahr": 2025
+  },
+  "haushalte": {
+   "wert": 918.0,
+   "jahr": 2025
+  },
+  "anteilEinpersonen": {
+   "wert": 37.690632,
+   "jahr": 2025
+  },
+  "anteilMitKindern": {
+   "wert": 25.054466,
+   "jahr": 2025
+  },
+  "wohnungen": {
+   "wert": 954.0,
+   "jahr": 2025
+  },
+  "wohnflaecheJeWohnung": {
+   "wert": 93.39622641509,
+   "jahr": 2025
+  },
+  "wohnflaecheJeEinwohner": {
+   "wert": 44.61692538808,
+   "jahr": 2025
+  },
+  "neubauWohnungen": {
+   "wert": 0.0,
+   "jahr": 2025
+  },
+  "anteilGefoerdert": {
+   "wert": 2.93501,
+   "jahr": 2025
+  }
+ },
+ "meschenich": {
+  "_ebene": "Stadtteil",
+  "_raum": "213 / Meschenich",
+  "einwohner": {
+   "wert": 7854.0,
+   "jahr": 2025
+  },
+  "durchschnittsalter": {
+   "wert": 39.40696884815,
+   "jahr": 2025
+  },
+  "haushalte": {
+   "wert": 3283.0,
+   "jahr": 2025
+  },
+  "anteilEinpersonen": {
+   "wert": 34.602498,
+   "jahr": 2025
+  },
+  "anteilMitKindern": {
+   "wert": 27.50533,
+   "jahr": 2025
+  },
+  "wohnungen": {
+   "wert": 2632.0,
+   "jahr": 2025
+  },
+  "wohnflaecheJeWohnung": {
+   "wert": 87.81800911854,
+   "jahr": 2025
+  },
+  "wohnflaecheJeEinwohner": {
+   "wert": 29.42920804686,
+   "jahr": 2025
+  },
+  "neubauWohnungen": {
+   "wert": 19.0,
+   "jahr": 2025
+  },
+  "anteilGefoerdert": {
+   "wert": 2.659574,
+   "jahr": 2025
+  }
+ },
+ "klettenberg": {
+  "_ebene": "Stadtteil",
+  "_raum": "301 / Klettenberg",
+  "einwohner": {
+   "wert": 10466.0,
+   "jahr": 2025
+  },
+  "durchschnittsalter": {
+   "wert": 43.94819733741,
+   "jahr": 2025
+  },
+  "haushalte": {
+   "wert": 5710.0,
+   "jahr": 2025
+  },
+  "anteilEinpersonen": {
+   "wert": 53.23993,
+   "jahr": 2025
+  },
+  "anteilMitKindern": {
+   "wert": 17.863398,
+   "jahr": 2025
+  },
+  "wohnungen": {
+   "wert": 5693.0,
+   "jahr": 2025
+  },
+  "wohnflaecheJeWohnung": {
+   "wert": 81.82908835412,
+   "jahr": 2025
+  },
+  "wohnflaecheJeEinwohner": {
+   "wert": 44.5110835085,
+   "jahr": 2025
+  },
+  "neubauWohnungen": {
+   "wert": 9.0,
+   "jahr": 2025
+  },
+  "anteilGefoerdert": {
+   "wert": 0.0,
+   "jahr": 2025
+  }
+ },
+ "suelz": {
+  "_ebene": "Stadtteil",
+  "_raum": "302 / Sülz",
+  "einwohner": {
+   "wert": 36652.0,
+   "jahr": 2025
+  },
+  "durchschnittsalter": {
+   "wert": 41.60576730692,
+   "jahr": 2025
+  },
+  "haushalte": {
+   "wert": 22166.0,
+   "jahr": 2025
+  },
+  "anteilEinpersonen": {
+   "wert": 61.377786,
+   "jahr": 2025
+  },
+  "anteilMitKindern": {
+   "wert": 13.317694,
+   "jahr": 2025
+  },
+  "wohnungen": {
+   "wert": 22626.0,
+   "jahr": 2025
+  },
+  "wohnflaecheJeWohnung": {
+   "wert": 69.10160876867,
+   "jahr": 2025
+  },
+  "wohnflaecheJeEinwohner": {
+   "wert": 42.65778129434,
+   "jahr": 2025
+  },
+  "neubauWohnungen": {
+   "wert": 40.0,
+   "jahr": 2025
+  },
+  "anteilGefoerdert": {
+   "wert": 0.782285,
+   "jahr": 2025
+  }
+ },
+ "lindenthal": {
+  "_ebene": "Stadtteil",
+  "_raum": "303 / Lindenthal",
+  "einwohner": {
+   "wert": 31037.0,
+   "jahr": 2025
+  },
+  "durchschnittsalter": {
+   "wert": 42.13804222917,
+   "jahr": 2025
+  },
+  "haushalte": {
+   "wert": 17406.0,
+   "jahr": 2025
+  },
+  "anteilEinpersonen": {
+   "wert": 59.30139,
+   "jahr": 2025
+  },
+  "anteilMitKindern": {
+   "wert": 13.794094,
+   "jahr": 2025
+  },
+  "wohnungen": {
+   "wert": 19090.0,
+   "jahr": 2025
+  },
+  "wohnflaecheJeWohnung": {
+   "wert": 78.15128339445,
+   "jahr": 2025
+  },
+  "wohnflaecheJeEinwohner": {
+   "wert": 48.06869220608,
+   "jahr": 2025
+  },
+  "neubauWohnungen": {
+   "wert": 54.0,
+   "jahr": 2025
+  },
+  "anteilGefoerdert": {
+   "wert": 0.476689,
+   "jahr": 2025
+  }
+ },
+ "braunsfeld": {
+  "_ebene": "Stadtteil",
+  "_raum": "304 / Braunsfeld",
+  "einwohner": {
+   "wert": 12573.0,
+   "jahr": 2025
+  },
+  "durchschnittsalter": {
+   "wert": 42.76409104165,
+   "jahr": 2025
+  },
+  "haushalte": {
+   "wert": 7036.0,
+   "jahr": 2025
+  },
+  "anteilEinpersonen": {
+   "wert": 55.116543,
+   "jahr": 2025
+  },
+  "anteilMitKindern": {
+   "wert": 15.974986,
+   "jahr": 2025
+  },
+  "wohnungen": {
+   "wert": 6949.0,
+   "jahr": 2025
+  },
+  "wohnflaecheJeWohnung": {
+   "wert": 84.90718088934,
+   "jahr": 2025
+  },
+  "wohnflaecheJeEinwohner": {
+   "wert": 46.92754314802,
+   "jahr": 2025
+  },
+  "neubauWohnungen": {
+   "wert": 187.0,
+   "jahr": 2025
+  },
+  "anteilGefoerdert": {
+   "wert": 0.690746,
+   "jahr": 2025
+  }
+ },
+ "muengersdorf": {
+  "_ebene": "Stadtteil",
+  "_raum": "305 / Müngersdorf",
+  "einwohner": {
+   "wert": 8308.0,
+   "jahr": 2025
+  },
+  "durchschnittsalter": {
+   "wert": 45.39117918472,
+   "jahr": 2025
+  },
+  "haushalte": {
+   "wert": 3821.0,
+   "jahr": 2025
+  },
+  "anteilEinpersonen": {
+   "wert": 44.203088,
+   "jahr": 2025
+  },
+  "anteilMitKindern": {
+   "wert": 20.256477,
+   "jahr": 2025
+  },
+  "wohnungen": {
+   "wert": 4124.0,
+   "jahr": 2025
+  },
+  "wohnflaecheJeWohnung": {
+   "wert": 112.09335596508,
+   "jahr": 2025
+  },
+  "wohnflaecheJeEinwohner": {
+   "wert": 55.64191141069,
+   "jahr": 2025
+  },
+  "neubauWohnungen": {
+   "wert": 19.0,
+   "jahr": 2025
+  },
+  "anteilGefoerdert": {
+   "wert": 7.104752,
+   "jahr": 2025
+  }
+ },
+ "junkersdorf": {
+  "_ebene": "Stadtteil",
+  "_raum": "306 / Junkersdorf",
+  "einwohner": {
+   "wert": 15211.0,
+   "jahr": 2025
+  },
+  "durchschnittsalter": {
+   "wert": 42.92934937436,
+   "jahr": 2025
+  },
+  "haushalte": {
+   "wert": 7745.0,
+   "jahr": 2025
+  },
+  "anteilEinpersonen": {
+   "wert": 47.96643,
+   "jahr": 2025
+  },
+  "anteilMitKindern": {
+   "wert": 19.573919,
+   "jahr": 2025
+  },
+  "wohnungen": {
+   "wert": 7769.0,
+   "jahr": 2025
+  },
+  "wohnflaecheJeWohnung": {
+   "wert": 103.02020852105,
+   "jahr": 2025
+  },
+  "wohnflaecheJeEinwohner": {
+   "wert": 52.61744789955,
+   "jahr": 2025
+  },
+  "neubauWohnungen": {
+   "wert": 43.0,
+   "jahr": 2025
+  },
+  "anteilGefoerdert": {
+   "wert": 1.248551,
+   "jahr": 2025
+  }
+ },
+ "weiden": {
+  "_ebene": "Stadtteil",
+  "_raum": "307 / Weiden",
+  "einwohner": {
+   "wert": 17998.0,
+   "jahr": 2025
+  },
+  "durchschnittsalter": {
+   "wert": 45.07657332296,
+   "jahr": 2025
+  },
+  "haushalte": {
+   "wert": 9519.0,
+   "jahr": 2025
+  },
+  "anteilEinpersonen": {
+   "wert": 50.572539,
+   "jahr": 2025
+  },
+  "anteilMitKindern": {
+   "wert": 16.472319,
+   "jahr": 2025
+  },
+  "wohnungen": {
+   "wert": 9413.0,
+   "jahr": 2025
+  },
+  "wohnflaecheJeWohnung": {
+   "wert": 86.44427918836,
+   "jahr": 2025
+  },
+  "wohnflaecheJeEinwohner": {
+   "wert": 45.21057895322,
+   "jahr": 2025
+  },
+  "neubauWohnungen": {
+   "wert": 79.0,
+   "jahr": 2025
+  },
+  "anteilGefoerdert": {
+   "wert": 0.998618,
+   "jahr": 2025
+  }
+ },
+ "loevenich": {
+  "_ebene": "Stadtteil",
+  "_raum": "308 / Lövenich",
+  "einwohner": {
+   "wert": 9122.0,
+   "jahr": 2025
+  },
+  "durchschnittsalter": {
+   "wert": 45.23248739312,
+   "jahr": 2025
+  },
+  "haushalte": {
+   "wert": 4343.0,
+   "jahr": 2025
+  },
+  "anteilEinpersonen": {
+   "wert": 39.419756,
+   "jahr": 2025
+  },
+  "anteilMitKindern": {
+   "wert": 23.509095,
+   "jahr": 2025
+  },
+  "wohnungen": {
+   "wert": 4404.0,
+   "jahr": 2025
+  },
+  "wohnflaecheJeWohnung": {
+   "wert": 105.16757493188,
+   "jahr": 2025
+  },
+  "wohnflaecheJeEinwohner": {
+   "wert": 50.7737338303,
+   "jahr": 2025
+  },
+  "neubauWohnungen": {
+   "wert": 11.0,
+   "jahr": 2025
+  },
+  "anteilGefoerdert": {
+   "wert": 0.0,
+   "jahr": 2025
+  }
+ },
+ "widdersdorf": {
+  "_ebene": "Stadtteil",
+  "_raum": "309 / Widdersdorf",
+  "einwohner": {
+   "wert": 12288.0,
+   "jahr": 2025
+  },
+  "durchschnittsalter": {
+   "wert": 41.67577446832,
+   "jahr": 2025
+  },
+  "haushalte": {
+   "wert": 4990.0,
+   "jahr": 2025
+  },
+  "anteilEinpersonen": {
+   "wert": 30.561122,
+   "jahr": 2025
+  },
+  "anteilMitKindern": {
+   "wert": 33.687375,
+   "jahr": 2025
+  },
+  "wohnungen": {
+   "wert": 4951.0,
+   "jahr": 2025
+  },
+  "wohnflaecheJeWohnung": {
+   "wert": 117.61199757625,
+   "jahr": 2025
+  },
+  "wohnflaecheJeEinwohner": {
+   "wert": 47.38745117188,
+   "jahr": 2025
+  },
+  "neubauWohnungen": {
+   "wert": 64.0,
+   "jahr": 2025
+  },
+  "anteilGefoerdert": {
+   "wert": 4.221369,
+   "jahr": 2025
+  }
+ },
+ "ehrenfeld": {
+  "_ebene": "Stadtteil",
+  "_raum": "401 / Ehrenfeld",
+  "einwohner": {
+   "wert": 39467.0,
+   "jahr": 2025
+  },
+  "durchschnittsalter": {
+   "wert": 39.80191679124,
+   "jahr": 2025
+  },
+  "haushalte": {
+   "wert": 23741.0,
+   "jahr": 2025
+  },
+  "anteilEinpersonen": {
+   "wert": 63.442989,
+   "jahr": 2025
+  },
+  "anteilMitKindern": {
+   "wert": 12.657428,
+   "jahr": 2025
+  },
+  "wohnungen": {
+   "wert": 24496.0,
+   "jahr": 2025
+  },
+  "wohnflaecheJeWohnung": {
+   "wert": 62.07654310908,
+   "jahr": 2025
+  },
+  "wohnflaecheJeEinwohner": {
+   "wert": 38.52907492335,
+   "jahr": 2025
+  },
+  "neubauWohnungen": {
+   "wert": 320.0,
+   "jahr": 2025
+  },
+  "anteilGefoerdert": {
+   "wert": 5.93158,
+   "jahr": 2025
+  }
+ },
+ "neuehrenfeld": {
+  "_ebene": "Stadtteil",
+  "_raum": "402 / Neuehrenfeld",
+  "einwohner": {
+   "wert": 24329.0,
+   "jahr": 2025
+  },
+  "durchschnittsalter": {
+   "wert": 42.24563620919,
+   "jahr": 2025
+  },
+  "haushalte": {
+   "wert": 13672.0,
+   "jahr": 2025
+  },
+  "anteilEinpersonen": {
+   "wert": 56.860737,
+   "jahr": 2025
+  },
+  "anteilMitKindern": {
+   "wert": 15.923054,
+   "jahr": 2025
+  },
+  "wohnungen": {
+   "wert": 13404.0,
+   "jahr": 2025
+  },
+  "wohnflaecheJeWohnung": {
+   "wert": 71.90741569681,
+   "jahr": 2025
+  },
+  "wohnflaecheJeEinwohner": {
+   "wert": 39.61720580377,
+   "jahr": 2025
+  },
+  "neubauWohnungen": {
+   "wert": 79.0,
+   "jahr": 2025
+  },
+  "anteilGefoerdert": {
+   "wert": 3.894359,
+   "jahr": 2025
+  }
+ },
+ "bickendorf": {
+  "_ebene": "Stadtteil",
+  "_raum": "403 / Bickendorf",
+  "einwohner": {
+   "wert": 17053.0,
+   "jahr": 2025
+  },
+  "durchschnittsalter": {
+   "wert": 42.26862331164,
+   "jahr": 2025
+  },
+  "haushalte": {
+   "wert": 8664.0,
+   "jahr": 2025
+  },
+  "anteilEinpersonen": {
+   "wert": 47.783934,
+   "jahr": 2025
+  },
+  "anteilMitKindern": {
+   "wert": 20.325485,
+   "jahr": 2025
+  },
+  "wohnungen": {
+   "wert": 8649.0,
+   "jahr": 2025
+  },
+  "wohnflaecheJeWohnung": {
+   "wert": 71.49577985894,
+   "jahr": 2025
+  },
+  "wohnflaecheJeEinwohner": {
+   "wert": 36.26147891867,
+   "jahr": 2025
+  },
+  "neubauWohnungen": {
+   "wert": 19.0,
+   "jahr": 2025
+  },
+  "anteilGefoerdert": {
+   "wert": 20.464793,
+   "jahr": 2025
+  }
+ },
+ "vogelsang": {
+  "_ebene": "Stadtteil",
+  "_raum": "404 / Vogelsang",
+  "einwohner": {
+   "wert": 8564.0,
+   "jahr": 2025
+  },
+  "durchschnittsalter": {
+   "wert": 43.67717577456,
+   "jahr": 2025
+  },
+  "haushalte": {
+   "wert": 4114.0,
+   "jahr": 2025
+  },
+  "anteilEinpersonen": {
+   "wert": 41.225085,
+   "jahr": 2025
+  },
+  "anteilMitKindern": {
+   "wert": 22.04667,
+   "jahr": 2025
+  },
+  "wohnungen": {
+   "wert": 3931.0,
+   "jahr": 2025
+  },
+  "wohnflaecheJeWohnung": {
+   "wert": 90.05291274485,
+   "jahr": 2025
+  },
+  "wohnflaecheJeEinwohner": {
+   "wert": 41.3355908454,
+   "jahr": 2025
+  },
+  "neubauWohnungen": {
+   "wert": 15.0,
+   "jahr": 2025
+  },
+  "anteilGefoerdert": {
+   "wert": 4.858814,
+   "jahr": 2025
+  }
+ },
+ "bocklemuend-mengenich": {
+  "_ebene": "Stadtteil",
+  "_raum": "405 / Bocklemünd/Mengenich",
+  "einwohner": {
+   "wert": 10650.0,
+   "jahr": 2025
+  },
+  "durchschnittsalter": {
+   "wert": 42.82593896714,
+   "jahr": 2025
+  },
+  "haushalte": {
+   "wert": 4909.0,
+   "jahr": 2025
+  },
+  "anteilEinpersonen": {
+   "wert": 42.900794,
+   "jahr": 2025
+  },
+  "anteilMitKindern": {
+   "wert": 23.100428,
+   "jahr": 2025
+  },
+  "wohnungen": {
+   "wert": 4968.0,
+   "jahr": 2025
+  },
+  "wohnflaecheJeWohnung": {
+   "wert": 78.88687600644,
+   "jahr": 2025
+  },
+  "wohnflaecheJeEinwohner": {
+   "wert": 36.79906103286,
+   "jahr": 2025
+  },
+  "neubauWohnungen": {
+   "wert": 6.0,
+   "jahr": 2025
+  },
+  "anteilGefoerdert": {
+   "wert": 12.902576,
+   "jahr": 2025
+  }
+ },
+ "ossendorf": {
+  "_ebene": "Stadtteil",
+  "_raum": "406 / Ossendorf",
+  "einwohner": {
+   "wert": 12512.0,
+   "jahr": 2025
+  },
+  "durchschnittsalter": {
+   "wert": 39.64599317988,
+   "jahr": 2025
+  },
+  "haushalte": {
+   "wert": 5413.0,
+   "jahr": 2025
+  },
+  "anteilEinpersonen": {
+   "wert": 38.777018,
+   "jahr": 2025
+  },
+  "anteilMitKindern": {
+   "wert": 25.90061,
+   "jahr": 2025
+  },
+  "wohnungen": {
+   "wert": 5288.0,
+   "jahr": 2025
+  },
+  "wohnflaecheJeWohnung": {
+   "wert": 80.75567322239,
+   "jahr": 2025
+  },
+  "wohnflaecheJeEinwohner": {
+   "wert": 34.13011508951,
+   "jahr": 2025
+  },
+  "neubauWohnungen": {
+   "wert": 10.0,
+   "jahr": 2025
+  },
+  "anteilGefoerdert": {
+   "wert": 27.080181,
+   "jahr": 2025
+  }
+ },
+ "nippes": {
+  "_ebene": "Stadtteil",
+  "_raum": "501 / Nippes",
+  "einwohner": {
+   "wert": 37088.0,
+   "jahr": 2025
+  },
+  "durchschnittsalter": {
+   "wert": 42.10587656385,
+   "jahr": 2025
+  },
+  "haushalte": {
+   "wert": 21233.0,
+   "jahr": 2025
+  },
+  "anteilEinpersonen": {
+   "wert": 57.60844,
+   "jahr": 2025
+  },
+  "anteilMitKindern": {
+   "wert": 16.300099,
+   "jahr": 2025
+  },
+  "wohnungen": {
+   "wert": 21067.0,
+   "jahr": 2025
+  },
+  "wohnflaecheJeWohnung": {
+   "wert": 69.94251673233,
+   "jahr": 2025
+  },
+  "wohnflaecheJeEinwohner": {
+   "wert": 39.72926553063,
+   "jahr": 2025
+  },
+  "neubauWohnungen": {
+   "wert": 195.0,
+   "jahr": 2025
+  },
+  "anteilGefoerdert": {
+   "wert": 3.977785,
+   "jahr": 2025
+  }
+ },
+ "mauenheim": {
+  "_ebene": "Stadtteil",
+  "_raum": "502 / Mauenheim",
+  "einwohner": {
+   "wert": 5587.0,
+   "jahr": 2025
+  },
+  "durchschnittsalter": {
+   "wert": 44.19924228865,
+   "jahr": 2025
+  },
+  "haushalte": {
+   "wert": 3091.0,
+   "jahr": 2025
+  },
+  "anteilEinpersonen": {
+   "wert": 53.736655,
+   "jahr": 2025
+  },
+  "anteilMitKindern": {
+   "wert": 16.175995,
+   "jahr": 2025
+  },
+  "wohnungen": {
+   "wert": 3074.0,
+   "jahr": 2025
+  },
+  "wohnflaecheJeWohnung": {
+   "wert": 72.98633702017,
+   "jahr": 2025
+  },
+  "wohnflaecheJeEinwohner": {
+   "wert": 40.15750850188,
+   "jahr": 2025
+  },
+  "neubauWohnungen": {
+   "wert": 44.0,
+   "jahr": 2025
+  },
+  "anteilGefoerdert": {
+   "wert": 2.049446,
+   "jahr": 2025
+  }
+ },
+ "riehl": {
+  "_ebene": "Stadtteil",
+  "_raum": "503 / Riehl",
+  "einwohner": {
+   "wert": 11866.0,
+   "jahr": 2025
+  },
+  "durchschnittsalter": {
+   "wert": 48.97442974324,
+   "jahr": 2025
+  },
+  "haushalte": {
+   "wert": 5844.0,
+   "jahr": 2025
+  },
+  "anteilEinpersonen": {
+   "wert": 54.603012,
+   "jahr": 2025
+  },
+  "anteilMitKindern": {
+   "wert": 13.963039,
+   "jahr": 2025
+  },
+  "wohnungen": {
+   "wert": 6157.0,
+   "jahr": 2025
+  },
+  "wohnflaecheJeWohnung": {
+   "wert": 73.48984895241,
+   "jahr": 2025
+  },
+  "wohnflaecheJeEinwohner": {
+   "wert": 38.13222652958,
+   "jahr": 2025
+  },
+  "neubauWohnungen": {
+   "wert": -50.0,
+   "jahr": 2025
+  },
+  "anteilGefoerdert": {
+   "wert": 8.413188,
+   "jahr": 2025
+  }
+ },
+ "niehl": {
+  "_ebene": "Stadtteil",
+  "_raum": "504 / Niehl",
+  "einwohner": {
+   "wert": 20270.0,
+   "jahr": 2025
+  },
+  "durchschnittsalter": {
+   "wert": 43.45477717481,
+   "jahr": 2025
+  },
+  "haushalte": {
+   "wert": 10581.0,
+   "jahr": 2025
+  },
+  "anteilEinpersonen": {
+   "wert": 50.902561,
+   "jahr": 2025
+  },
+  "anteilMitKindern": {
+   "wert": 17.786599,
+   "jahr": 2025
+  },
+  "wohnungen": {
+   "wert": 10248.0,
+   "jahr": 2025
+  },
+  "wohnflaecheJeWohnung": {
+   "wert": 73.75341530055,
+   "jahr": 2025
+  },
+  "wohnflaecheJeEinwohner": {
+   "wert": 37.28786383818,
+   "jahr": 2025
+  },
+  "neubauWohnungen": {
+   "wert": 41.0,
+   "jahr": 2025
+  },
+  "anteilGefoerdert": {
+   "wert": 7.757611,
+   "jahr": 2025
+  }
+ },
+ "weidenpesch": {
+  "_ebene": "Stadtteil",
+  "_raum": "505 / Weidenpesch",
+  "einwohner": {
+   "wert": 13663.0,
+   "jahr": 2025
+  },
+  "durchschnittsalter": {
+   "wert": 44.30461221303,
+   "jahr": 2025
+  },
+  "haushalte": {
+   "wert": 7728.0,
+   "jahr": 2025
+  },
+  "anteilEinpersonen": {
+   "wert": 55.939441,
+   "jahr": 2025
+  },
+  "anteilMitKindern": {
+   "wert": 15.243271,
+   "jahr": 2025
+  },
+  "wohnungen": {
+   "wert": 7591.0,
+   "jahr": 2025
+  },
+  "wohnflaecheJeWohnung": {
+   "wert": 69.26043999473,
+   "jahr": 2025
+  },
+  "wohnflaecheJeEinwohner": {
+   "wert": 38.48027519578,
+   "jahr": 2025
+  },
+  "neubauWohnungen": {
+   "wert": 15.0,
+   "jahr": 2025
+  },
+  "anteilGefoerdert": {
+   "wert": 5.585561,
+   "jahr": 2025
+  }
+ },
+ "longerich": {
+  "_ebene": "Stadtteil",
+  "_raum": "506 / Longerich",
+  "einwohner": {
+   "wert": 14120.0,
+   "jahr": 2025
+  },
+  "durchschnittsalter": {
+   "wert": 44.5058427762,
+   "jahr": 2025
+  },
+  "haushalte": {
+   "wert": 6906.0,
+   "jahr": 2025
+  },
+  "anteilEinpersonen": {
+   "wert": 44.178975,
+   "jahr": 2025
+  },
+  "anteilMitKindern": {
+   "wert": 20.344628,
+   "jahr": 2025
+  },
+  "wohnungen": {
+   "wert": 6902.0,
+   "jahr": 2025
+  },
+  "wohnflaecheJeWohnung": {
+   "wert": 85.25152129817,
+   "jahr": 2025
+  },
+  "wohnflaecheJeEinwohner": {
+   "wert": 41.67181303116,
+   "jahr": 2025
+  },
+  "neubauWohnungen": {
+   "wert": 56.0,
+   "jahr": 2025
+  },
+  "anteilGefoerdert": {
+   "wert": 4.433497,
+   "jahr": 2025
+  }
+ },
+ "bilderstoeckchen": {
+  "_ebene": "Stadtteil",
+  "_raum": "507 / Bilderstöckchen",
+  "einwohner": {
+   "wert": 15258.0,
+   "jahr": 2025
+  },
+  "durchschnittsalter": {
+   "wert": 41.01612268974,
+   "jahr": 2025
+  },
+  "haushalte": {
+   "wert": 7381.0,
+   "jahr": 2025
+  },
+  "anteilEinpersonen": {
+   "wert": 45.806801,
+   "jahr": 2025
+  },
+  "anteilMitKindern": {
+   "wert": 21.853407,
+   "jahr": 2025
+  },
+  "wohnungen": {
+   "wert": 7038.0,
+   "jahr": 2025
+  },
+  "wohnflaecheJeWohnung": {
+   "wert": 73.27848820688,
+   "jahr": 2025
+  },
+  "wohnflaecheJeEinwohner": {
+   "wert": 33.80089133569,
+   "jahr": 2025
+  },
+  "neubauWohnungen": {
+   "wert": 15.0,
+   "jahr": 2025
+  },
+  "anteilGefoerdert": {
+   "wert": 6.848536,
+   "jahr": 2025
+  }
+ },
+ "merkenich": {
+  "_ebene": "Stadtteil",
+  "_raum": "601 / Merkenich",
+  "einwohner": {
+   "wert": 5954.0,
+   "jahr": 2025
+  },
+  "durchschnittsalter": {
+   "wert": 43.51076307244,
+   "jahr": 2025
+  },
+  "haushalte": {
+   "wert": 2870.0,
+   "jahr": 2025
+  },
+  "anteilEinpersonen": {
+   "wert": 40.348432,
+   "jahr": 2025
+  },
+  "anteilMitKindern": {
+   "wert": 20.383275,
+   "jahr": 2025
+  },
+  "wohnungen": {
+   "wert": 2741.0,
+   "jahr": 2025
+  },
+  "wohnflaecheJeWohnung": {
+   "wert": 94.57497263772,
+   "jahr": 2025
+  },
+  "wohnflaecheJeEinwohner": {
+   "wert": 43.53879744709,
+   "jahr": 2025
+  },
+  "neubauWohnungen": {
+   "wert": 6.0,
+   "jahr": 2025
+  },
+  "anteilGefoerdert": {
+   "wert": 1.9336,
+   "jahr": 2025
+  }
+ },
+ "fuehlingen": {
+  "_ebene": "Stadtteil",
+  "_raum": "602 / Fühlingen",
+  "einwohner": {
+   "wert": 2385.0,
+   "jahr": 2025
+  },
+  "durchschnittsalter": {
+   "wert": 43.02948986723,
+   "jahr": 2025
+  },
+  "haushalte": {
+   "wert": 961.0,
+   "jahr": 2025
+  },
+  "anteilEinpersonen": {
+   "wert": 35.796046,
+   "jahr": 2025
+  },
+  "anteilMitKindern": {
+   "wert": 20.395421,
+   "jahr": 2025
+  },
+  "wohnungen": {
+   "wert": 1004.0,
+   "jahr": 2025
+  },
+  "wohnflaecheJeWohnung": {
+   "wert": 107.98007968127,
+   "jahr": 2025
+  },
+  "wohnflaecheJeEinwohner": {
+   "wert": 45.45576519916,
+   "jahr": 2025
+  },
+  "neubauWohnungen": {
+   "wert": 0.0,
+   "jahr": 2025
+  },
+  "anteilGefoerdert": {
+   "wert": 0.0,
+   "jahr": 2025
+  }
+ },
+ "seeberg": {
+  "_ebene": "Stadtteil",
+  "_raum": "603 / Seeberg",
+  "einwohner": {
+   "wert": 11070.0,
+   "jahr": 2025
+  },
+  "durchschnittsalter": {
+   "wert": 42.0944519723,
+   "jahr": 2025
+  },
+  "haushalte": {
+   "wert": 4840.0,
+   "jahr": 2025
+  },
+  "anteilEinpersonen": {
+   "wert": 35.227273,
+   "jahr": 2025
+  },
+  "anteilMitKindern": {
+   "wert": 26.239669,
+   "jahr": 2025
+  },
+  "wohnungen": {
+   "wert": 4684.0,
+   "jahr": 2025
+  },
+  "wohnflaecheJeWohnung": {
+   "wert": 78.4658411614,
+   "jahr": 2025
+  },
+  "wohnflaecheJeEinwohner": {
+   "wert": 33.20090334237,
+   "jahr": 2025
+  },
+  "neubauWohnungen": {
+   "wert": 0.0,
+   "jahr": 2025
+  },
+  "anteilGefoerdert": {
+   "wert": 13.087105,
+   "jahr": 2025
+  }
+ },
+ "heimersdorf": {
+  "_ebene": "Stadtteil",
+  "_raum": "604 / Heimersdorf",
+  "einwohner": {
+   "wert": 6319.0,
+   "jahr": 2025
+  },
+  "durchschnittsalter": {
+   "wert": 46.20376378119,
+   "jahr": 2025
+  },
+  "haushalte": {
+   "wert": 2965.0,
+   "jahr": 2025
+  },
+  "anteilEinpersonen": {
+   "wert": 41.382799,
+   "jahr": 2025
+  },
+  "anteilMitKindern": {
+   "wert": 21.349073,
+   "jahr": 2025
+  },
+  "wohnungen": {
+   "wert": 3018.0,
+   "jahr": 2025
+  },
+  "wohnflaecheJeWohnung": {
+   "wert": 93.75811795891,
+   "jahr": 2025
+  },
+  "wohnflaecheJeEinwohner": {
+   "wert": 44.77955372686,
+   "jahr": 2025
+  },
+  "neubauWohnungen": {
+   "wert": 6.0,
+   "jahr": 2025
+  },
+  "anteilGefoerdert": {
+   "wert": 0.894632,
+   "jahr": 2025
+  }
+ },
+ "lindweiler": {
+  "_ebene": "Stadtteil",
+  "_raum": "605 / Lindweiler",
+  "einwohner": {
+   "wert": 3509.0,
+   "jahr": 2025
+  },
+  "durchschnittsalter": {
+   "wert": 43.9152892562,
+   "jahr": 2025
+  },
+  "haushalte": {
+   "wert": 1576.0,
+   "jahr": 2025
+  },
+  "anteilEinpersonen": {
+   "wert": 39.784264,
+   "jahr": 2025
+  },
+  "anteilMitKindern": {
+   "wert": 23.857868,
+   "jahr": 2025
+  },
+  "wohnungen": {
+   "wert": 1531.0,
+   "jahr": 2025
+  },
+  "wohnflaecheJeWohnung": {
+   "wert": 87.18158066623,
+   "jahr": 2025
+  },
+  "wohnflaecheJeEinwohner": {
+   "wert": 38.03790253634,
+   "jahr": 2025
+  },
+  "neubauWohnungen": {
+   "wert": 0.0,
+   "jahr": 2025
+  },
+  "anteilGefoerdert": {
+   "wert": 19.333768,
+   "jahr": 2025
+  }
+ },
+ "pesch": {
+  "_ebene": "Stadtteil",
+  "_raum": "606 / Pesch",
+  "einwohner": {
+   "wert": 7826.0,
+   "jahr": 2025
+  },
+  "durchschnittsalter": {
+   "wert": 46.43158488798,
+   "jahr": 2025
+  },
+  "haushalte": {
+   "wert": 3753.0,
+   "jahr": 2025
+  },
+  "anteilEinpersonen": {
+   "wert": 38.902212,
+   "jahr": 2025
+  },
+  "anteilMitKindern": {
+   "wert": 22.328804,
+   "jahr": 2025
+  },
+  "wohnungen": {
+   "wert": 3661.0,
+   "jahr": 2025
+  },
+  "wohnflaecheJeWohnung": {
+   "wert": 100.45042338159,
+   "jahr": 2025
+  },
+  "wohnflaecheJeEinwohner": {
+   "wert": 46.99067211858,
+   "jahr": 2025
+  },
+  "neubauWohnungen": {
+   "wert": 0.0,
+   "jahr": 2024
+  },
+  "anteilGefoerdert": {
+   "wert": 0.573613,
+   "jahr": 2025
+  }
+ },
+ "esch-auweiler": {
+  "_ebene": "Stadtteil",
+  "_raum": "607 / Esch/Auweiler",
+  "einwohner": {
+   "wert": 6990.0,
+   "jahr": 2025
+  },
+  "durchschnittsalter": {
+   "wert": 44.70486409156,
+   "jahr": 2025
+  },
+  "haushalte": {
+   "wert": 3122.0,
+   "jahr": 2025
+  },
+  "anteilEinpersonen": {
+   "wert": 35.874439,
+   "jahr": 2025
+  },
+  "anteilMitKindern": {
+   "wert": 24.3754,
+   "jahr": 2025
+  },
+  "wohnungen": {
+   "wert": 3048.0,
+   "jahr": 2025
+  },
+  "wohnflaecheJeWohnung": {
+   "wert": 107.4593175853,
+   "jahr": 2025
+  },
+  "wohnflaecheJeEinwohner": {
+   "wert": 46.85779685265,
+   "jahr": 2025
+  },
+  "neubauWohnungen": {
+   "wert": 0.0,
+   "jahr": 2025
+  },
+  "anteilGefoerdert": {
+   "wert": 4.265091,
+   "jahr": 2025
+  }
+ },
+ "volkhoven-weiler": {
+  "_ebene": "Stadtteil",
+  "_raum": "608 / Volkhoven/Weiler",
+  "einwohner": {
+   "wert": 6577.0,
+   "jahr": 2025
+  },
+  "durchschnittsalter": {
+   "wert": 41.00535958644,
+   "jahr": 2025
+  },
+  "haushalte": {
+   "wert": 2778.0,
+   "jahr": 2025
+  },
+  "anteilEinpersonen": {
+   "wert": 31.857451,
+   "jahr": 2025
+  },
+  "anteilMitKindern": {
+   "wert": 27.933765,
+   "jahr": 2025
+  },
+  "wohnungen": {
+   "wert": 2559.0,
+   "jahr": 2025
+  },
+  "wohnflaecheJeWohnung": {
+   "wert": 90.00898788589,
+   "jahr": 2025
+  },
+  "wohnflaecheJeEinwohner": {
+   "wert": 35.02098221073,
+   "jahr": 2025
+  },
+  "neubauWohnungen": {
+   "wert": 11.0,
+   "jahr": 2025
+  },
+  "anteilGefoerdert": {
+   "wert": 35.717076,
+   "jahr": 2025
+  }
+ },
+ "chorweiler": {
+  "_ebene": "Stadtteil",
+  "_raum": "609 / Chorweiler",
+  "einwohner": {
+   "wert": 12868.0,
+   "jahr": 2025
+  },
+  "durchschnittsalter": {
+   "wert": 42.04719070563,
+   "jahr": 2025
+  },
+  "haushalte": {
+   "wert": 5347.0,
+   "jahr": 2025
+  },
+  "anteilEinpersonen": {
+   "wert": 33.196185,
+   "jahr": 2025
+  },
+  "anteilMitKindern": {
+   "wert": 28.240135,
+   "jahr": 2025
+  },
+  "wohnungen": {
+   "wert": 5635.0,
+   "jahr": 2025
+  },
+  "wohnflaecheJeWohnung": {
+   "wert": 71.38456078083,
+   "jahr": 2025
+  },
+  "wohnflaecheJeEinwohner": {
+   "wert": 31.25986944358,
+   "jahr": 2025
+  },
+  "neubauWohnungen": {
+   "wert": 28.0,
+   "jahr": 2025
+  },
+  "anteilGefoerdert": {
+   "wert": 65.217391,
+   "jahr": 2025
+  }
+ },
+ "blumenberg": {
+  "_ebene": "Stadtteil",
+  "_raum": "610 / Blumenberg",
+  "einwohner": {
+   "wert": 5156.0,
+   "jahr": 2025
+  },
+  "durchschnittsalter": {
+   "wert": 42.62191298164,
+   "jahr": 2025
+  },
+  "haushalte": {
+   "wert": 2030.0,
+   "jahr": 2025
+  },
+  "anteilEinpersonen": {
+   "wert": 28.128079,
+   "jahr": 2025
+  },
+  "anteilMitKindern": {
+   "wert": 24.433498,
+   "jahr": 2025
+  },
+  "wohnungen": {
+   "wert": 1928.0,
+   "jahr": 2025
+  },
+  "wohnflaecheJeWohnung": {
+   "wert": 93.93153526971,
+   "jahr": 2025
+  },
+  "wohnflaecheJeEinwohner": {
+   "wert": 35.12412723041,
+   "jahr": 2025
+  },
+  "neubauWohnungen": {
+   "wert": 0.0,
+   "jahr": 2025
+  },
+  "anteilGefoerdert": {
+   "wert": 21.680497,
+   "jahr": 2025
+  }
+ },
+ "roggendorf-thenhoven": {
+  "_ebene": "Stadtteil",
+  "_raum": "611 / Roggendorf/Thenhoven",
+  "einwohner": {
+   "wert": 4894.0,
+   "jahr": 2025
+  },
+  "durchschnittsalter": {
+   "wert": 39.68456272987,
+   "jahr": 2025
+  },
+  "haushalte": {
+   "wert": 1984.0,
+   "jahr": 2025
+  },
+  "anteilEinpersonen": {
+   "wert": 33.316532,
+   "jahr": 2025
+  },
+  "anteilMitKindern": {
+   "wert": 30.947581,
+   "jahr": 2025
+  },
+  "wohnungen": {
+   "wert": 1916.0,
+   "jahr": 2025
+  },
+  "wohnflaecheJeWohnung": {
+   "wert": 98.9003131524,
+   "jahr": 2025
+  },
+  "wohnflaecheJeEinwohner": {
+   "wert": 38.71945239068,
+   "jahr": 2025
+  },
+  "neubauWohnungen": {
+   "wert": 8.0,
+   "jahr": 2025
+  },
+  "anteilGefoerdert": {
+   "wert": 19.415448,
+   "jahr": 2025
+  }
+ },
+ "worringen": {
+  "_ebene": "Stadtteil",
+  "_raum": "612 / Worringen",
+  "einwohner": {
+   "wert": 10443.0,
+   "jahr": 2025
+  },
+  "durchschnittsalter": {
+   "wert": 43.11866002745,
+   "jahr": 2025
+  },
+  "haushalte": {
+   "wert": 4937.0,
+   "jahr": 2025
+  },
+  "anteilEinpersonen": {
+   "wert": 40.328134,
+   "jahr": 2025
+  },
+  "anteilMitKindern": {
+   "wert": 23.739113,
+   "jahr": 2025
+  },
+  "wohnungen": {
+   "wert": 4888.0,
+   "jahr": 2025
+  },
+  "wohnflaecheJeWohnung": {
+   "wert": 86.68044189853,
+   "jahr": 2025
+  },
+  "wohnflaecheJeEinwohner": {
+   "wert": 40.57205783779,
+   "jahr": 2025
+  },
+  "neubauWohnungen": {
+   "wert": 25.0,
+   "jahr": 2025
+  },
+  "anteilGefoerdert": {
+   "wert": 2.639116,
+   "jahr": 2025
+  }
+ },
+ "poll": {
+  "_ebene": "Stadtteil",
+  "_raum": "701 / Poll",
+  "einwohner": {
+   "wert": 11379.0,
+   "jahr": 2025
+  },
+  "durchschnittsalter": {
+   "wert": 44.82713038638,
+   "jahr": 2025
+  },
+  "haushalte": {
+   "wert": 5859.0,
+   "jahr": 2025
+  },
+  "anteilEinpersonen": {
+   "wert": 47.9092,
+   "jahr": 2025
+  },
+  "anteilMitKindern": {
+   "wert": 18.194231,
+   "jahr": 2025
+  },
+  "wohnungen": {
+   "wert": 5903.0,
+   "jahr": 2025
+  },
+  "wohnflaecheJeWohnung": {
+   "wert": 82.18973403354,
+   "jahr": 2025
+  },
+  "wohnflaecheJeEinwohner": {
+   "wert": 42.63696282626,
+   "jahr": 2025
+  },
+  "neubauWohnungen": {
+   "wert": 126.0,
+   "jahr": 2025
+  },
+  "anteilGefoerdert": {
+   "wert": 7.843469,
+   "jahr": 2025
+  }
+ },
+ "westhoven": {
+  "_ebene": "Stadtteil",
+  "_raum": "702 / Westhoven",
+  "einwohner": {
+   "wert": 5633.0,
+   "jahr": 2025
+  },
+  "durchschnittsalter": {
+   "wert": 46.53730989999,
+   "jahr": 2025
+  },
+  "haushalte": {
+   "wert": 2854.0,
+   "jahr": 2025
+  },
+  "anteilEinpersonen": {
+   "wert": 49.053959,
+   "jahr": 2025
+  },
+  "anteilMitKindern": {
+   "wert": 17.79958,
+   "jahr": 2025
+  },
+  "wohnungen": {
+   "wert": 2509.0,
+   "jahr": 2025
+  },
+  "wohnflaecheJeWohnung": {
+   "wert": 84.21642088481,
+   "jahr": 2025
+  },
+  "wohnflaecheJeEinwohner": {
+   "wert": 37.51091780579,
+   "jahr": 2025
+  },
+  "neubauWohnungen": {
+   "wert": 0.0,
+   "jahr": 2025
+  },
+  "anteilGefoerdert": {
+   "wert": 6.05819,
+   "jahr": 2025
+  }
+ },
+ "ensen": {
+  "_ebene": "Stadtteil",
+  "_raum": "703 / Ensen",
+  "einwohner": {
+   "wert": 7731.0,
+   "jahr": 2025
+  },
+  "durchschnittsalter": {
+   "wert": 44.1042879317,
+   "jahr": 2025
+  },
+  "haushalte": {
+   "wert": 3647.0,
+   "jahr": 2025
+  },
+  "anteilEinpersonen": {
+   "wert": 44.282972,
+   "jahr": 2025
+  },
+  "anteilMitKindern": {
+   "wert": 20.153551,
+   "jahr": 2025
+  },
+  "wohnungen": {
+   "wert": 3580.0,
+   "jahr": 2025
+  },
+  "wohnflaecheJeWohnung": {
+   "wert": 86.18994413408,
+   "jahr": 2025
+  },
+  "wohnflaecheJeEinwohner": {
+   "wert": 39.91204242659,
+   "jahr": 2025
+  },
+  "neubauWohnungen": {
+   "wert": 53.0,
+   "jahr": 2025
+  },
+  "anteilGefoerdert": {
+   "wert": 3.21229,
+   "jahr": 2025
+  }
+ },
+ "gremberghoven": {
+  "_ebene": "Stadtteil",
+  "_raum": "704 / Gremberghoven",
+  "einwohner": {
+   "wert": 3429.0,
+   "jahr": 2025
+  },
+  "durchschnittsalter": {
+   "wert": 37.32674735103,
+   "jahr": 2025
+  },
+  "haushalte": {
+   "wert": 1491.0,
+   "jahr": 2025
+  },
+  "anteilEinpersonen": {
+   "wert": 40.375587,
+   "jahr": 2025
+  },
+  "anteilMitKindern": {
+   "wert": 28.236083,
+   "jahr": 2025
+  },
+  "wohnungen": {
+   "wert": 1436.0,
+   "jahr": 2025
+  },
+  "wohnflaecheJeWohnung": {
+   "wert": 71.37395543175,
+   "jahr": 2025
+  },
+  "wohnflaecheJeEinwohner": {
+   "wert": 29.89005540974,
+   "jahr": 2025
+  },
+  "neubauWohnungen": {
+   "wert": 65.0,
+   "jahr": 2025
+  },
+  "anteilGefoerdert": {
+   "wert": 1.601671,
+   "jahr": 2025
+  }
+ },
+ "eil": {
+  "_ebene": "Stadtteil",
+  "_raum": "705 / Eil",
+  "einwohner": {
+   "wert": 9644.0,
+   "jahr": 2025
+  },
+  "durchschnittsalter": {
+   "wert": 43.36438891193,
+   "jahr": 2025
+  },
+  "haushalte": {
+   "wert": 4712.0,
+   "jahr": 2025
+  },
+  "anteilEinpersonen": {
+   "wert": 43.251273,
+   "jahr": 2025
+  },
+  "anteilMitKindern": {
+   "wert": 20.309847,
+   "jahr": 2025
+  },
+  "wohnungen": {
+   "wert": 4475.0,
+   "jahr": 2025
+  },
+  "wohnflaecheJeWohnung": {
+   "wert": 85.91776536313,
+   "jahr": 2025
+  },
+  "wohnflaecheJeEinwohner": {
+   "wert": 39.86748237246,
+   "jahr": 2025
+  },
+  "neubauWohnungen": {
+   "wert": 12.0,
+   "jahr": 2025
+  },
+  "anteilGefoerdert": {
+   "wert": 0.581005,
+   "jahr": 2025
+  }
+ },
  "porz": {
   "_ebene": "Stadtteil",
   "_raum": "706 / Porz",
@@ -832,6 +2548,1238 @@
   },
   "anteilGefoerdert": {
    "wert": 6.999343,
+   "jahr": 2025
+  }
+ },
+ "urbach": {
+  "_ebene": "Stadtteil",
+  "_raum": "707 / Urbach",
+  "einwohner": {
+   "wert": 13059.0,
+   "jahr": 2025
+  },
+  "durchschnittsalter": {
+   "wert": 44.00842330959,
+   "jahr": 2025
+  },
+  "haushalte": {
+   "wert": 6488.0,
+   "jahr": 2025
+  },
+  "anteilEinpersonen": {
+   "wert": 45.576449,
+   "jahr": 2025
+  },
+  "anteilMitKindern": {
+   "wert": 20.175709,
+   "jahr": 2025
+  },
+  "wohnungen": {
+   "wert": 6450.0,
+   "jahr": 2025
+  },
+  "wohnflaecheJeWohnung": {
+   "wert": 77.41410852713,
+   "jahr": 2025
+  },
+  "wohnflaecheJeEinwohner": {
+   "wert": 38.23577609312,
+   "jahr": 2025
+  },
+  "neubauWohnungen": {
+   "wert": 37.0,
+   "jahr": 2025
+  },
+  "anteilGefoerdert": {
+   "wert": 3.038759,
+   "jahr": 2025
+  }
+ },
+ "elsdorf": {
+  "_ebene": "Stadtteil",
+  "_raum": "708 / Elsdorf",
+  "einwohner": {
+   "wert": 2627.0,
+   "jahr": 2025
+  },
+  "durchschnittsalter": {
+   "wert": 39.88637228778,
+   "jahr": 2025
+  },
+  "haushalte": {
+   "wert": 1051.0,
+   "jahr": 2025
+  },
+  "anteilEinpersonen": {
+   "wert": 32.540438,
+   "jahr": 2025
+  },
+  "anteilMitKindern": {
+   "wert": 33.20647,
+   "jahr": 2025
+  },
+  "wohnungen": {
+   "wert": 1119.0,
+   "jahr": 2025
+  },
+  "wohnflaecheJeWohnung": {
+   "wert": 92.26988382484,
+   "jahr": 2025
+  },
+  "wohnflaecheJeEinwohner": {
+   "wert": 39.30338789494,
+   "jahr": 2025
+  },
+  "neubauWohnungen": {
+   "wert": 142.0,
+   "jahr": 2025
+  },
+  "anteilGefoerdert": {
+   "wert": 23.235031,
+   "jahr": 2025
+  }
+ },
+ "grengel": {
+  "_ebene": "Stadtteil",
+  "_raum": "709 / Grengel",
+  "einwohner": {
+   "wert": 5595.0,
+   "jahr": 2025
+  },
+  "durchschnittsalter": {
+   "wert": 43.31061960083,
+   "jahr": 2025
+  },
+  "haushalte": {
+   "wert": 2794.0,
+   "jahr": 2025
+  },
+  "anteilEinpersonen": {
+   "wert": 46.027201,
+   "jahr": 2025
+  },
+  "anteilMitKindern": {
+   "wert": 20.579814,
+   "jahr": 2025
+  },
+  "wohnungen": {
+   "wert": 2689.0,
+   "jahr": 2025
+  },
+  "wohnflaecheJeWohnung": {
+   "wert": 83.22685013016,
+   "jahr": 2025
+  },
+  "wohnflaecheJeEinwohner": {
+   "wert": 39.99946380697,
+   "jahr": 2025
+  },
+  "neubauWohnungen": {
+   "wert": 15.0,
+   "jahr": 2025
+  },
+  "anteilGefoerdert": {
+   "wert": 2.380066,
+   "jahr": 2025
+  }
+ },
+ "wahnheide": {
+  "_ebene": "Stadtteil",
+  "_raum": "710 / Wahnheide",
+  "einwohner": {
+   "wert": 8099.0,
+   "jahr": 2025
+  },
+  "durchschnittsalter": {
+   "wert": 43.61484956991,
+   "jahr": 2025
+  },
+  "haushalte": {
+   "wert": 4228.0,
+   "jahr": 2025
+  },
+  "anteilEinpersonen": {
+   "wert": 49.337748,
+   "jahr": 2025
+  },
+  "anteilMitKindern": {
+   "wert": 18.684957,
+   "jahr": 2025
+  },
+  "wohnungen": {
+   "wert": 4233.0,
+   "jahr": 2025
+  },
+  "wohnflaecheJeWohnung": {
+   "wert": 78.02480510276,
+   "jahr": 2025
+  },
+  "wohnflaecheJeEinwohner": {
+   "wert": 40.78021978022,
+   "jahr": 2025
+  },
+  "neubauWohnungen": {
+   "wert": 72.0,
+   "jahr": 2025
+  },
+  "anteilGefoerdert": {
+   "wert": 0.992204,
+   "jahr": 2025
+  }
+ },
+ "wahn": {
+  "_ebene": "Stadtteil",
+  "_raum": "711 / Wahn",
+  "einwohner": {
+   "wert": 7405.0,
+   "jahr": 2025
+  },
+  "durchschnittsalter": {
+   "wert": 42.46603646185,
+   "jahr": 2025
+  },
+  "haushalte": {
+   "wert": 3367.0,
+   "jahr": 2025
+  },
+  "anteilEinpersonen": {
+   "wert": 38.907039,
+   "jahr": 2025
+  },
+  "anteilMitKindern": {
+   "wert": 23.492723,
+   "jahr": 2025
+  },
+  "wohnungen": {
+   "wert": 3293.0,
+   "jahr": 2025
+  },
+  "wohnflaecheJeWohnung": {
+   "wert": 91.38171879745,
+   "jahr": 2025
+  },
+  "wohnflaecheJeEinwohner": {
+   "wert": 40.63740715733,
+   "jahr": 2025
+  },
+  "neubauWohnungen": {
+   "wert": 28.0,
+   "jahr": 2025
+  },
+  "anteilGefoerdert": {
+   "wert": 7.318554,
+   "jahr": 2025
+  }
+ },
+ "lind": {
+  "_ebene": "Stadtteil",
+  "_raum": "712 / Lind",
+  "einwohner": {
+   "wert": 3690.0,
+   "jahr": 2025
+  },
+  "durchschnittsalter": {
+   "wert": 44.24191508582,
+   "jahr": 2025
+  },
+  "haushalte": {
+   "wert": 1785.0,
+   "jahr": 2025
+  },
+  "anteilEinpersonen": {
+   "wert": 44.42577,
+   "jahr": 2025
+  },
+  "anteilMitKindern": {
+   "wert": 17.927171,
+   "jahr": 2025
+  },
+  "wohnungen": {
+   "wert": 1731.0,
+   "jahr": 2025
+  },
+  "wohnflaecheJeWohnung": {
+   "wert": 86.79664933564,
+   "jahr": 2025
+  },
+  "wohnflaecheJeEinwohner": {
+   "wert": 40.71680216802,
+   "jahr": 2025
+  },
+  "neubauWohnungen": {
+   "wert": 0.0,
+   "jahr": 2025
+  },
+  "anteilGefoerdert": {
+   "wert": 1.213171,
+   "jahr": 2025
+  }
+ },
+ "libur": {
+  "_ebene": "Stadtteil",
+  "_raum": "713 / Libur",
+  "einwohner": {
+   "wert": 1133.0,
+   "jahr": 2025
+  },
+  "durchschnittsalter": {
+   "wert": 43.52618417182,
+   "jahr": 2025
+  },
+  "haushalte": {
+   "wert": 511.0,
+   "jahr": 2025
+  },
+  "anteilEinpersonen": {
+   "wert": 33.072407,
+   "jahr": 2025
+  },
+  "anteilMitKindern": {
+   "wert": 23.679061,
+   "jahr": 2025
+  },
+  "wohnungen": {
+   "wert": 479.0,
+   "jahr": 2025
+  },
+  "wohnflaecheJeWohnung": {
+   "wert": 111.97077244259,
+   "jahr": 2025
+  },
+  "wohnflaecheJeEinwohner": {
+   "wert": 47.33804060018,
+   "jahr": 2025
+  },
+  "neubauWohnungen": {
+   "wert": 0.0,
+   "jahr": 2025
+  },
+  "anteilGefoerdert": {
+   "wert": 0.0,
+   "jahr": 2025
+  }
+ },
+ "zuendorf": {
+  "_ebene": "Stadtteil",
+  "_raum": "714 / Zündorf",
+  "einwohner": {
+   "wert": 11951.0,
+   "jahr": 2025
+  },
+  "durchschnittsalter": {
+   "wert": 47.76253730511,
+   "jahr": 2025
+  },
+  "haushalte": {
+   "wert": 5901.0,
+   "jahr": 2025
+  },
+  "anteilEinpersonen": {
+   "wert": 41.738688,
+   "jahr": 2025
+  },
+  "anteilMitKindern": {
+   "wert": 18.657855,
+   "jahr": 2025
+  },
+  "wohnungen": {
+   "wert": 5859.0,
+   "jahr": 2025
+  },
+  "wohnflaecheJeWohnung": {
+   "wert": 95.61699948797,
+   "jahr": 2025
+  },
+  "wohnflaecheJeEinwohner": {
+   "wert": 46.87641201573,
+   "jahr": 2025
+  },
+  "neubauWohnungen": {
+   "wert": 23.0,
+   "jahr": 2025
+  },
+  "anteilGefoerdert": {
+   "wert": 6.571087,
+   "jahr": 2025
+  }
+ },
+ "langel": {
+  "_ebene": "Stadtteil",
+  "_raum": "715 / Langel",
+  "einwohner": {
+   "wert": 3568.0,
+   "jahr": 2025
+  },
+  "durchschnittsalter": {
+   "wert": 45.29619768311,
+   "jahr": 2025
+  },
+  "haushalte": {
+   "wert": 1658.0,
+   "jahr": 2025
+  },
+  "anteilEinpersonen": {
+   "wert": 35.102533,
+   "jahr": 2025
+  },
+  "anteilMitKindern": {
+   "wert": 23.58263,
+   "jahr": 2025
+  },
+  "wohnungen": {
+   "wert": 1627.0,
+   "jahr": 2025
+  },
+  "wohnflaecheJeWohnung": {
+   "wert": 107.9041180086,
+   "jahr": 2025
+  },
+  "wohnflaecheJeEinwohner": {
+   "wert": 49.20403587444,
+   "jahr": 2025
+  },
+  "neubauWohnungen": {
+   "wert": 9.0,
+   "jahr": 2024
+  },
+  "anteilGefoerdert": {
+   "wert": 0.553165,
+   "jahr": 2025
+  }
+ },
+ "finkenberg": {
+  "_ebene": "Stadtteil",
+  "_raum": "716 / Finkenberg",
+  "einwohner": {
+   "wert": 6904.0,
+   "jahr": 2025
+  },
+  "durchschnittsalter": {
+   "wert": 40.1571794129,
+   "jahr": 2025
+  },
+  "haushalte": {
+   "wert": 2734.0,
+   "jahr": 2025
+  },
+  "anteilEinpersonen": {
+   "wert": 33.174835,
+   "jahr": 2025
+  },
+  "anteilMitKindern": {
+   "wert": 28.346745,
+   "jahr": 2025
+  },
+  "wohnungen": {
+   "wert": 2707.0,
+   "jahr": 2025
+  },
+  "wohnflaecheJeWohnung": {
+   "wert": 78.49057997784,
+   "jahr": 2025
+  },
+  "wohnflaecheJeEinwohner": {
+   "wert": 30.77549246813,
+   "jahr": 2025
+  },
+  "neubauWohnungen": {
+   "wert": 0.0,
+   "jahr": 2025
+  },
+  "anteilGefoerdert": {
+   "wert": 10.860731,
+   "jahr": 2025
+  }
+ },
+ "humboldt-gremberg": {
+  "_ebene": "Stadtteil",
+  "_raum": "801 / Humboldt/Gremberg",
+  "einwohner": {
+   "wert": 15302.0,
+   "jahr": 2025
+  },
+  "durchschnittsalter": {
+   "wert": 40.74563782512,
+   "jahr": 2025
+  },
+  "haushalte": {
+   "wert": 8427.0,
+   "jahr": 2025
+  },
+  "anteilEinpersonen": {
+   "wert": 55.701911,
+   "jahr": 2025
+  },
+  "anteilMitKindern": {
+   "wert": 15.853803,
+   "jahr": 2025
+  },
+  "wohnungen": {
+   "wert": 8309.0,
+   "jahr": 2025
+  },
+  "wohnflaecheJeWohnung": {
+   "wert": 60.60669153929,
+   "jahr": 2025
+  },
+  "wohnflaecheJeEinwohner": {
+   "wert": 32.90948895569,
+   "jahr": 2025
+  },
+  "neubauWohnungen": {
+   "wert": 17.0,
+   "jahr": 2025
+  },
+  "anteilGefoerdert": {
+   "wert": 11.674088,
+   "jahr": 2025
+  }
+ },
+ "kalk": {
+  "_ebene": "Stadtteil",
+  "_raum": "802 / Kalk",
+  "einwohner": {
+   "wert": 25718.0,
+   "jahr": 2025
+  },
+  "durchschnittsalter": {
+   "wert": 38.75147756435,
+   "jahr": 2025
+  },
+  "haushalte": {
+   "wert": 13847.0,
+   "jahr": 2025
+  },
+  "anteilEinpersonen": {
+   "wert": 57.275944,
+   "jahr": 2025
+  },
+  "anteilMitKindern": {
+   "wert": 16.559544,
+   "jahr": 2025
+  },
+  "wohnungen": {
+   "wert": 13140.0,
+   "jahr": 2025
+  },
+  "wohnflaecheJeWohnung": {
+   "wert": 60.70646879756,
+   "jahr": 2025
+  },
+  "wohnflaecheJeEinwohner": {
+   "wert": 31.01652539078,
+   "jahr": 2025
+  },
+  "neubauWohnungen": {
+   "wert": 115.0,
+   "jahr": 2025
+  },
+  "anteilGefoerdert": {
+   "wert": 14.923896,
+   "jahr": 2025
+  }
+ },
+ "vingst": {
+  "_ebene": "Stadtteil",
+  "_raum": "803 / Vingst",
+  "einwohner": {
+   "wert": 12659.0,
+   "jahr": 2025
+  },
+  "durchschnittsalter": {
+   "wert": 41.17467809464,
+   "jahr": 2025
+  },
+  "haushalte": {
+   "wert": 5909.0,
+   "jahr": 2025
+  },
+  "anteilEinpersonen": {
+   "wert": 43.729904,
+   "jahr": 2025
+  },
+  "anteilMitKindern": {
+   "wert": 23.980369,
+   "jahr": 2025
+  },
+  "wohnungen": {
+   "wert": 5901.0,
+   "jahr": 2025
+  },
+  "wohnflaecheJeWohnung": {
+   "wert": 67.27097102186,
+   "jahr": 2025
+  },
+  "wohnflaecheJeEinwohner": {
+   "wert": 31.35840113753,
+   "jahr": 2025
+  },
+  "neubauWohnungen": {
+   "wert": 46.0,
+   "jahr": 2025
+  },
+  "anteilGefoerdert": {
+   "wert": 20.555837,
+   "jahr": 2025
+  }
+ },
+ "hoehenberg": {
+  "_ebene": "Stadtteil",
+  "_raum": "804 / Höhenberg",
+  "einwohner": {
+   "wert": 12426.0,
+   "jahr": 2025
+  },
+  "durchschnittsalter": {
+   "wert": 41.12255888191,
+   "jahr": 2025
+  },
+  "haushalte": {
+   "wert": 6891.0,
+   "jahr": 2025
+  },
+  "anteilEinpersonen": {
+   "wert": 57.263097,
+   "jahr": 2025
+  },
+  "anteilMitKindern": {
+   "wert": 16.282107,
+   "jahr": 2025
+  },
+  "wohnungen": {
+   "wert": 6483.0,
+   "jahr": 2025
+  },
+  "wohnflaecheJeWohnung": {
+   "wert": 62.57889865803,
+   "jahr": 2025
+  },
+  "wohnflaecheJeEinwohner": {
+   "wert": 32.64920328344,
+   "jahr": 2025
+  },
+  "neubauWohnungen": {
+   "wert": 16.0,
+   "jahr": 2025
+  },
+  "anteilGefoerdert": {
+   "wert": 5.630109,
+   "jahr": 2025
+  }
+ },
+ "ostheim": {
+  "_ebene": "Stadtteil",
+  "_raum": "805 / Ostheim",
+  "einwohner": {
+   "wert": 14032.0,
+   "jahr": 2025
+  },
+  "durchschnittsalter": {
+   "wert": 39.59265132079,
+   "jahr": 2025
+  },
+  "haushalte": {
+   "wert": 6305.0,
+   "jahr": 2025
+  },
+  "anteilEinpersonen": {
+   "wert": 41.284695,
+   "jahr": 2025
+  },
+  "anteilMitKindern": {
+   "wert": 26.375892,
+   "jahr": 2025
+  },
+  "wohnungen": {
+   "wert": 6044.0,
+   "jahr": 2025
+  },
+  "wohnflaecheJeWohnung": {
+   "wert": 79.76919258769,
+   "jahr": 2025
+  },
+  "wohnflaecheJeEinwohner": {
+   "wert": 34.35896522235,
+   "jahr": 2025
+  },
+  "neubauWohnungen": {
+   "wert": 17.0,
+   "jahr": 2025
+  },
+  "anteilGefoerdert": {
+   "wert": 21.211118,
+   "jahr": 2025
+  }
+ },
+ "merheim": {
+  "_ebene": "Stadtteil",
+  "_raum": "806 / Merheim",
+  "einwohner": {
+   "wert": 11324.0,
+   "jahr": 2025
+  },
+  "durchschnittsalter": {
+   "wert": 41.54159307665,
+   "jahr": 2025
+  },
+  "haushalte": {
+   "wert": 5136.0,
+   "jahr": 2025
+  },
+  "anteilEinpersonen": {
+   "wert": 39.252336,
+   "jahr": 2025
+  },
+  "anteilMitKindern": {
+   "wert": 24.98053,
+   "jahr": 2025
+  },
+  "wohnungen": {
+   "wert": 5100.0,
+   "jahr": 2025
+  },
+  "wohnflaecheJeWohnung": {
+   "wert": 90.50470588235,
+   "jahr": 2025
+  },
+  "wohnflaecheJeEinwohner": {
+   "wert": 40.76068527022,
+   "jahr": 2025
+  },
+  "neubauWohnungen": {
+   "wert": 161.0,
+   "jahr": 2025
+  },
+  "anteilGefoerdert": {
+   "wert": 6.549019,
+   "jahr": 2025
+  }
+ },
+ "brueck": {
+  "_ebene": "Stadtteil",
+  "_raum": "807 / Brück",
+  "einwohner": {
+   "wert": 10361.0,
+   "jahr": 2025
+  },
+  "durchschnittsalter": {
+   "wert": 46.10014316507,
+   "jahr": 2025
+  },
+  "haushalte": {
+   "wert": 4997.0,
+   "jahr": 2025
+  },
+  "anteilEinpersonen": {
+   "wert": 43.546128,
+   "jahr": 2025
+  },
+  "anteilMitKindern": {
+   "wert": 20.292175,
+   "jahr": 2025
+  },
+  "wohnungen": {
+   "wert": 5101.0,
+   "jahr": 2025
+  },
+  "wohnflaecheJeWohnung": {
+   "wert": 95.12017251519,
+   "jahr": 2025
+  },
+  "wohnflaecheJeEinwohner": {
+   "wert": 46.8302287424,
+   "jahr": 2025
+  },
+  "neubauWohnungen": {
+   "wert": 14.0,
+   "jahr": 2025
+  },
+  "anteilGefoerdert": {
+   "wert": 1.940795,
+   "jahr": 2025
+  }
+ },
+ "rath-heumar": {
+  "_ebene": "Stadtteil",
+  "_raum": "808 / Rath/Heumar",
+  "einwohner": {
+   "wert": 11878.0,
+   "jahr": 2025
+  },
+  "durchschnittsalter": {
+   "wert": 45.57930628052,
+   "jahr": 2025
+  },
+  "haushalte": {
+   "wert": 6007.0,
+   "jahr": 2025
+  },
+  "anteilEinpersonen": {
+   "wert": 43.699018,
+   "jahr": 2025
+  },
+  "anteilMitKindern": {
+   "wert": 19.427335,
+   "jahr": 2025
+  },
+  "wohnungen": {
+   "wert": 5867.0,
+   "jahr": 2025
+  },
+  "wohnflaecheJeWohnung": {
+   "wert": 101.07874552582,
+   "jahr": 2025
+  },
+  "wohnflaecheJeEinwohner": {
+   "wert": 49.92667115676,
+   "jahr": 2025
+  },
+  "neubauWohnungen": {
+   "wert": 42.0,
+   "jahr": 2025
+  },
+  "anteilGefoerdert": {
+   "wert": 2.488494,
+   "jahr": 2025
+  }
+ },
+ "neubrueck": {
+  "_ebene": "Stadtteil",
+  "_raum": "809 / Neubrück",
+  "einwohner": {
+   "wert": 9205.0,
+   "jahr": 2025
+  },
+  "durchschnittsalter": {
+   "wert": 41.6974560927,
+   "jahr": 2025
+  },
+  "haushalte": {
+   "wert": 3888.0,
+   "jahr": 2025
+  },
+  "anteilEinpersonen": {
+   "wert": 39.171811,
+   "jahr": 2025
+  },
+  "anteilMitKindern": {
+   "wert": 26.337449,
+   "jahr": 2025
+  },
+  "wohnungen": {
+   "wert": 3629.0,
+   "jahr": 2025
+  },
+  "wohnflaecheJeWohnung": {
+   "wert": 80.60732984293,
+   "jahr": 2025
+  },
+  "wohnflaecheJeEinwohner": {
+   "wert": 31.77881586095,
+   "jahr": 2025
+  },
+  "neubauWohnungen": {
+   "wert": 0.0,
+   "jahr": 2024
+  },
+  "anteilGefoerdert": {
+   "wert": 4.767153,
+   "jahr": 2025
+  }
+ },
+ "muelheim": {
+  "_ebene": "Stadtteil",
+  "_raum": "901 / Mülheim",
+  "einwohner": {
+   "wert": 43182.0,
+   "jahr": 2025
+  },
+  "durchschnittsalter": {
+   "wert": 40.43121941241,
+   "jahr": 2025
+  },
+  "haushalte": {
+   "wert": 23192.0,
+   "jahr": 2025
+  },
+  "anteilEinpersonen": {
+   "wert": 55.907209,
+   "jahr": 2025
+  },
+  "anteilMitKindern": {
+   "wert": 17.0188,
+   "jahr": 2025
+  },
+  "wohnungen": {
+   "wert": 22158.0,
+   "jahr": 2025
+  },
+  "wohnflaecheJeWohnung": {
+   "wert": 64.27836447333,
+   "jahr": 2025
+  },
+  "wohnflaecheJeEinwohner": {
+   "wert": 32.98318743921,
+   "jahr": 2025
+  },
+  "neubauWohnungen": {
+   "wert": 189.0,
+   "jahr": 2025
+  },
+  "anteilGefoerdert": {
+   "wert": 5.99332,
+   "jahr": 2025
+  }
+ },
+ "buchforst": {
+  "_ebene": "Stadtteil",
+  "_raum": "902 / Buchforst",
+  "einwohner": {
+   "wert": 7172.0,
+   "jahr": 2025
+  },
+  "durchschnittsalter": {
+   "wert": 42.23372141662,
+   "jahr": 2025
+  },
+  "haushalte": {
+   "wert": 3879.0,
+   "jahr": 2025
+  },
+  "anteilEinpersonen": {
+   "wert": 54.292343,
+   "jahr": 2025
+  },
+  "anteilMitKindern": {
+   "wert": 18.896623,
+   "jahr": 2025
+  },
+  "wohnungen": {
+   "wert": 3914.0,
+   "jahr": 2025
+  },
+  "wohnflaecheJeWohnung": {
+   "wert": 61.62365866122,
+   "jahr": 2025
+  },
+  "wohnflaecheJeEinwohner": {
+   "wert": 33.63008923592,
+   "jahr": 2025
+  },
+  "neubauWohnungen": {
+   "wert": 0.0,
+   "jahr": 2025
+  },
+  "anteilGefoerdert": {
+   "wert": 10.577414,
+   "jahr": 2025
+  }
+ },
+ "buchheim": {
+  "_ebene": "Stadtteil",
+  "_raum": "903 / Buchheim",
+  "einwohner": {
+   "wert": 13678.0,
+   "jahr": 2025
+  },
+  "durchschnittsalter": {
+   "wert": 40.45794950529,
+   "jahr": 2025
+  },
+  "haushalte": {
+   "wert": 6926.0,
+   "jahr": 2025
+  },
+  "anteilEinpersonen": {
+   "wert": 47.617673,
+   "jahr": 2025
+  },
+  "anteilMitKindern": {
+   "wert": 21.311002,
+   "jahr": 2025
+  },
+  "wohnungen": {
+   "wert": 6672.0,
+   "jahr": 2025
+  },
+  "wohnflaecheJeWohnung": {
+   "wert": 70.65977218225,
+   "jahr": 2025
+  },
+  "wohnflaecheJeEinwohner": {
+   "wert": 34.46717356339,
+   "jahr": 2025
+  },
+  "neubauWohnungen": {
+   "wert": 31.0,
+   "jahr": 2025
+  },
+  "anteilGefoerdert": {
+   "wert": 12.979616,
+   "jahr": 2025
+  }
+ },
+ "holweide": {
+  "_ebene": "Stadtteil",
+  "_raum": "904 / Holweide",
+  "einwohner": {
+   "wert": 21035.0,
+   "jahr": 2025
+  },
+  "durchschnittsalter": {
+   "wert": 42.63088107123,
+   "jahr": 2025
+  },
+  "haushalte": {
+   "wert": 10415.0,
+   "jahr": 2025
+  },
+  "anteilEinpersonen": {
+   "wert": 46.730677,
+   "jahr": 2025
+  },
+  "anteilMitKindern": {
+   "wert": 20.163226,
+   "jahr": 2025
+  },
+  "wohnungen": {
+   "wert": 10512.0,
+   "jahr": 2025
+  },
+  "wohnflaecheJeWohnung": {
+   "wert": 75.38755707763,
+   "jahr": 2025
+  },
+  "wohnflaecheJeEinwohner": {
+   "wert": 37.67406703114,
+   "jahr": 2025
+  },
+  "neubauWohnungen": {
+   "wert": 36.0,
+   "jahr": 2025
+  },
+  "anteilGefoerdert": {
+   "wert": 6.725646,
+   "jahr": 2025
+  }
+ },
+ "dellbrueck": {
+  "_ebene": "Stadtteil",
+  "_raum": "905 / Dellbrück",
+  "einwohner": {
+   "wert": 21952.0,
+   "jahr": 2025
+  },
+  "durchschnittsalter": {
+   "wert": 46.03018707483,
+   "jahr": 2025
+  },
+  "haushalte": {
+   "wert": 11362.0,
+   "jahr": 2025
+  },
+  "anteilEinpersonen": {
+   "wert": 48.186939,
+   "jahr": 2025
+  },
+  "anteilMitKindern": {
+   "wert": 18.271431,
+   "jahr": 2025
+  },
+  "wohnungen": {
+   "wert": 11550.0,
+   "jahr": 2025
+  },
+  "wohnflaecheJeWohnung": {
+   "wert": 87.33904761905,
+   "jahr": 2025
+  },
+  "wohnflaecheJeEinwohner": {
+   "wert": 45.95326166181,
+   "jahr": 2025
+  },
+  "neubauWohnungen": {
+   "wert": 40.0,
+   "jahr": 2025
+  },
+  "anteilGefoerdert": {
+   "wert": 4.718614,
+   "jahr": 2025
+  }
+ },
+ "hoehenhaus": {
+  "_ebene": "Stadtteil",
+  "_raum": "906 / Höhenhaus",
+  "einwohner": {
+   "wert": 15883.0,
+   "jahr": 2025
+  },
+  "durchschnittsalter": {
+   "wert": 43.74363050641,
+   "jahr": 2025
+  },
+  "haushalte": {
+   "wert": 7289.0,
+   "jahr": 2025
+  },
+  "anteilEinpersonen": {
+   "wert": 38.702154,
+   "jahr": 2025
+  },
+  "anteilMitKindern": {
+   "wert": 23.43257,
+   "jahr": 2025
+  },
+  "wohnungen": {
+   "wert": 7291.0,
+   "jahr": 2025
+  },
+  "wohnflaecheJeWohnung": {
+   "wert": 87.91345494445,
+   "jahr": 2025
+  },
+  "wohnflaecheJeEinwohner": {
+   "wert": 40.35616697098,
+   "jahr": 2025
+  },
+  "neubauWohnungen": {
+   "wert": 75.0,
+   "jahr": 2025
+  },
+  "anteilGefoerdert": {
+   "wert": 13.633246,
+   "jahr": 2025
+  }
+ },
+ "duennwald": {
+  "_ebene": "Stadtteil",
+  "_raum": "907 / Dünnwald",
+  "einwohner": {
+   "wert": 11604.0,
+   "jahr": 2025
+  },
+  "durchschnittsalter": {
+   "wert": 43.00970211421,
+   "jahr": 2025
+  },
+  "haushalte": {
+   "wert": 5420.0,
+   "jahr": 2025
+  },
+  "anteilEinpersonen": {
+   "wert": 41.863469,
+   "jahr": 2025
+  },
+  "anteilMitKindern": {
+   "wert": 24.114391,
+   "jahr": 2025
+  },
+  "wohnungen": {
+   "wert": 5666.0,
+   "jahr": 2025
+  },
+  "wohnflaecheJeWohnung": {
+   "wert": 84.4721143664,
+   "jahr": 2025
+  },
+  "wohnflaecheJeEinwohner": {
+   "wert": 41.24603584971,
+   "jahr": 2025
+  },
+  "neubauWohnungen": {
+   "wert": 34.0,
+   "jahr": 2025
+  },
+  "anteilGefoerdert": {
+   "wert": 14.084009,
+   "jahr": 2025
+  }
+ },
+ "stammheim": {
+  "_ebene": "Stadtteil",
+  "_raum": "908 / Stammheim",
+  "einwohner": {
+   "wert": 8004.0,
+   "jahr": 2025
+  },
+  "durchschnittsalter": {
+   "wert": 44.03175495586,
+   "jahr": 2025
+  },
+  "haushalte": {
+   "wert": 3928.0,
+   "jahr": 2025
+  },
+  "anteilEinpersonen": {
+   "wert": 43.279022,
+   "jahr": 2025
+  },
+  "anteilMitKindern": {
+   "wert": 21.206721,
+   "jahr": 2025
+  },
+  "wohnungen": {
+   "wert": 4043.0,
+   "jahr": 2025
+  },
+  "wohnflaecheJeWohnung": {
+   "wert": 75.69799653722,
+   "jahr": 2025
+  },
+  "wohnflaecheJeEinwohner": {
+   "wert": 38.23675662169,
+   "jahr": 2025
+  },
+  "neubauWohnungen": {
+   "wert": 30.0,
+   "jahr": 2025
+  },
+  "anteilGefoerdert": {
+   "wert": 6.900816,
+   "jahr": 2025
+  }
+ },
+ "flittard": {
+  "_ebene": "Stadtteil",
+  "_raum": "909 / Flittard",
+  "einwohner": {
+   "wert": 8094.0,
+   "jahr": 2025
+  },
+  "durchschnittsalter": {
+   "wert": 43.56068281031,
+   "jahr": 2025
+  },
+  "haushalte": {
+   "wert": 3801.0,
+   "jahr": 2025
+  },
+  "anteilEinpersonen": {
+   "wert": 41.804788,
+   "jahr": 2025
+  },
+  "anteilMitKindern": {
+   "wert": 22.862405,
+   "jahr": 2025
+  },
+  "wohnungen": {
+   "wert": 3862.0,
+   "jahr": 2025
+  },
+  "wohnflaecheJeWohnung": {
+   "wert": 80.73744174003,
+   "jahr": 2025
+  },
+  "wohnflaecheJeEinwohner": {
+   "wert": 38.5233506301,
+   "jahr": 2025
+  },
+  "neubauWohnungen": {
+   "wert": 5.0,
+   "jahr": 2024
+  },
+  "anteilGefoerdert": {
+   "wert": 1.631279,
    "jahr": 2025
   }
  },
@@ -921,7 +3869,7 @@
   "name": "Stadt Köln, Amt für Stadtentwicklung und Statistik: Statistischer Datenkatalog",
   "url": "https://www.offenedaten-koeln.de/dataset/statistischer-datenkatalog-koeln",
   "lizenz": "Datenlizenz Deutschland Namensnennung 2.0",
-  "abgerufen": "2026-07-28",
+  "abgerufen": "2026-07-31",
   "hinweis": "Wohnungsbestand und Wohnflaeche nach Zensus 2022 fortgeschrieben. Innenstadt liegt nur als Stadtbezirk vor, nicht als Stadtteil.",
   "merkmale": {
    "A0025A": "einwohner",
@@ -935,6 +3883,6 @@
    "B0009A": "neubauWohnungen",
    "B0026P": "anteilGefoerdert"
   },
-  "pflege": "CSV von der Quell-URL laden, je Stadtteil das juengste Jahr mit Wert nehmen und die Werte hier ersetzen. Achtung: Porz, Muelheim, Nippes, Ehrenfeld, Lindenthal und Rodenkirchen sind zugleich Stadtbezirksnamen - immer die Zeile mit RAUMEBENE=Stadtteile nehmen, sonst stehen Bezirkszahlen auf der Stadtteilseite."
+  "pflege": "tools/stadtteildaten/wohnkennzahlen.py --neu ausfuehren. Je Stadtteil und Merkmal wird das juengste Jahr mit Wert genommen, weil die Merkmale unterschiedlich weit fortgeschrieben sind."
  }
 }

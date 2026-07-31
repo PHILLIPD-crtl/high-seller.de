@@ -1,0 +1,14 @@
+# Abhaengigkeiten der Stadtteil-Datenpipeline.
+#
+# Einrichten:
+#   python3 -m venv tools/stadtteildaten/.venv
+#   tools/stadtteildaten/.venv/bin/pip install -r tools/stadtteildaten/requirements.txt
+#
+# geopandas wird nur fuer die Bodenrichtwerte gebraucht (Verschneidung der
+# BORIS-Zonen mit den Stadtteilgrenzen). wohnkennzahlen.py kommt mit pandas aus.
+geopandas>=1.1
+shapely>=2.1
+pyproj>=3.7
+pandas>=2.2
+requests>=2.32
+pdfplumber>=0.11

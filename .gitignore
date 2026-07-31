@@ -1,0 +1,12 @@
+# Zwischenspeicher der Datenpipeline: heruntergeladene Rohdaten (CSV, Shapefiles).
+# Teils mehrere hundert Megabyte und jederzeit neu ladbar — gehoert nicht ins Repo.
+tools/stadtteildaten/.cache/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# macOS
+.DS_Store

@@ -203,5 +203,55 @@
   "_stadtteil": "Ostheim",
   "bebauung": "Bis ins 19. Jahrhundert landwirtschaftlich geprägt, 1147 als Heimstätte Oestheim urkundlich genannt. Der heutige Bestand erzählt Siedlungsgeschichte in vier Kapiteln: die Saarsiedlung der frühen 1930er als erstes einheitliches Wohngebiet, die Humboldtsiedlung aus zu Wohnhäusern umgebauten Baracken der 1940er, die Siedlung Buchheimer Weg von 1954 bis 1958 mit 1.037 Wohnungen in bis zu achtgeschossigen Bauten, und die Hochhausbebauung an der Gernsheimer Straße für 2.500 Menschen aus den frühen 1970ern. Rund 5.500 Wohnungen, davon knapp 30 Prozent öffentlich gefördert, im Schnitt 73 Quadratmeter.",
   "lage": "Angeschlossen über Frankfurter Straße, Ostheimer Straße und Rösrather Straße; einen eigenen Autobahnanschluss gibt es trotz dreier nahe liegender Autobahnen nicht. Im Schulzentrum von 1981 sind das Heinrich-Heine-Gymnasium und die Albert-Schweitzer-Realschule untergebracht. Der 64 Meter hohe Vingster Berg, aus Kriegstrümmern aufgeschüttet und bewaldet, gehört zu einem Grüngürtel, der bis Merheim, Höhenberg und Vingst reicht."
+ },
+ "ossendorf": {
+  "_stadtteil": "Ossendorf",
+  "bebauung": "Schon vor 5.000 Jahren siedelten hier Bauern, erstmals schriftlich erwähnt wurde Ossendorf am 25. Oktober 980. An Frohnhofstraße und Iltisstraße lagen mehrere Bauernhöfe, darunter Gut Frohnhof, das bereits 920 belegt ist. Aus dem Bauernland ist ein gemischter Stadtteil geworden, in dem Wohnen und Gewerbe nebeneinander liegen.",
+  "lage": "Die Stadtbahnlinie 5 bedient fünf Haltestellen im Ort — Margaretastraße, Rektor-Klein-Straße, Alter Flughafen Butzweilerhof, IKEA Butzweilerhof und Sparkasse am Butzweilerhof —, dazu mehrere Buslinien. Durch das Gebiet verläuft außerdem die Bahnstrecke Köln–Frechen. Der Butzweilerhof, Kölns früherer Flughafen, ist das prägende Areal im Norden."
+ },
+ "seeberg": {
+  "_stadtteil": "Seeberg",
+  "bebauung": "Der Name verbindet zwei Dinge: die Nähe zum Fühlinger See, von dem der Ort nur durch ein Waldstück und die B 9 getrennt ist, und den Stallagsberg westlich des Stadtteils. Gegliedert ist Seeberg in einen Nord- und einen Südteil, jeweils mit eigenem Zentrum — eine Struktur, die man beim Vergleich von Objekten kennen sollte.",
+  "lage": "In Seeberg-Nord liegen Grundschule, Hauptschule und die Henry-Ford-Realschule, in Seeberg-Süd eine Grundschule mit Kindergarten und ein kleines Einkaufszentrum, das gegenüber früher deutlich ausgedünnt ist. Haupterschließung ist die Mercatorstraße, die zugleich die Grenze zu Heimersdorf bildet und nach Norden durch Chorweiler und Blumenberg führt. Der Fühlinger See liegt vor der Haustür."
+ },
+ "raderberg": {
+  "_stadtteil": "Raderberg",
+  "bebauung": "Der Name geht auf gerodeten Wald oder die alte Hinrichtungsstätte Marterberg zurück — 1225 wurde hier Graf Friedrich aufs Rad geflochten, nachdem er seinen Vetter, den Erzbischof Engelbert, getötet hatte. 1174 überließ der Propst von St. Severin das Gebiet gegen jährliche Abgabe den Kölner Juden, die dort ihren alten Friedhof anlegten.",
+  "lage": "Ab 1913 fuhr die Straßenbahnlinie 7 über die Brühler Straße, 1955 auf Busbetrieb umgestellt; mit der Nord-Süd-Stadtbahn bekommt Raderberg wieder einen Schienenanschluss. Über die Hauptstraßen bestehen direkte Verbindungen zum Autobahnkreuz Köln-Süd und zur Anschlussstelle Köln-Eifeltor. Im Ort: Grundschule Annastraße, Berufskolleg für Medienberufe, der Großmarkt, die Raderbergkonzerte im Kammermusiksaal des Deutschlandfunks und der Kunstsalon in einer alten Kupferschmiede."
+ },
+ "mauenheim": {
+  "_stadtteil": "Mauenheim",
+  "bebauung": "Mit rund 5.600 Einwohnern auf 49 Hektar der flächenkleinste Stadtteil Kölns — entsprechend dicht ist die Bebauung. Erstmals 1199 urkundlich erwähnt, als Erzbischof Adolf I. dem Kunibertsstift den Rodzehnt auf neu gerodete Flächen schenkte.",
+  "lage": "Im linksrheinischen Stadtbezirk Nippes zwischen Nordfriedhof, Neusser Straße und Mauenheimer Gürtel gelegen, im Osten und Norden an Weidenpesch grenzend. Die kompakte Größe bedeutet kurze Wege innerhalb des Stadtteils und eine enge Verzahnung mit den Nachbarveedeln."
+ },
+ "heimersdorf": {
+  "_stadtteil": "Heimersdorf",
+  "bebauung": "Der Ortsname ist seit dem späten 12. Jahrhundert belegt: Zwischen 1178 und 1183 tritt ein Johan de Heimerstorp als Zeuge bei einem Rechtsgeschäft auf. Aus dem alten Hofgebiet ist ein Wohnstadtteil im Kölner Norden geworden, etwa neun Kilometer vom Zentrum entfernt.",
+  "lage": "Angebunden über eine unterirdische Station der Stadtbahnlinie 15. Bis in die 1930er Jahre lag der Bahnhof Longerich der Strecke Köln–Kleve am Pingenweg auf Heimersdorfer Gebiet; das Gebäude steht bis heute."
+ },
+ "gremberghoven": {
+  "_stadtteil": "Gremberghoven",
+  "bebauung": "Eine Eisenbahnsiedlung, entstanden nach dem Ersten Weltkrieg mit dem Rangierbahnhof Gremberg. Die Siedlungshäuser mit großen Selbstversorgergärten gehen auf Entwürfe des Architekten Martin Kießling zurück und bilden bis heute den Ortskern. Der Name wird seit 1922 verwendet und setzt sich aus Gremberg und Westhoven zusammen.",
+  "lage": "Die A 559 passiert den Siedlungskern nördlich, an der Anschlussstelle Köln-Porz-Gremberghoven trifft sie auf die B 8. Wirtschaftlich bestimmend ist der AirportBusinessPark entlang der Frankfurter Straße, Ende der 1980er Jahre entstanden und ein gefragter Gewerbestandort — für Wohnungssuchende bedeutet das kurze Arbeitswege."
+ },
+ "chorweiler": {
+  "_stadtteil": "Chorweiler",
+  "bebauung": "Das Zentrum entstand in den 1970er Jahren als neuer Stadtteil und ist ein typisches Beispiel der Wohnungsbaupolitik jener Epoche. Zugrunde lag die 1957 wieder aufgegriffene Idee einer Neuen Stadt, die der Architekt Fritz Schumacher schon 1922 formuliert hatte. Der Bestand ist damit einheitlich geplant und in wenigen Jahren entstanden.",
+  "lage": "Eigene Anschlussstelle an der A 57, allerdings nur in Fahrtrichtung Köln nutzbar; die Mercatorstraße führt als Kraftfahrstraße nach Süden zum Militärring. Im Ort: die Heinrich-Böll-Gesamtschule, eine Grundschule und eine Waldorfschule; Real- und Hauptschule liegen im angrenzenden Seeberg-Nord. Das Bürgerzentrum vereint Bezirksrathaus, Hallenbad, Stadtbücherei, Jugendzentrum und einen Saal mit 800 Plätzen."
+ },
+ "raderthal": {
+  "_stadtteil": "Raderthal",
+  "bebauung": "Der Name bezeichnet das an den Raderberg anschließende Tal, ein ehemaliges Flussbett des Rheins; als Flurbezeichnung ist Raderthal schon im 13. Jahrhundert in kölnischen Schreinsbüchern belegt. Die Tallage prägt bis heute den Zuschnitt der Grundstücke.",
+  "lage": "Im Süden grenzt Raderthal an den äußeren Kölner Grüngürtel. Noch diesseits des Militärrings liegt der Fritz-Encke-Volkspark mit seinem wieder installierten Trinkbrunnen in einem kleinen Rundtempel. Durch den Stadtteil führt die B 51 Richtung Brühl."
+ },
+ "esch-auweiler": {
+  "_stadtteil": "Esch/Auweiler",
+  "bebauung": "Zwei eigenständige Orte im Kölner Norden, die zum 1. Januar 1975 eingemeindet wurden und davor zur Gemeinde Sinnersdorf gehörten. Der dörfliche Charakter ist erhalten geblieben — die Bebauung ist deutlich lockerer als in den innenstadtnahen Veedeln.",
+  "lage": "Drei Buslinien der KVB erschließen die beiden Orte: die 125 von Weiler über Chorweiler, Longerich und Pesch nach Pulheim-Sinnersdorf, die 126 von Bocklemünd über Mengenich und Auweiler nach Chorweiler, dazu der Nachtbus 123. Eine Schienenanbindung gibt es nicht — wer hier wohnt, ist auf Bus oder Auto angewiesen."
+ },
+ "flittard": {
+  "_stadtteil": "Flittard",
+  "bebauung": "Der Name bedeutet fließende, vom Rhein an- oder weggeschwemmte Erde und verweist auf die Hochwassergefährdung, der der Ort bis zum Deichbau 1894/95 immer wieder ausgesetzt war. Erstmals 989 urkundlich erwähnt. Der Ortskern besteht aus kleinen ländlichen Häusern; ältester Profanbau ist der Bongartzhof von 1715, ein Fachwerkbau mit Backsteinausfachung und tief heruntergezogenem Walmdach. Die Pfarrkirche St. Hubertus hat ihren alten Westturm behalten.",
+  "lage": "Im rechtsrheinischen Norden im Bezirk Mülheim, direkt an der Stadtgrenze zu Leverkusen. Die Deichlage am Rhein ist bei der Bewertung von Kellern und Untergeschossen ein Thema, das offen angesprochen gehört."
  }
 }

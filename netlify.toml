@@ -648,6 +648,66 @@
   force = true
 
 [[redirects]]
+  from = "/immobilienmakler-koeln-ossendorf"
+  to = "/immobilienmakler-koeln-ossendorf.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/immobilienmakler-koeln-seeberg"
+  to = "/immobilienmakler-koeln-seeberg.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/immobilienmakler-koeln-raderberg"
+  to = "/immobilienmakler-koeln-raderberg.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/immobilienmakler-koeln-mauenheim"
+  to = "/immobilienmakler-koeln-mauenheim.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/immobilienmakler-koeln-heimersdorf"
+  to = "/immobilienmakler-koeln-heimersdorf.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/immobilienmakler-koeln-gremberghoven"
+  to = "/immobilienmakler-koeln-gremberghoven.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/immobilienmakler-koeln-chorweiler"
+  to = "/immobilienmakler-koeln-chorweiler.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/immobilienmakler-koeln-raderthal"
+  to = "/immobilienmakler-koeln-raderthal.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/immobilienmakler-koeln-esch-auweiler"
+  to = "/immobilienmakler-koeln-esch-auweiler.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/immobilienmakler-koeln-flittard"
+  to = "/immobilienmakler-koeln-flittard.html"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/immobilienmakler-koeln-suelz"
   to = "/immobilienmakler-koeln-suelz.html"
   status = 301

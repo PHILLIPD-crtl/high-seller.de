@@ -81,20 +81,30 @@
   }
 
   function showFallback() {
-    if (summary) summary.style.display = "none";
+    // Die Gesamtwertung bleibt stehen: sie ist fest im Quelltext hinterlegt
+    // und mit Stand ausgewiesen. Nur die einzelnen Rezensionstexte fehlen,
+    // und genau das sagt die Meldung.
     grid.removeAttribute("aria-busy");
     grid.className = "reviews-fallback";
     grid.innerHTML =
-      '<p class="reviews-fallback__msg">Unsere Google-Bewertungen konnten gerade nicht geladen werden. ' +
-      "Sie können diese direkt bei Google ansehen.</p>";
+      '<p class="reviews-fallback__msg">Die einzelnen Bewertungstexte konnten gerade nicht geladen werden. ' +
+      "Sie können sie direkt bei Google nachlesen.</p>";
+  }
+
+  // Setzt Wertung und Anzahl ueberall dort, wo sie auf der Seite stehen:
+  // im Bewertungsbereich und in der Vertrauenszeile ganz oben.
+  function setAll(selector, text) {
+    var els = document.querySelectorAll(selector);
+    for (var i = 0; i < els.length; i++) els[i].textContent = text;
   }
 
   function renderSummary(data) {
-    if (!summary) return;
-    if (!data.rating) {
-      summary.style.display = "none";
-      return;
-    }
+    // WICHTIG: Bei fehlender Antwort wird hier nichts mehr ausgeblendet.
+    // Wertung und Anzahl stehen fest im Quelltext (Stand siehe dort). Sie zu
+    // verstecken, sobald Google einmal nicht antwortet, wuerde ausgerechnet
+    // den Beleg entfernen, wegen dem der Besucher hier ist.
+    if (!data || !data.rating) return;
+
     if (scoreEl) scoreEl.textContent = fmtScore(data.rating);
     if (starsEl) starsEl.innerHTML = stars(data.rating);
     if (metaEl) {
@@ -102,7 +112,10 @@
         ? "basierend auf " + data.count + " Google-Bewertungen"
         : "Google-Bewertung";
     }
-    summary.style.display = "";
+    if (summary) summary.style.display = "";
+
+    setAll("[data-gr-score]", fmtScore(data.rating));
+    if (data.count) setAll("[data-gr-count]", String(data.count));
   }
 
   function card(r) {

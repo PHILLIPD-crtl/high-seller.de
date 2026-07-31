@@ -1,0 +1,158 @@
+{
+  "_hinweis": "Momentaufnahme der von Propstack als 'Verkauft' gefuehrten Objekte. Erzeugt von tools/verkaufte-objekte-aktualisieren.py. Diese Datei ist die dauerhafte Quelle der Referenzseite: sie bleibt gueltig, auch wenn Propstack nicht erreichbar ist oder ein Objekt dort geloescht wird. Bewusst NICHT enthalten: Strassenadresse (verkaufte Privatimmobilien) und Preis (Propstack fuehrt den Angebots-, nicht den erzielten Preis). 'kuratiert' haelt je Objekt-ID gepruefte Angaben fest, die Propstack unzuverlaessig liefert - vor allem den Stadtteil.",
+  "_kuratiert_hinweis": "Stadtteil je Objekt-ID, geprueft am Propstack-Titel des jeweiligen Objekts. Leerer String = kein Stadtteil ausweisen (Ort genuegt). Das Propstack-Feld 'district' wird nur genutzt, wenn hier kein Eintrag steht, denn es enthaelt haeufig 'Nordrhein-Westfalen' oder den Ortsnamen selbst.",
+  "kuratiert": {
+    "3034088": {
+      "stadtteil": "Sürth"
+    },
+    "4338682": {
+      "stadtteil": "Dellbrück"
+    },
+    "3953348": {
+      "stadtteil": ""
+    },
+    "4594983": {
+      "stadtteil": ""
+    },
+    "3800242": {
+      "stadtteil": ""
+    },
+    "4828262": {
+      "stadtteil": "Nippes"
+    },
+    "4452124": {
+      "stadtteil": ""
+    },
+    "5149392": {
+      "stadtteil": "Kalk"
+    },
+    "4452142": {
+      "stadtteil": "Keldenich"
+    },
+    "5270761": {
+      "stadtteil": "Mülheim"
+    }
+  },
+  "objekte": [
+    {
+      "id": "3953348",
+      "objektart": "Wohnung",
+      "ort": "Kerpen",
+      "stadtteil": "",
+      "wohnflaeche": 69.44,
+      "grundstueck": null,
+      "zimmer": 3,
+      "baujahr": 1972,
+      "energieklasse": "F",
+      "bild": "referenz-objekt-wohnung-kerpen-3953348"
+    },
+    {
+      "id": "4338682",
+      "objektart": "Haus",
+      "ort": "Köln",
+      "stadtteil": "Dellbrück",
+      "wohnflaeche": 208,
+      "grundstueck": 408,
+      "zimmer": 5,
+      "baujahr": 1960,
+      "energieklasse": "D",
+      "bild": "referenz-objekt-haus-koeln-dellbrueck-4338682"
+    },
+    {
+      "id": "5149392",
+      "objektart": "Wohnung",
+      "ort": "Köln",
+      "stadtteil": "Kalk",
+      "wohnflaeche": 45,
+      "grundstueck": null,
+      "zimmer": 2,
+      "baujahr": 1954,
+      "energieklasse": "D",
+      "bild": "referenz-objekt-wohnung-koeln-kalk-5149392"
+    },
+    {
+      "id": "5270761",
+      "objektart": "Wohnung",
+      "ort": "Köln",
+      "stadtteil": "Mülheim",
+      "wohnflaeche": 102,
+      "grundstueck": null,
+      "zimmer": 6,
+      "baujahr": 1956,
+      "energieklasse": "C",
+      "bild": "referenz-objekt-wohnung-koeln-muelheim-5270761"
+    },
+    {
+      "id": "4828262",
+      "objektart": "Wohnung",
+      "ort": "Köln",
+      "stadtteil": "Nippes",
+      "wohnflaeche": 44,
+      "grundstueck": null,
+      "zimmer": 1,
+      "baujahr": 2021,
+      "energieklasse": "B",
+      "bild": "referenz-objekt-wohnung-koeln-nippes-4828262"
+    },
+    {
+      "id": "3034088",
+      "objektart": "Wohnung",
+      "ort": "Köln",
+      "stadtteil": "Sürth",
+      "wohnflaeche": 61.41,
+      "grundstueck": null,
+      "zimmer": 3,
+      "baujahr": 1995,
+      "energieklasse": "C",
+      "bild": "referenz-objekt-wohnung-koeln-suerth-3034088"
+    },
+    {
+      "id": "3800242",
+      "objektart": "Wohnung",
+      "ort": "Monheim am Rhein",
+      "stadtteil": "",
+      "wohnflaeche": 76,
+      "grundstueck": null,
+      "zimmer": 3,
+      "baujahr": 1971,
+      "energieklasse": "F",
+      "bild": "referenz-objekt-wohnung-monheim-am-rhein-3800242"
+    },
+    {
+      "id": "4594983",
+      "objektart": "Wohnung",
+      "ort": "Monheim am Rhein",
+      "stadtteil": "",
+      "wohnflaeche": 64,
+      "grundstueck": null,
+      "zimmer": 3,
+      "baujahr": 1968,
+      "energieklasse": "C",
+      "bild": "referenz-objekt-wohnung-monheim-am-rhein-4594983"
+    },
+    {
+      "id": "4452124",
+      "objektart": "Wohnung",
+      "ort": "Wesseling",
+      "stadtteil": "",
+      "wohnflaeche": 84,
+      "grundstueck": null,
+      "zimmer": 3,
+      "baujahr": 2020,
+      "energieklasse": "A_PLUS",
+      "bild": "referenz-objekt-wohnung-wesseling-4452124"
+    },
+    {
+      "id": "4452142",
+      "objektart": "Wohnung",
+      "ort": "Wesseling",
+      "stadtteil": "Keldenich",
+      "wohnflaeche": 86,
+      "grundstueck": null,
+      "zimmer": 3,
+      "baujahr": 2020,
+      "energieklasse": "A_PLUS",
+      "bild": "referenz-objekt-wohnung-wesseling-keldenich-4452142"
+    }
+  ]
+}

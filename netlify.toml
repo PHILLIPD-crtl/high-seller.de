@@ -1,59 +1,194 @@
 # netlify.toml — Highseller Immobilien & Finanzen
+#
+# REIHENFOLGE IST HIER BEDEUTUNG, NICHT GESCHMACK.
+# Netlify nimmt die erste Regel, die passt, und hoert dann auf. Die Gruppen
+# unten stehen deshalb in genau dieser Folge:
+#
+#   2. interne Umschreibungen (200)   - saubere Adressen fuer die Angebote
+#   3. alte Pfade ohne Hostangabe     - Sicherheitsnetz
+#   4. Entdoppelung .html             - eine Seite, eine Adresse
+#
+# Gruppe 1 (alte Domain mit Hostangabe) gab es bis zum 31.07.2026 und ist
+# bewusst entfallen; die Begruendung steht unten an ihrer Stelle. Die
+# Nummerierung der uebrigen Gruppen bleibt, damit Verweise darauf aus
+# readme.md und aus Commit-Nachrichten weiterhin stimmen.
+#
+# Saemtliche Weiterleitungen stehen bewusst NUR in dieser Datei. Es gibt
+# zusaetzlich ein _redirects, das Netlify VOR dieser Datei auswertet;
+# pfadbasierte Regeln dort wuerden die Regeln hier ueberholen.
 
 [build]
   publish = "."
+
+# Netlifys "Pretty URLs" ist standardmaessig AN und schreibt beim Deploy jeden
+# internen Verweis um: aus href="kontakt.html" wird href='/kontakt'. Im
+# Quelltext des Projekts steht ueberall die .html-Fassung, live kam bisher
+# ueberall die endungslose an.
+#
+# Das war die zweite Haelfte des Doppelungsproblems. Solange beide Adressen
+# mit 200 antworteten, verteilte sich jede Seite auf zwei Adressen: die
+# endungslose, auf die alle internen Verweise zeigten, und die .html-Fassung,
+# auf die canonical und sitemap.xml zeigen.
+#
+# Mit den Entdopplungsregeln weiter unten waere daraus ein zweites Problem
+# geworden: JEDER Menueklick haette erst eine 301 abgeholt. Deshalb hier aus.
+# Damit bleiben die Verweise so, wie sie im Quelltext stehen - .html, gleich
+# dem canonical, gleich der Sitemap, gleich dem, was Google indexiert hat.
+[build.processing.html]
+  pretty_urls = false
 
 [functions]
   directory = "netlify/functions"
   node_bundler = "esbuild"
 
 # ---------------------------------------------------------------------------
-# Saubere URLs für die Immobilienangebote
+# ALTE DOMAIN highseller-immobilien.koeln - BEWUSST OHNE REGELN
+# ---------------------------------------------------------------------------
+# Hier standen 42 Weiterleitungen von der Vorgaengerdomain auf die passenden
+# Seiten dieser Website. Sie sind am 31.07.2026 auf Entscheidung des Inhabers
+# entfernt worden: Die alte Domain wird aufgegeben und nicht mehr auf Netlify
+# gezeigt.
+#
+# Damit ist das hier kein Versehen, sondern Absicht. Wer die Regeln
+# zurueckholen will, findet sie in der Versionsgeschichte dieser Datei.
+#
+# Was das kostet: highseller-immobilien.koeln antwortet weiterhin ueberall mit
+# 404. Wer aus einem Google-Treffer oder ueber einen alten Verweis kommt,
+# landet im Nichts statt auf der passenden Seite. Die dort aufgebaute
+# Sichtbarkeit verfaellt.
+#
+# Falls die Entscheidung spaeter revidiert wird, sind zwei Schritte noetig,
+# bevor irgendeine Regel greifen kann:
+#   1. Domain in Netlify als Alias des Projekts "high-seller" eintragen
+#      (Apex und www).
+#   2. DNS bei Strato umstellen - A-Eintrag von 81.169.145.160 auf 75.2.60.5,
+#      www als CNAME auf high-seller.netlify.app. Die MX-Eintraege dabei NICHT
+#      anfassen, an der Domain haengt E-Mail ueber smtpin.rzone.de.
+
+# ---------------------------------------------------------------------------
+# 2. Saubere Adressen fuer die Immobilienangebote
 # ---------------------------------------------------------------------------
 
-# Übersichtsseite: /immobilienangebote -> bestehende Angebotsseite
+# Uebersichtsseite.
+#
+# Das war bis hierher eine interne Umschreibung mit Status 200, und genau das
+# war eine Doppelung: dieselbe Angebotsseite lieferte sowohl unter
+# /immobilienangebote als auch unter /immobilien-angebote.html eine vollwertige
+# Seite aus, und BEIDE Adressen standen in der sitemap.xml. Die kurze Adresse
+# bleibt gueltig, sie leitet jetzt aber weiter, statt den Inhalt ein zweites
+# Mal auszuliefern. Aus der Sitemap ist sie entfernt.
 [[redirects]]
   from = "/immobilienangebote"
   to = "/immobilien-angebote.html"
-  status = 200
+  status = 301
+  force = true
 
-# Detailseiten mit SEO-URL: /immobilien/<slug> -> serverseitig gerenderte Seite
+# Detailseiten mit sprechender Adresse: /immobilien/<slug>.
+#
+# Hier bleibt es bei der Umschreibung mit 200: diese Seiten werden von der
+# Function erzeugt und existieren unter keiner zweiten Adresse. Es gibt also
+# nichts zu entdoppeln.
 [[redirects]]
   from = "/immobilien/:slug"
   to = "/.netlify/functions/property?slug=:slug"
   status = 200
 
 # ---------------------------------------------------------------------------
-# 301-Weiterleitungen von alten URLs der vorherigen Website
-# Google hat diese URLs noch im Index -> dauerhaft auf die aktuellen Seiten leiten
+# 3. Alte Pfade der Vorgaengerseite, ohne Hostangabe
 # ---------------------------------------------------------------------------
+# Diese Pfade (/karriere-seite, /kontaktformular und weitere) gab es auf
+# high-seller.de nie - sie stammen von der aufgegebenen Vorgaengerdomain.
+#
+# Die Gruppe bleibt trotzdem stehen, weil sie zwei Faelle abfaengt und nichts
+# kostet: alte Verweise, die jemand haendisch auf die neue Domain umgeschrieben
+# hat, und den Fall, dass die alte Domain doch noch pfaderhaltend auf
+# high-seller.de umgebogen wird. Ohne diese Regeln liefe beides in die
+# 404-Seite.
 
 [[redirects]]
-  from = "/makler-bewerbung"
-  to = "/karriere"
+  from = "/immobilie-verkaufen-koeln"
+  to = "/immobilie-verkaufen.html"
   status = 301
   force = true
 
 [[redirects]]
-  from = "/agb-dokument"
-  to = "/impressum"
+  from = "/immobilien-kaufen-koeln-umgebung"
+  to = "/immobilien-angebote.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/baufinanzierung-koeln"
+  to = "/baufinanzierung.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/karriere-seite"
+  to = "/karriere.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/makler-bewerbung"
+  to = "/karriere.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/datenschutzerklaerung"
+  to = "/datenschutz.html"
   status = 301
   force = true
 
 [[redirects]]
   from = "/datenschutzerklaerung-highseller-immobilien"
-  to = "/datenschutz"
+  to = "/datenschutz.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/widerrufsbelehrung"
+  to = "/widerruf.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/agb"
+  to = "/impressum.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/agb-dokument"
+  to = "/impressum.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/baris-olmez"
+  to = "/ueber-uns.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/serhad-mendekli"
+  to = "/ueber-uns.html"
   status = 301
   force = true
 
 [[redirects]]
   from = "/kontaktformular"
-  to = "/kontakt"
+  to = "/kontakt.html"
   status = 301
   force = true
 
-# Verkaufte Referenzobjekte: alte, noch im Google-Index befindliche URLs
-# dauerhaft auf die aktuelle Referenzseite leiten (SEO-Signale erhalten).
+[[redirects]]
+  from = "/kalender"
+  to = "/kontakt.html"
+  status = 301
+  force = true
+
 [[redirects]]
   from = "/verkaufte-immobilien-koeln"
   to = "/verkaufte-objekte.html"
@@ -61,13 +196,13 @@
   force = true
 
 [[redirects]]
-  from = "/verkaufte-immobilien-koeln/*"
+  from = "/verkaufte-immobilien-koeln.html"
   to = "/verkaufte-objekte.html"
   status = 301
   force = true
 
 [[redirects]]
-  from = "/verkaufte-immobilien-koeln.html"
+  from = "/verkaufte-immobilien-koeln/*"
   to = "/verkaufte-objekte.html"
   status = 301
   force = true
@@ -85,14 +220,298 @@
   force = true
 
 [[redirects]]
+  from = "/referenzen"
+  to = "/verkaufte-objekte.html"
+  status = 301
+  force = true
+
+# ---------------------------------------------------------------------------
+# 4. Entdoppelung: eine Seite, eine Adresse
+# ---------------------------------------------------------------------------
+# Netlify liefert jede Seite unter zwei Adressen mit Status 200 aus, also
+# /kontakt UND /kontakt.html. Fuer Suchmaschinen sind das zwei Seiten mit
+# identischem Inhalt, und beide konkurrieren um dieselbe Suchanfrage.
+#
+# Massgeblich ist die .html-Fassung: alle canonical-Angaben, die sitemap.xml
+# und saemtliche internen Verweise zeigen darauf. Deshalb geht die endungslose
+# Adresse dauerhaft auf die .html-Fassung.
+#
+# force = true ist noetig, weil Netlify die endungslose Adresse sonst als
+# bereits vorhandene Datei ansieht und die Regel stillschweigend uebergeht.
+#
+# BEIM ANLEGEN EINER NEUEN SEITE hier eine Regel ergaenzen, sonst ist die neue
+# Seite sofort wieder unter zwei Adressen erreichbar.
+
+# Startseite: die .html-Fassung auf das nackte Wurzelverzeichnis, denn das
+# canonical der Startseite lautet https://high-seller.de/ .
+
+[[redirects]]
+  from = "/index.html"
+  to = "/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/baufinanzierung"
+  to = "/baufinanzierung.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/baufinanzierungsrechner"
+  to = "/baufinanzierungsrechner.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/budget-rechner"
+  to = "/budget-rechner.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/datenschutz"
+  to = "/datenschutz.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/faq"
+  to = "/faq.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/immobilie-bewerten"
+  to = "/immobilie-bewerten.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/immobilie-verkaufen"
+  to = "/immobilie-verkaufen.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/immobilien-angebote"
+  to = "/immobilien-angebote.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/immobilienmakler-koeln"
+  to = "/immobilienmakler-koeln.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/immobilienmakler-koeln-bayenthal"
+  to = "/immobilienmakler-koeln-bayenthal.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/immobilienmakler-koeln-braunsfeld"
+  to = "/immobilienmakler-koeln-braunsfeld.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/immobilienmakler-koeln-deutz"
+  to = "/immobilienmakler-koeln-deutz.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/immobilienmakler-koeln-duennwald"
+  to = "/immobilienmakler-koeln-duennwald.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/immobilienmakler-koeln-ehrenfeld"
+  to = "/immobilienmakler-koeln-ehrenfeld.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/immobilienmakler-koeln-hoehenhaus"
+  to = "/immobilienmakler-koeln-hoehenhaus.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/immobilienmakler-koeln-innenstadt"
+  to = "/immobilienmakler-koeln-innenstadt.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/immobilienmakler-koeln-junkersdorf"
+  to = "/immobilienmakler-koeln-junkersdorf.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/immobilienmakler-koeln-klettenberg"
+  to = "/immobilienmakler-koeln-klettenberg.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/immobilienmakler-koeln-lindenthal"
+  to = "/immobilienmakler-koeln-lindenthal.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/immobilienmakler-koeln-marienburg"
+  to = "/immobilienmakler-koeln-marienburg.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/immobilienmakler-koeln-muelheim"
+  to = "/immobilienmakler-koeln-muelheim.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/immobilienmakler-koeln-niehl"
+  to = "/immobilienmakler-koeln-niehl.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/immobilienmakler-koeln-nippes"
+  to = "/immobilienmakler-koeln-nippes.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/immobilienmakler-koeln-pesch"
+  to = "/immobilienmakler-koeln-pesch.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/immobilienmakler-koeln-porz"
+  to = "/immobilienmakler-koeln-porz.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/immobilienmakler-koeln-rodenkirchen"
+  to = "/immobilienmakler-koeln-rodenkirchen.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/immobilienmakler-koeln-suelz"
+  to = "/immobilienmakler-koeln-suelz.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/immobilienmakler-koeln-weidenpesch"
+  to = "/immobilienmakler-koeln-weidenpesch.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/immobilienmakler-koeln-zollstock"
+  to = "/immobilienmakler-koeln-zollstock.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/impressum"
+  to = "/impressum.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/kaeuferkartei"
+  to = "/kaeuferkartei.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/karriere"
+  to = "/karriere.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/kontakt"
+  to = "/kontakt.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/marktdaten-koeln"
+  to = "/marktdaten-koeln.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/ratgeber"
+  to = "/ratgeber.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/ratgeber-erbimmobilie-verkaufen"
+  to = "/ratgeber-erbimmobilie-verkaufen.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/ratgeber-haus-verkaufen-koeln"
+  to = "/ratgeber-haus-verkaufen-koeln.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/ratgeber-immobilienbewertung"
+  to = "/ratgeber-immobilienbewertung.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/tippgeberprovision"
+  to = "/tippgeberprovision.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/ueber-uns"
+  to = "/ueber-uns.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/unterlagen-checkliste"
+  to = "/unterlagen-checkliste.html"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/verkaufte-objekte"
   to = "/verkaufte-objekte.html"
   status = 301
   force = true
 
 [[redirects]]
-  from = "/referenzen"
-  to = "/verkaufte-objekte.html"
+  from = "/widerruf"
+  to = "/widerruf.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/wissen"
+  to = "/wissen.html"
   status = 301
   force = true
 

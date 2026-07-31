@@ -882,6 +882,24 @@
   force = true
 
 [[redirects]]
+  from = "/reihenhaus-verkaufen-koeln"
+  to = "/reihenhaus-verkaufen-koeln.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/doppelhaushaelfte-verkaufen-koeln"
+  to = "/doppelhaushaelfte-verkaufen-koeln.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/vermietete-wohnung-verkaufen-koeln"
+  to = "/vermietete-wohnung-verkaufen-koeln.html"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/immobilienmakler-koeln-suelz"
   to = "/immobilienmakler-koeln-suelz.html"
   status = 301

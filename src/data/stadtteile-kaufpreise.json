@@ -1,0 +1,742 @@
+{
+ "altstadt-nord": {
+  "_stadtteil": "Altstadt/Nord",
+  "Umwandlung": {
+   "eurProM2": 6736,
+   "faelle": 20
+  },
+  "Weiterverkauf": {
+   "eurProM2": 5894,
+   "faelle": 63
+  }
+ },
+ "altstadt-sued": {
+  "_stadtteil": "Altstadt/Süd",
+  "Umwandlung": {
+   "eurProM2": 6708,
+   "faelle": 24
+  },
+  "Weiterverkauf": {
+   "eurProM2": 5841,
+   "faelle": 126
+  }
+ },
+ "bayenthal": {
+  "_stadtteil": "Bayenthal",
+  "Neubau": {
+   "eurProM2": 7579,
+   "faelle": 14
+  },
+  "Umwandlung": {
+   "eurProM2": 7154,
+   "faelle": 7
+  },
+  "Weiterverkauf": {
+   "eurProM2": 5921,
+   "faelle": 30
+  }
+ },
+ "bickendorf": {
+  "_stadtteil": "Bickendorf",
+  "Umwandlung": {
+   "eurProM2": 4956,
+   "faelle": 10
+  },
+  "Weiterverkauf": {
+   "eurProM2": 3928,
+   "faelle": 24
+  }
+ },
+ "bilderstoeckchen": {
+  "_stadtteil": "Bilderstöckchen",
+  "Weiterverkauf": {
+   "eurProM2": 3461,
+   "faelle": 35
+  }
+ },
+ "bocklemuend-mengenich": {
+  "_stadtteil": "Bocklemünd/Mengenich",
+  "Weiterverkauf": {
+   "eurProM2": 3569,
+   "faelle": 29
+  }
+ },
+ "braunsfeld": {
+  "_stadtteil": "Braunsfeld",
+  "Neubau": {
+   "eurProM2": 9170,
+   "faelle": 6
+  },
+  "Weiterverkauf": {
+   "eurProM2": 5128,
+   "faelle": 37
+  }
+ },
+ "brueck": {
+  "_stadtteil": "Brück",
+  "Neubau": {
+   "eurProM2": 6905,
+   "faelle": 4
+  },
+  "Weiterverkauf": {
+   "eurProM2": 3233,
+   "faelle": 31
+  }
+ },
+ "buchforst": {
+  "_stadtteil": "Buchforst",
+  "Weiterverkauf": {
+   "eurProM2": 3272,
+   "faelle": 4
+  }
+ },
+ "buchheim": {
+  "_stadtteil": "Buchheim",
+  "Weiterverkauf": {
+   "eurProM2": 3254,
+   "faelle": 27
+  }
+ },
+ "chorweiler": {
+  "_stadtteil": "Chorweiler",
+  "Weiterverkauf": {
+   "eurProM2": 2697,
+   "faelle": 11
+  }
+ },
+ "dellbrueck": {
+  "_stadtteil": "Dellbrück",
+  "Neubau": {
+   "eurProM2": 6691,
+   "faelle": 4
+  },
+  "Weiterverkauf": {
+   "eurProM2": 3630,
+   "faelle": 53
+  }
+ },
+ "deutz": {
+  "_stadtteil": "Deutz",
+  "Weiterverkauf": {
+   "eurProM2": 4690,
+   "faelle": 40
+  }
+ },
+ "duennwald": {
+  "_stadtteil": "Dünnwald",
+  "Umwandlung": {
+   "eurProM2": 2834,
+   "faelle": 7
+  },
+  "Weiterverkauf": {
+   "eurProM2": 3571,
+   "faelle": 12
+  }
+ },
+ "ehrenfeld": {
+  "_stadtteil": "Ehrenfeld",
+  "Neubau": {
+   "eurProM2": 7149,
+   "faelle": 141
+  },
+  "Umwandlung": {
+   "eurProM2": 5405,
+   "faelle": 18
+  },
+  "Weiterverkauf": {
+   "eurProM2": 5078,
+   "faelle": 112
+  }
+ },
+ "eil": {
+  "_stadtteil": "Eil",
+  "Weiterverkauf": {
+   "eurProM2": 2826,
+   "faelle": 32
+  }
+ },
+ "elsdorf": {
+  "_stadtteil": "Elsdorf",
+  "Neubau": {
+   "eurProM2": 5195,
+   "faelle": 5
+  }
+ },
+ "ensen": {
+  "_stadtteil": "Ensen",
+  "Weiterverkauf": {
+   "eurProM2": 3385,
+   "faelle": 24
+  }
+ },
+ "esch-auweiler": {
+  "_stadtteil": "Esch/Auweiler",
+  "Weiterverkauf": {
+   "eurProM2": 3289,
+   "faelle": 10
+  }
+ },
+ "finkenberg": {
+  "_stadtteil": "Finkenberg",
+  "Weiterverkauf": {
+   "eurProM2": 2110,
+   "faelle": 16
+  }
+ },
+ "flittard": {
+  "_stadtteil": "Flittard",
+  "Weiterverkauf": {
+   "eurProM2": 2661,
+   "faelle": 9
+  }
+ },
+ "fuehlingen": {
+  "_stadtteil": "Fühlingen",
+  "Weiterverkauf": {
+   "eurProM2": 4785,
+   "faelle": 4
+  }
+ },
+ "gremberghoven": {
+  "_stadtteil": "Gremberghoven",
+  "Weiterverkauf": {
+   "eurProM2": 3129,
+   "faelle": 12
+  }
+ },
+ "grengel": {
+  "_stadtteil": "Grengel",
+  "Weiterverkauf": {
+   "eurProM2": 2637,
+   "faelle": 21
+  }
+ },
+ "hahnwald": {
+  "_stadtteil": "Hahnwald",
+  "Weiterverkauf": {
+   "eurProM2": 7952,
+   "faelle": 5
+  }
+ },
+ "heimersdorf": {
+  "_stadtteil": "Heimersdorf",
+  "Umwandlung": {
+   "eurProM2": 4240,
+   "faelle": 4
+  },
+  "Weiterverkauf": {
+   "eurProM2": 2789,
+   "faelle": 12
+  }
+ },
+ "holweide": {
+  "_stadtteil": "Holweide",
+  "Neubau": {
+   "eurProM2": 5792,
+   "faelle": 8
+  },
+  "Umwandlung": {
+   "eurProM2": 2614,
+   "faelle": 6
+  },
+  "Weiterverkauf": {
+   "eurProM2": 3301,
+   "faelle": 44
+  }
+ },
+ "humboldt-gremberg": {
+  "_stadtteil": "Humboldt/Gremberg",
+  "Weiterverkauf": {
+   "eurProM2": 3049,
+   "faelle": 63
+  }
+ },
+ "hoehenberg": {
+  "_stadtteil": "Höhenberg",
+  "Neubau": {
+   "eurProM2": 6256,
+   "faelle": 13
+  },
+  "Weiterverkauf": {
+   "eurProM2": 3097,
+   "faelle": 61
+  }
+ },
+ "hoehenhaus": {
+  "_stadtteil": "Höhenhaus",
+  "Weiterverkauf": {
+   "eurProM2": 3317,
+   "faelle": 26
+  }
+ },
+ "junkersdorf": {
+  "_stadtteil": "Junkersdorf",
+  "Neubau": {
+   "eurProM2": 10170,
+   "faelle": 3
+  },
+  "Weiterverkauf": {
+   "eurProM2": 4414,
+   "faelle": 103
+  }
+ },
+ "kalk": {
+  "_stadtteil": "Kalk",
+  "Weiterverkauf": {
+   "eurProM2": 3447,
+   "faelle": 38
+  }
+ },
+ "klettenberg": {
+  "_stadtteil": "Klettenberg",
+  "Weiterverkauf": {
+   "eurProM2": 5339,
+   "faelle": 49
+  }
+ },
+ "langel": {
+  "_stadtteil": "Langel",
+  "Weiterverkauf": {
+   "eurProM2": 3166,
+   "faelle": 3
+  }
+ },
+ "lind": {
+  "_stadtteil": "Lind",
+  "Weiterverkauf": {
+   "eurProM2": 3191,
+   "faelle": 16
+  }
+ },
+ "lindenthal": {
+  "_stadtteil": "Lindenthal",
+  "Umwandlung": {
+   "eurProM2": 6785,
+   "faelle": 10
+  },
+  "Weiterverkauf": {
+   "eurProM2": 5569,
+   "faelle": 144
+  }
+ },
+ "longerich": {
+  "_stadtteil": "Longerich",
+  "Weiterverkauf": {
+   "eurProM2": 3274,
+   "faelle": 23
+  }
+ },
+ "loevenich": {
+  "_stadtteil": "Lövenich",
+  "Weiterverkauf": {
+   "eurProM2": 3627,
+   "faelle": 28
+  }
+ },
+ "marienburg": {
+  "_stadtteil": "Marienburg",
+  "Neubau": {
+   "eurProM2": 9888,
+   "faelle": 11
+  },
+  "Weiterverkauf": {
+   "eurProM2": 5684,
+   "faelle": 47
+  }
+ },
+ "mauenheim": {
+  "_stadtteil": "Mauenheim",
+  "Weiterverkauf": {
+   "eurProM2": 3793,
+   "faelle": 13
+  }
+ },
+ "merheim": {
+  "_stadtteil": "Merheim",
+  "Weiterverkauf": {
+   "eurProM2": 3415,
+   "faelle": 23
+  }
+ },
+ "merkenich": {
+  "_stadtteil": "Merkenich",
+  "Weiterverkauf": {
+   "eurProM2": 3919,
+   "faelle": 4
+  }
+ },
+ "meschenich": {
+  "_stadtteil": "Meschenich",
+  "Weiterverkauf": {
+   "eurProM2": 2880,
+   "faelle": 5
+  }
+ },
+ "muelheim": {
+  "_stadtteil": "Mülheim",
+  "Umwandlung": {
+   "eurProM2": 4991,
+   "faelle": 18
+  },
+  "Weiterverkauf": {
+   "eurProM2": 3747,
+   "faelle": 118
+  }
+ },
+ "muengersdorf": {
+  "_stadtteil": "Müngersdorf",
+  "Weiterverkauf": {
+   "eurProM2": 4789,
+   "faelle": 19
+  }
+ },
+ "neubrueck": {
+  "_stadtteil": "Neubrück",
+  "Weiterverkauf": {
+   "eurProM2": 2629,
+   "faelle": 29
+  }
+ },
+ "neuehrenfeld": {
+  "_stadtteil": "Neuehrenfeld",
+  "Umwandlung": {
+   "eurProM2": 5506,
+   "faelle": 6
+  },
+  "Weiterverkauf": {
+   "eurProM2": 4386,
+   "faelle": 84
+  }
+ },
+ "neustadt-nord": {
+  "_stadtteil": "Neustadt/Nord",
+  "Neubau": {
+   "eurProM2": 8698,
+   "faelle": 39
+  },
+  "Umwandlung": {
+   "eurProM2": 7387,
+   "faelle": 6
+  },
+  "Weiterverkauf": {
+   "eurProM2": 5571,
+   "faelle": 163
+  }
+ },
+ "neustadt-sued": {
+  "_stadtteil": "Neustadt/Süd",
+  "Umwandlung": {
+   "eurProM2": 7556,
+   "faelle": 36
+  },
+  "Weiterverkauf": {
+   "eurProM2": 5766,
+   "faelle": 216
+  }
+ },
+ "niehl": {
+  "_stadtteil": "Niehl",
+  "Neubau": {
+   "eurProM2": 7006,
+   "faelle": 15
+  },
+  "Weiterverkauf": {
+   "eurProM2": 3949,
+   "faelle": 75
+  }
+ },
+ "nippes": {
+  "_stadtteil": "Nippes",
+  "Neubau": {
+   "eurProM2": 7532,
+   "faelle": 25
+  },
+  "Umwandlung": {
+   "eurProM2": 5766,
+   "faelle": 25
+  },
+  "Weiterverkauf": {
+   "eurProM2": 4590,
+   "faelle": 141
+  }
+ },
+ "ossendorf": {
+  "_stadtteil": "Ossendorf",
+  "Neubau": {
+   "eurProM2": 5718,
+   "faelle": 9
+  },
+  "Weiterverkauf": {
+   "eurProM2": 4601,
+   "faelle": 13
+  }
+ },
+ "ostheim": {
+  "_stadtteil": "Ostheim",
+  "Weiterverkauf": {
+   "eurProM2": 2457,
+   "faelle": 14
+  }
+ },
+ "pesch": {
+  "_stadtteil": "Pesch",
+  "Weiterverkauf": {
+   "eurProM2": 2984,
+   "faelle": 18
+  }
+ },
+ "poll": {
+  "_stadtteil": "Poll",
+  "Neubau": {
+   "eurProM2": 6095,
+   "faelle": 6
+  },
+  "Weiterverkauf": {
+   "eurProM2": 3576,
+   "faelle": 29
+  }
+ },
+ "porz": {
+  "_stadtteil": "Porz",
+  "Weiterverkauf": {
+   "eurProM2": 3140,
+   "faelle": 72
+  }
+ },
+ "raderberg": {
+  "_stadtteil": "Raderberg",
+  "Neubau": {
+   "eurProM2": 7309,
+   "faelle": 20
+  },
+  "Umwandlung": {
+   "eurProM2": 6736,
+   "faelle": 3
+  },
+  "Weiterverkauf": {
+   "eurProM2": 5113,
+   "faelle": 13
+  }
+ },
+ "raderthal": {
+  "_stadtteil": "Raderthal",
+  "Weiterverkauf": {
+   "eurProM2": 4628,
+   "faelle": 11
+  }
+ },
+ "rath-heumar": {
+  "_stadtteil": "Rath/Heumar",
+  "Weiterverkauf": {
+   "eurProM2": 3728,
+   "faelle": 15
+  }
+ },
+ "riehl": {
+  "_stadtteil": "Riehl",
+  "Weiterverkauf": {
+   "eurProM2": 4606,
+   "faelle": 54
+  }
+ },
+ "rodenkirchen": {
+  "_stadtteil": "Rodenkirchen",
+  "Neubau": {
+   "eurProM2": 7699,
+   "faelle": 18
+  },
+  "Weiterverkauf": {
+   "eurProM2": 4790,
+   "faelle": 79
+  }
+ },
+ "rondorf": {
+  "_stadtteil": "Rondorf",
+  "Weiterverkauf": {
+   "eurProM2": 3768,
+   "faelle": 17
+  }
+ },
+ "seeberg": {
+  "_stadtteil": "Seeberg",
+  "Weiterverkauf": {
+   "eurProM2": 2626,
+   "faelle": 13
+  }
+ },
+ "stammheim": {
+  "_stadtteil": "Stammheim",
+  "Weiterverkauf": {
+   "eurProM2": 3489,
+   "faelle": 9
+  }
+ },
+ "suelz": {
+  "_stadtteil": "Sülz",
+  "Umwandlung": {
+   "eurProM2": 5171,
+   "faelle": 4
+  },
+  "Weiterverkauf": {
+   "eurProM2": 5055,
+   "faelle": 121
+  }
+ },
+ "suerth": {
+  "_stadtteil": "Sürth",
+  "Neubau": {
+   "eurProM2": 6394,
+   "faelle": 5
+  },
+  "Weiterverkauf": {
+   "eurProM2": 4740,
+   "faelle": 37
+  }
+ },
+ "urbach": {
+  "_stadtteil": "Urbach",
+  "Weiterverkauf": {
+   "eurProM2": 2604,
+   "faelle": 49
+  }
+ },
+ "vingst": {
+  "_stadtteil": "Vingst",
+  "Weiterverkauf": {
+   "eurProM2": 3076,
+   "faelle": 18
+  }
+ },
+ "vogelsang": {
+  "_stadtteil": "Vogelsang",
+  "Weiterverkauf": {
+   "eurProM2": 4888,
+   "faelle": 5
+  }
+ },
+ "volkhoven-weiler": {
+  "_stadtteil": "Volkhoven/Weiler",
+  "Neubau": {
+   "eurProM2": 5141,
+   "faelle": 5
+  },
+  "Weiterverkauf": {
+   "eurProM2": 3391,
+   "faelle": 9
+  }
+ },
+ "wahn": {
+  "_stadtteil": "Wahn",
+  "Weiterverkauf": {
+   "eurProM2": 3364,
+   "faelle": 16
+  }
+ },
+ "wahnheide": {
+  "_stadtteil": "Wahnheide",
+  "Weiterverkauf": {
+   "eurProM2": 2898,
+   "faelle": 34
+  }
+ },
+ "weiden": {
+  "_stadtteil": "Weiden",
+  "Neubau": {
+   "eurProM2": 6377,
+   "faelle": 14
+  },
+  "Umwandlung": {
+   "eurProM2": 3436,
+   "faelle": 12
+  },
+  "Weiterverkauf": {
+   "eurProM2": 3368,
+   "faelle": 132
+  }
+ },
+ "weidenpesch": {
+  "_stadtteil": "Weidenpesch",
+  "Neubau": {
+   "eurProM2": 5819,
+   "faelle": 53
+  },
+  "Weiterverkauf": {
+   "eurProM2": 3578,
+   "faelle": 51
+  }
+ },
+ "weiss": {
+  "_stadtteil": "Weiß",
+  "Umwandlung": {
+   "eurProM2": 3284,
+   "faelle": 6
+  },
+  "Weiterverkauf": {
+   "eurProM2": 3811,
+   "faelle": 16
+  }
+ },
+ "westhoven": {
+  "_stadtteil": "Westhoven",
+  "Weiterverkauf": {
+   "eurProM2": 3292,
+   "faelle": 25
+  }
+ },
+ "widdersdorf": {
+  "_stadtteil": "Widdersdorf",
+  "Neubau": {
+   "eurProM2": 6326,
+   "faelle": 10
+  },
+  "Weiterverkauf": {
+   "eurProM2": 4151,
+   "faelle": 16
+  }
+ },
+ "worringen": {
+  "_stadtteil": "Worringen",
+  "Weiterverkauf": {
+   "eurProM2": 3485,
+   "faelle": 8
+  }
+ },
+ "zollstock": {
+  "_stadtteil": "Zollstock",
+  "Umwandlung": {
+   "eurProM2": 6199,
+   "faelle": 8
+  },
+  "Weiterverkauf": {
+   "eurProM2": 4368,
+   "faelle": 114
+  }
+ },
+ "zuendorf": {
+  "_stadtteil": "Zündorf",
+  "Weiterverkauf": {
+   "eurProM2": 3166,
+   "faelle": 52
+  }
+ },
+ "_quelle": {
+  "name": "Grundstuecksmarktbericht 2026 fuer die Stadt Koeln, Gutachterausschuss fuer Grundstueckswerte",
+  "url": "https://www.gars.nrw/images/user/GA_K%C3%B6ln/GMB2026_Digitalversion.pdf",
+  "abgerufen": "2026-07-31",
+  "hinweis": "Notarielle Kaufpreise, keine Angebotspreise. Arithmetisches Mittel Euro je m2 Wohnflaeche fuer Eigentumswohnungen. Der Bericht fuehrt nur Stadtteile mit mindestens drei auswertbaren Vertraegen; fehlende Stadtteile sind daher kein Datenfehler.",
+  "kategorien": {
+   "Neubau": "Erstverkauf neu errichteter Wohnungen",
+   "Weiterverkauf": "Wiederverkauf aus dem Bestand",
+   "Umwandlung": "erstmaliger Verkauf nach Aufteilung in Wohneigentum"
+  },
+  "pflege": "tools/stadtteildaten/kaufpreise.py --neu ausfuehren. Bei einem neuen Jahrgang die PDF-Adresse oben anpassen.",
+  "ohneWerte": [
+   "Blumenberg",
+   "Godorf",
+   "Immendorf",
+   "Libur",
+   "Lindweiler",
+   "Roggendorf/Thenhoven"
+  ]
+ }
+}

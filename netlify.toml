@@ -1452,6 +1452,42 @@
   force = true
 
 [[redirects]]
+  from = "/immobilienmakler-duesseldorf"
+  to = "/immobilienmakler-duesseldorf.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/immobilienmakler-bonn"
+  to = "/immobilienmakler-bonn.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/immobilienmakler-neuss"
+  to = "/immobilienmakler-neuss.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/immobilienmakler-solingen"
+  to = "/immobilienmakler-solingen.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/immobilienmakler-wuppertal"
+  to = "/immobilienmakler-wuppertal.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/immobilienmakler-remscheid"
+  to = "/immobilienmakler-remscheid.html"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/immobilienmakler-koeln-suelz"
   to = "/immobilienmakler-koeln-suelz.html"
   status = 301

@@ -31,6 +31,14 @@
   "brwMedian": 600,
   "brwZonen": 286
  },
+ "Bonn": {
+  "brw": [
+   260,
+   2000
+  ],
+  "brwMedian": 750,
+  "brwZonen": 327
+ },
  "Bornheim": {
   "brw": [
    440,
@@ -62,6 +70,14 @@
   ],
   "brwMedian": 410,
   "brwZonen": 26
+ },
+ "Düsseldorf": {
+  "brw": [
+   450,
+   4200
+  ],
+  "brwMedian": 1025,
+  "brwZonen": 198
  },
  "Elsdorf": {
   "brw": [
@@ -255,6 +271,14 @@
   "brwMedian": 290,
   "brwZonen": 41
  },
+ "Neuss": {
+  "brw": [
+   330,
+   1010
+  ],
+  "brwMedian": 620,
+  "brwZonen": 179
+ },
  "Niederkassel": {
   "brw": [
    470,
@@ -295,6 +319,14 @@
   "brwMedian": 610,
   "brwZonen": 34
  },
+ "Remscheid": {
+  "brw": [
+   155,
+   420
+  ],
+  "brwMedian": 230,
+  "brwZonen": 314
+ },
  "Rommerskirchen": {
   "brw": [
    105,
@@ -326,6 +358,14 @@
   ],
   "brwMedian": 550,
   "brwZonen": 34
+ },
+ "Solingen": {
+  "brw": [
+   240,
+   565
+  ],
+  "brwMedian": 415,
+  "brwZonen": 280
  },
  "Swisttal": {
   "brw": [
@@ -382,6 +422,14 @@
   ],
   "brwMedian": 115,
   "brwZonen": 113
+ },
+ "Wuppertal": {
+  "brw": [
+   160,
+   510
+  ],
+  "brwMedian": 290,
+  "brwZonen": 581
  },
  "Zülpich": {
   "brw": [

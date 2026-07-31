@@ -1356,6 +1356,102 @@
   force = true
 
 [[redirects]]
+  from = "/immobilienmakler-lindlar"
+  to = "/immobilienmakler-lindlar.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/immobilienmakler-much"
+  to = "/immobilienmakler-much.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/immobilienmakler-engelskirchen"
+  to = "/immobilienmakler-engelskirchen.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/immobilienmakler-wipperfuerth"
+  to = "/immobilienmakler-wipperfuerth.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/immobilienmakler-hueckeswagen"
+  to = "/immobilienmakler-hueckeswagen.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/immobilienmakler-zuelpich"
+  to = "/immobilienmakler-zuelpich.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/immobilienmakler-euskirchen"
+  to = "/immobilienmakler-euskirchen.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/immobilienmakler-koenigswinter"
+  to = "/immobilienmakler-koenigswinter.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/immobilienmakler-haan"
+  to = "/immobilienmakler-haan.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/immobilienmakler-erkrath"
+  to = "/immobilienmakler-erkrath.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/immobilienmakler-grevenbroich"
+  to = "/immobilienmakler-grevenbroich.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/immobilienmakler-noervenich"
+  to = "/immobilienmakler-noervenich.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/immobilienmakler-elsdorf-rheinland"
+  to = "/immobilienmakler-elsdorf-rheinland.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/immobilienmakler-vettweiss"
+  to = "/immobilienmakler-vettweiss.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/immobilienmakler-merzenich"
+  to = "/immobilienmakler-merzenich.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/immobilienmakler-neunkirchen-seelscheid"
+  to = "/immobilienmakler-neunkirchen-seelscheid.html"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/immobilienmakler-koeln-suelz"
   to = "/immobilienmakler-koeln-suelz.html"
   status = 301

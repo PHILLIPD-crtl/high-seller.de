@@ -39,7 +39,11 @@ STAEDTE = ["Hürth", "Frechen", "Pulheim", "Brühl", "Wesseling",
            # Remscheid - dort ist ein Koelner Buero weder glaubwuerdig noch
            # konkurrenzfaehig, und schwache Seiten beschaedigen die starken.
            "Siegburg", "Sankt Augustin", "Hennef (Sieg)", "Alfter", "Swisttal",
-           "Weilerswist", "Rommerskirchen", "Bedburg", "Wermelskirchen", "Hilden"]
+           "Weilerswist", "Rommerskirchen", "Bedburg", "Wermelskirchen", "Hilden",
+           "Lindlar", "Much", "Engelskirchen", "Wipperfürth", "Hückeswagen",
+           "Zülpich", "Euskirchen", "Königswinter", "Haan", "Erkrath",
+           "Grevenbroich", "Nörvenich", "Elsdorf", "Vettweiß", "Merzenich",
+           "Neunkirchen-Seelscheid"]
 NUTZUNGEN = ("W", "WA", "WR", "WB")
 
 WURZEL = Path(__file__).resolve().parents[2]

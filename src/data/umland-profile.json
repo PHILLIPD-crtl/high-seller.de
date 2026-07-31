@@ -230,5 +230,117 @@
   "einwohner": 56000,
   "lage": "Nördlich von Köln zwischen Düsseldorf und Solingen, rund 23 Kilometer vom Kölner Zentrum. Zwei Bahnhöfe mit der S 1 nach Düsseldorf und Solingen, dazu die A 3, A 46 und A 59 — eine der bestangebundenen Städte der Region.",
   "markt": "Kompakt und urban für eine Mittelstadt, mit einer der längsten Fußgängerzonen Nordrhein-Westfalens. Der Markt ist stärker von Düsseldorf geprägt als von Köln, was sich im Preisniveau zeigt: 610 Euro je Quadratmeter im Median, deutlich über den bergischen Nachbarorten."
+ },
+ "lindlar": {
+  "_stadt": "Lindlar",
+  "kreis": "Oberbergischer Kreis",
+  "einwohner": 22000,
+  "lage": "Östlich von Köln im Oberbergischen, rund 22 Kilometer vom Zentrum. Erreichbar über die A 4 und Landstraßen; einen Schienenanschluss gibt es nicht, die nächsten Bahnhöfe liegen in Overath und Engelskirchen.",
+  "markt": "Bekannt durch den Lindlarer Grauwacke-Abbau und das LVR-Freilichtmuseum. Ländlich geprägt mit über hundert Ortschaften, überwiegend Einfamilienhäuser mit großen Grundstücken. Die Bodenrichtwerte gehören zu den niedrigsten im gesamten Einzugsgebiet — wer Fläche sucht und pendeln kann, findet hier das meiste fürs Geld."
+ },
+ "much": {
+  "_stadt": "Much",
+  "kreis": "Rhein-Sieg-Kreis",
+  "einwohner": 15000,
+  "lage": "Östlich von Köln im Bergischen, rund 26 Kilometer vom Zentrum. Angebunden über die A 3 und Landstraßen; kein Bahnanschluss, der nächste Halt ist Hennef oder Overath.",
+  "markt": "Ländlich mit über hundertfünfzig Ortsteilen und Weilern, Fachwerk und Schiefer prägen die alten Kerne. Überwiegend Einfamilienhäuser, oft auf großen Grundstücken in Hanglage. Die fehlende Schienenanbindung hält die Preise niedrig — für Käufer, die auf das Auto angewiesen sind, ist das der günstigste Weg zu einem Haus im Grünen."
+ },
+ "engelskirchen": {
+  "_stadt": "Engelskirchen",
+  "kreis": "Oberbergischer Kreis",
+  "einwohner": 19000,
+  "lage": "Östlich von Köln im Aggertal, rund 26 Kilometer vom Zentrum. Die S 19 hält in Engelskirchen, Ründeroth und Osberghausen und fährt direkt nach Köln; dazu die A 4 mit eigener Anschlussstelle.",
+  "markt": "Industriegeschichte prägt den Ort — die ehemalige Baumwollspinnerei Ermen und Engels, an der Friedrich Engels beteiligt war, ist heute Industriemuseum. Überwiegend Einfamilienhäuser im Aggertal und an den Hängen. Die durchgehende S-Bahn nach Köln bei sehr niedrigen Bodenwerten macht Engelskirchen für Pendler interessant."
+ },
+ "wipperfuerth": {
+  "_stadt": "Wipperfürth",
+  "kreis": "Oberbergischer Kreis",
+  "einwohner": 21000,
+  "lage": "Nordöstlich von Köln im Bergischen Land, rund 28 Kilometer vom Zentrum. Erreichbar über Landstraßen und die A 1; einen Personenbahnhof gibt es nicht mehr.",
+  "markt": "Die älteste Stadt des Bergischen Landes mit erhaltenem historischem Kern. Überwiegend Einfamilienhäuser, dazu Mittelstand und Industrie als Arbeitgeber vor Ort. Die Preise gehören zu den niedrigsten der Region — wer in Wipperfürth kauft, arbeitet meist auch dort oder in der näheren Umgebung."
+ },
+ "hueckeswagen": {
+  "_stadt": "Hückeswagen",
+  "kreis": "Oberbergischer Kreis",
+  "einwohner": 15000,
+  "lage": "Nordöstlich von Köln im Bergischen Land, rund 30 Kilometer vom Zentrum. Angebunden über Landstraßen; die nächsten Bahnhöfe liegen in Remscheid und Wipperfürth-Umgebung.",
+  "markt": "Schloss Hückeswagen und die Bever-Talsperre prägen das Bild. Kleinstädtisch mit bergischem Fachwerk im Kern, ringsum Einfamilienhäuser und viel Grün. Am äußeren Rand unseres Einzugsgebiets — wir sind hier tätig, wenn die Lage passt, sagen aber ab, wenn uns die Ortskenntnis fehlt."
+ },
+ "zuelpich": {
+  "_stadt": "Zülpich",
+  "kreis": "Kreis Euskirchen",
+  "einwohner": 21000,
+  "lage": "Südwestlich von Köln in der Voreifel, rund 28 Kilometer vom Zentrum. Angebunden über die A 1 und die Bördebahn; nach Köln fährt man rund vierzig Minuten mit dem Auto.",
+  "markt": "Römische Geschichte prägt den Ort — die erhaltene Stadtmauer und die Römerthermen sind überregional bekannt, ebenso der Zülpicher See aus der Landesgartenschau. Überwiegend Ein- und Zweifamilienhäuser bei sehr moderaten Bodenwerten."
+ },
+ "euskirchen": {
+  "_stadt": "Euskirchen",
+  "kreis": "Kreis Euskirchen",
+  "einwohner": 58000,
+  "lage": "Südwestlich von Köln, rund 30 Kilometer vom Zentrum, Kreisstadt. Der Bahnhof Euskirchen ist Knotenpunkt mit der RB 24 nach Köln — rund vierzig Minuten bis zum Hauptbahnhof —, dazu Anschluss an die A 1 und A 61.",
+  "markt": "Die größte Stadt der Voreifel mit eigenem Zentrum und Einzelhandel. Der Ort wurde bei der Flutkatastrophe 2021 schwer getroffen; der Wiederaufbau prägt einzelne Lagen bis heute und gehört bei jeder Bewertung offen benannt. Preisniveau moderat, die Bahnanbindung nach Köln ist das stärkste Argument."
+ },
+ "koenigswinter": {
+  "_stadt": "Königswinter",
+  "kreis": "Rhein-Sieg-Kreis",
+  "einwohner": 42000,
+  "lage": "Südöstlich von Köln am Rhein, rund 29 Kilometer vom Zentrum. Die Stadtbahnlinie 66 verbindet Königswinter mit Bonn und Siegburg, von dort besteht ICE-Anschluss; dazu die A 3 und die Rheinfähre nach Bonn-Mehlem.",
+  "markt": "Das Siebengebirge mit dem Drachenfels prägt den Ort — Tourismus und Wohnlagen mit Rheinblick bestimmen den Markt. Die Hanglagen erzielen deutlich höhere Preise als die Flächen im Tal. Der Markt orientiert sich stärker an Bonn als an Köln."
+ },
+ "haan": {
+  "_stadt": "Haan",
+  "kreis": "Kreis Mettmann",
+  "einwohner": 31000,
+  "lage": "Nördlich von Köln zwischen Düsseldorf und Wuppertal, rund 26 Kilometer vom Kölner Zentrum. Zwei Bahnhöfe mit der S 8 nach Düsseldorf und Wuppertal, dazu die A 46 und A 3.",
+  "markt": "Kleinstädtisch mit erhaltenem Ortskern, umgeben von Grün — das Neandertal liegt in unmittelbarer Nähe. Der Markt wird von Düsseldorf und Wuppertal geprägt, nicht von Köln. Entsprechend liegt das Preisniveau über den bergischen Nachbarorten."
+ },
+ "erkrath": {
+  "_stadt": "Erkrath",
+  "kreis": "Kreis Mettmann",
+  "einwohner": 45000,
+  "lage": "Nördlich von Köln unmittelbar an Düsseldorf grenzend, rund 28 Kilometer vom Kölner Zentrum. Drei S-Bahn-Halte mit der S 8 und S 28, dazu die A 3 und A 46. Düsseldorf ist in zehn Minuten erreichbar.",
+  "markt": "Das Neandertal gab dem Neandertaler seinen Namen und liegt auf Erkrather Gebiet. Der Wohnungsmarkt ist vollständig von Düsseldorf geprägt — wer hier kauft, arbeitet in aller Regel dort. Für Kölner Verhältnisse ist das ein Randgebiet unseres Einzugsgebiets."
+ },
+ "grevenbroich": {
+  "_stadt": "Grevenbroich",
+  "kreis": "Rhein-Kreis Neuss",
+  "einwohner": 63000,
+  "lage": "Nordwestlich von Köln, rund 27 Kilometer vom Zentrum. Der Bahnhof liegt an der Strecke Köln–Mönchengladbach mit RE 8 und RB 27, dazu die A 46 und A 540.",
+  "markt": "Vom Braunkohletagebau und den Kraftwerken Frimmersdorf und Neurath geprägt, dazu Aluminiumindustrie. Der Strukturwandel bestimmt die Entwicklung. Das Preisniveau ist moderat, die Bahnanbindung nach Köln und Düsseldorf gleichermaßen gut."
+ },
+ "noervenich": {
+  "_stadt": "Nörvenich",
+  "kreis": "Kreis Düren",
+  "einwohner": 11000,
+  "lage": "Westlich von Köln in der Zülpicher Börde, rund 23 Kilometer vom Zentrum. Angebunden über die A 4 und Landstraßen; kein Bahnanschluss, der nächste Halt ist Düren oder Kerpen-Buir.",
+  "markt": "Ländlich geprägt mit Schloss Nörvenich und mehreren Ortsteilen in der Börde. Landwirtschaft bestimmt die Umgebung, der Fliegerhorst Nörvenich ist ein wichtiger Arbeitgeber. Sehr niedrige Bodenwerte bei guter Autobahnanbindung nach Köln."
+ },
+ "elsdorf-rheinland": {
+  "_stadt": "Elsdorf",
+  "kreis": "Rhein-Erft-Kreis",
+  "einwohner": 21000,
+  "lage": "Westlich von Köln, rund 23 Kilometer vom Zentrum. Angebunden über die A 4 und A 61; einen Personenbahnhof gibt es nicht, die nächsten Halte liegen in Bedburg und Horrem.",
+  "markt": "Vom Braunkohletagebau geprägt — der Tagebau Hambach reicht bis an das Gemeindegebiet. Die Rekultivierung verändert die Landschaft grundlegend und wird den Ort in den kommenden Jahrzehnten prägen. Preisniveau entsprechend niedrig. Nicht zu verwechseln mit dem Kölner Stadtteil Elsdorf im Bezirk Porz."
+ },
+ "vettweiss": {
+  "_stadt": "Vettweiß",
+  "kreis": "Kreis Düren",
+  "einwohner": 9000,
+  "lage": "Südwestlich von Köln in der Zülpicher Börde, rund 28 Kilometer vom Zentrum. Erreichbar über die A 4 und Landstraßen; kein Schienenanschluss.",
+  "markt": "Ländlich mit dreizehn Ortsteilen, Landwirtschaft prägt die Börde. Überwiegend Einfamilienhäuser mit großen Grundstücken. Am äußeren Rand unseres Einzugsgebiets — die Fahrt nach Köln dauert mit dem Auto rund vierzig Minuten."
+ },
+ "merzenich": {
+  "_stadt": "Merzenich",
+  "kreis": "Kreis Düren",
+  "einwohner": 10000,
+  "lage": "Westlich von Köln zwischen Düren und Kerpen, rund 29 Kilometer vom Zentrum. Angebunden über die A 4 und die Bahnstrecke Köln–Aachen mit Halt in Merzenich.",
+  "markt": "Vom Tagebau Hambach unmittelbar betroffen — der Ortsteil Morschenich wurde umgesiedelt, das Gelände wird rekultiviert. Diese Entwicklung prägt den Markt stärker als jede andere Größe und gehört bei einer Bewertung offen angesprochen. Die Bahnanbindung nach Köln ist gut."
+ },
+ "neunkirchen-seelscheid": {
+  "_stadt": "Neunkirchen-Seelscheid",
+  "kreis": "Rhein-Sieg-Kreis",
+  "einwohner": 20000,
+  "lage": "Östlich von Köln im Bergischen, rund 24 Kilometer vom Zentrum. Angebunden über die A 3 und Landstraßen; kein Bahnanschluss, die nächsten Halte sind Hennef und Siegburg mit ICE-Verbindung.",
+  "markt": "Aus zwei Orten 1969 zusammengefügt, ländlich geprägt mit vielen kleinen Ortschaften. Überwiegend Einfamilienhäuser mit großen Grundstücken. Die Nähe zum ICE-Halt Siegburg ist für Pendler das eigentliche Argument, die fehlende Schienenanbindung vor Ort hält die Preise niedrig."
  }
 }

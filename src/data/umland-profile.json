@@ -342,5 +342,47 @@
   "einwohner": 20000,
   "lage": "Östlich von Köln im Bergischen, rund 24 Kilometer vom Zentrum. Angebunden über die A 3 und Landstraßen; kein Bahnanschluss, die nächsten Halte sind Hennef und Siegburg mit ICE-Verbindung.",
   "markt": "Aus zwei Orten 1969 zusammengefügt, ländlich geprägt mit vielen kleinen Ortschaften. Überwiegend Einfamilienhäuser mit großen Grundstücken. Die Nähe zum ICE-Halt Siegburg ist für Pendler das eigentliche Argument, die fehlende Schienenanbindung vor Ort hält die Preise niedrig."
+ },
+ "duesseldorf": {
+  "_stadt": "Düsseldorf",
+  "kreis": "Landeshauptstadt",
+  "einwohner": 653000,
+  "lage": "Rund 40 Kilometer nördlich von Köln, verbunden über die A 3, A 57 und den Rhein-Ruhr-Express, der beide Städte in gut zwanzig Minuten verbindet. Der Kölner Hauptbahnhof und Düsseldorf Hbf liegen näher beieinander als manche Stadtteile innerhalb einer der beiden Städte.",
+  "markt": "Der teuerste Markt der Region: Mit über 1.000 Euro je Quadratmeter im Median liegen die Bodenrichtwerte deutlich über Köln. Wir sind ein Kölner Büro und arbeiten in Düsseldorf dann, wenn es der Fall hergibt — etwa wenn Eigentümer aus unserem Kölner Bestand dort eine zweite Immobilie halten oder ein Verkauf in beiden Städten zusammenhängt. Für eine reine Düsseldorfer Vermarktung ohne Bezug zu Köln empfehlen wir Ihnen ehrlicherweise einen Anbieter vor Ort."
+ },
+ "bonn": {
+  "_stadt": "Bonn",
+  "kreis": "kreisfreie Stadt",
+  "einwohner": 336000,
+  "lage": "Rund 30 Kilometer südlich von Köln, verbunden über die A 555, die Stadtbahnlinie 16 und die Bahn — je nach Verbindung zwanzig bis dreißig Minuten. Die Achse Köln–Bonn ist einer der am dichtesten verflochtenen Wirtschaftsräume Deutschlands.",
+  "markt": "Geprägt von den UN-Institutionen, den DAX-Konzernen Deutsche Post und Telekom sowie der Universität. Das Preisniveau liegt mit 750 Euro je Quadratmeter im Median über dem Kölner Umland, aber unter Köln selbst. Wir arbeiten hier regelmäßig, weil viele Eigentümer zwischen beiden Städten pendeln oder in beiden Immobilien halten — Bonn liegt näher an unserem Büro im Zollhafen als mancher rechtsrheinische Kölner Stadtteil."
+ },
+ "neuss": {
+  "_stadt": "Neuss",
+  "kreis": "Rhein-Kreis Neuss",
+  "einwohner": 153000,
+  "lage": "Rund 26 Kilometer nordwestlich von Köln am linken Rheinufer, gegenüber von Düsseldorf. Angebunden über die A 57 und die S 11, die direkt nach Köln fährt.",
+  "markt": "Eine der ältesten Städte Deutschlands mit römischem Ursprung, heute geprägt vom Hafen — einem der größten Binnenhäfen Europas. Der Markt orientiert sich stärker an Düsseldorf als an Köln, mit 620 Euro je Quadratmeter im Median. Für Eigentümer mit Bezug nach Köln sind wir hier tätig; wer ausschließlich in Neuss verwurzelt ist, findet vor Ort spezialisierte Anbieter."
+ },
+ "solingen": {
+  "_stadt": "Solingen",
+  "kreis": "kreisfreie Stadt",
+  "einwohner": 160000,
+  "lage": "Rund 21 Kilometer nordöstlich von Köln im Bergischen Land. Angebunden über die A 3 und die S 1 und S 7; der Bahnhof Solingen Hbf ist ICE-Halt an der Strecke Köln–Dortmund.",
+  "markt": "Die Klingenstadt — Schneidwaren aus Solingen sind ein weltweit geschützter Herkunftsbegriff. Bergisch geprägt mit vielen Hanglagen und Schieferfassaden, dazu Industrie. Mit 415 Euro je Quadratmeter im Median deutlich günstiger als Köln bei ICE-Anbindung. Für Pendler nach Köln durchaus eine Option, die viele nicht auf dem Schirm haben."
+ },
+ "wuppertal": {
+  "_stadt": "Wuppertal",
+  "kreis": "kreisfreie Stadt",
+  "einwohner": 355000,
+  "lage": "Rund 29 Kilometer nordöstlich von Köln im Bergischen Land. Angebunden über die A 1 und A 46 sowie die S 8 und Regionalzüge; nach Köln sind es rund vierzig Minuten mit der Bahn.",
+  "markt": "Die Stadt der Schwebebahn, gewachsen aus Elberfeld und Barmen im engen Tal der Wupper. Der Markt ist ausgeprägt kleinteilig: Die Hanglagen unterscheiden sich stark, die Spanne der Bodenrichtwerte ist eine der breitesten der Region. Mit 290 Euro je Quadratmeter im Median gehört Wuppertal zu den günstigsten Großstädten Nordrhein-Westfalens — für Kapitalanleger ein Markt mit auskömmlichen Renditen."
+ },
+ "remscheid": {
+  "_stadt": "Remscheid",
+  "kreis": "kreisfreie Stadt",
+  "einwohner": 112000,
+  "lage": "Rund 26 Kilometer nordöstlich von Köln im Bergischen Land, auf einem Höhenrücken zwischen Wupper und Ennepe. Angebunden über die A 1; die Bahn führt über Solingen oder Wuppertal nach Köln.",
+  "markt": "Werkzeugstadt mit langer Industriegeschichte, Heimat der Müngstener Brücke — der höchsten Eisenbahnbrücke Deutschlands. Bergisch geprägt mit vielen Hanglagen. Mit 230 Euro je Quadratmeter im Median einer der günstigsten Standorte der gesamten Region. Wir sind hier tätig, wenn Eigentümer einen Bezug nach Köln haben; für die reine lokale Vermarktung gibt es vor Ort erfahrene Anbieter."
  }
 }

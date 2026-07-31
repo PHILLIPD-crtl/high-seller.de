@@ -43,7 +43,12 @@ STAEDTE = ["Hürth", "Frechen", "Pulheim", "Brühl", "Wesseling",
            "Lindlar", "Much", "Engelskirchen", "Wipperfürth", "Hückeswagen",
            "Zülpich", "Euskirchen", "Königswinter", "Haan", "Erkrath",
            "Grevenbroich", "Nörvenich", "Elsdorf", "Vettweiß", "Merzenich",
-           "Neunkirchen-Seelscheid"]
+           "Neunkirchen-Seelscheid",
+           # Grossstaedte im Ring, auf ausdrueckliche Entscheidung des Inhabers
+           # ergaenzt. Sie haben eigene Maklermaerkte; die Seiten positionieren
+           # Highseller entsprechend als Koelner Buero mit Einzugsgebiet, nicht
+           # als lokalen Anbieter.
+           "Düsseldorf", "Bonn", "Wuppertal", "Neuss", "Solingen", "Remscheid"]
 NUTZUNGEN = ("W", "WA", "WR", "WB")
 
 WURZEL = Path(__file__).resolve().parents[2]

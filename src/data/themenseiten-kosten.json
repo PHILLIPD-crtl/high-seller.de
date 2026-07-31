@@ -143,5 +143,53 @@
   "bullet1": "Berechnung der Entschädigung vor der Verkaufsentscheidung",
   "bullet2": "Prüfung von Kündigungsrechten nach § 489 BGB",
   "bullet3": "Vergleich mit Übertragung des Darlehens auf ein neues Objekt"
+ },
+ "erbschaftsteuer-immobilie-koeln": {
+  "titel": "Erbschaftsteuer auf Immobilien | Freibeträge & Bewertung",
+  "h1": "Erbschaftsteuer auf Immobilien",
+  "besch": "Erbschaftsteuer bei Immobilien: Freibeträge, Bewertung nach BewG, Familienheim-Befreiung und Nachweis eines niedrigeren Werts.",
+  "kurz": "Die Freibeträge sind hoch — die Bewertung durch das Finanzamt oft höher als gedacht.",
+  "a1": "Die Freibeträge betragen 500.000 Euro für Ehegatten und eingetragene Lebenspartner, 400.000 Euro je Kind, 200.000 Euro für Enkel und 20.000 Euro für Geschwister, Nichten, Neffen und Nichtverwandte. Sie gelten je Erwerber und erneuern sich alle zehn Jahre. Der Steuersatz richtet sich nach Steuerklasse und Erwerbswert und reicht von 7 bis 50 Prozent.",
+  "a2": "Bewertet wird nach dem Bewertungsgesetz, nicht nach dem tatsächlichen Marktwert. Für Ein- und Zweifamilienhäuser gilt das Vergleichswertverfahren, ersatzweise das Sachwertverfahren; für vermietete Objekte das Ertragswertverfahren. Seit der Reform durch das Jahressteuergesetz 2022 fallen die Werte spürbar höher aus als zuvor — Erben werden regelmäßig davon überrascht, dass das Finanzamt über dem liegt, was sie am Markt erzielen könnten.",
+  "a3": "Dagegen gibt es ein Mittel: den Nachweis eines niedrigeren gemeinen Werts nach § 198 BewG. Zulässig sind ein Gutachten des Gutachterausschusses oder eines zertifizierten Sachverständigen — oder ein zeitnaher Verkauf im gewöhnlichen Geschäftsverkehr. Wer ohnehin verkaufen will, hat damit den einfachsten Nachweis in der Hand. Die Fristen dafür sollten Sie mit Ihrem Steuerberater abstimmen.",
+  "faq1_f": "Wann ist das Familienheim steuerfrei?",
+  "faq1_a": "Erben Ehegatten die selbstgenutzte Wohnung, bleibt sie nach § 13 Abs. 1 Nr. 4b ErbStG steuerfrei, wenn sie diese zehn Jahre lang selbst bewohnen — ohne Flächenbegrenzung. Für Kinder gilt dieselbe Regel nach Nr. 4c, aber begrenzt auf 200 Quadratmeter Wohnfläche; darüber hinaus wird anteilig besteuert. Zieht der Erbe innerhalb der zehn Jahre aus oder vermietet, entfällt die Befreiung rückwirkend — außer bei zwingenden Gründen wie Pflegebedürftigkeit.",
+  "faq2_f": "Muss ich verkaufen, um die Steuer zu zahlen?",
+  "faq2_a": "Nicht zwingend. Auf Antrag kann die Steuer nach § 28 Abs. 3 ErbStG bis zu zehn Jahre gestundet werden, wenn sie nur durch Veräußerung der Immobilie aufgebracht werden könnte. Bei zu eigenen Wohnzwecken genutzten Objekten ist die Stundung zinslos. Das ist ein wenig bekanntes, aber wirksames Instrument. Den Antrag stellt Ihr Steuerberater.",
+  "bullet1": "Zeitnaher Verkauf als Nachweis nach § 198 BewG",
+  "bullet2": "Wertermittlung innerhalb weniger Tage",
+  "bullet3": "Zusammenarbeit mit Ihrem Steuerberater"
+ },
+ "schenkung-immobilie-koeln": {
+  "titel": "Immobilie verschenken oder überschreiben | Köln",
+  "h1": "Immobilie zu Lebzeiten übertragen",
+  "besch": "Immobilie verschenken: Freibeträge alle zehn Jahre, Nießbrauch, Pflichtteilsergänzung und Rückforderung. Was vorher zu klären ist.",
+  "kurz": "Die Zehnjahresfrist macht die Schenkung zum Planungsinstrument — mit mehreren Haken.",
+  "a1": "Die Freibeträge der Erbschaftsteuer gelten auch für Schenkungen und erneuern sich alle zehn Jahre. Ein Elternpaar kann jedem Kind alle zehn Jahre 800.000 Euro steuerfrei übertragen — 400.000 Euro je Elternteil. Bei größeren Vermögen ist die gestaffelte Übertragung deshalb ein wirksames Instrument, das aber Zeit braucht: Wer erst mit achtzig anfängt, nutzt die Staffelung nicht mehr.",
+  "a2": "Üblich ist die Übertragung unter Nießbrauchsvorbehalt: Der Schenker behält das Recht, die Immobilie zu nutzen oder zu vermieten. Das mindert den steuerlichen Wert der Schenkung erheblich, weil der kapitalisierte Nießbrauch abgezogen wird — je jünger der Schenker, desto mehr. Praktisch bedeutet es aber auch: Der Beschenkte kann nicht frei verfügen, ein Verkauf braucht die Mitwirkung des Nießbrauchers.",
+  "a3": "Drei Punkte werden regelmäßig übersehen. Erstens die Pflichtteilsergänzung nach § 2325 BGB: Schenkungen der letzten zehn Jahre werden anteilig dem Nachlass zugerechnet, bei Nießbrauchsvorbehalt läuft die Frist unter Umständen gar nicht an. Zweitens die Rückforderung wegen Verarmung nach § 528 BGB, die auch der Sozialhilfeträger geltend machen kann. Drittens die Grunderwerbsteuer, die zwischen Eltern und Kindern zwar entfällt, zwischen Geschwistern aber anfällt.",
+  "faq1_f": "Kann ich die Schenkung rückgängig machen?",
+  "faq1_a": "Nur in engen Grenzen. Gesetzlich vorgesehen sind die Rückforderung wegen Verarmung nach § 528 BGB und der Widerruf wegen groben Undanks nach § 530 BGB — beides mit hohen Hürden. Wer sich absichern will, vereinbart im Übertragungsvertrag ausdrückliche Rückforderungsrechte, etwa für den Fall der Insolvenz oder Scheidung des Beschenkten oder wenn dieser vor dem Schenker stirbt. Solche Klauseln gehören in die notarielle Urkunde und sind später nicht nachholbar.",
+  "faq2_f": "Was kostet die Übertragung?",
+  "faq2_a": "Notar und Grundbuch berechnen sich nach dem Wert der Immobilie, ähnlich wie beim Kauf — bei 400.000 Euro sind rund 2.000 bis 2.500 Euro realistisch. Grunderwerbsteuer fällt zwischen Verwandten in gerader Linie und zwischen Ehegatten nicht an. Für die steuerliche Gestaltung ist der Steuerberater zuständig, für die Vertragsgestaltung der Notar; wir liefern die Wertermittlung, auf der beide aufbauen.",
+  "bullet1": "Wertermittlung als Grundlage für Notar und Steuerberater",
+  "bullet2": "Einschätzung, was der Nießbrauch wertmäßig ausmacht",
+  "bullet3": "Neutrale Bewertung bei mehreren Beschenkten"
+ },
+ "wohnflaechenberechnung-koeln": {
+  "titel": "Wohnfläche richtig berechnen | Köln",
+  "h1": "Wohnflächenberechnung beim Verkauf",
+  "besch": "Wohnfläche berechnen nach WoFlV: Dachschrägen, Balkone, Keller. Warum falsche Angaben teuer werden und wie es richtig geht.",
+  "kurz": "Eine falsche Wohnflächenangabe ist ein Sachmangel — mit Haftung.",
+  "a1": "Es gibt keine gesetzlich verbindliche Methode für den Verkauf, aber einen faktischen Standard: die Wohnflächenverordnung von 2004. Danach zählen Räume unter Dachschrägen erst ab einer lichten Höhe von einem Meter zur Hälfte und ab zwei Metern voll. Balkone, Loggien, Dachgärten und Terrassen gehen in der Regel zu einem Viertel ein, höchstens zur Hälfte. Keller, Waschküchen, Heizungsräume und Garagen zählen gar nicht.",
+  "a2": "Daneben existiert die DIN 277, die Grundflächen anders erfasst und regelmäßig höhere Werte liefert — sie ist für Wohnimmobilien aber unüblich. Wer eine Fläche nach DIN 277 im Exposé nennt, ohne das kenntlich zu machen, riskiert Ärger. Ältere Kaufverträge und Baubeschreibungen enthalten oft Flächen nach der II. Berechnungsverordnung, dem Vorgänger der WoFlV; die Abweichungen sind meist gering, aber vorhanden.",
+  "a3": "Praktisch heißt das: Übernehmen Sie Flächenangaben nicht ungeprüft aus alten Unterlagen. Nach der Rechtsprechung des Bundesgerichtshofs ist eine Abweichung von mehr als zehn Prozent nach unten ein Sachmangel, der zur Minderung berechtigt — trotz Gewährleistungsausschluss, wenn die Fläche als Beschaffenheit zugesichert war. Bei einer Wohnung für 400.000 Euro und acht Quadratmetern zu viel sind das schnell 30.000 Euro Minderung.",
+  "faq1_f": "Zählt der Wintergarten zur Wohnfläche?",
+  "faq1_a": "Ein beheizbarer, allseitig geschlossener Wintergarten zählt voll. Ein unbeheizter, aber geschlossener zählt zur Hälfte. Ein offener oder nur mit Folien geschlossener Anbau zählt gar nicht. Ähnlich differenziert ist es beim Hobbyraum im Keller: Er zählt nur, wenn er nach Landesbauordnung als Aufenthaltsraum genehmigt ist — die tatsächliche Nutzung genügt nicht. In NRW verlangt das unter anderem eine lichte Höhe von 2,40 Metern.",
+  "faq2_f": "Muss ich neu vermessen lassen?",
+  "faq2_a": "Nicht immer, aber bei Zweifeln lohnt es. Ein Aufmaß durch einen Sachverständigen kostet je nach Größe im niedrigen dreistelligen Bereich — gemessen an einem Minderungsrisiko im fünfstelligen Bereich ist das gut angelegt. Sinnvoll ist es besonders bei Dachgeschosswohnungen, nach Umbauten, bei Wintergärten und wenn die vorhandenen Unterlagen älter als zwanzig Jahre sind.",
+  "bullet1": "Prüfung vorhandener Flächenangaben auf Plausibilität",
+  "bullet2": "Vermittlung eines Aufmaßes, wo Zweifel bestehen",
+  "bullet3": "Klare Angabe der Berechnungsgrundlage im Exposé"
  }
 }

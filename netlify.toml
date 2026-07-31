@@ -1020,6 +1020,36 @@
   force = true
 
 [[redirects]]
+  from = "/erbschaftsteuer-immobilie-koeln"
+  to = "/erbschaftsteuer-immobilie-koeln.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/schenkung-immobilie-koeln"
+  to = "/schenkung-immobilie-koeln.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/wohnflaechenberechnung-koeln"
+  to = "/wohnflaechenberechnung-koeln.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/anschlussfinanzierung-koeln"
+  to = "/anschlussfinanzierung-koeln.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/forward-darlehen-koeln"
+  to = "/forward-darlehen-koeln.html"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/immobilienmakler-koeln-suelz"
   to = "/immobilienmakler-koeln-suelz.html"
   status = 301

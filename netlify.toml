@@ -408,6 +408,66 @@
   force = true
 
 [[redirects]]
+  from = "/immobilienmakler-koeln-neustadt-sued"
+  to = "/immobilienmakler-koeln-neustadt-sued.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/immobilienmakler-koeln-neustadt-nord"
+  to = "/immobilienmakler-koeln-neustadt-nord.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/immobilienmakler-koeln-altstadt-sued"
+  to = "/immobilienmakler-koeln-altstadt-sued.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/immobilienmakler-koeln-altstadt-nord"
+  to = "/immobilienmakler-koeln-altstadt-nord.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/immobilienmakler-koeln-neuehrenfeld"
+  to = "/immobilienmakler-koeln-neuehrenfeld.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/immobilienmakler-koeln-weiden"
+  to = "/immobilienmakler-koeln-weiden.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/immobilienmakler-koeln-riehl"
+  to = "/immobilienmakler-koeln-riehl.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/immobilienmakler-koeln-dellbrueck"
+  to = "/immobilienmakler-koeln-dellbrueck.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/immobilienmakler-koeln-hoehenberg"
+  to = "/immobilienmakler-koeln-hoehenberg.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/immobilienmakler-koeln-humboldt-gremberg"
+  to = "/immobilienmakler-koeln-humboldt-gremberg.html"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/immobilienmakler-koeln-suelz"
   to = "/immobilienmakler-koeln-suelz.html"
   status = 301

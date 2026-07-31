@@ -1,0 +1,67 @@
+{
+ "Bergisch Gladbach": {
+  "brw": [
+   270,
+   970
+  ],
+  "brwMedian": 600,
+  "brwZonen": 286
+ },
+ "Brühl": {
+  "brw": [
+   400,
+   660
+  ],
+  "brwMedian": 560,
+  "brwZonen": 51
+ },
+ "Frechen": {
+  "brw": [
+   340,
+   730
+  ],
+  "brwMedian": 540,
+  "brwZonen": 47
+ },
+ "Hürth": {
+  "brw": [
+   230,
+   720
+  ],
+  "brwMedian": 470,
+  "brwZonen": 56
+ },
+ "Leverkusen": {
+  "brw": [
+   280,
+   720
+  ],
+  "brwMedian": 460,
+  "brwZonen": 291
+ },
+ "Pulheim": {
+  "brw": [
+   260,
+   690
+  ],
+  "brwMedian": 610,
+  "brwZonen": 34
+ },
+ "Wesseling": {
+  "brw": [
+   210,
+   450
+  ],
+  "brwMedian": 400,
+  "brwZonen": 20
+ },
+ "_quelle": {
+  "name": "BORIS NRW, Datensatz BRW_2026_Polygon",
+  "stichtag": "2026-01-01",
+  "url": "https://www.boris.nrw.de/",
+  "abgerufen": "2026-07-31",
+  "methodik": "Wohnbauzonen (ENTW=B, Nutzung W/WA/WR/WB) je Gemeinde. Ausgewiesen werden Spanne, Median und Zonenzahl - amtlich gibt es keinen Einzelwert je Gemeinde.",
+  "hinweis": "Koeln differenziert WA/WR/WB, die Umlandstaedte nutzen den Sammelcode W. Beide Schreibweisen muessen abgedeckt sein.",
+  "pflege": "tools/stadtteildaten/umland_bodenrichtwerte.py"
+ }
+}

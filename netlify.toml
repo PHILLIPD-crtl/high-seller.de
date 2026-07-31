@@ -900,6 +900,18 @@
   force = true
 
 [[redirects]]
+  from = "/sanierungsbeduerftiges-haus-verkaufen-koeln"
+  to = "/sanierungsbeduerftiges-haus-verkaufen-koeln.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/denkmalimmobilie-verkaufen-koeln"
+  to = "/denkmalimmobilie-verkaufen-koeln.html"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/immobilienmakler-koeln-suelz"
   to = "/immobilienmakler-koeln-suelz.html"
   status = 301

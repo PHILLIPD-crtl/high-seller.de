@@ -1,0 +1,781 @@
+{
+ "altstadt-nord": {
+  "_stadtteil": "Altstadt/Nord",
+  "brw": [
+   1850,
+   3100
+  ],
+  "brwMedian": 2475,
+  "brwZonen": 2
+ },
+ "altstadt-sued": {
+  "_stadtteil": "Altstadt/Süd",
+  "brw": [
+   2090,
+   2420
+  ],
+  "brwMedian": 2255,
+  "brwZonen": 2
+ },
+ "bayenthal": {
+  "_stadtteil": "Bayenthal",
+  "brw": [
+   2370,
+   2930
+  ],
+  "brwMedian": 2830,
+  "brwZonen": 3
+ },
+ "bickendorf": {
+  "_stadtteil": "Bickendorf",
+  "brw": [
+   940,
+   1020
+  ],
+  "brwMedian": 980,
+  "brwZonen": 2
+ },
+ "bilderstoeckchen": {
+  "_stadtteil": "Bilderstöckchen",
+  "brw": [
+   810,
+   1180
+  ],
+  "brwMedian": 960,
+  "brwZonen": 4
+ },
+ "blumenberg": {
+  "_stadtteil": "Blumenberg",
+  "brw": [
+   720,
+   890
+  ],
+  "brwMedian": 720,
+  "brwZonen": 3
+ },
+ "bocklemuend-mengenich": {
+  "_stadtteil": "Bocklemünd/Mengenich",
+  "brw": [
+   690,
+   960
+  ],
+  "brwMedian": 905,
+  "brwZonen": 4
+ },
+ "braunsfeld": {
+  "_stadtteil": "Braunsfeld",
+  "brw": [
+   1050,
+   1950
+  ],
+  "brwMedian": 1810,
+  "brwZonen": 6
+ },
+ "brueck": {
+  "_stadtteil": "Brück",
+  "brw": [
+   660,
+   1070
+  ],
+  "brwMedian": 850,
+  "brwZonen": 14
+ },
+ "buchforst": {
+  "_stadtteil": "Buchforst",
+  "brw": [
+   790,
+   920
+  ],
+  "brwMedian": 855,
+  "brwZonen": 2
+ },
+ "buchheim": {
+  "_stadtteil": "Buchheim",
+  "brw": [
+   690,
+   960
+  ],
+  "brwMedian": 825,
+  "brwZonen": 2
+ },
+ "chorweiler": {
+  "_stadtteil": "Chorweiler",
+  "brw": [
+   660,
+   740
+  ],
+  "brwMedian": 720,
+  "brwZonen": 3
+ },
+ "dellbrueck": {
+  "_stadtteil": "Dellbrück",
+  "brw": [
+   610,
+   990
+  ],
+  "brwMedian": 820,
+  "brwZonen": 15
+ },
+ "deutz": {
+  "_stadtteil": "Deutz",
+  "brw": [
+   1260,
+   1720
+  ],
+  "brwMedian": 1420,
+  "brwZonen": 6
+ },
+ "duennwald": {
+  "_stadtteil": "Dünnwald",
+  "brw": [
+   600,
+   830
+  ],
+  "brwMedian": 740,
+  "brwZonen": 9
+ },
+ "ehrenfeld": {
+  "_stadtteil": "Ehrenfeld",
+  "brw": [
+   960,
+   1200
+  ],
+  "brwMedian": 1200,
+  "brwZonen": 3
+ },
+ "eil": {
+  "_stadtteil": "Eil",
+  "brw": [
+   670,
+   880
+  ],
+  "brwMedian": 760,
+  "brwZonen": 3
+ },
+ "ensen": {
+  "_stadtteil": "Ensen",
+  "brw": [
+   730,
+   780
+  ],
+  "brwMedian": 770,
+  "brwZonen": 4
+ },
+ "esch-auweiler": {
+  "_stadtteil": "Esch/Auweiler",
+  "brw": [
+   460,
+   930
+  ],
+  "brwMedian": 710,
+  "brwZonen": 5
+ },
+ "finkenberg": {
+  "_stadtteil": "Finkenberg",
+  "brw": [
+   730,
+   750
+  ],
+  "brwMedian": 740,
+  "brwZonen": 2
+ },
+ "flittard": {
+  "_stadtteil": "Flittard",
+  "brw": [
+   540,
+   660
+  ],
+  "brwMedian": 630,
+  "brwZonen": 5
+ },
+ "fuehlingen": {
+  "_stadtteil": "Fühlingen",
+  "brw": [
+   710,
+   740
+  ],
+  "brwMedian": 725,
+  "brwZonen": 2
+ },
+ "godorf": {
+  "_stadtteil": "Godorf",
+  "brw": [
+   430,
+   490
+  ],
+  "brwMedian": 460,
+  "brwZonen": 2
+ },
+ "gremberghoven": {
+  "_stadtteil": "Gremberghoven",
+  "brw": [
+   720,
+   730
+  ],
+  "brwMedian": 725,
+  "brwZonen": 2
+ },
+ "grengel": {
+  "_stadtteil": "Grengel",
+  "brw": [
+   580,
+   750
+  ],
+  "brwMedian": 665,
+  "brwZonen": 2
+ },
+ "hahnwald": {
+  "_stadtteil": "Hahnwald",
+  "brw": [
+   1270,
+   1270
+  ],
+  "brwMedian": 1270,
+  "brwZonen": 1
+ },
+ "heimersdorf": {
+  "_stadtteil": "Heimersdorf",
+  "brw": [
+   630,
+   700
+  ],
+  "brwMedian": 660,
+  "brwZonen": 4
+ },
+ "holweide": {
+  "_stadtteil": "Holweide",
+  "brw": [
+   610,
+   960
+  ],
+  "brwMedian": 820,
+  "brwZonen": 9
+ },
+ "humboldt-gremberg": {
+  "_stadtteil": "Humboldt/Gremberg",
+  "brw": [
+   620,
+   790
+  ],
+  "brwMedian": 705,
+  "brwZonen": 2
+ },
+ "hoehenberg": {
+  "_stadtteil": "Höhenberg",
+  "brw": [
+   640,
+   790
+  ],
+  "brwMedian": 700,
+  "brwZonen": 4
+ },
+ "hoehenhaus": {
+  "_stadtteil": "Höhenhaus",
+  "brw": [
+   700,
+   920
+  ],
+  "brwMedian": 790,
+  "brwZonen": 7
+ },
+ "immendorf": {
+  "_stadtteil": "Immendorf",
+  "brw": [
+   520,
+   590
+  ],
+  "brwMedian": 530,
+  "brwZonen": 3
+ },
+ "junkersdorf": {
+  "_stadtteil": "Junkersdorf",
+  "brw": [
+   970,
+   2360
+  ],
+  "brwMedian": 1890,
+  "brwZonen": 10
+ },
+ "kalk": {
+  "_stadtteil": "Kalk",
+  "brw": [
+   790,
+   940
+  ],
+  "brwMedian": 930,
+  "brwZonen": 3
+ },
+ "klettenberg": {
+  "_stadtteil": "Klettenberg",
+  "brw": [
+   1590,
+   1650
+  ],
+  "brwMedian": 1620,
+  "brwZonen": 2
+ },
+ "langel": {
+  "_stadtteil": "Langel",
+  "brw": [
+   530,
+   620
+  ],
+  "brwMedian": 600,
+  "brwZonen": 3
+ },
+ "libur": {
+  "_stadtteil": "Libur",
+  "brw": [
+   600,
+   600
+  ],
+  "brwMedian": 600,
+  "brwZonen": 1
+ },
+ "lind": {
+  "_stadtteil": "Lind",
+  "brw": [
+   690,
+   690
+  ],
+  "brwMedian": 690,
+  "brwZonen": 1
+ },
+ "lindenthal": {
+  "_stadtteil": "Lindenthal",
+  "brw": [
+   1220,
+   2520
+  ],
+  "brwMedian": 2120,
+  "brwZonen": 10
+ },
+ "lindweiler": {
+  "_stadtteil": "Lindweiler",
+  "brw": [
+   520,
+   760
+  ],
+  "brwMedian": 700,
+  "brwZonen": 3
+ },
+ "longerich": {
+  "_stadtteil": "Longerich",
+  "brw": [
+   750,
+   1220
+  ],
+  "brwMedian": 945,
+  "brwZonen": 6
+ },
+ "loevenich": {
+  "_stadtteil": "Lövenich",
+  "brw": [
+   670,
+   1480
+  ],
+  "brwMedian": 1100,
+  "brwZonen": 8
+ },
+ "marienburg": {
+  "_stadtteil": "Marienburg",
+  "brw": [
+   2100,
+   2100
+  ],
+  "brwMedian": 2100,
+  "brwZonen": 1
+ },
+ "mauenheim": {
+  "_stadtteil": "Mauenheim",
+  "brw": [
+   1080,
+   1240
+  ],
+  "brwMedian": 1160,
+  "brwZonen": 2
+ },
+ "merheim": {
+  "_stadtteil": "Merheim",
+  "brw": [
+   730,
+   970
+  ],
+  "brwMedian": 815,
+  "brwZonen": 6
+ },
+ "merkenich": {
+  "_stadtteil": "Merkenich",
+  "brw": [
+   515,
+   720
+  ],
+  "brwMedian": 680,
+  "brwZonen": 5
+ },
+ "meschenich": {
+  "_stadtteil": "Meschenich",
+  "brw": [
+   480,
+   540
+  ],
+  "brwMedian": 510,
+  "brwZonen": 2
+ },
+ "muelheim": {
+  "_stadtteil": "Mülheim",
+  "brw": [
+   530,
+   1090
+  ],
+  "brwMedian": 820,
+  "brwZonen": 9
+ },
+ "muengersdorf": {
+  "_stadtteil": "Müngersdorf",
+  "brw": [
+   760,
+   1940
+  ],
+  "brwMedian": 1570,
+  "brwZonen": 9
+ },
+ "neubrueck": {
+  "_stadtteil": "Neubrück",
+  "brw": [
+   680,
+   890
+  ],
+  "brwMedian": 785,
+  "brwZonen": 2
+ },
+ "neuehrenfeld": {
+  "_stadtteil": "Neuehrenfeld",
+  "brw": [
+   1020,
+   1420
+  ],
+  "brwMedian": 1155,
+  "brwZonen": 4
+ },
+ "neustadt-nord": {
+  "_stadtteil": "Neustadt/Nord",
+  "brw": [
+   1810,
+   2140
+  ],
+  "brwMedian": 2090,
+  "brwZonen": 3
+ },
+ "neustadt-sued": {
+  "_stadtteil": "Neustadt/Süd",
+  "brw": [
+   1650,
+   2140
+  ],
+  "brwMedian": 1905,
+  "brwZonen": 6
+ },
+ "niehl": {
+  "_stadtteil": "Niehl",
+  "brw": [
+   1000,
+   1350
+  ],
+  "brwMedian": 1180,
+  "brwZonen": 5
+ },
+ "nippes": {
+  "_stadtteil": "Nippes",
+  "brw": [
+   1100,
+   1840
+  ],
+  "brwMedian": 1620,
+  "brwZonen": 5
+ },
+ "ossendorf": {
+  "_stadtteil": "Ossendorf",
+  "brw": [
+   1040,
+   1140
+  ],
+  "brwMedian": 1090,
+  "brwZonen": 2
+ },
+ "ostheim": {
+  "_stadtteil": "Ostheim",
+  "brw": [
+   370,
+   940
+  ],
+  "brwMedian": 675,
+  "brwZonen": 8
+ },
+ "pesch": {
+  "_stadtteil": "Pesch",
+  "brw": [
+   640,
+   940
+  ],
+  "brwMedian": 855,
+  "brwZonen": 4
+ },
+ "poll": {
+  "_stadtteil": "Poll",
+  "brw": [
+   690,
+   930
+  ],
+  "brwMedian": 760,
+  "brwZonen": 4
+ },
+ "porz": {
+  "_stadtteil": "Porz",
+  "brw": [
+   730,
+   1020
+  ],
+  "brwMedian": 790,
+  "brwZonen": 5
+ },
+ "raderberg": {
+  "_stadtteil": "Raderberg",
+  "brw": [
+   1350,
+   1660
+  ],
+  "brwMedian": 1505,
+  "brwZonen": 2
+ },
+ "raderthal": {
+  "_stadtteil": "Raderthal",
+  "brw": [
+   1090,
+   1770
+  ],
+  "brwMedian": 1220,
+  "brwZonen": 3
+ },
+ "rath-heumar": {
+  "_stadtteil": "Rath/Heumar",
+  "brw": [
+   570,
+   960
+  ],
+  "brwMedian": 805,
+  "brwZonen": 14
+ },
+ "riehl": {
+  "_stadtteil": "Riehl",
+  "brw": [
+   1260,
+   2300
+  ],
+  "brwMedian": 1585,
+  "brwZonen": 4
+ },
+ "rodenkirchen": {
+  "_stadtteil": "Rodenkirchen",
+  "brw": [
+   930,
+   2280
+  ],
+  "brwMedian": 1545,
+  "brwZonen": 10
+ },
+ "roggendorf-thenhoven": {
+  "_stadtteil": "Roggendorf/Thenhoven",
+  "brw": [
+   640,
+   690
+  ],
+  "brwMedian": 665,
+  "brwZonen": 2
+ },
+ "rondorf": {
+  "_stadtteil": "Rondorf",
+  "brw": [
+   760,
+   1270
+  ],
+  "brwMedian": 1010,
+  "brwZonen": 7
+ },
+ "seeberg": {
+  "_stadtteil": "Seeberg",
+  "brw": [
+   580,
+   810
+  ],
+  "brwMedian": 720,
+  "brwZonen": 7
+ },
+ "stammheim": {
+  "_stadtteil": "Stammheim",
+  "brw": [
+   600,
+   770
+  ],
+  "brwMedian": 675,
+  "brwZonen": 4
+ },
+ "suelz": {
+  "_stadtteil": "Sülz",
+  "brw": [
+   1430,
+   2610
+  ],
+  "brwMedian": 1740,
+  "brwZonen": 6
+ },
+ "suerth": {
+  "_stadtteil": "Sürth",
+  "brw": [
+   1060,
+   1320
+  ],
+  "brwMedian": 1120,
+  "brwZonen": 3
+ },
+ "urbach": {
+  "_stadtteil": "Urbach",
+  "brw": [
+   670,
+   820
+  ],
+  "brwMedian": 710,
+  "brwZonen": 4
+ },
+ "vingst": {
+  "_stadtteil": "Vingst",
+  "brw": [
+   750,
+   790
+  ],
+  "brwMedian": 770,
+  "brwZonen": 2
+ },
+ "vogelsang": {
+  "_stadtteil": "Vogelsang",
+  "brw": [
+   810,
+   900
+  ],
+  "brwMedian": 860,
+  "brwZonen": 3
+ },
+ "volkhoven-weiler": {
+  "_stadtteil": "Volkhoven/Weiler",
+  "brw": [
+   580,
+   730
+  ],
+  "brwMedian": 670,
+  "brwZonen": 5
+ },
+ "wahn": {
+  "_stadtteil": "Wahn",
+  "brw": [
+   690,
+   740
+  ],
+  "brwMedian": 690,
+  "brwZonen": 3
+ },
+ "wahnheide": {
+  "_stadtteil": "Wahnheide",
+  "brw": [
+   650,
+   840
+  ],
+  "brwMedian": 720,
+  "brwZonen": 4
+ },
+ "weiden": {
+  "_stadtteil": "Weiden",
+  "brw": [
+   850,
+   1450
+  ],
+  "brwMedian": 1260,
+  "brwZonen": 11
+ },
+ "weidenpesch": {
+  "_stadtteil": "Weidenpesch",
+  "brw": [
+   900,
+   1240
+  ],
+  "brwMedian": 1130,
+  "brwZonen": 5
+ },
+ "weiss": {
+  "_stadtteil": "Weiß",
+  "brw": [
+   1120,
+   1750
+  ],
+  "brwMedian": 1435,
+  "brwZonen": 2
+ },
+ "westhoven": {
+  "_stadtteil": "Westhoven",
+  "brw": [
+   500,
+   760
+  ],
+  "brwMedian": 630,
+  "brwZonen": 2
+ },
+ "widdersdorf": {
+  "_stadtteil": "Widdersdorf",
+  "brw": [
+   700,
+   1220
+  ],
+  "brwMedian": 1060,
+  "brwZonen": 7
+ },
+ "worringen": {
+  "_stadtteil": "Worringen",
+  "brw": [
+   630,
+   790
+  ],
+  "brwMedian": 700,
+  "brwZonen": 5
+ },
+ "zollstock": {
+  "_stadtteil": "Zollstock",
+  "brw": [
+   1010,
+   1590
+  ],
+  "brwMedian": 1300,
+  "brwZonen": 2
+ },
+ "zuendorf": {
+  "_stadtteil": "Zündorf",
+  "brw": [
+   690,
+   930
+  ],
+  "brwMedian": 740,
+  "brwZonen": 4
+ },
+ "_quelle": {
+  "name": "BORIS NRW, Datensatz BRW_2026_Polygon",
+  "stichtag": "2026-01-01",
+  "url": "https://www.boris.nrw.de/",
+  "download": "https://www.opengeodata.nrw.de/produkte/infrastruktur_bauen_wohnen/boris/BRW/BRW_EPSG25832_Shape.zip",
+  "grenzen": "Stadt Koeln, Offene Daten: Stadtteilgrenzen (Shapefile), EPSG:25832",
+  "grenzenUrl": "https://offenedaten-koeln.de/sites/default/files/uploaded_resources/Stadtteil.zip",
+  "abgerufen": "2026-07-31",
+  "methodik": "Beruecksichtigt werden Zonen mit ENTW=B (baureifes Land) und Nutzung WA/WR/WB. Jede Zone wird dem Stadtteil zugeordnet, in dem ihr groesster Flaechenanteil liegt. Amtlich gibt es keinen Bodenrichtwert je Stadtteil, nur Zonenwerte — ausgewiesen werden deshalb Spanne, Median und Zonenzahl.",
+  "pflege": "tools/stadtteildaten/bodenrichtwerte.py --neu ausfuehren.",
+  "ohneWohnbauzonen": [
+   "Elsdorf"
+  ]
+ }
+}

@@ -1002,6 +1002,24 @@
   force = true
 
 [[redirects]]
+  from = "/grunderwerbsteuer-nrw"
+  to = "/grunderwerbsteuer-nrw.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/wertgutachten-immobilie-koeln"
+  to = "/wertgutachten-immobilie-koeln.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/vorfaelligkeitsentschaedigung-koeln"
+  to = "/vorfaelligkeitsentschaedigung-koeln.html"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/immobilienmakler-koeln-suelz"
   to = "/immobilienmakler-koeln-suelz.html"
   status = 301

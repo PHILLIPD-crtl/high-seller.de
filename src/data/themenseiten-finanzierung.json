@@ -127,5 +127,53 @@
   "bullet1": "Ehrliche Prüfung der Tragfähigkeit, auch mit Ergebnis Nein",
   "bullet2": "Vergleich mit dem Szenario zwei Jahre später",
   "bullet3": "Empfehlung zur Tilgungshöhe, nicht nur zum Zins"
+ },
+ "kapitalbeschaffung-immobilie-koeln": {
+  "titel": "Kapitalbeschaffung über die Immobilie | Köln",
+  "h1": "Kapital aus der Immobilie beschaffen",
+  "besch": "Kapitalbeschaffung über Immobilien: Beleihung ohne Verkauf, Voraussetzungen, Kosten und Alternativen. Beratung in Köln.",
+  "kurz": "Wer Eigentum hat, kann Kapital aufnehmen, ohne zu verkaufen.",
+  "a1": "Eine lastenfreie oder gering belastete Immobilie ist eine Sicherheit. Über eine Grundschuld lässt sich Kapital aufnehmen, das frei verwendbar ist — für eine Renovierung, den Kauf einer zweiten Immobilie, die Ablösung teurer Konsumkredite oder eine Beteiligung. Die Zinsen liegen deutlich unter denen eines Ratenkredits, weil die Bank besichert ist.",
+  "a2": "Die Beleihungsgrenze liegt üblicherweise bei sechzig bis achtzig Prozent des Beleihungswerts, der selbst schon unter dem Marktwert liegt. Bei einer Immobilie mit 600.000 Euro Verkehrswert und einem Beleihungswert von 540.000 Euro sind also grob 320.000 bis 430.000 Euro darstellbar — abzüglich bestehender Belastungen. Die Bank prüft zusätzlich, ob die Rate aus dem laufenden Einkommen tragbar ist.",
+  "a3": "Zu klären ist der Verwendungszweck. Für wohnwirtschaftliche Zwecke — Renovierung, Umbau, Kauf — gelten günstigere Konditionen als für freie Verwendung. Wer angibt zu renovieren, sollte auch renovieren; Banken fordern gelegentlich Nachweise. Als Darlehensvermittler nach § 34i GewO prüfen wir, welche Variante für Ihren Zweck die günstigste ist.",
+  "faq1_f": "Wird das im Grundbuch sichtbar?",
+  "faq1_a": "Ja, die Grundschuld wird in Abteilung III eingetragen. Beim späteren Verkauf muss sie abgelöst und gelöscht werden, was Notarkosten verursacht. Wer eine bereits eingetragene, aber getilgte Grundschuld hat, kann sie oft wiederverwenden — das spart die Neubestellung und ist ein häufig übersehener Vorteil. Ein Blick ins Grundbuch lohnt sich vorher.",
+  "faq2_f": "Geht das auch im Rentenalter?",
+  "faq2_a": "Schwieriger, aber nicht unmöglich. Banken prüfen die Kapitaldienstfähigkeit über die gesamte Laufzeit; bei begrenzter Lebenserwartung wird die Laufzeit kurz und die Rate hoch. Alternativen sind die Umkehrhypothek, bei der keine laufende Tilgung anfällt, oder der Teilverkauf — beide sind teuer und sollten genau gerechnet werden. Wir zeigen die Zahlen, auch wenn sie gegen das Produkt sprechen.",
+  "bullet1": "Berechnung des tatsächlich darstellbaren Rahmens",
+  "bullet2": "Prüfung, ob eine bestehende Grundschuld wiederverwendbar ist",
+  "bullet3": "Vergleich mit Verkauf oder Teilverkauf"
+ },
+ "umschuldung-immobilienkredit-koeln": {
+  "titel": "Umschuldung Immobilienkredit | Köln",
+  "h1": "Immobilienkredit umschulden",
+  "besch": "Umschuldung: wann sie sich lohnt, Kündigungsrecht nach zehn Jahren, Kosten der Grundschuldabtretung und Rechenbeispiel.",
+  "kurz": "Nach zehn Jahren dürfen Sie kündigen — ohne Vorfälligkeitsentschädigung.",
+  "a1": "Das Sonderkündigungsrecht nach § 489 Abs. 1 Nr. 2 BGB ist der stärkste Hebel: Zehn Jahre nach vollständiger Auszahlung dürfen Sie mit sechs Monaten Frist kündigen, unabhängig von der vereinbarten Zinsbindung und ohne Vorfälligkeitsentschädigung. Dieses Recht ist unabdingbar, es kann vertraglich nicht ausgeschlossen werden. Wer 2011 einen Fünfzehnjahresvertrag abgeschlossen hat, kann seit 2021 wechseln.",
+  "a2": "Die Rechnung ist einfach: Zinsersparnis über die Restlaufzeit gegen die Wechselkosten. Letztere bestehen im Wesentlichen aus der Grundschuldabtretung, die im niedrigen dreistelligen Bereich liegt und von der neuen Bank oft übernommen wird. Bei 250.000 Euro Restschuld, zehn Jahren Restlaufzeit und einem halben Prozentpunkt Zinsunterschied sparen Sie grob 12.000 Euro.",
+  "a3": "Innerhalb der Zinsbindung ist eine Umschuldung nur gegen Vorfälligkeitsentschädigung möglich — dann lohnt sie sich selten. Prüfen sollte man aber, ob die Widerrufsbelehrung des alten Vertrags fehlerhaft war; bei Verträgen zwischen 2010 und 2016 kam das häufig vor und eröffnete ein Widerrufsrecht. Ob das in Ihrem Fall trägt, prüft ein Anwalt oder die Verbraucherzentrale.",
+  "faq1_f": "Muss ich zur neuen Bank wechseln oder geht es bei meiner?",
+  "faq1_a": "Beides ist möglich. Ihre Bank wird Ihnen eine Prolongation anbieten, meist zu Konditionen, die über dem Markt liegen — sie kalkuliert damit, dass Sie den Aufwand scheuen. Ein Vergleichsangebot in der Hand ändert diese Rechnung erfahrungsgemäß schnell. Wir holen die Angebote ein, Sie entscheiden, ob Sie wechseln oder mit dem Vergleich nachverhandeln.",
+  "faq2_f": "Wie lange dauert eine Umschuldung?",
+  "faq2_a": "Vier bis acht Wochen von der Anfrage bis zur Auszahlung, sofern die Unterlagen vollständig sind. Die Grundschuldabtretung läuft über die Notare beider Banken und braucht davon zwei bis drei Wochen. Wichtig ist der Vorlauf: Die sechsmonatige Kündigungsfrist nach § 489 BGB sollten Sie rechtzeitig auslösen, sonst verschenken Sie Monate zu altem Zins.",
+  "bullet1": "Prüfung des Kündigungsrechts nach § 489 BGB",
+  "bullet2": "Vergleichsangebote als Verhandlungsgrundlage",
+  "bullet3": "Rechenbeispiel mit Ihren tatsächlichen Zahlen"
+ },
+ "baufinanzierung-selbststaendige-koeln": {
+  "titel": "Baufinanzierung für Selbstständige | Köln",
+  "h1": "Baufinanzierung für Selbstständige",
+  "besch": "Immobilienfinanzierung für Selbstständige und Freiberufler: welche Unterlagen Banken verlangen, wie sie rechnen und was hilft.",
+  "kurz": "Selbstständige bekommen Finanzierungen — sie brauchen nur mehr Nachweise.",
+  "a1": "Banken bewerten Selbstständige anders als Angestellte. Statt drei Gehaltsabrechnungen verlangen sie in der Regel die letzten zwei bis drei Jahresabschlüsse oder Einnahmen-Überschuss-Rechnungen, die aktuelle betriebswirtschaftliche Auswertung, Einkommensteuerbescheide und oft eine Vorschau. Gerechnet wird meist mit dem Durchschnitt der letzten drei Jahre — nicht mit dem besten Jahr.",
+  "a2": "Schwankende Einkommen werden konservativ angesetzt, teils mit Sicherheitsabschlägen von zehn bis zwanzig Prozent. Wer in einem Jahr deutlich weniger verdient hat, zieht den Schnitt herunter, auch wenn der Grund einmalig war. Hilfreich ist eine kurze schriftliche Erläuterung solcher Ausreißer — Banken lesen das, und es verhindert Fehlschlüsse.",
+  "a3": "Entscheidend ist die Bankenauswahl. Manche Häuser sind bei Selbstständigen restriktiv, andere haben eigene Programme und akzeptieren kürzere Historien oder rechnen mit aktuelleren Zahlen. Diesen Unterschied kennt man nur, wenn man mehrere Anbieter vergleicht — genau dafür ist eine Vermittlung nach § 34i GewO da. Eine Absage bei der Hausbank bedeutet nicht, dass es nicht geht.",
+  "faq1_f": "Wie lange muss ich selbstständig sein?",
+  "faq1_a": "Die meisten Banken verlangen drei Jahre, manche zwei, wenige akzeptieren ein Jahr bei einschlägiger Vorerfahrung — etwa wenn Sie vorher angestellt dasselbe gemacht haben. Bei Freiberuflern mit stabilen Auftraggebern, etwa Ärzten oder Anwälten, sind die Anforderungen oft niedriger. Wer kürzer selbstständig ist, braucht mehr Eigenkapital, um die Lücke zu schließen.",
+  "faq2_f": "Zählen Privatentnahmen oder der Gewinn?",
+  "faq2_a": "Der Gewinn nach Steuern ist die Basis, nicht die Entnahmen. Wer viel im Unternehmen belässt, sieht auf dem Papier weniger leistungsfähig aus, als er ist — Rücklagen im Betrieb werden nicht als Einkommen gewertet. Umgekehrt helfen hohe Abschreibungen: Sie mindern den Gewinn steuerlich, werden von manchen Banken aber teilweise wieder hinzugerechnet. Welche Bank wie rechnet, macht mehrere zehntausend Euro Kreditrahmen aus.",
+  "bullet1": "Vergleich von Banken mit unterschiedlichen Anforderungen",
+  "bullet2": "Aufbereitung der Unterlagen vor der ersten Anfrage",
+  "bullet3": "Konditionenanfrage statt mehrfacher Kreditanfragen"
  }
 }

@@ -253,7 +253,8 @@ def bauen(s, vorlage, koeln):
     # Pruefung wird abgeschaltet statt geschaerft.
     pruef = h
     if s.bezirk:
-        pruef = re.sub(rf"Stadtbezirks?\s+{re.escape(s.bezirk)}", "", pruef)
+        # Sowohl "Stadtbezirk Nippes" als auch die Kurzform "Bezirk Nippes".
+        pruef = re.sub(rf"(Stadt)?[Bb]ezirks?\s+{re.escape(s.bezirk)}", "", pruef)
     for feld in ("bebauung", "lage"):
         text = s.profil.get(feld)
         if not text:

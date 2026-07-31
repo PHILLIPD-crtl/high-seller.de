@@ -1146,6 +1146,48 @@
   force = true
 
 [[redirects]]
+  from = "/ablauf-immobilienverkauf-koeln"
+  to = "/ablauf-immobilienverkauf-koeln.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/makler-oder-privatverkauf-koeln"
+  to = "/makler-oder-privatverkauf-koeln.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/grundschuld-erklaert-koeln"
+  to = "/grundschuld-erklaert-koeln.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/wann-zahlt-der-kaeufer-koeln"
+  to = "/wann-zahlt-der-kaeufer-koeln.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/immobilienmakler-dormagen"
+  to = "/immobilienmakler-dormagen.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/immobilienmakler-monheim-am-rhein"
+  to = "/immobilienmakler-monheim-am-rhein.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/immobilienmakler-troisdorf"
+  to = "/immobilienmakler-troisdorf.html"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/immobilienmakler-koeln-suelz"
   to = "/immobilienmakler-koeln-suelz.html"
   status = 301

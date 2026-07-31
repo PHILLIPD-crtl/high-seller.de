@@ -15,6 +15,14 @@
   "brwMedian": 560,
   "brwZonen": 51
  },
+ "Dormagen": {
+  "brw": [
+   125,
+   530
+  ],
+  "brwMedian": 410,
+  "brwZonen": 26
+ },
  "Frechen": {
   "brw": [
    340,
@@ -39,6 +47,14 @@
   "brwMedian": 460,
   "brwZonen": 291
  },
+ "Monheim am Rhein": {
+  "brw": [
+   285,
+   600
+  ],
+  "brwMedian": 570,
+  "brwZonen": 50
+ },
  "Pulheim": {
   "brw": [
    260,
@@ -46,6 +62,14 @@
   ],
   "brwMedian": 610,
   "brwZonen": 34
+ },
+ "Troisdorf": {
+  "brw": [
+   370,
+   700
+  ],
+  "brwMedian": 590,
+  "brwZonen": 23
  },
  "Wesseling": {
   "brw": [

@@ -27,7 +27,8 @@ import geopandas as gpd
 import pandas as pd
 
 STAEDTE = ["Hürth", "Frechen", "Pulheim", "Brühl", "Wesseling",
-           "Leverkusen", "Bergisch Gladbach"]
+           "Leverkusen", "Bergisch Gladbach",
+           "Dormagen", "Monheim am Rhein", "Troisdorf"]
 NUTZUNGEN = ("W", "WA", "WR", "WB")
 
 WURZEL = Path(__file__).resolve().parents[2]

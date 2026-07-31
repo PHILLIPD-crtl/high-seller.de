@@ -1296,6 +1296,66 @@
   force = true
 
 [[redirects]]
+  from = "/immobilienmakler-siegburg"
+  to = "/immobilienmakler-siegburg.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/immobilienmakler-sankt-augustin"
+  to = "/immobilienmakler-sankt-augustin.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/immobilienmakler-hennef-sieg"
+  to = "/immobilienmakler-hennef-sieg.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/immobilienmakler-alfter"
+  to = "/immobilienmakler-alfter.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/immobilienmakler-swisttal"
+  to = "/immobilienmakler-swisttal.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/immobilienmakler-weilerswist"
+  to = "/immobilienmakler-weilerswist.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/immobilienmakler-rommerskirchen"
+  to = "/immobilienmakler-rommerskirchen.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/immobilienmakler-bedburg"
+  to = "/immobilienmakler-bedburg.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/immobilienmakler-wermelskirchen"
+  to = "/immobilienmakler-wermelskirchen.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/immobilienmakler-hilden"
+  to = "/immobilienmakler-hilden.html"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/immobilienmakler-koeln-suelz"
   to = "/immobilienmakler-koeln-suelz.html"
   status = 301

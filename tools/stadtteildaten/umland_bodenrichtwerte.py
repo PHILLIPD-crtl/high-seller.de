@@ -33,7 +33,13 @@ STAEDTE = ["Hürth", "Frechen", "Pulheim", "Brühl", "Wesseling",
            "Dormagen", "Monheim am Rhein", "Troisdorf",
            "Niederkassel", "Odenthal", "Rösrath", "Bergheim", "Langenfeld",
            "Bornheim", "Erftstadt", "Kerpen", "Leichlingen", "Burscheid",
-           "Overath", "Kürten", "Lohmar"]
+           "Overath", "Kürten", "Lohmar",
+           # 20-30 km: bewusst nur Orte des Speckguertels, KEINE eigenstaendigen
+           # Grossstaedte wie Duesseldorf, Bonn, Wuppertal, Neuss, Solingen oder
+           # Remscheid - dort ist ein Koelner Buero weder glaubwuerdig noch
+           # konkurrenzfaehig, und schwache Seiten beschaedigen die starken.
+           "Siegburg", "Sankt Augustin", "Hennef (Sieg)", "Alfter", "Swisttal",
+           "Weilerswist", "Rommerskirchen", "Bedburg", "Wermelskirchen", "Hilden"]
 NUTZUNGEN = ("W", "WA", "WR", "WB")
 
 WURZEL = Path(__file__).resolve().parents[2]

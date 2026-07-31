@@ -1,4 +1,42 @@
-# Highseller Immobilien & Finanzen — Website (Stand v40)
+# Highseller Immobilien & Finanzen — Website (Stand v41)
+
+## Was in v41 umgesetzt wurde
+
+### Alte Domain aufgegeben, Weiterleitungen entfernt
+
+**Entscheidung des Inhabers vom 31.07.2026:** `highseller-immobilien.koeln`
+wird nicht mehr genutzt und auch nicht auf Netlify gezeigt. Die 42
+Weiterleitungen, die in v39 dafür angelegt wurden, sind deshalb aus
+`netlify.toml` entfernt — sie hätten ohne Domain-Alias und DNS-Umstellung
+ohnehin nie gegriffen und wären als toter Code liegen geblieben. Von 109
+Regeln bleiben 67.
+
+An ihrer Stelle steht ein Kommentarblock, der die Entscheidung festhält.
+Das ist Absicht: Ohne ihn liest sich das Fehlen der Regeln später wie ein
+Versehen, und jemand baut sie gutgemeint wieder ein.
+
+**Was das kostet, damit es niemanden überrascht:** Die alte Domain antwortet
+weiterhin auf jeder Adresse mit 404. Wer aus einem Google-Treffer oder über
+einen alten Verweis kommt, landet im Nichts statt auf der passenden Seite.
+Die dort aufgebaute Sichtbarkeit verfällt.
+
+**Falls die Entscheidung revidiert wird**, sind zwei Schritte nötig, bevor
+irgendeine Regel greifen kann. Die alten Regeln stehen in der
+Versionsgeschichte von `netlify.toml`.
+
+1. Domain in Netlify als Alias des Projekts „high-seller" eintragen, Apex und
+   `www`.
+2. DNS bei Strato umstellen: A-Eintrag von `81.169.145.160` auf `75.2.60.5`,
+   `www` als CNAME auf `high-seller.netlify.app`.
+
+**Achtung dabei:** An der Domain hängt E-Mail. Der MX-Eintrag zeigt auf
+`smtpin.rzone.de`, Stratos Mailserver. Wer die DNS-Einträge umstellt, darf die
+MX-Einträge nicht anfassen, sonst bricht der E-Mail-Empfang. Wer die Domain
+kündigt, verliert jede E-Mail-Adresse darauf.
+
+Gruppe 3 in `netlify.toml` (alte Pfade ohne Hostangabe) bleibt bestehen. Diese
+Pfade gab es auf high-seller.de nie, die Regeln kosten aber nichts und fangen
+händisch umgeschriebene Verweise ab.
 
 ## Was in v40 umgesetzt wurde
 

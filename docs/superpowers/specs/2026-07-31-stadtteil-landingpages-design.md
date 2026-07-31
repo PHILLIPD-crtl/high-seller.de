@@ -143,16 +143,45 @@ Sterne-Auszeichnungen aus.
 
 ## Etappen
 
-| Etappe | Inhalt | Ergebnis |
-|---|---|---|
-| 1 | Datenpipeline, drei Skripte | Amtliche Zahlen für alle 86 Stadtteile in `src/data` |
-| 2 | Generator plus Template | 63 Seiten erzeugbar, noch ohne Ortsprofile |
-| 3 | Ortsprofile | 63 recherchierte Texte, Duplikation unter Zielwert |
-| 4 | Innenstadt-Umbau, Verlinkung, Sitemap | Bestand und Neubestand verzahnt |
-| 5 | Kaufseiten | Zwei Seiten live |
+| Etappe | Inhalt | Ergebnis | Stand |
+|---|---|---|---|
+| 1 | Datenpipeline, vier Skripte | Amtliche Zahlen für alle 86 Stadtteile in `src/data` | **fertig** |
+| 2 | Generator plus Template | 63 Seiten erzeugbar | offen |
+| 3 | Ortsprofile und Seitentexte | 63 Seiten mit eigener Substanz | offen |
+| 4 | Innenstadt-Umbau, Verlinkung, Sitemap | Bestand und Neubestand verzahnt | offen |
+| 5 | Kaufseiten | Zwei Seiten live | offen |
 
-Etappe 3 ist der Schwerpunkt und läuft über mehrere Sitzungen. Etappe 5 ist von
-1 bis 4 unabhängig und kann vorgezogen werden.
+## Gemessener Aufwand von Etappe 3
+
+Am 31.07.2026 über alle 20 bestehenden Stadtteilseiten gemessen, indem die
+Zeilen bestimmt wurden, die auf **allen** Seiten identisch sind:
+
+- **298 Zeilen Boilerplate** je Seite mit rund 481 Wörtern (Kopf, Fuß,
+  Wertrechner, Cookie-Banner, Bezirksauswahl)
+- **56 variable Zeilen** je Seite mit rund **629 Wörtern eigenem Text**
+
+Der individuelle Teil ist damit deutlich mehr als die zwei Profilfelder
+`bebauung` und `lage`: Titel und Beschreibung, Einleitung, drei Absätze
+„Lage & Markt", Marktbeschreibung, Aufzählungen, mehrere Handlungsaufrufe und
+die FAQ sind je Stadtteil eigens formuliert.
+
+**Für 63 Seiten sind das rund 40.000 Wörter.** Diese Zahl ist der Grund für den
+Lieferzuschnitt unten — sie ist in einer Sitzung nicht zu erreichen, und der
+Versuch würde genau die gleichförmigen Seiten erzeugen, die dieser Entwurf
+verhindern soll.
+
+## Lieferzuschnitt
+
+Geliefert wird in Chargen von etwa zehn Stadtteilen. Jede Charge ist
+**vollständig fertig**: Daten, Ortsprofil, eigener Text, Verlinkung, Sitemap,
+Duplikationsmessung. Danach kann sie live gehen.
+
+Der Grund: Zehn fertige Seiten sind besser als 63 halbfertige — sowohl für
+Google als auch für die Beurteilung, ob die Textqualität stimmt, bevor der
+Aufwand für die restlichen Seiten hineinfließt. Reihenfolge nach Marktgröße,
+damit der Ertrag früh eintritt.
+
+Etappe 5 ist von 1 bis 4 unabhängig und kann jederzeit vorgezogen werden.
 
 ## Bewusst nicht enthalten
 

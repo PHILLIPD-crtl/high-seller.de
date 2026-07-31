@@ -63,6 +63,22 @@
   "brwMedian": 410,
   "brwZonen": 26
  },
+ "Elsdorf": {
+  "brw": [
+   120,
+   310
+  ],
+  "brwMedian": 220,
+  "brwZonen": 17
+ },
+ "Engelskirchen": {
+  "brw": [
+   90,
+   235
+  ],
+  "brwMedian": 105,
+  "brwZonen": 101
+ },
  "Erftstadt": {
   "brw": [
    140,
@@ -71,6 +87,22 @@
   "brwMedian": 325,
   "brwZonen": 44
  },
+ "Erkrath": {
+  "brw": [
+   245,
+   580
+  ],
+  "brwMedian": 480,
+  "brwZonen": 75
+ },
+ "Euskirchen": {
+  "brw": [
+   80,
+   430
+  ],
+  "brwMedian": 210,
+  "brwZonen": 135
+ },
  "Frechen": {
   "brw": [
    340,
@@ -78,6 +110,22 @@
   ],
   "brwMedian": 540,
   "brwZonen": 47
+ },
+ "Grevenbroich": {
+  "brw": [
+   100,
+   530
+  ],
+  "brwMedian": 305,
+  "brwZonen": 74
+ },
+ "Haan": {
+  "brw": [
+   270,
+   710
+  ],
+  "brwMedian": 520,
+  "brwZonen": 60
  },
  "Hennef (Sieg)": {
   "brw": [
@@ -95,6 +143,14 @@
   "brwMedian": 610,
   "brwZonen": 67
  },
+ "Hückeswagen": {
+  "brw": [
+   95,
+   250
+  ],
+  "brwMedian": 115,
+  "brwZonen": 100
+ },
  "Hürth": {
   "brw": [
    230,
@@ -110,6 +166,14 @@
   ],
   "brwMedian": 340,
   "brwZonen": 61
+ },
+ "Königswinter": {
+  "brw": [
+   250,
+   690
+  ],
+  "brwMedian": 400,
+  "brwZonen": 50
  },
  "Kürten": {
   "brw": [
@@ -143,6 +207,14 @@
   "brwMedian": 460,
   "brwZonen": 291
  },
+ "Lindlar": {
+  "brw": [
+   85,
+   355
+  ],
+  "brwMedian": 105,
+  "brwZonen": 165
+ },
  "Lohmar": {
   "brw": [
    260,
@@ -150,6 +222,14 @@
   ],
   "brwMedian": 370,
   "brwZonen": 40
+ },
+ "Merzenich": {
+  "brw": [
+   260,
+   380
+  ],
+  "brwMedian": 285,
+  "brwZonen": 4
  },
  "Monheim am Rhein": {
   "brw": [
@@ -159,6 +239,22 @@
   "brwMedian": 570,
   "brwZonen": 50
  },
+ "Much": {
+  "brw": [
+   75,
+   350
+  ],
+  "brwMedian": 195,
+  "brwZonen": 20
+ },
+ "Neunkirchen-Seelscheid": {
+  "brw": [
+   120,
+   390
+  ],
+  "brwMedian": 290,
+  "brwZonen": 41
+ },
  "Niederkassel": {
   "brw": [
    470,
@@ -166,6 +262,14 @@
   ],
   "brwMedian": 605,
   "brwZonen": 8
+ },
+ "Nörvenich": {
+  "brw": [
+   150,
+   400
+  ],
+  "brwMedian": 260,
+  "brwZonen": 20
  },
  "Odenthal": {
   "brw": [
@@ -239,6 +343,14 @@
   "brwMedian": 590,
   "brwZonen": 23
  },
+ "Vettweiß": {
+  "brw": [
+   160,
+   320
+  ],
+  "brwMedian": 260,
+  "brwZonen": 20
+ },
  "Weilerswist": {
   "brw": [
    110,
@@ -262,6 +374,22 @@
   ],
   "brwMedian": 400,
   "brwZonen": 20
+ },
+ "Wipperfürth": {
+  "brw": [
+   80,
+   250
+  ],
+  "brwMedian": 115,
+  "brwZonen": 113
+ },
+ "Zülpich": {
+  "brw": [
+   70,
+   420
+  ],
+  "brwMedian": 145,
+  "brwZonen": 80
  },
  "_quelle": {
   "name": "BORIS NRW, Datensatz BRW_2026_Polygon",

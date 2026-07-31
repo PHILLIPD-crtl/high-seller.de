@@ -1488,6 +1488,30 @@
   force = true
 
 [[redirects]]
+  from = "/erstkaeufer-leitfaden-koeln"
+  to = "/erstkaeufer-leitfaden-koeln.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/immobilie-als-kapitalanlage-koeln"
+  to = "/immobilie-als-kapitalanlage-koeln.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/besichtigung-checkliste-koeln"
+  to = "/besichtigung-checkliste-koeln.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/hausgeld-verstehen-koeln"
+  to = "/hausgeld-verstehen-koeln.html"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/immobilienmakler-koeln-suelz"
   to = "/immobilienmakler-koeln-suelz.html"
   status = 301

@@ -159,6 +159,33 @@ def bestand_absatz(s, koeln):
     return text
 
 
+def zusammenfassung(s):
+    """Ein Satz ueber dem Marktabschnitt. Nimmt den ersten Satz des
+    Bebauungsprofils auf, damit hier nicht dieselbe Floskel auf 63 Seiten steht."""
+    erster = s.profil["bebauung"].split(". ")[0].rstrip(".")
+    return (f"{erster}. Für den Verkauf zählt, was das im Einzelfall bedeutet — "
+            f"Zustand, Schnitt und Lage innerhalb des Stadtteils.")
+
+
+def markt_absatz(s):
+    """Absatz unter 'Der Immobilienmarkt in X'. Traegt die Kaufpreise."""
+    if not s.wv:
+        return (f"Der Gutachterausschuss weist für {s.anzeige} im Berichtsjahr keine "
+                f"gesonderten Wohnungspreise aus — dafür braucht es mindestens drei "
+                f"auswertbare Kaufverträge. Die Bewertung stützt sich hier auf "
+                f"Bodenrichtwerte und Vergleichsobjekte der Nachbarschaft.")
+    teile = [f"Im Weiterverkauf wurden 2025 im Mittel {zahl(s.wv['eurProM2'])} € je m² "
+             f"Wohnfläche notariell beurkundet, ermittelt aus {zahl(s.wv['faelle'])} "
+             f"Kaufverträgen."]
+    if s.neubau:
+        aufschlag = round((s.neubau["eurProM2"] / s.wv["eurProM2"] - 1) * 100)
+        teile.append(f"Neubauwohnungen lagen bei {zahl(s.neubau['eurProM2'])} € je m² und damit "
+                     f"rund {aufschlag} % darüber ({zahl(s.neubau['faelle'])} Verträge).")
+    teile.append("Das sind beurkundete Preise, keine Angebotspreise — der Unterschied ist "
+                 "der Grund, warum diese Zahlen als Grundlage taugen.")
+    return " ".join(teile)
+
+
 def einleitung(s):
     """Erster Satz nach der H1. Aufhaenger datengesteuert, nicht zufaellig."""
     varianten = [
@@ -227,16 +254,34 @@ def bauen(s, vorlage, koeln):
         (r'(› )Köln-Nippes(</div>)', rf'\1Köln-{s.anzeige}\2'),
         (r'<h1>Immobilienmakler in Köln-Nippes</h1><p>.*?</p>',
          f'<h1>Immobilienmakler in Köln-{s.anzeige}</h1><p>{einleitung(s)}</p>'),
-        (r'<h2>Immobilien in Nippes: Lage &amp; Markt</h2>',
-         f'<h2>Immobilien in {s.anzeige}: Lage &amp; Markt</h2>'),
-        (r'<h2>Der Immobilienmarkt in Nippes</h2>',
-         f'<h2>Der Immobilienmarkt in {s.anzeige}</h2>'),
+        # Lage & Markt: Ueberschrift plus die drei folgenden Absaetze am Stueck,
+        # damit Reihenfolge und Einrueckung der Vorlage erhalten bleiben.
+        (r'<h2>Immobilien in Nippes: Lage &amp; Markt</h2>\n'
+         r'(\s*)<p>.*?</p>\n\s*<p>.*?</p>\n\s*<p>.*?</p>',
+         lambda m: (f'<h2>Immobilien in {s.anzeige}: Lage &amp; Markt</h2>\n'
+                    f'{m.group(1)}<p>{a1}</p>\n{m.group(1)}<p>{a2}</p>\n'
+                    f'{m.group(1)}<p>{a3}</p>')),
+        (r'(<div class="prose reveal"><p>).*?(</p>)',
+         lambda m: m.group(1) + zusammenfassung(s) + m.group(2)),
+        (r'<h2>Der Immobilienmarkt in Nippes</h2>\n(\s*)<p>.*?</p>',
+         lambda m: (f'<h2>Der Immobilienmarkt in {s.anzeige}</h2>\n'
+                    f'{m.group(1)}<p>{markt_absatz(s)}</p>')),
+        # Kennzahlenkacheln zwischen <dl> und </dl>
+        (r'(<dl>\n)(?:\s*<div><dt>.*?</div>\n)+(\s*</dl>)',
+         lambda m: m.group(1) + marktdaten_block(s, koeln) + "\n" + m.group(2)),
+        # Ortsprofil: Bebauung und Lage
+        (r'(<h3>Bebauung in Köln-)Nippes(</h3>\n\s*<p>).*?(</p>)',
+         lambda m: m.group(1) + s.anzeige + m.group(2) + s.profil["bebauung"] + m.group(3)),
+        (r'(<h3>Lage und Infrastruktur</h3>\n\s*<p>).*?(</p>)',
+         lambda m: m.group(1) + s.profil["lage"] + m.group(2)),
+        # Wohnungsbestand in Zahlen
+        (r'(<h3>Wohnungsbestand in Zahlen</h3>\n\s*<p>).*?(</p>)',
+         lambda m: m.group(1) + bestand_absatz(s, koeln) + m.group(2)),
         (r'<h3>Immobilie in Köln-Nippes verkaufen oder bewerten\?</h3>',
          f'<h3>Immobilie in Köln-{s.anzeige} verkaufen oder bewerten?</h3>'),
         (r'(<h2 class="headline">)Immobilienpreise in Köln-Nippes(</h2>)',
          rf'\1Immobilienpreise in Köln-{s.anzeige}\2'),
         (r'<h3>Marktdaten Köln-Nippes</h3>', f'<h3>Marktdaten Köln-{s.anzeige}</h3>'),
-        (r'<h3>Bebauung in Köln-Nippes</h3>', f'<h3>Bebauung in Köln-{s.anzeige}</h3>'),
         (r'(<h2 class="headline" style="max-width:24ch">)Immobilienwert in Köln-Nippes ermitteln(</h2>)',
          rf'\1Immobilienwert in Köln-{s.anzeige} ermitteln\2'),
     ]
@@ -258,6 +303,7 @@ def main() -> int:
     wohn = laden("stadtteile-wohnkennzahlen.json")
     boden = laden("stadtteile-bodenrichtwerte.json")
     kauf = laden("stadtteile-kaufpreise.json")
+    bezirke = laden("stadtteile-bezirke.json")["stadtteile"]
     koeln = wohn["_koeln"]
 
     kuerzel = args.stadtteile or [k for k in profile if not k.startswith("_")]
@@ -269,8 +315,13 @@ def main() -> int:
         if k not in profile:
             print(f"  {k}: kein Ortsprofil, uebersprungen")
             continue
+        bez = bezirke.get(k, {})
+        # Nachbarn = uebrige Stadtteile desselben Bezirks, fuer die es eine
+        # Seite gibt. Die Verlinkung bleibt damit symmetrisch.
+        nachbarn = [n for n, v in bezirke.items()
+                    if v.get("bezirk") == bez.get("bezirk") and n != k]
         s = Stadtteil(k, profile[k], wohn[k], boden.get(k), kauf.get(k, {}),
-                      bezirk="", nachbarn=[])
+                      bezirk=bez.get("bezirk", ""), nachbarn=nachbarn)
         html = bauen(s, vorlage, koeln)
         if not args.pruefen:
             (WURZEL / s.datei).write_text(html, encoding="utf-8")

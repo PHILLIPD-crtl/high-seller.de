@@ -31,5 +31,53 @@
   "bullet1": "Berechnung beider Szenarien mit Ihren Zahlen",
   "bullet2": "Vergleich der Aufschläge über mehrere Anbieter",
   "bullet3": "Prüfung von Rücktrittsrechten vor Abschluss"
+ },
+ "eigenkapital-immobilienkauf-koeln": {
+  "titel": "Wie viel Eigenkapital beim Immobilienkauf? | Köln",
+  "h1": "Eigenkapital beim Immobilienkauf",
+  "besch": "Eigenkapital beim Hauskauf: Faustregeln, Nebenkosten, Vollfinanzierung und was Banken tatsächlich verlangen. Beratung in Köln.",
+  "kurz": "Die Nebenkosten sollten aus eigener Tasche kommen — alles andere wird teuer.",
+  "a1": "In Nordrhein-Westfalen summieren sich die Kaufnebenkosten auf rund zehn Prozent: 6,5 Prozent Grunderwerbsteuer, 1,5 bis 2 Prozent für Notar und Grundbuch, dazu die anteilige Maklerprovision. Banken finanzieren diese Kosten in aller Regel nicht mit, weil ihnen kein Gegenwert gegenübersteht. Bei einem Kaufpreis von 500.000 Euro sind das rund 50.000 Euro, die vorhanden sein müssen, bevor über die Finanzierung gesprochen wird.",
+  "a2": "Die verbreitete Faustregel lautet: Nebenkosten plus zehn bis zwanzig Prozent des Kaufpreises. Bei 500.000 Euro wären das 100.000 bis 150.000 Euro insgesamt. Wer weniger hat, bekommt in der Regel trotzdem eine Finanzierung — aber zu schlechteren Konditionen, weil die Bank ihr Risiko über den Zins einpreist. Der Aufschlag zwischen 80 und 100 Prozent Beleihung liegt oft bei einem halben Prozentpunkt oder mehr.",
+  "a3": "Zum Eigenkapital zählt mehr, als viele denken: Guthaben, Bausparverträge, Wertpapiere, Rückkaufswerte von Lebensversicherungen, ein bereits bezahltes Grundstück und Eigenleistungen am Bau in begrenztem Umfang. Auch ein zinsloses Familiendarlehen kann angerechnet werden, wenn es nachrangig gestellt wird. Was in Ihrem Fall zählt, rechnen wir konkret durch — als Darlehensvermittler nach § 34i GewO.",
+  "faq1_f": "Geht eine Finanzierung ganz ohne Eigenkapital?",
+  "faq1_a": "Es gibt sie, die Vollfinanzierung über 100 oder sogar 110 Prozent. Voraussetzung ist ein sicheres, überdurchschnittliches Einkommen, eine einwandfreie Bonität und eine gut verwertbare Immobilie. Der Preis ist ein deutlich höherer Zins und eine sehr lange Laufzeit. Für Berufseinsteiger mit stabilem Einkommen kann das aufgehen; wer knapp kalkuliert, gerät bei jeder Störung in Schwierigkeiten. Wir rechnen ehrlich durch, auch wenn das Ergebnis manchmal lautet: noch nicht.",
+  "faq2_f": "Wie viel Rate kann ich mir leisten?",
+  "faq2_a": "Als grobe Grenze gilt, dass die Rate 35 bis 40 Prozent des Nettohaushaltseinkommens nicht überschreiten sollte. Wichtiger als die Faustregel ist eine ehrliche Haushaltsrechnung mit allen laufenden Kosten — einschließlich Instandhaltungsrücklage von etwa einem Euro je Quadratmeter und Monat, die Eigentümer oft vergessen. Unser Budgetrechner gibt einen ersten Anhaltspunkt.",
+  "bullet1": "Ehrliche Berechnung, was tragbar ist",
+  "bullet2": "Prüfung, welche Mittel als Eigenkapital zählen",
+  "bullet3": "Vergleich über mehrere Banken statt eines Hausangebots"
+ },
+ "zwischenfinanzierung-koeln": {
+  "titel": "Zwischenfinanzierung in Köln | Kaufen vor dem Verkauf",
+  "h1": "Zwischenfinanzierung: kaufen, bevor verkauft ist",
+  "besch": "Zwischenfinanzierung: Ablauf, Kosten, Risiken und Alternativen, wenn Sie kaufen wollen, bevor die alte Immobilie verkauft ist.",
+  "kurz": "Die Zwischenfinanzierung überbrückt die Lücke — sie kostet Geld, aber weniger als ein Notverkauf.",
+  "a1": "Wer eine neue Immobilie kauft, bevor die alte verkauft ist, braucht eine Überbrückung. Die Zwischenfinanzierung stellt den benötigten Betrag bereit und wird mit dem Verkaufserlös abgelöst. Sie ist variabel verzinst und jederzeit rückzahlbar — dafür teurer als eine reguläre Finanzierung, meist ein bis zwei Prozentpunkte über dem Marktzins.",
+  "a2": "Die Bank verlangt eine belastbare Einschätzung des Verkaufswerts der alten Immobilie und häufig deren Beleihung als Sicherheit. Genau hier hilft es, dass wir Makler und Darlehensvermittler in einem sind: Die Wertermittlung, die die Bank braucht, kommt von uns — und wir wissen, was am Markt tatsächlich erzielbar ist, nicht nur, was ein Bewertungsverfahren ausrechnet.",
+  "a3": "Das Risiko liegt im Zeitablauf. Verkauft sich die alte Immobilie langsamer als geplant, laufen die Zinsen weiter und der Druck steigt, den Preis zu senken. Deshalb ist eine realistische Einschätzung der Vermarktungsdauer wichtiger als der günstigste Zins. In Köln sind bei marktgerechtem Preis acht bis sechzehn Wochen bis zur Beurkundung üblich, plus vier bis acht Wochen bis zur Kaufpreiszahlung.",
+  "faq1_f": "Gibt es Alternativen zur Zwischenfinanzierung?",
+  "faq1_a": "Ja, drei. Erstens eine Rücktrittsklausel im neuen Kaufvertrag für den Fall, dass der Verkauf scheitert — nicht jeder Verkäufer akzeptiert das. Zweitens ein längerer Zeitraum zwischen Beurkundung und Kaufpreisfälligkeit beim Neukauf, oft verhandelbar. Drittens die zeitliche Staffelung: erst verkaufen, zwischenzeitlich zur Miete wohnen, dann in Ruhe kaufen. Letzteres ist am günstigsten und am unbequemsten.",
+  "faq2_f": "Wie lange läuft eine Zwischenfinanzierung?",
+  "faq2_a": "Üblich sind sechs bis vierundzwanzig Monate. Sie ist jederzeit ohne Vorfälligkeitsentschädigung rückzahlbar — das ist ihr eigentlicher Vorteil gegenüber einem regulären Darlehen. Verzögert sich der Verkauf über die vereinbarte Laufzeit hinaus, ist eine Verlängerung meist möglich, aber Verhandlungssache. Wer den Zeitplan realistisch ansetzt, braucht sie nicht.",
+  "bullet1": "Wertermittlung, die der Bank als Grundlage genügt",
+  "bullet2": "Realistische Einschätzung der Vermarktungsdauer",
+  "bullet3": "Vergleich mit Rücktrittsklausel und Staffelung"
+ },
+ "kfw-foerderung-koeln": {
+  "titel": "KfW-Förderung für Immobilien in Köln | Programme",
+  "h1": "KfW-Förderung beim Immobilienkauf",
+  "besch": "KfW-Förderung: Programme für Neubau, Sanierung und Familien, Antragswege und die wichtigste Regel — Antrag vor Vertragsschluss.",
+  "kurz": "Die wichtigste Regel: erst beantragen, dann unterschreiben.",
+  "a1": "Die KfW fördert energieeffizientes Bauen und Sanieren sowie den Erwerb von Wohneigentum für Familien mit zinsgünstigen Krediten und Tilgungszuschüssen. Die Programme ändern sich häufig, Bedingungen und Fördersätze ebenso — was heute gilt, kann in sechs Monaten anders sein. Verbindlich ist immer der Stand zum Antragszeitpunkt.",
+  "a2": "Die Regel, an der die meisten Anträge scheitern: Der Antrag muss vor Abschluss des Liefer- oder Leistungsvertrags gestellt werden. Wer den Kaufvertrag beurkundet oder den Handwerker beauftragt hat und danach beantragt, geht leer aus. Bei Sanierungen ist zusätzlich ein Energieeffizienz-Experte einzubinden, der die Maßnahmen bestätigt — auch dessen Beauftragung hat Reihenfolgeregeln.",
+  "a3": "Beantragt wird nicht direkt bei der KfW, sondern über ein Kreditinstitut, das den Antrag durchleitet. Als Darlehensvermittler nach § 34i GewO prüfen wir, welche Programme für Ihr Vorhaben in Frage kommen und wie sie sich mit der übrigen Finanzierung verzahnen lassen. Häufig ist die Kombination aus KfW-Mitteln und einem Bankdarlehen günstiger als eine reine Bankfinanzierung — aber nicht immer.",
+  "faq1_f": "Kann ich KfW-Mittel auch beim Kauf einer Bestandsimmobilie nutzen?",
+  "faq1_a": "Für den reinen Erwerb ohne Sanierung gibt es nur eingeschränkte Programme, etwa für Familien mit Kindern unter bestimmten Einkommensgrenzen beim Kauf sanierter Bestandsgebäude. Umfangreicher sind die Programme, wenn Sie nach dem Kauf sanieren — dann werden die energetischen Maßnahmen gefördert, teils mit erheblichen Tilgungszuschüssen. Die Reihenfolge ist auch hier entscheidend.",
+  "faq2_f": "Lohnt sich der Aufwand?",
+  "faq2_a": "Das hängt von Programm und Vorhaben ab. Bei größeren Sanierungen können Tilgungszuschüsse fünfstellig ausfallen, dann lohnt sich der Aufwand für Antrag und Energieberater klar. Bei kleineren Maßnahmen steht der Aufwand mitunter in keinem Verhältnis. Wir rechnen das vorab durch, statt pauschal zur Förderung zu raten — auch wenn das manchmal heißt, davon abzuraten.",
+  "bullet1": "Prüfung, welche Programme aktuell passen",
+  "bullet2": "Beachtung der Reihenfolge: Antrag vor Vertragsschluss",
+  "bullet3": "Verzahnung von Fördermitteln und Bankdarlehen"
  }
 }

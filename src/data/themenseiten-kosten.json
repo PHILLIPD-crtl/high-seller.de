@@ -47,5 +47,53 @@
   "bullet1": "Prüfung, welcher Ausweistyp für Ihr Objekt Pflicht ist",
   "bullet2": "Pflichtangaben im Exposé vollständig und korrekt",
   "bullet3": "Vermittlung an Aussteller, wenn kein Ausweis vorliegt"
+ },
+ "notarkosten-immobilienverkauf-koeln": {
+  "titel": "Notarkosten beim Immobilienverkauf | Köln",
+  "h1": "Notarkosten und Grundbuchgebühren",
+  "besch": "Notarkosten beim Immobilienverkauf: Höhe nach GNotKG, wer was zahlt, Grundbuchgebühren und Ablauf. Transparent für Köln erklärt.",
+  "kurz": "Notarkosten sind gesetzlich festgelegt — verhandeln lässt sich daran nichts.",
+  "a1": "Die Gebühren richten sich nach dem Gerichts- und Notarkostengesetz und bemessen sich am Kaufpreis. Sie sind für alle Notare identisch; ein Preisvergleich bringt nichts. Für den Kaufvertrag fällt eine doppelte Gebühr an, für die Auflassungsvormerkung und die Löschung alter Grundschulden jeweils weitere. Als Faustregel liegen Notar und Grundbuchamt zusammen bei etwa 1,5 bis 2 Prozent des Kaufpreises.",
+  "a2": "Die Verteilung ist üblich, nicht gesetzlich vorgeschrieben. In der Praxis trägt der Käufer die Kosten des Kaufvertrags, der Auflassungsvormerkung und der Eigentumsumschreibung. Der Verkäufer zahlt, was mit der Lastenfreistellung zu tun hat: die Löschung eingetragener Grundschulden, deren Bewilligung und die entsprechenden Grundbuchgebühren. Bei einer Grundschuld über 300.000 Euro sind das mehrere hundert Euro.",
+  "a3": "Beauftragt wird der Notar üblicherweise vom Käufer, weil er die Kosten trägt. Er ist zur Neutralität verpflichtet und berät beide Seiten. Wichtig für den Zeitplan: Zwischen dem Übersenden des Vertragsentwurfs und der Beurkundung müssen bei Verbrauchergeschäften zwei Wochen liegen, § 17 Abs. 2a BeurkG. Diese Frist ist nicht verkürzbar und sollte von Anfang an eingeplant werden.",
+  "faq1_f": "Wann wird der Kaufpreis fällig?",
+  "faq1_a": "Nicht mit der Beurkundung, sondern wenn die im Vertrag genannten Fälligkeitsvoraussetzungen erfüllt sind. Das sind typischerweise: eingetragene Auflassungsvormerkung zugunsten des Käufers, vorliegende Löschungsunterlagen für alte Grundschulden, und etwaige Genehmigungen. Der Notar teilt die Fälligkeit schriftlich mit. Zwischen Beurkundung und Zahlung liegen dadurch meist vier bis acht Wochen.",
+  "faq2_f": "Was kostet die Löschung meiner alten Grundschuld?",
+  "faq2_a": "Sie richtet sich nach der Höhe der eingetragenen Grundschuld, nicht nach der Restschuld des Darlehens. Bei 300.000 Euro Grundschuld fallen für die notarielle Löschungsbewilligung und die Grundbuchlöschung zusammen ungefähr 400 bis 500 Euro an. Die Bank stellt die Löschungsbewilligung nach Ablösung aus, manche verlangen dafür eine Bearbeitungsgebühr — die ist nach Rechtsprechung des Bundesgerichtshofs allerdings häufig unzulässig.",
+  "bullet1": "Kostenschätzung für Ihren Fall vor dem Notartermin",
+  "bullet2": "Vollständige Unterlagen, damit keine Nachbeurkundung nötig wird",
+  "bullet3": "Abstimmung von Fälligkeit und Übergabe mit dem Notar"
+ },
+ "grundbuchauszug-koeln": {
+  "titel": "Grundbuchauszug für den Immobilienverkauf | Köln",
+  "h1": "Grundbuchauszug: was drinsteht und warum er zählt",
+  "besch": "Grundbuchauszug beantragen in Köln: Aufbau der drei Abteilungen, Kosten, wer ihn bekommt und welche Einträge den Verkauf bremsen.",
+  "kurz": "Im Grundbuch steht, was den Verkauf verzögern kann — besser vorher wissen.",
+  "a1": "Das Grundbuch besteht aus dem Bestandsverzeichnis und drei Abteilungen. Das Bestandsverzeichnis beschreibt das Grundstück mit Gemarkung, Flur und Flurstück. Abteilung I nennt die Eigentümer, Abteilung II Lasten und Beschränkungen, Abteilung III die Grundpfandrechte. Für den Verkauf sind die Abteilungen II und III entscheidend — dort stehen die Punkte, die Käufer und deren Banken prüfen.",
+  "a2": "In Abteilung II finden sich Wegerechte, Leitungsrechte, Wohnrechte, Nießbrauch, Vorkaufsrechte und Erbbaurechte. Ein eingetragenes Wohnrecht mindert den Wert erheblich; ein Wegerecht zugunsten des Nachbarn ist meist unproblematisch, muss aber im Exposé stehen. Verschwiegene Belastungen sind ein Mangel, für den der Verkäufer trotz Gewährleistungsausschluss haftet.",
+  "a3": "Abteilung III enthält Hypotheken und Grundschulden. Wichtig: Die eingetragene Summe entspricht nicht der Restschuld. Häufig stehen dort noch alte, längst getilgte Grundschulden, weil niemand die Löschung veranlasst hat. Diese müssen vor oder mit dem Verkauf gelöscht werden — was Zeit kostet, wenn die Bank die Unterlagen erst suchen muss. Deshalb schauen wir früh hinein.",
+  "faq1_f": "Wer bekommt einen Grundbuchauszug?",
+  "faq1_a": "Nur wer ein berechtigtes Interesse darlegt, § 12 GBO. Das sind Eigentümer, eingetragene Berechtigte, Notare, Behörden und Gläubiger. Ein Kaufinteressent hat noch kein berechtigtes Interesse, solange keine ernsthafte Verhandlung läuft — deshalb beschafft ihn der Verkäufer. In Köln ist das Amtsgericht Köln als Grundbuchamt zuständig, die Beantragung ist auch schriftlich möglich.",
+  "faq2_f": "Was kostet ein Grundbuchauszug?",
+  "faq2_a": "Ein einfacher Auszug kostet 10 Euro, ein beglaubigter 20 Euro. Für den Verkauf genügt in der Regel ein aktueller unbeglaubigter Auszug; der Notar zieht ohnehin selbst eine Einsicht. Wichtig ist die Aktualität — ein Auszug, der älter als drei Monate ist, wird von Banken meist nicht mehr akzeptiert.",
+  "bullet1": "Frühe Prüfung von Abteilung II und III",
+  "bullet2": "Klärung alter, nicht gelöschter Grundschulden",
+  "bullet3": "Beschaffung fehlender Unterlagen übernehmen wir"
+ },
+ "teilungserklaerung-koeln": {
+  "titel": "Teilungserklärung beim Wohnungsverkauf | Köln",
+  "h1": "Teilungserklärung: das Regelwerk Ihrer Wohnung",
+  "besch": "Teilungserklärung verstehen: Sonder- und Gemeinschaftseigentum, Stimmrecht, Kostenverteilung und was Käufer daraus lesen.",
+  "kurz": "Die Teilungserklärung entscheidet, was Ihnen wirklich gehört.",
+  "a1": "Die Teilungserklärung nach § 8 WEG teilt das Gebäude in Sondereigentum und Gemeinschaftseigentum auf. Sondereigentum ist die Wohnung selbst; Gemeinschaftseigentum sind Dach, Fassade, tragende Wände, Treppenhaus und Leitungen. Der entscheidende Punkt für Käufer: Was am Gemeinschaftseigentum saniert wird, zahlen alle nach Miteigentumsanteilen — unabhängig davon, wer davon profitiert.",
+  "a2": "Balkone, Fenster und Wohnungseingangstüren sind die häufigsten Streitfälle. Nach der Rechtsprechung des Bundesgerichtshofs gehören Fenster einschließlich Rahmen zum Gemeinschaftseigentum, auch wenn sie nur eine Wohnung versorgen. Bei Balkonen ist die Konstruktion Gemeinschaftseigentum, der Bodenbelag kann Sondereigentum sein. Was in Ihrer Anlage gilt, steht in der Teilungserklärung — und es weicht oft von der gesetzlichen Regel ab.",
+  "a3": "Ebenso wichtig ist die Gemeinschaftsordnung, die meist Teil derselben Urkunde ist. Sie regelt Stimmrecht, Kostenverteilung, Vermietungsbeschränkungen und ob eine Zustimmung des Verwalters zum Verkauf nötig ist. Eine solche Veräußerungsbeschränkung nach § 12 WEG kommt vor und kann den Verkauf verzögern — sie gehört zu den ersten Dingen, die wir prüfen.",
+  "faq1_f": "Was ist eine Veräußerungsbeschränkung?",
+  "faq1_a": "Eine Regelung, nach der der Verkauf der Zustimmung des Verwalters oder der Eigentümergemeinschaft bedarf, § 12 WEG. Die Zustimmung darf nur aus wichtigem Grund verweigert werden — etwa bei berechtigten Zweifeln an der Zahlungsfähigkeit des Käufers. Praktisch bedeutet sie: Der Notarvertrag wird erst wirksam, wenn die Zustimmung vorliegt. Das kostet ein bis zwei Wochen und sollte früh angestoßen werden.",
+  "faq2_f": "Wie viel Instandhaltungsrücklage ist genug?",
+  "faq2_a": "Eine feste Regel gibt es nicht. Als Orientierung dient die Berechnung nach § 28 der II. Berechnungsverordnung, die je nach Baualter zwischen 7,10 und 11,50 Euro je Quadratmeter Wohnfläche und Jahr vorsieht. Entscheidender als die absolute Höhe ist das Verhältnis zum anstehenden Bedarf: Eine Anlage mit 80.000 Euro Rücklage und einer Dachsanierung für 300.000 Euro vor der Brust ist unterfinanziert — Käufer rechnen die Differenz vom Preis ab.",
+  "bullet1": "Prüfung von Teilungserklärung und Gemeinschaftsordnung",
+  "bullet2": "Frühzeitige Klärung einer Veräußerungsbeschränkung",
+  "bullet3": "Beschaffung von Protokollen und Wirtschaftsplan"
  }
 }

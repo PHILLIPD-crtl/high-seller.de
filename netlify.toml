@@ -1188,6 +1188,36 @@
   force = true
 
 [[redirects]]
+  from = "/warum-highseller-koeln"
+  to = "/warum-highseller-koeln.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/vermarktungskonzept-koeln"
+  to = "/vermarktungskonzept-koeln.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/premium-marketing-immobilien-koeln"
+  to = "/premium-marketing-immobilien-koeln.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/finanzierung-ueber-banken-koeln"
+  to = "/finanzierung-ueber-banken-koeln.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/kundenstimmen-highseller-koeln"
+  to = "/kundenstimmen-highseller-koeln.html"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/immobilienmakler-koeln-suelz"
   to = "/immobilienmakler-koeln-suelz.html"
   status = 301

@@ -253,5 +253,90 @@
   "_stadtteil": "Flittard",
   "bebauung": "Der Name bedeutet fließende, vom Rhein an- oder weggeschwemmte Erde und verweist auf die Hochwassergefährdung, der der Ort bis zum Deichbau 1894/95 immer wieder ausgesetzt war. Erstmals 989 urkundlich erwähnt. Der Ortskern besteht aus kleinen ländlichen Häusern; ältester Profanbau ist der Bongartzhof von 1715, ein Fachwerkbau mit Backsteinausfachung und tief heruntergezogenem Walmdach. Die Pfarrkirche St. Hubertus hat ihren alten Westturm behalten.",
   "lage": "Im rechtsrheinischen Norden im Bezirk Mülheim, direkt an der Stadtgrenze zu Leverkusen. Die Deichlage am Rhein ist bei der Bewertung von Kellern und Untergeschossen ein Thema, das offen angesprochen gehört."
+ },
+ "blumenberg": {
+  "_stadtteil": "Blumenberg",
+  "bebauung": "Ursprünglich ausschließlich als Fläche für Einfamilienhäuser geplant, später um Mehrfamilienhäuser ergänzt. Eine Besonderheit ist eine Siedlung aus 16 Reihenhäusern, die zu den ältesten Ökosiedlungen Deutschlands zählt. Bodenuntersuchungen und zwei Ausgrabungen belegen eine Siedlung auf der Rheinniederterrasse schon in vorgeschichtlicher Zeit.",
+  "lage": "Der Haltepunkt der im Tunnel verlaufenden S 11 bringt Fahrgäste in rund 20 Minuten zum Hauptbahnhof, zeitweise ergänzt durch die S 6. Vier Kindergärten, eine Gemeinschaftsgrundschule, ein Jugendzentrum, Spielplätze und Sportanlagen — die Ausstattung ist ausgesprochen familienorientiert, dazu Arztpraxen mehrerer Fachrichtungen und eine Apotheke."
+ },
+ "buchforst": {
+  "_stadtteil": "Buchforst",
+  "bebauung": "Das namensgebende Waldgebiet wurde erst im 20. Jahrhundert nennenswert besiedelt: 1926 erwarb die Gemeinnützige Aktiengesellschaft für Wohnungsbau ein 18 Hektar großes Gelände im Kalkerfeld. Erhalten sind zwei bedeutende Zeugnisse dieser Zeit — der Blaue Hof und die Weiße Stadt. Zu Letzterer gehört die Pfarrkirche St. Petrus Canisius, 1930/31 von Wilhelm Riphahn und Carl Maria Grod erbaut.",
+  "lage": "Der 1990 eröffnete Bahnhof Köln-Buchforst wird von den S-Bahn-Linien 6 und 11 bedient, dazu kommen die Stadtbahnlinie 3 und Buslinien. Die Anbindung ist für einen so kleinen Stadtteil ungewöhnlich gut."
+ },
+ "elsdorf": {
+  "_stadtteil": "Elsdorf",
+  "bebauung": "1371 als Eygelstorp urkundlich erwähnt, der Name geht auf Eigil zurück; die ältere Generation sagte mundartlich Eilsdörp. Schönstes Bauwerk ist der denkmalgeschützte Bergerhof, ein Gutshof des 18./19. Jahrhunderts, weitere ehemalige Bauernhöfe stehen entlang der Gilsonstraße. Zwischen 2006 und 2012 entstand östlich der B 8 ein neues Wohngebiet mit überwiegend zweieinhalbgeschossigen Siedlungs- und Reihenhäusern.",
+  "lage": "Einer der kleinsten Stadtteile Kölns nach Fläche und Einwohnern. Wie sonst nur Libur ist Elsdorf vollständig von landwirtschaftlichen Flächen umgeben, die höher liegen als der historische Ortskern und ertragreichere Böden haben. Amtlich weist BORIS für Elsdorf keine Wohnbauzone aus — die Bewertung stützt sich hier auf Vergleichsobjekte der Nachbarorte."
+ },
+ "fuehlingen": {
+  "_stadtteil": "Fühlingen",
+  "bebauung": "Auf einem hochwassersicheren Hügel westlich des Rheins gelegen und deshalb früh besiedelt — archäologische Spuren reichen bis in die Jungsteinzeit, zur Römerzeit gab es im Gebiet des heutigen Sees mehrere Anlagen. Der Ort hat dörfliche Strukturen behalten, obwohl am Westrand ein größeres Neubaugebiet entstand und im Ortsinneren zahlreiche Ein- und Zweifamilienhäuser hinzukamen.",
+  "lage": "Überregional bekannt durch den Fühlinger See südlich des Ortes. Die B 9 führt hindurch; seit Juni 2016 entlastet eine Umgehungsstraße den Ortskern und dient zugleich als Zubringer zur A 1. Die alte Volksschule von 1880 wurde Ende der 1970er Jahre mangels Schülerzahlen geschlossen."
+ },
+ "godorf": {
+  "_stadtteil": "Godorf",
+  "bebauung": "1173 als Gudegedorp erstmals erwähnt, archäologische Funde weisen auf römische und fränkische Besiedlung; eine erste Mühle ist seit 1197 belegt. Das heutige Ortsbild ist zweigeteilt: im Westen ein- und zweigeschossige Wohnhäuser der Nachkriegszeit und einige Fachwerkhäuser, daneben ausgedehnte Industrieanlagen der Petrochemie.",
+  "lage": "Zum Stadtteil gehört der Godorfer Hafen, 1967 der größte seiner Art in der Region. Die Nähe zur Raffinerie prägt den Ort und ist beim Verkauf ein Punkt, der offen angesprochen gehört — sie bringt Arbeitsplätze, begrenzt aber die Nachfrage. Der Gutachterausschuss weist für Godorf keine eigenen Wohnungspreise aus."
+ },
+ "hahnwald": {
+  "_stadtteil": "Hahnwald",
+  "bebauung": "Einer der jüngsten Kölner Stadtteile und zugleich eines der exklusivsten Villenviertel Deutschlands. Geprägt von moderner Villenarchitektur, großzügigen Gärten und teils sehr altem Baumbestand. Der Name geht auf einen früheren Hainwald zurück, 1610 als Hendtgen und um 1800 als Haalen belegt. Die durchschnittliche Wohnfläche liegt bei über 220 Quadratmetern je Wohnung — der mit Abstand höchste Wert der Stadt.",
+  "lage": "Ruhige Lage im Kölner Süden, etwa 15 bis 20 Autominuten vom Zentrum entfernt. Die Abgeschiedenheit ist hier kein Nachteil, sondern das Produkt: Wer in Hahnwald kauft, sucht genau das."
+ },
+ "immendorf": {
+  "_stadtteil": "Immendorf",
+  "bebauung": "948 in einer Schrift des Erzbischofs Wichfrid als Iminethorp erwähnt, archäologische Spuren belegen römische und fränkische Bebauung. Das Ortsbild ist bis heute von alten Bauernhöfen bestimmt — ein dörflicher Kern am äußersten Südrand der Stadt.",
+  "lage": "In der Nähe des Kölner Raffineriezentrums gelegen und indirekt an die Rheinland-Raffinerie grenzend, bei der viele Einwohner beschäftigt sind oder waren. Überregional bekannt ist der Ort im Straßenradsport durch die Radsportabteilung des TSV Immendorf. Eigene Wohnungspreise weist der Gutachterausschuss für Immendorf nicht aus."
+ },
+ "langel": {
+  "_stadtteil": "Langel",
+  "bebauung": "965 als Langalon erstmals urkundlich erwähnt, seit dem Mittelalter zum Amt Porz im Herzogtum Berg. 1635 wurden Einwanderungsbestimmungen erlassen, nach denen jeder Neubürger vereidigt werden musste. Der Ort ist klein und ländlich geblieben.",
+  "lage": "Eine direkte Straßenbahnverbindung gibt es nicht mehr, seit die Linie 7 im benachbarten Zündorf endet und die Kleinbahn Zündorf–Siegburg eingestellt wurde; Pläne für eine Anbindung liegen seit Jahren auf Eis. Größter Verein ist der TuS Langel, der neben Fußball auch eine Ballettgruppe unterhält, die einkommensschwachen Familien offensteht."
+ },
+ "libur": {
+  "_stadtteil": "Libur",
+  "bebauung": "1183 erstmals urkundlich genannt, 1185 im Mirakelbuch Annos II. als villula Lebure, 1411 in der Schreibweise Lebur. Der südlichste Stadtteil Kölns und zugleich der mit der geringsten Einwohnerzahl und der niedrigsten Bevölkerungsdichte — rund 1.100 Menschen auf viel Fläche.",
+  "lage": "Wie sonst nur Elsdorf vollständig von landwirtschaftlichen Flächen umgeben. Die Abgeschiedenheit bestimmt den Markt: wenige Objekte, wenige Verkäufe, dafür eine Nachfrage, die gezielt hierher will. Der Gutachterausschuss weist keine eigenen Wohnungspreise aus."
+ },
+ "lindweiler": {
+  "_stadtteil": "Lindweiler",
+  "bebauung": "Die Geschichte geht auf den 1276 erstmals erwähnten Lindweilerhof zurück, von dem heute noch ein Fachwerk- und ein Backsteingebäude erhalten sind. Am 1. April 1888 wurde der Ort eingemeindet.",
+  "lage": "Im linksrheinischen Norden im Stadtbezirk Chorweiler. Im Ort liegen eine Gemeinschaftsgrundschule mit rund 115 Schülern und die Gertrud-Bollenrath-Förderschule, dazu die katholische Filialkirche Schmerzhafte Mutter Maria. Eigene Kaufpreisdaten weist der Gutachterausschuss nicht aus."
+ },
+ "merkenich": {
+  "_stadtteil": "Merkenich",
+  "bebauung": "Eines von vier Rheindörfern — neben Rheinkassel, Langel und Kasselberg — entlang der römischen Straßenverbindung von Köln über Neuss und Xanten nach Nijmegen. Weil der Rhein die Reichsgrenze bildete, standen hier in regelmäßigen Abständen römische Anlagen. Der dörfliche Charakter ist erhalten geblieben.",
+  "lage": "Eigener Anschluss an die A 1, die A 57 ist über das Autobahnkreuz Köln-Nord schnell erreichbar. Historisch bedeutsam sind die Rheinfähren von Merkenich nach Wiesdorf und von Langel nach Hitdorf."
+ },
+ "meschenich": {
+  "_stadtteil": "Meschenich",
+  "bebauung": "Erste Siedlungszeichen stammen aus römischer Zeit, 1166 wird der Ort als Meschingen urkundlich erwähnt. Im Liber valoris ist 1274 bereits die romanische Ortskirche verzeichnet. Am äußersten Südrand der Stadt gelegen, mit weiten Bereichen dörflicher Prägung.",
+  "lage": "Die A 553 endet bei Meschenich; die ursprünglich geplante Verlängerung bis zur A 4 wurde verworfen. Deshalb tragen die mitten durch den Ort führende B 51 und die Brühler Tangente L 150 den Verkehr — eine Belastung, die bei der Bewertung einzelner Lagen zählt."
+ },
+ "roggendorf-thenhoven": {
+  "_stadtteil": "Roggendorf/Thenhoven",
+  "bebauung": "Thenhoven wurde 948 als Thiedinhove erstmals erwähnt; 1288 fand in der Nähe auf der Fühlinger Heide die Schlacht von Worringen statt. Sehenswert sind das Schloss Arff am Südostrand des Chorbuschs und die katholische Ortskirche St. Johann Baptist aus dem 19. Jahrhundert mit einer Orgel der dänischen Firma Marcussen.",
+  "lage": "Nach Fläche der zweitgrößte Stadtteil Kölns nach Eil, nach Einwohnerzahl einer der kleinsten — entsprechend locker die Bebauung. An der Grenze zu Worringen, noch auf eigenem Gebiet, liegt der Bahnhof Köln-Worringen mit der S 11 nach Düsseldorf und Bergisch Gladbach."
+ },
+ "stammheim": {
+  "_stadtteil": "Stammheim",
+  "bebauung": "959 erstmals urkundlich nachgewiesen mit der Erwähnung der Herren von und zu Stammheim; die Vorläuferin der heutigen Pfarrkirche St. Mariä Geburt wird schon im 11. Jahrhundert genannt. Prägend ist der Schlosspark, in dem seit 2002 jährlich das Kunstfest Rheinblicke stattfindet. Die 2013 eingeweihte evangelische Immanuel-Kirche erhielt den Kölner Architekturpreis 2014.",
+  "lage": "Rechtsrheinisch im Bezirk Mülheim. Die erste Bahnlinie durch Stammheim ging 1898 in Betrieb — die Bayer-Bahn zwischen Leverkusen und Köln-Mülheim, die heute noch als Werksbahn für Güterverkehr genutzt wird."
+ },
+ "vogelsang": {
+  "_stadtteil": "Vogelsang",
+  "bebauung": "Entstanden als planmäßige Siedlung: Wohnraummangel durch die Industrialisierung der 1920er Jahre, wachsende Arbeitslosigkeit in der Weltwirtschaftskrise und die daraus folgende Verelendung gaben den Ausschlag. 1955 kam für den kurz zuvor eigenständig gewordenen evangelischen Gemeindebezirk die Emmauskirche hinzu, in den 1960er Jahren entstanden rund um das ursprüngliche Siedlungsgebiet viele Einfamilienhäuser.",
+  "lage": "Im Westen im Stadtbezirk Ehrenfeld. Die Ausstattung ist für die Größe bemerkenswert: vier Kindertagesstätten, drei Grundschulen, eine Hauptschule und zwei Gesamtschulen. Dazu der Vogelsanger Markt, das Max-Planck-Institut für Pflanzenzüchtungsforschung, die Grünanlage Biesterfeld und der Westfriedhof."
+ },
+ "volkhoven-weiler": {
+  "_stadtteil": "Volkhoven/Weiler",
+  "bebauung": "Der Doppelname sagt es: zwei kleine Dörfer, die im 20. Jahrhundert zusammengewachsen sind. Das südlicher gelegene Volkhoven gehörte in der Franzosenzeit zum Kanton Weiden und wurde 1888 eingemeindet. Die beiden Ortskerne sind bis heute unterscheidbar.",
+  "lage": "Im linksrheinischen Norden im Stadtbezirk Chorweiler. Das nächstgelegene Gymnasium für die Nachbarstadtteile liegt hier, was den Ort für Familien aus der Umgebung mitversorgt."
+ },
+ "worringen": {
+  "_stadtteil": "Worringen",
+  "bebauung": "Der nördlichste Stadtteil Kölns. Die römische Straßenverbindung von Köln über Neuss nach Xanten führt bis heute als B 9 durch den Ort; der alte Ortskern bekam bereits in den 1930er Jahren eine Umgehung. Zwischen Worringen und Dormagen liegen ausgedehnte Anlagen der chemischen Industrie, teils auf Kölner, teils auf Dormagener Gebiet.",
+  "lage": "Südwestlich liegt das Naturschutzgebiet Worringer Bruch mit ausgedehnten Wandermöglichkeiten. Sechs Kindergärten und zwei Grundschulen im Ort; die Hauptschule wurde 2011 geschlossen, weiterführende Schulen besuchen Kinder seither in anderen Stadtteilen oder in Dormagen."
  }
 }

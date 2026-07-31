@@ -1663,6 +1663,36 @@
   status = 301
   force = true
 
+# ---------------------------------------------------------------------------
+# Aus der Search Console am 31.07.2026: verbliebene 404
+# ---------------------------------------------------------------------------
+# Von sechs gemeldeten Adressen waren drei bereits durch die Regeln aus v39
+# abgefangen. Diese beiden fehlten noch; sie stammen aus der Vorgaengerseite und
+# wurden zuletzt am 16. und 17.07.2026 von Google gecrawlt.
+
+[[redirects]]
+  from = "/agb-highseller-immobilien-koeln"
+  to = "/impressum.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/objekte-highseller-immobilien"
+  to = "/verkaufte-objekte.html"
+  status = 301
+  force = true
+
+# Ueberrest der frueheren Framer-Website. Bewusst 410 statt 301: Die Datei ist
+# ein Laufzeit-Bundle ohne Entsprechung auf der neuen Seite, eine Weiterleitung
+# auf eine HTML-Seite waere fuer einen Skript-Aufruf sinnlos. 410 sagt Google
+# "dauerhaft entfernt" und fuehrt zur schnelleren Entfernung aus dem Index als
+# ein wiederholtes 404.
+[[redirects]]
+  from = "/one-runtime/*"
+  to = "/410"
+  status = 410
+  force = true
+
 [[redirects]]
   from = "/immobilienmakler-koeln-suelz"
   to = "/immobilienmakler-koeln-suelz.html"

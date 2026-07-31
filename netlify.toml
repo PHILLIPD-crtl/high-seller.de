@@ -528,6 +528,66 @@
   force = true
 
 [[redirects]]
+  from = "/immobilienmakler-koeln-bocklemuend-mengenich"
+  to = "/immobilienmakler-koeln-bocklemuend-mengenich.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/immobilienmakler-koeln-neubrueck"
+  to = "/immobilienmakler-koeln-neubrueck.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/immobilienmakler-koeln-loevenich"
+  to = "/immobilienmakler-koeln-loevenich.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/immobilienmakler-koeln-buchheim"
+  to = "/immobilienmakler-koeln-buchheim.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/immobilienmakler-koeln-westhoven"
+  to = "/immobilienmakler-koeln-westhoven.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/immobilienmakler-koeln-bickendorf"
+  to = "/immobilienmakler-koeln-bickendorf.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/immobilienmakler-koeln-ensen"
+  to = "/immobilienmakler-koeln-ensen.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/immobilienmakler-koeln-longerich"
+  to = "/immobilienmakler-koeln-longerich.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/immobilienmakler-koeln-merheim"
+  to = "/immobilienmakler-koeln-merheim.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/immobilienmakler-koeln-grengel"
+  to = "/immobilienmakler-koeln-grengel.html"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/immobilienmakler-koeln-suelz"
   to = "/immobilienmakler-koeln-suelz.html"
   status = 301

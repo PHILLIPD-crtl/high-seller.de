@@ -468,6 +468,66 @@
   force = true
 
 [[redirects]]
+  from = "/immobilienmakler-koeln-zuendorf"
+  to = "/immobilienmakler-koeln-zuendorf.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/immobilienmakler-koeln-urbach"
+  to = "/immobilienmakler-koeln-urbach.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/immobilienmakler-koeln-holweide"
+  to = "/immobilienmakler-koeln-holweide.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/immobilienmakler-koeln-kalk"
+  to = "/immobilienmakler-koeln-kalk.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/immobilienmakler-koeln-suerth"
+  to = "/immobilienmakler-koeln-suerth.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/immobilienmakler-koeln-bilderstoeckchen"
+  to = "/immobilienmakler-koeln-bilderstoeckchen.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/immobilienmakler-koeln-wahnheide"
+  to = "/immobilienmakler-koeln-wahnheide.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/immobilienmakler-koeln-eil"
+  to = "/immobilienmakler-koeln-eil.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/immobilienmakler-koeln-brueck"
+  to = "/immobilienmakler-koeln-brueck.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/immobilienmakler-koeln-poll"
+  to = "/immobilienmakler-koeln-poll.html"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/immobilienmakler-koeln-suelz"
   to = "/immobilienmakler-koeln-suelz.html"
   status = 301

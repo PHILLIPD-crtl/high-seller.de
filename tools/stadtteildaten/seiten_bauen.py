@@ -245,7 +245,23 @@ def bauen(s, vorlage, koeln):
     # jede Wendung wie "Teil des Stadtbezirks Nippes" ist richtig und kein Rest
     # der Vorlage. Generisch gefiltert statt einzelne Wendungen aufzuzaehlen -
     # sonst meldet jede neue Formulierung in texte.py einen Fehlalarm.
-    pruef = re.sub(rf"Stadtbezirks?\s+{re.escape(s.bezirk)}", "", h) if s.bezirk else h
+    # Zwei Arten von berechtigten Treffern werden vor der Pruefung entfernt:
+    # der Bezirksname (Riehl LIEGT im Stadtbezirk Nippes) und der Inhalt der
+    # handgeschriebenen Ortsprofile (Bilderstoeckchen wurde aus Teilen von
+    # Neuehrenfeld, Ossendorf und Nippes gebildet - das steht dort mit Absicht).
+    # Ohne diese Ausnahmen meldet jede neue Formulierung einen Fehlalarm und die
+    # Pruefung wird abgeschaltet statt geschaerft.
+    pruef = h
+    if s.bezirk:
+        pruef = re.sub(rf"Stadtbezirks?\s+{re.escape(s.bezirk)}", "", pruef)
+    for feld in ("bebauung", "lage"):
+        text = s.profil.get(feld)
+        if not text:
+            continue
+        pruef = pruef.replace(text, "")
+        # Zusammenfassung und Abschluss uebernehmen den ERSTEN SATZ des Profils.
+        # Ohne diese Zeile meldet die Pruefung ihn als Rest der Vorlage.
+        pruef = pruef.replace(text.split(". ")[0].rstrip("."), "")
     rest = pruef.count("Nippes")
     if rest and s.kuerzel != "nippes":
         stellen = [z.strip()[:120] for z in pruef.split("\n") if "Nippes" in z][:3]

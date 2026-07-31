@@ -1,4 +1,20 @@
 {
+ "Alfter": {
+  "brw": [
+   390,
+   600
+  ],
+  "brwMedian": 530,
+  "brwZonen": 19
+ },
+ "Bedburg": {
+  "brw": [
+   210,
+   330
+  ],
+  "brwMedian": 250,
+  "brwZonen": 22
+ },
  "Bergheim": {
   "brw": [
    150,
@@ -62,6 +78,22 @@
   ],
   "brwMedian": 540,
   "brwZonen": 47
+ },
+ "Hennef (Sieg)": {
+  "brw": [
+   150,
+   560
+  ],
+  "brwMedian": 390,
+  "brwZonen": 61
+ },
+ "Hilden": {
+  "brw": [
+   310,
+   880
+  ],
+  "brwMedian": 610,
+  "brwZonen": 67
  },
  "Hürth": {
   "brw": [
@@ -159,6 +191,14 @@
   "brwMedian": 610,
   "brwZonen": 34
  },
+ "Rommerskirchen": {
+  "brw": [
+   105,
+   340
+  ],
+  "brwMedian": 230,
+  "brwZonen": 21
+ },
  "Rösrath": {
   "brw": [
    290,
@@ -167,6 +207,30 @@
   "brwMedian": 500,
   "brwZonen": 59
  },
+ "Sankt Augustin": {
+  "brw": [
+   390,
+   690
+  ],
+  "brwMedian": 560,
+  "brwZonen": 24
+ },
+ "Siegburg": {
+  "brw": [
+   390,
+   1150
+  ],
+  "brwMedian": 550,
+  "brwZonen": 34
+ },
+ "Swisttal": {
+  "brw": [
+   155,
+   480
+  ],
+  "brwMedian": 295,
+  "brwZonen": 18
+ },
  "Troisdorf": {
   "brw": [
    370,
@@ -174,6 +238,22 @@
   ],
   "brwMedian": 590,
   "brwZonen": 23
+ },
+ "Weilerswist": {
+  "brw": [
+   110,
+   360
+  ],
+  "brwMedian": 245,
+  "brwZonen": 32
+ },
+ "Wermelskirchen": {
+  "brw": [
+   165,
+   410
+  ],
+  "brwMedian": 340,
+  "brwZonen": 71
  },
  "Wesseling": {
   "brw": [

@@ -160,5 +160,75 @@
   "einwohner": 31000,
   "lage": "Südöstlich von Köln zwischen Siegburg und dem Bergischen Land, rund 20 Kilometer vom Zentrum. Angebunden über die A 3 und A 560; der nächste Bahnhof ist Siegburg/Bonn mit ICE-Halt, von dort sind es fünfzehn Minuten nach Köln.",
   "markt": "Die Wahnbachtalsperre und ausgedehnte Waldgebiete prägen das Bild. Aus mehreren Ortsteilen gewachsen, überwiegend Einfamilienhäuser. Die Nähe zum ICE-Halt Siegburg ist das eigentliche Argument: Wer von dort pendelt, ist schneller in Köln als aus manchem Kölner Randstadtteil."
+ },
+ "siegburg": {
+  "_stadt": "Siegburg",
+  "kreis": "Rhein-Sieg-Kreis",
+  "einwohner": 42000,
+  "lage": "Südöstlich von Köln, rund 22 Kilometer vom Zentrum, Kreisstadt des Rhein-Sieg-Kreises. Der Bahnhof Siegburg/Bonn ist ICE-Halt an der Schnellfahrstrecke Köln–Rhein/Main — von dort sind es fünfzehn Minuten zum Kölner Hauptbahnhof, schneller als aus manchem Kölner Randstadtteil.",
+  "markt": "Der Michaelsberg mit der ehemaligen Benediktinerabtei prägt das Stadtbild. Die ICE-Anbindung hat den Wohnungsmarkt spürbar belebt: Pendler nach Köln, Bonn und Frankfurt treffen sich hier. Entsprechend liegt das Preisniveau über den umliegenden Orten des Kreises."
+ },
+ "sankt-augustin": {
+  "_stadt": "Sankt Augustin",
+  "kreis": "Rhein-Sieg-Kreis",
+  "einwohner": 56000,
+  "lage": "Zwischen Köln und Bonn, rund 22 Kilometer vom Kölner Zentrum. Die Stadtbahnlinie 66 verbindet Sankt Augustin mit Bonn und Siegburg, von dort besteht ICE-Anschluss. Dazu die A 59 und A 560.",
+  "markt": "Erst 1969 aus mehreren Orten gebildet und seitdem stark gewachsen — Sitz der Hochschule Bonn-Rhein-Sieg und des Fraunhofer-Instituts. Die Doppellage zwischen zwei Oberzentren und der Hochschulstandort halten die Nachfrage stabil, vor allem bei kleineren Wohnungen."
+ },
+ "hennef-sieg": {
+  "_stadt": "Hennef (Sieg)",
+  "kreis": "Rhein-Sieg-Kreis",
+  "einwohner": 48000,
+  "lage": "Südöstlich von Köln im Siegtal, rund 27 Kilometer vom Zentrum. Die S 12 und S 19 halten in Hennef und mehreren Ortsteilen und fahren direkt nach Köln; dazu Anschluss an die A 3 und A 560.",
+  "markt": "Über hundert Ortsteile auf großer Fläche, von der Innenstadt bis zu Weilern im Siegtal — Hennef gilt als eine der flächenmäßig größten Städte der Region. Überwiegend Einfamilienhäuser mit großen Grundstücken. Die durchgehende S-Bahn-Anbindung macht den Ort für Kölner Pendler interessant, das Preisniveau bleibt deutlich unter dem Kölner Umland im Westen."
+ },
+ "alfter": {
+  "_stadt": "Alfter",
+  "kreis": "Rhein-Sieg-Kreis",
+  "einwohner": 24000,
+  "lage": "Südwestlich von Köln am Vorgebirge, rund 22 Kilometer vom Zentrum und unmittelbar an Bonn grenzend. Die Stadtbahnlinie 18 fährt über Bornheim und Brühl nach Köln, die Linie 63 nach Bonn.",
+  "markt": "Am Vorgebirgshang gelegen mit Blick ins Rheintal, geprägt von Obstanbau und Gartenbau. Fünf Ortsteile, darunter Oedekoven und Witterschlick. Die Nähe zu Bonn bestimmt den Markt stärker als die zu Köln — viele Käufer arbeiten in der ehemaligen Bundeshauptstadt."
+ },
+ "swisttal": {
+  "_stadt": "Swisttal",
+  "kreis": "Rhein-Sieg-Kreis",
+  "einwohner": 19000,
+  "lage": "Südwestlich von Köln, rund 25 Kilometer vom Zentrum. Erreichbar über die A 61 und die Voreifelbahn RB 23, die in Odendorf und Ludendorf hält und nach Bonn führt.",
+  "markt": "Ländlich geprägt mit neun Ortsteilen in der Voreifel. Überwiegend Einfamilienhäuser mit großen Grundstücken, dazu landwirtschaftliche Flächen. Mit einem Median von 295 Euro je Quadratmeter einer der günstigeren Standorte im Einzugsgebiet — der Preis für die größere Entfernung."
+ },
+ "weilerswist": {
+  "_stadt": "Weilerswist",
+  "kreis": "Rhein-Erft-Kreis",
+  "einwohner": 18000,
+  "lage": "Südwestlich von Köln, rund 21 Kilometer vom Zentrum. Direkt an der A 1 gelegen mit eigener Anschlussstelle, dazu die Voreifelbahn RB 23 mit Halt in Derkum und Weilerswist.",
+  "markt": "Ländlich geprägt an der Erft, mit mehreren Ortsteilen und viel Gewerbe entlang der Autobahn — ein großes Logistikzentrum ist der bekannteste Arbeitgeber. Überwiegend Ein- und Zweifamilienhäuser. Mit 245 Euro je Quadratmeter im Median einer der günstigsten Standorte mit direkter Autobahnanbindung nach Köln."
+ },
+ "rommerskirchen": {
+  "_stadt": "Rommerskirchen",
+  "kreis": "Rhein-Kreis Neuss",
+  "einwohner": 13000,
+  "lage": "Nordwestlich von Köln, rund 21 Kilometer vom Zentrum. Angebunden über die A 46 und den Bahnhof Rommerskirchen an der Strecke Köln–Grevenbroich–Mönchengladbach.",
+  "markt": "Ländlich geprägt zwischen Köln, Neuss und Grevenbroich, mit landwirtschaftlichen Flächen und mehreren Ortsteilen. Überwiegend Einfamilienhäuser. Mit 230 Euro je Quadratmeter im Median der günstigste Standort im gesamten Einzugsgebiet — wer maximal viel Fläche für sein Budget sucht und pendeln kann, findet hier die niedrigsten Bodenwerte."
+ },
+ "bedburg": {
+  "_stadt": "Bedburg",
+  "kreis": "Rhein-Erft-Kreis",
+  "einwohner": 24000,
+  "lage": "Westlich von Köln, rund 24 Kilometer vom Zentrum. Die Erftbahn RB 38 hält in Bedburg und fährt nach Köln und Düren; dazu Anschluss an die A 61.",
+  "markt": "Vom Braunkohletagebau geprägt, mit Schloss Bedburg als Wahrzeichen — einer der ältesten Wasserburgen des Rheinlands. Der Strukturwandel bestimmt die Entwicklung; die Rekultivierungsflächen verändern das Umland spürbar. Preisniveau entsprechend moderat bei 250 Euro je Quadratmeter im Median."
+ },
+ "wermelskirchen": {
+  "_stadt": "Wermelskirchen",
+  "kreis": "Rheinisch-Bergischer Kreis",
+  "einwohner": 35000,
+  "lage": "Nordöstlich von Köln im Bergischen Land, rund 22 Kilometer vom Zentrum. Angebunden über die A 1 mit eigener Anschlussstelle; einen Personenbahnhof gibt es nicht mehr, die nächsten Halte liegen in Burscheid-Umgebung und Remscheid.",
+  "markt": "Bergisch geprägt mit Schieferfassaden und Fachwerk im historischen Kern, dazu Industrie und Mittelstand. Überwiegend Ein- und Zweifamilienhäuser in Hanglage. Die fehlende Schienenanbindung hält das Preisniveau bei 340 Euro je Quadratmeter im Median, obwohl die Autobahn Köln in gut zwanzig Minuten erreichbar macht."
+ },
+ "hilden": {
+  "_stadt": "Hilden",
+  "kreis": "Kreis Mettmann",
+  "einwohner": 56000,
+  "lage": "Nördlich von Köln zwischen Düsseldorf und Solingen, rund 23 Kilometer vom Kölner Zentrum. Zwei Bahnhöfe mit der S 1 nach Düsseldorf und Solingen, dazu die A 3, A 46 und A 59 — eine der bestangebundenen Städte der Region.",
+  "markt": "Kompakt und urban für eine Mittelstadt, mit einer der längsten Fußgängerzonen Nordrhein-Westfalens. Der Markt ist stärker von Düsseldorf geprägt als von Köln, was sich im Preisniveau zeigt: 610 Euro je Quadratmeter im Median, deutlich über den bergischen Nachbarorten."
  }
 }

@@ -930,6 +930,24 @@
   force = true
 
 [[redirects]]
+  from = "/zwangsversteigerung-abwenden-koeln"
+  to = "/zwangsversteigerung-abwenden-koeln.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/immobilie-verkaufen-berufliche-veraenderung-koeln"
+  to = "/immobilie-verkaufen-berufliche-veraenderung-koeln.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/immobilie-zu-gross-verkaufen-koeln"
+  to = "/immobilie-zu-gross-verkaufen-koeln.html"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/immobilienmakler-koeln-suelz"
   to = "/immobilienmakler-koeln-suelz.html"
   status = 301

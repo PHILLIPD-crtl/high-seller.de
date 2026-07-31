@@ -46,6 +46,15 @@ def zahl(wert, nachkomma=0):
     return s.replace(",", "#").replace(".", ",").replace("#", ".")
 
 
+# Kuerzel -> Anzeigename, aus der Bezirksdatei gefuellt. Wird fuer die
+# Beschriftung der Nachbarschaftsknoepfe gebraucht.
+ANZEIGE = {}
+
+
+def anzeige_von(kuerzel):
+    return ANZEIGE.get(kuerzel, kuerzel.replace("-", "-").title())
+
+
 def waehle(varianten, kennzahl):
     """Variante datengesteuert waehlen, damit gleiche Eingabe gleiche Ausgabe
     ergibt. Der Rest der Kennzahl streut ueber die Stadtteile."""
@@ -186,6 +195,26 @@ def markt_absatz(s):
     return " ".join(teile)
 
 
+def preisfrage(s):
+    """Antwort auf die Preisfrage. Stuetzt sich auf die eigenen Zahlen des
+    Stadtteils statt auf allgemeine Marktprosa."""
+    if not s.wv:
+        return ("Für diesen Stadtteil weist der Gutachterausschuss zu wenige Kaufverträge "
+                "aus, um einen Mittelwert zu bilden. Aussagekräftig sind hier die "
+                "Bodenrichtwerte und Vergleichsobjekte der direkten Nachbarschaft — "
+                "beides sehen wir uns für Ihr Objekt konkret an.")
+    teile = [f"Für {s.anzeige} liegt der beurkundete Mittelwert im Weiterverkauf bei "
+             f"{zahl(s.wv['eurProM2'])} € je m² Wohnfläche."]
+    if s.b:
+        teile.append(f"Die Bodenrichtwerte reichen von {zahl(s.b['brw'][0])} bis "
+                     f"{zahl(s.b['brw'][1])} € je m² über {s.b['brwZonen']} "
+                     f"{'Zone' if s.b['brwZonen'] == 1 else 'Zonen'} — die Spanne zeigt, wie "
+                     f"stark die Lage innerhalb des Stadtteils zählt.")
+    teile.append("Ein Mittelwert ersetzt keine Bewertung: Zustand, Schnitt, Baujahr und "
+                 "Vermietung verschieben den Wert im Einzelfall erheblich.")
+    return " ".join(teile)
+
+
 def einleitung(s):
     """Erster Satz nach der H1. Aufhaenger datengesteuert, nicht zufaellig."""
     varianten = [
@@ -277,6 +306,19 @@ def bauen(s, vorlage, koeln):
         # Wohnungsbestand in Zahlen
         (r'(<h3>Wohnungsbestand in Zahlen</h3>\n\s*<p>).*?(</p>)',
          lambda m: m.group(1) + bestand_absatz(s, koeln) + m.group(2)),
+        # Leistungsaufzaehlung
+        (r'<ul class="bullets">.*?</ul>',
+         lambda m: ('<ul class="bullets">'
+                    f'<li>Bewertung anhand der Vergleichslagen in {s.anzeige}</li>'
+                    '<li>Vermarktung über Portale, Netzwerk und Käuferkartei</li>'
+                    '<li>Käufer auf Finanzierbarkeit geprüft, bevor besichtigt wird</li>'
+                    '<li>Auch vermietete Objekte und Kapitalanlagen</li></ul>')),
+        # Abschlussabsatz ueber dem Wertrechner
+        (r'(<p class="awards-note")', r'\1'),  # Anker, bleibt unveraendert
+        # Haeufige Fragen: erste Frage traegt den Stadtteilnamen
+        (r'<h3>Warum steigen die Preise in Nippes\?</h3>\n(\s*)<p>.*?</p>',
+         lambda m: (f'<h3>Wie entwickeln sich die Preise in {s.anzeige}?</h3>\n'
+                    f'{m.group(1)}<p>{preisfrage(s)}</p>')),
         (r'<h3>Immobilie in Köln-Nippes verkaufen oder bewerten\?</h3>',
          f'<h3>Immobilie in Köln-{s.anzeige} verkaufen oder bewerten?</h3>'),
         (r'(<h2 class="headline">)Immobilienpreise in Köln-Nippes(</h2>)',
@@ -289,6 +331,34 @@ def bauen(s, vorlage, koeln):
         h, n = re.subn(muster, ersatz, h, flags=re.S)
         if n == 0:
             raise SystemExit(f"{s.kuerzel}: Muster nicht gefunden -> {muster[:60]}")
+
+    # Nachbarschaftsleiste: Verweise auf die uebrigen Stadtteile desselben
+    # Bezirks, fuer die es eine Seite gibt. Symmetrisch, weil jede Seite alle
+    # anderen ihres Bezirks nennt — ohne Symmetrie haengen Randlagen in der Luft.
+    if s.nachbarn:
+        knoepfe = " ".join(
+            f'<a class="btn btn--ghost" href="immobilienmakler-koeln-{n}.html">'
+            f'Köln-{anzeige_von(n)}</a>' for n in s.nachbarn)
+        h, n_ = re.subn(
+            r'(<p style="font-weight:600;color:var\(--ink\);margin-bottom:10px">'
+            r'Auch tätig im Stadtbezirk )Nippes( und Umgebung:</p>\n\s*'
+            r'<div style="display:flex;flex-wrap:wrap;gap:10px">).*?(</div>)',
+            lambda m: m.group(1) + s.bezirk + m.group(2) + knoepfe + m.group(3),
+            h, flags=re.S)
+        if n_ == 0:
+            raise SystemExit(f"{s.kuerzel}: Nachbarschaftsleiste nicht gefunden")
+
+    # Schlussdurchgang fuer die strukturierten Daten und alles, was den Namen
+    # der Vorlage noch traegt. Bewusst zuletzt: waeren diese Ersetzungen frueher
+    # gelaufen, haetten die genaueren Muster oben ins Leere gegriffen.
+    h = h.replace("immobilienmakler-koeln-nippes.html", s.datei)
+    h = h.replace("Köln-Nippes", f"Köln-{s.anzeige}")
+    h = h.replace("Köln Nippes", f"Köln {s.anzeige}")
+
+    rest = h.count("Nippes")
+    if rest and s.kuerzel != "nippes":
+        stellen = [m.group(0) for m in re.finditer(r'.{40}Nippes.{40}', h)][:3]
+        raise SystemExit(f"{s.kuerzel}: {rest} Reste der Vorlage uebrig -> {stellen}")
 
     return h
 
@@ -304,6 +374,7 @@ def main() -> int:
     boden = laden("stadtteile-bodenrichtwerte.json")
     kauf = laden("stadtteile-kaufpreise.json")
     bezirke = laden("stadtteile-bezirke.json")["stadtteile"]
+    ANZEIGE.update({k: v["name"].replace("/", "-") for k, v in bezirke.items()})
     koeln = wohn["_koeln"]
 
     kuerzel = args.stadtteile or [k for k in profile if not k.startswith("_")]
@@ -318,8 +389,12 @@ def main() -> int:
         bez = bezirke.get(k, {})
         # Nachbarn = uebrige Stadtteile desselben Bezirks, fuer die es eine
         # Seite gibt. Die Verlinkung bleibt damit symmetrisch.
-        nachbarn = [n for n, v in bezirke.items()
-                    if v.get("bezirk") == bez.get("bezirk") and n != k]
+        # Nur Nachbarn verlinken, deren Seite existiert oder in diesem Lauf
+        # entsteht — ein Verweis ins Leere schadet mehr als ein fehlender.
+        nachbarn = sorted(n for n, v in bezirke.items()
+                          if v.get("bezirk") == bez.get("bezirk") and n != k
+                          and ((WURZEL / f"immobilienmakler-koeln-{n}.html").exists()
+                               or n in kuerzel))
         s = Stadtteil(k, profile[k], wohn[k], boden.get(k), kauf.get(k, {}),
                       bezirk=bez.get("bezirk", ""), nachbarn=nachbarn)
         html = bauen(s, vorlage, koeln)

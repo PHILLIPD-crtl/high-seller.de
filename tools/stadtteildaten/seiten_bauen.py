@@ -26,6 +26,9 @@ import re
 import sys
 from pathlib import Path
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+import texte as T  # noqa: E402  (Pfad muss vorher gesetzt sein)
+
 WURZEL = Path(__file__).resolve().parents[2]
 DATEN = WURZEL / "src" / "data"
 VORLAGE = WURZEL / "immobilienmakler-koeln-nippes.html"
@@ -35,15 +38,7 @@ def laden(name):
     return json.loads((DATEN / name).read_text(encoding="utf-8"))
 
 
-def zahl(wert, nachkomma=0):
-    """1234.5 -> '1.235' — deutsche Schreibweise.
-
-    Der Umweg ueber das Rautezeichen ist noetig, weil Punkt und Komma
-    gegeneinander getauscht werden: ohne Zwischenschritt wuerde die zweite
-    Ersetzung das Ergebnis der ersten wieder einfangen.
-    """
-    s = f"{wert:,.{nachkomma}f}"
-    return s.replace(",", "#").replace(".", ",").replace("#", ".")
+zahl = T.zahl  # eine Fassung, in texte.py
 
 
 # Kuerzel -> Anzeigename, aus der Bezirksdatei gefuellt. Wird fuer die
@@ -109,160 +104,33 @@ class Stadtteil:
         return self.w["anteilGefoerdert"]["wert"]
 
 
+def lage_und_markt(s, koeln):
+    """Drei Absaetze: Einordnung, Bebauung, Lage plus Preisniveau."""
+    a3 = s.profil["lage"]
+    niveau = T.preisniveau(s)
+    if niveau:
+        a3 = f"{a3} {niveau}"
+    return T.einordnung(s), s.profil["bebauung"], a3
+
+
 def marktdaten_block(s, koeln):
-    """Die drei Kennzahlenkacheln. Fehlende Werte werden weggelassen, nicht
-    mit Platzhaltern gefuellt — eine leere Kachel wirkt wie ein Fehler."""
+    """Die drei Kennzahlenkacheln. Fehlende Werte werden weggelassen, nicht mit
+    Platzhaltern gefuellt — eine leere Kachel wirkt wie ein Fehler."""
     teile = []
     if s.b:
         teile.append(
-            f'<div><dt>Bodenrichtwert</dt><dd><b>{zahl(s.b["brw"][0])}–{zahl(s.b["brw"][1])} €/m²</b>'
-            f'<span>Median {zahl(s.b["brwMedian"])} · {s.b["brwZonen"]} '
+            f'<div><dt>Bodenrichtwert</dt><dd><b>{T.zahl(s.b["brw"][0])}–{T.zahl(s.b["brw"][1])} €/m²</b>'
+            f'<span>Median {T.zahl(s.b["brwMedian"])} · {s.b["brwZonen"]} '
             f'{"Zone" if s.b["brwZonen"] == 1 else "Zonen"} · Stichtag 1.1.2026</span></dd></div>')
     if s.wv:
         teile.append(
-            f'<div><dt>Wohnung, Weiterverkauf</dt><dd><b>{zahl(s.wv["eurProM2"])} €/m²</b>'
-            f'<span>{zahl(s.wv["faelle"])} Kaufverträge 2025</span></dd></div>')
+            f'<div><dt>Wohnung, Weiterverkauf</dt><dd><b>{T.zahl(s.wv["eurProM2"])} €/m²</b>'
+            f'<span>{T.zahl(s.wv["faelle"])} Kaufverträge 2025</span></dd></div>')
     if s.neubau:
         teile.append(
-            f'<div><dt>Wohnung, Neubau</dt><dd><b>{zahl(s.neubau["eurProM2"])} €/m²</b>'
-            f'<span>{zahl(s.neubau["faelle"])} Kaufverträge 2025</span></dd></div>')
+            f'<div><dt>Wohnung, Neubau</dt><dd><b>{T.zahl(s.neubau["eurProM2"])} €/m²</b>'
+            f'<span>{T.zahl(s.neubau["faelle"])} Kaufverträge 2025</span></dd></div>')
     return "".join(teile)
-
-
-def bestand_absatz(s, koeln):
-    """Wohnungsbestand in Zahlen — der Vergleich mit dem Stadtwert macht die
-    Zahl erst aussagekraeftig."""
-    k_ein = koeln["anteilEinpersonen"]["wert"]
-    k_kind = koeln["anteilMitKindern"]["wert"]
-    k_fl = koeln["wohnflaecheJeWohnung"]["wert"]
-
-    if s.flaeche_je_wohnung >= k_fl + 12:
-        gr = (f"Mit {zahl(s.flaeche_je_wohnung, 1)} m² je Wohnung liegt der Bestand deutlich "
-              f"über dem Kölner Mittel von {zahl(k_fl, 1)} m² — hier stehen Familienwohnungen "
-              f"und Häuser, keine Einzimmerappartements.")
-    elif s.flaeche_je_wohnung <= k_fl - 8:
-        gr = (f"Mit {zahl(s.flaeche_je_wohnung, 1)} m² je Wohnung ist der Bestand kleinteiliger "
-              f"als im Kölner Mittel ({zahl(k_fl, 1)} m²). Das begrenzt den Kreis der Käufer "
-              f"nicht, verschiebt ihn aber.")
-    else:
-        gr = (f"Mit {zahl(s.flaeche_je_wohnung, 1)} m² je Wohnung entspricht der Bestand "
-              f"weitgehend dem Kölner Mittel von {zahl(k_fl, 1)} m².")
-
-    nachfrage = (
-        "gefragt sind vor allem gut geschnittene Zwei- und Dreizimmerwohnungen"
-        if s.einpersonen > k_ein + 3 else
-        "gefragt sind vor allem familientaugliche Grundrisse ab drei Zimmern"
-        if s.mit_kindern > k_kind + 2 else
-        "die Nachfrage verteilt sich breit über die Wohnungsgrößen")
-
-    text = (f"Von den {zahl(s.w['haushalte']['wert'])} Haushalten bestehen "
-            f"{zahl(s.einpersonen)} % aus einer Person (Köln: {zahl(k_ein)} %), "
-            f"{zahl(s.mit_kindern)} % leben mit Kindern (Köln: {zahl(k_kind)} %). "
-            f"Das prägt die Nachfrage: {nachfrage}. {gr}")
-
-    if s.gefoerdert >= koeln["anteilGefoerdert"]["wert"] * 1.6:
-        text += (f" Der Anteil geförderter Wohnungen liegt bei {zahl(s.gefoerdert, 1)} % und "
-                 f"damit klar über dem Stadtwert von "
-                 f"{zahl(koeln['anteilGefoerdert']['wert'], 1)} % — für Kapitalanleger ein "
-                 f"Punkt, der in die Bewertung gehört.")
-    return text
-
-
-def zusammenfassung(s):
-    """Ein Satz ueber dem Marktabschnitt. Nimmt den ersten Satz des
-    Bebauungsprofils auf, damit hier nicht dieselbe Floskel auf 63 Seiten steht."""
-    erster = s.profil["bebauung"].split(". ")[0].rstrip(".")
-    return (f"{erster}. Für den Verkauf zählt, was das im Einzelfall bedeutet — "
-            f"Zustand, Schnitt und Lage innerhalb des Stadtteils.")
-
-
-def markt_absatz(s):
-    """Absatz unter 'Der Immobilienmarkt in X'. Traegt die Kaufpreise."""
-    if not s.wv:
-        return (f"Der Gutachterausschuss weist für {s.anzeige} im Berichtsjahr keine "
-                f"gesonderten Wohnungspreise aus — dafür braucht es mindestens drei "
-                f"auswertbare Kaufverträge. Die Bewertung stützt sich hier auf "
-                f"Bodenrichtwerte und Vergleichsobjekte der Nachbarschaft.")
-    teile = [f"Im Weiterverkauf wurden 2025 im Mittel {zahl(s.wv['eurProM2'])} € je m² "
-             f"Wohnfläche notariell beurkundet, ermittelt aus {zahl(s.wv['faelle'])} "
-             f"Kaufverträgen."]
-    if s.neubau:
-        aufschlag = round((s.neubau["eurProM2"] / s.wv["eurProM2"] - 1) * 100)
-        teile.append(f"Neubauwohnungen lagen bei {zahl(s.neubau['eurProM2'])} € je m² und damit "
-                     f"rund {aufschlag} % darüber ({zahl(s.neubau['faelle'])} Verträge).")
-    teile.append("Das sind beurkundete Preise, keine Angebotspreise — der Unterschied ist "
-                 "der Grund, warum diese Zahlen als Grundlage taugen.")
-    return " ".join(teile)
-
-
-def abschluss(s):
-    """Absatz ueber dem Wertrechner. Fasst den Stadtteil in einem Satz, ohne
-    die Formulierungen der Abschnitte darueber zu wiederholen."""
-    lage_erster = s.profil["lage"].split(". ")[0].rstrip(".")
-    return (f"{s.anzeige} im Stadtbezirk {s.bezirk}: {lage_erster}. Was Ihre Immobilie "
-            f"hier wert ist, hängt von Lage, Zustand und Schnitt ab — die Einschätzung "
-            f"ist kostenlos und unverbindlich.")
-
-
-def preisfrage(s):
-    """Antwort auf die Preisfrage. Stuetzt sich auf die eigenen Zahlen des
-    Stadtteils statt auf allgemeine Marktprosa."""
-    if not s.wv:
-        return ("Für diesen Stadtteil weist der Gutachterausschuss zu wenige Kaufverträge "
-                "aus, um einen Mittelwert zu bilden. Aussagekräftig sind hier die "
-                "Bodenrichtwerte und Vergleichsobjekte der direkten Nachbarschaft — "
-                "beides sehen wir uns für Ihr Objekt konkret an.")
-    teile = [f"Für {s.anzeige} liegt der beurkundete Mittelwert im Weiterverkauf bei "
-             f"{zahl(s.wv['eurProM2'])} € je m² Wohnfläche."]
-    if s.b:
-        teile.append(f"Die Bodenrichtwerte reichen von {zahl(s.b['brw'][0])} bis "
-                     f"{zahl(s.b['brw'][1])} € je m² über {s.b['brwZonen']} "
-                     f"{'Zone' if s.b['brwZonen'] == 1 else 'Zonen'} — die Spanne zeigt, wie "
-                     f"stark die Lage innerhalb des Stadtteils zählt.")
-    teile.append("Ein Mittelwert ersetzt keine Bewertung: Zustand, Schnitt, Baujahr und "
-                 "Vermietung verschieben den Wert im Einzelfall erheblich.")
-    return " ".join(teile)
-
-
-def einleitung(s):
-    """Erster Satz nach der H1. Aufhaenger datengesteuert, nicht zufaellig."""
-    varianten = [
-        f"{s.anzeige} zählt zu den Lagen, in denen sich Angebot und Nachfrage spürbar "
-        f"verschoben haben.",
-        f"{s.anzeige} ist ein Stadtteil mit eigenem Charakter — und einem Markt, der sich "
-        f"nicht mit dem Kölner Durchschnitt erklären lässt.",
-        f"Wer in {s.anzeige} verkauft, verkauft in einem Markt mit eigenen Regeln.",
-    ]
-    grund = int(s.einwohner)
-    satz = waehle(varianten, grund)
-    if s.wv:
-        satz += (f" {zahl(s.wv['faelle'])} notariell beurkundete Wohnungsverkäufe im Jahr 2025 "
-                 f"geben dafür eine belastbare Grundlage.")
-    return satz
-
-
-def lage_und_markt(s, koeln):
-    """Drei Absaetze: Einordnung, Bebauung, Preisniveau."""
-    a1 = (f"{s.anzeige} gehört zum Stadtbezirk {s.bezirk}. "
-          f"{zahl(s.einwohner)} Menschen leben hier in {zahl(s.wohnungen)} Wohnungen.")
-    a2 = s.profil["bebauung"]
-    a3_teile = [s.profil["lage"]]
-    if s.wv:
-        k_wv = 4200  # grober Kölner Mittelwert Weiterverkauf, nur zur Einordnung
-        if s.wv["eurProM2"] >= 5200:
-            a3_teile.append(
-                f"Das Preisniveau ist gehoben: {zahl(s.wv['eurProM2'])} € je m² Wohnfläche im "
-                f"Weiterverkauf, ermittelt aus {zahl(s.wv['faelle'])} notariellen Kaufverträgen.")
-        elif s.wv["eurProM2"] <= 3300:
-            a3_teile.append(
-                f"Mit {zahl(s.wv['eurProM2'])} € je m² Wohnfläche im Weiterverkauf liegt "
-                f"{s.anzeige} im günstigeren Drittel der Stadt — für Käufer ein Einstieg, für "
-                f"Eigentümer ein Markt mit Bewegung nach oben.")
-        else:
-            a3_teile.append(
-                f"Der Weiterverkauf liegt bei {zahl(s.wv['eurProM2'])} € je m² Wohnfläche, "
-                f"ermittelt aus {zahl(s.wv['faelle'])} notariellen Kaufverträgen des Jahres 2025.")
-    return a1, a2, " ".join(a3_teile)
 
 
 def bauen(s, vorlage, koeln):
@@ -291,7 +159,7 @@ def bauen(s, vorlage, koeln):
         # Sichtbarer Inhalt
         (r'(› )Köln-Nippes(</div>)', rf'\1Köln-{s.anzeige}\2'),
         (r'<h1>Immobilienmakler in Köln-Nippes</h1><p>.*?</p>',
-         f'<h1>Immobilienmakler in Köln-{s.anzeige}</h1><p>{einleitung(s)}</p>'),
+         f'<h1>Immobilienmakler in Köln-{s.anzeige}</h1><p>{T.einleitung(s)}</p>'),
         # Lage & Markt: Ueberschrift plus die drei folgenden Absaetze am Stueck,
         # damit Reihenfolge und Einrueckung der Vorlage erhalten bleiben.
         (r'<h2>Immobilien in Nippes: Lage &amp; Markt</h2>\n'
@@ -300,10 +168,10 @@ def bauen(s, vorlage, koeln):
                     f'{m.group(1)}<p>{a1}</p>\n{m.group(1)}<p>{a2}</p>\n'
                     f'{m.group(1)}<p>{a3}</p>')),
         (r'(<div class="prose reveal"><p>).*?(</p>)',
-         lambda m: m.group(1) + zusammenfassung(s) + m.group(2)),
+         lambda m: m.group(1) + T.zusammenfassung(s) + m.group(2)),
         (r'<h2>Der Immobilienmarkt in Nippes</h2>\n(\s*)<p>.*?</p>',
          lambda m: (f'<h2>Der Immobilienmarkt in {s.anzeige}</h2>\n'
-                    f'{m.group(1)}<p>{markt_absatz(s)}</p>')),
+                    f'{m.group(1)}<p>{T.markt(s)}</p>')),
         # Kennzahlenkacheln zwischen <dl> und </dl>
         (r'(<dl>\n)(?:\s*<div><dt>.*?</div>\n)+(\s*</dl>)',
          lambda m: m.group(1) + marktdaten_block(s, koeln) + "\n" + m.group(2)),
@@ -314,25 +182,21 @@ def bauen(s, vorlage, koeln):
          lambda m: m.group(1) + s.profil["lage"] + m.group(2)),
         # Wohnungsbestand in Zahlen
         (r'(<h3>Wohnungsbestand in Zahlen</h3>\n\s*<p>).*?(</p>)',
-         lambda m: m.group(1) + bestand_absatz(s, koeln) + m.group(2)),
+         lambda m: m.group(1) + T.bestand(s, koeln) + m.group(2)),
         # Leistungsaufzaehlung
         (r'<ul class="bullets">.*?</ul>',
-         lambda m: ('<ul class="bullets">'
-                    f'<li>Bewertung anhand der Vergleichslagen in {s.anzeige}</li>'
-                    '<li>Vermarktung über Portale, Netzwerk und Käuferkartei</li>'
-                    '<li>Käufer auf Finanzierbarkeit geprüft, bevor besichtigt wird</li>'
-                    '<li>Auch vermietete Objekte und Kapitalanlagen</li></ul>')),
+         lambda m: f'<ul class="bullets">{T.leistungen(s)}</ul>'),
         # Abschlussabsatz ueber dem Wertrechner
         (r'(<p class="awards-note")', r'\1'),  # Anker, bleibt unveraendert
         # Haeufige Fragen: erste Frage traegt den Stadtteilnamen
         (r'<h3>Warum steigen die Preise in Nippes\?</h3>\n(\s*)<p>.*?</p>',
          lambda m: (f'<h3>Wie entwickeln sich die Preise in {s.anzeige}?</h3>\n'
-                    f'{m.group(1)}<p>{preisfrage(s)}</p>')),
+                    f'{m.group(1)}<p>{T.preisfrage(s)}</p>')),
         (r'<h3>Mehrfamilienhaus in Nippes verkaufen, wie läuft die Bewertung\?</h3>',
          f'<h3>Mehrfamilienhaus in {s.anzeige} verkaufen, wie läuft die Bewertung?</h3>'),
         # Abschlussabsatz ueber dem Wertrechner
         (r'(<p>)Nippes ist das aufstrebende Veedel im Kölner Norden:.*?(</p>)',
-         lambda m: m.group(1) + abschluss(s) + m.group(2)),
+         lambda m: m.group(1) + T.abschluss(s) + m.group(2)),
         # Einstiegstext des Wertrechners
         (r'(<p class="lead" style="max-width:58ch;margin-bottom:20px">Sie überlegen zu '
          r'verkaufen\? Starten Sie mit einer kostenlosen Einschätzung für Ihre Immobilie in )'
@@ -377,11 +241,11 @@ def bauen(s, vorlage, koeln):
     # Der Bezirksname darf stehen bleiben: Riehl LIEGT im Stadtbezirk Nippes,
     # "Riehl gehoert zum Stadtbezirk Nippes" ist richtig und kein Rest der
     # Vorlage. Nur Vorkommen ausserhalb dieser Wendungen zaehlen.
-    pruef = h
-    if s.bezirk == "Nippes":
-        pruef = pruef.replace(f"zum Stadtbezirk {s.bezirk}", "")
-        pruef = pruef.replace(f"im Stadtbezirk {s.bezirk}", "")
-        pruef = pruef.replace(f"Stadtbezirk {s.bezirk} und Umgebung", "")
+    # Der Bezirksname darf stehen bleiben: Riehl LIEGT im Stadtbezirk Nippes,
+    # jede Wendung wie "Teil des Stadtbezirks Nippes" ist richtig und kein Rest
+    # der Vorlage. Generisch gefiltert statt einzelne Wendungen aufzuzaehlen -
+    # sonst meldet jede neue Formulierung in texte.py einen Fehlalarm.
+    pruef = re.sub(rf"Stadtbezirks?\s+{re.escape(s.bezirk)}", "", h) if s.bezirk else h
     rest = pruef.count("Nippes")
     if rest and s.kuerzel != "nippes":
         stellen = [z.strip()[:120] for z in pruef.split("\n") if "Nippes" in z][:3]

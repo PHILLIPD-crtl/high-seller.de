@@ -4,18 +4,18 @@
 # Netlify nimmt die erste Regel, die passt, und hoert dann auf. Die Gruppen
 # unten stehen deshalb in genau dieser Folge:
 #
-#   1. alte Domain (mit Hostangabe)   - muss zuerst kommen, sonst wuerden die
-#                                       hostlosen Regeln darunter den Inhalt
-#                                       der neuen Seite unter der ALTEN Domain
-#                                       ausliefern und damit doppeln
 #   2. interne Umschreibungen (200)   - saubere Adressen fuer die Angebote
 #   3. alte Pfade ohne Hostangabe     - Sicherheitsnetz
 #   4. Entdoppelung .html             - eine Seite, eine Adresse
 #
+# Gruppe 1 (alte Domain mit Hostangabe) gab es bis zum 31.07.2026 und ist
+# bewusst entfallen; die Begruendung steht unten an ihrer Stelle. Die
+# Nummerierung der uebrigen Gruppen bleibt, damit Verweise darauf aus
+# readme.md und aus Commit-Nachrichten weiterhin stimmen.
+#
 # Saemtliche Weiterleitungen stehen bewusst NUR in dieser Datei. Es gibt
-# zusaetzlich ein _redirects, das Netlify VOR dieser Datei auswertet; stuenden
-# dort weiterhin pfadbasierte Regeln, wuerden sie die Host-Regeln aus Gruppe 1
-# ueberholen und Besucher auf der alten Domain festhalten.
+# zusaetzlich ein _redirects, das Netlify VOR dieser Datei auswertet;
+# pfadbasierte Regeln dort wuerden die Regeln hier ueberholen.
 
 [build]
   publish = "."
@@ -42,286 +42,28 @@
   node_bundler = "esbuild"
 
 # ---------------------------------------------------------------------------
-# 1. ALTE DOMAIN highseller-immobilien.koeln
+# ALTE DOMAIN highseller-immobilien.koeln - BEWUSST OHNE REGELN
 # ---------------------------------------------------------------------------
-# Die Vorgaengerseite lag auf highseller-immobilien.koeln (Strato). Sie ist
-# abgeschaltet und antwortet dort auf JEDER Adresse mit einem nackten 404 -
-# alte Verweise und noch vorhandene Google-Treffer laufen also ins Leere.
+# Hier standen 42 Weiterleitungen von der Vorgaengerdomain auf die passenden
+# Seiten dieser Website. Sie sind am 31.07.2026 auf Entscheidung des Inhabers
+# entfernt worden: Die alte Domain wird aufgegeben und nicht mehr auf Netlify
+# gezeigt.
 #
-# VORAUSSETZUNG, sonst greift keine einzige dieser Regeln: Die Domain muss in
-# Netlify als Domain-Alias des Projekts "high-seller" eingetragen und ihr DNS
-# von Strato auf Netlify umgestellt sein. Solange die Domain auf
-# 81.169.145.160 zeigt, beantwortet Strato die Anfragen und Netlify sieht sie
-# nie. Die Schritte stehen in readme.md unter "Alte Domain".
+# Damit ist das hier kein Versehen, sondern Absicht. Wer die Regeln
+# zurueckholen will, findet sie in der Versionsgeschichte dieser Datei.
 #
-# Die Regeln nennen den Host vollstaendig. Dadurch springt eine alte Adresse in
-# EINEM Schritt auf ihr neues Ziel statt ueber den Umweg der automatischen
-# Alias-Umleitung. http braucht keine eigenen Regeln, weil Netlify fuer eigene
-# Domains ohnehin auf https zwingt, bevor die Regeln ausgewertet werden.
-
-# --- highseller-immobilien.koeln ---
-
-[[redirects]]
-  from = "https://highseller-immobilien.koeln/immobilie-verkaufen-koeln"
-  to = "https://high-seller.de/immobilie-verkaufen.html"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "https://highseller-immobilien.koeln/immobilien-kaufen-koeln-umgebung"
-  to = "https://high-seller.de/immobilien-angebote.html"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "https://highseller-immobilien.koeln/baufinanzierung-koeln"
-  to = "https://high-seller.de/baufinanzierung.html"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "https://highseller-immobilien.koeln/karriere-seite"
-  to = "https://high-seller.de/karriere.html"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "https://highseller-immobilien.koeln/makler-bewerbung"
-  to = "https://high-seller.de/karriere.html"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "https://highseller-immobilien.koeln/datenschutzerklaerung"
-  to = "https://high-seller.de/datenschutz.html"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "https://highseller-immobilien.koeln/datenschutzerklaerung-highseller-immobilien"
-  to = "https://high-seller.de/datenschutz.html"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "https://highseller-immobilien.koeln/widerrufsbelehrung"
-  to = "https://high-seller.de/widerruf.html"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "https://highseller-immobilien.koeln/agb"
-  to = "https://high-seller.de/impressum.html"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "https://highseller-immobilien.koeln/agb-dokument"
-  to = "https://high-seller.de/impressum.html"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "https://highseller-immobilien.koeln/baris-olmez"
-  to = "https://high-seller.de/ueber-uns.html"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "https://highseller-immobilien.koeln/serhad-mendekli"
-  to = "https://high-seller.de/ueber-uns.html"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "https://highseller-immobilien.koeln/kontaktformular"
-  to = "https://high-seller.de/kontakt.html"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "https://highseller-immobilien.koeln/kalender"
-  to = "https://high-seller.de/kontakt.html"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "https://highseller-immobilien.koeln/verkaufte-immobilien-koeln"
-  to = "https://high-seller.de/verkaufte-objekte.html"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "https://highseller-immobilien.koeln/verkaufte-immobilien-koeln.html"
-  to = "https://high-seller.de/verkaufte-objekte.html"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "https://highseller-immobilien.koeln/verkaufte-immobilien-koeln/*"
-  to = "https://high-seller.de/verkaufte-objekte.html"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "https://highseller-immobilien.koeln/verkaufte-immobilien"
-  to = "https://high-seller.de/verkaufte-objekte.html"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "https://highseller-immobilien.koeln/verkaufte-immobilien/*"
-  to = "https://high-seller.de/verkaufte-objekte.html"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "https://highseller-immobilien.koeln/referenzen"
-  to = "https://high-seller.de/verkaufte-objekte.html"
-  status = 301
-  force = true
-
-# Alles Uebrige von highseller-immobilien.koeln auf die Startseite. Diese Regel
-# MUSS die letzte ihrer Gruppe sein, sonst verschluckt sie die genauen
-# Zuordnungen darueber.
-
-[[redirects]]
-  from = "https://highseller-immobilien.koeln/*"
-  to = "https://high-seller.de/"
-  status = 301
-  force = true
-
-# --- www.highseller-immobilien.koeln ---
-
-[[redirects]]
-  from = "https://www.highseller-immobilien.koeln/immobilie-verkaufen-koeln"
-  to = "https://high-seller.de/immobilie-verkaufen.html"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "https://www.highseller-immobilien.koeln/immobilien-kaufen-koeln-umgebung"
-  to = "https://high-seller.de/immobilien-angebote.html"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "https://www.highseller-immobilien.koeln/baufinanzierung-koeln"
-  to = "https://high-seller.de/baufinanzierung.html"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "https://www.highseller-immobilien.koeln/karriere-seite"
-  to = "https://high-seller.de/karriere.html"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "https://www.highseller-immobilien.koeln/makler-bewerbung"
-  to = "https://high-seller.de/karriere.html"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "https://www.highseller-immobilien.koeln/datenschutzerklaerung"
-  to = "https://high-seller.de/datenschutz.html"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "https://www.highseller-immobilien.koeln/datenschutzerklaerung-highseller-immobilien"
-  to = "https://high-seller.de/datenschutz.html"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "https://www.highseller-immobilien.koeln/widerrufsbelehrung"
-  to = "https://high-seller.de/widerruf.html"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "https://www.highseller-immobilien.koeln/agb"
-  to = "https://high-seller.de/impressum.html"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "https://www.highseller-immobilien.koeln/agb-dokument"
-  to = "https://high-seller.de/impressum.html"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "https://www.highseller-immobilien.koeln/baris-olmez"
-  to = "https://high-seller.de/ueber-uns.html"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "https://www.highseller-immobilien.koeln/serhad-mendekli"
-  to = "https://high-seller.de/ueber-uns.html"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "https://www.highseller-immobilien.koeln/kontaktformular"
-  to = "https://high-seller.de/kontakt.html"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "https://www.highseller-immobilien.koeln/kalender"
-  to = "https://high-seller.de/kontakt.html"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "https://www.highseller-immobilien.koeln/verkaufte-immobilien-koeln"
-  to = "https://high-seller.de/verkaufte-objekte.html"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "https://www.highseller-immobilien.koeln/verkaufte-immobilien-koeln.html"
-  to = "https://high-seller.de/verkaufte-objekte.html"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "https://www.highseller-immobilien.koeln/verkaufte-immobilien-koeln/*"
-  to = "https://high-seller.de/verkaufte-objekte.html"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "https://www.highseller-immobilien.koeln/verkaufte-immobilien"
-  to = "https://high-seller.de/verkaufte-objekte.html"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "https://www.highseller-immobilien.koeln/verkaufte-immobilien/*"
-  to = "https://high-seller.de/verkaufte-objekte.html"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "https://www.highseller-immobilien.koeln/referenzen"
-  to = "https://high-seller.de/verkaufte-objekte.html"
-  status = 301
-  force = true
-
-# Alles Uebrige von www.highseller-immobilien.koeln auf die Startseite. Diese Regel
-# MUSS die letzte ihrer Gruppe sein, sonst verschluckt sie die genauen
-# Zuordnungen darueber.
-
-[[redirects]]
-  from = "https://www.highseller-immobilien.koeln/*"
-  to = "https://high-seller.de/"
-  status = 301
-  force = true
+# Was das kostet: highseller-immobilien.koeln antwortet weiterhin ueberall mit
+# 404. Wer aus einem Google-Treffer oder ueber einen alten Verweis kommt,
+# landet im Nichts statt auf der passenden Seite. Die dort aufgebaute
+# Sichtbarkeit verfaellt.
+#
+# Falls die Entscheidung spaeter revidiert wird, sind zwei Schritte noetig,
+# bevor irgendeine Regel greifen kann:
+#   1. Domain in Netlify als Alias des Projekts "high-seller" eintragen
+#      (Apex und www).
+#   2. DNS bei Strato umstellen - A-Eintrag von 81.169.145.160 auf 75.2.60.5,
+#      www als CNAME auf high-seller.netlify.app. Die MX-Eintraege dabei NICHT
+#      anfassen, an der Domain haengt E-Mail ueber smtpin.rzone.de.
 
 # ---------------------------------------------------------------------------
 # 2. Saubere Adressen fuer die Immobilienangebote
@@ -352,12 +94,16 @@
   status = 200
 
 # ---------------------------------------------------------------------------
-# 3. Dieselben alten Pfade, ohne Hostangabe
+# 3. Alte Pfade der Vorgaengerseite, ohne Hostangabe
 # ---------------------------------------------------------------------------
-# Sicherheitsnetz fuer zwei Faelle. Erstens, falls die alte Domain nicht ueber
-# Netlify, sondern bei Strato pfaderhaltend auf high-seller.de umgebogen wird -
-# dann kommen die alten Pfade hier an. Zweitens fuer alte Verweise, die jemand
-# haendisch auf die neue Domain umgeschrieben hat.
+# Diese Pfade (/karriere-seite, /kontaktformular und weitere) gab es auf
+# high-seller.de nie - sie stammen von der aufgegebenen Vorgaengerdomain.
+#
+# Die Gruppe bleibt trotzdem stehen, weil sie zwei Faelle abfaengt und nichts
+# kostet: alte Verweise, die jemand haendisch auf die neue Domain umgeschrieben
+# hat, und den Fall, dass die alte Domain doch noch pfaderhaltend auf
+# high-seller.de umgebogen wird. Ohne diese Regeln liefe beides in die
+# 404-Seite.
 
 [[redirects]]
   from = "/immobilie-verkaufen-koeln"

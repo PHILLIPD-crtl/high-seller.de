@@ -948,6 +948,24 @@
   force = true
 
 [[redirects]]
+  from = "/immobilie-verkaufen-auswandern-koeln"
+  to = "/immobilie-verkaufen-auswandern-koeln.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/trennung-ohne-trauschein-immobilie-koeln"
+  to = "/trennung-ohne-trauschein-immobilie-koeln.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/immobilie-verkaufen-nach-erbschaft-koeln"
+  to = "/immobilie-verkaufen-nach-erbschaft-koeln.html"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/immobilienmakler-koeln-suelz"
   to = "/immobilienmakler-koeln-suelz.html"
   status = 301

@@ -912,6 +912,24 @@
   force = true
 
 [[redirects]]
+  from = "/haus-verkaufen-scheidung-koeln"
+  to = "/haus-verkaufen-scheidung-koeln.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/erbengemeinschaft-immobilie-verkaufen-koeln"
+  to = "/erbengemeinschaft-immobilie-verkaufen-koeln.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/immobilie-verkaufen-pflegeheim-koeln"
+  to = "/immobilie-verkaufen-pflegeheim-koeln.html"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/immobilienmakler-koeln-suelz"
   to = "/immobilienmakler-koeln-suelz.html"
   status = 301

@@ -1,0 +1,51 @@
+{
+ "_hinweis": "Fachinhalte der Objektart-Seiten. Handarbeit. Jede Seite behandelt genau die Punkte, die bei dieser Objektart ueber den Preis entscheiden - keine allgemeine Verkaufsprosa.",
+ "mehrfamilienhaus-verkaufen-koeln": {
+  "titel": "Mehrfamilienhaus verkaufen in Köln | Ertragswert & Ablauf",
+  "h1": "Mehrfamilienhaus in Köln verkaufen",
+  "besch": "Mehrfamilienhaus in Köln verkaufen: Ertragswertverfahren, Mieterhöhungspotenzial, Unterlagen und Käuferprüfung. Bewertung und Finanzierung aus einer Hand.",
+  "kurz": "Bei vermieteten Mehrfamilienhäusern zählt nicht der Quadratmeterpreis, sondern der Ertrag.",
+  "a1": "Ein Mehrfamilienhaus wird nicht wie ein Einfamilienhaus bewertet. Maßgeblich ist das Ertragswertverfahren nach der Immobilienwertermittlungsverordnung: Aus der Jahresnettokaltmiete werden die Bewirtschaftungskosten abgezogen, der Bodenwert verzinst abgesetzt, und der verbleibende Reinertrag mit einem Vervielfältiger kapitalisiert. Dieser Vervielfältiger hängt vom Liegenschaftszinssatz des Gutachterausschusses und der Restnutzungsdauer ab — zwei Größen, die den Wert stärker bewegen als jede Renovierung.",
+  "a2": "Der häufigste Fehler beim Verkauf: Die Ist-Miete wird mit der erzielbaren Miete verwechselt. Ein Haus mit langjährigen Mietverhältnissen unter Marktniveau ist für Kapitalanleger weniger wert als eines mit marktüblichen Mieten — auch wenn die Substanz identisch ist. Umgekehrt kann Mietsteigerungspotenzial den Preis heben, wenn es belegbar ist. Wir rechnen beides durch und weisen es getrennt aus, statt eine Zahl zu nennen.",
+  "a3": "Zusätzlich prüfen wir Vergleichswerte aus tatsächlichen Verkäufen. Der Kölner Gutachterausschuss weist für 79 Stadtteile notarielle Kaufpreise aus; für Mehrfamilienhäuser kommen die Faktoren aus dem Grundstücksmarktbericht hinzu. Ein Ertragswert ohne Vergleichsprüfung ist eine Rechnung, kein Marktwert.",
+  "faq1_f": "Welche Unterlagen brauche ich für ein Mehrfamilienhaus?",
+  "faq1_a": "Über die üblichen Unterlagen hinaus: Mietverträge aller Einheiten, Mieterliste mit Nettokaltmieten und Vertragsbeginn, Nebenkostenabrechnungen der letzten drei Jahre, Nachweise über Modernisierungen und deren Umlage, Protokolle etwaiger Mieterhöhungen, Wirtschaftlichkeitsberechnung bei geförderten Wohnungen. Fehlen diese, schätzen Käufer konservativ — zu Ihren Lasten.",
+  "faq2_f": "Muss ich Mieter über den Verkauf informieren?",
+  "faq2_a": "Eine gesetzliche Pflicht zur Vorabinformation gibt es nicht. Für Besichtigungen brauchen Sie aber die Duldung der Mieter, und die setzt eine rechtzeitige Ankündigung voraus. In der Praxis ist ein offener Umgang der ruhigere Weg: Mieter, die aus dem Verkaufsschild vom Verkauf erfahren, blockieren häufiger. Beim Verkauf einzelner vermieteter Wohnungen greift zudem das Vorkaufsrecht des Mieters nach § 577 BGB.",
+  "bullet1": "Ertragswert nach ImmoWertV, getrennt nach Ist- und Marktmiete",
+  "bullet2": "Prüfung der Käuferbonität vor der Besichtigung",
+  "bullet3": "Diskrete Vermarktung, auf Wunsch ohne Schild und Portal"
+ },
+ "eigentumswohnung-verkaufen-koeln": {
+  "titel": "Eigentumswohnung verkaufen in Köln | Preise & Unterlagen",
+  "h1": "Eigentumswohnung in Köln verkaufen",
+  "besch": "Eigentumswohnung in Köln verkaufen: notarielle Preise nach Stadtteil, Teilungserklärung, Rücklage und Ablauf. Bewertung kostenlos und unverbindlich.",
+  "kurz": "Bei Eigentumswohnungen entscheidet die Gemeinschaft mit über den Preis.",
+  "a1": "Der Wert einer Eigentumswohnung hängt an drei Dingen, die Käufer prüfen, bevor sie über den Preis reden: der Teilungserklärung, dem Zustand des Gemeinschaftseigentums und der Instandhaltungsrücklage. Eine gut geschnittene Wohnung in einer Anlage mit anstehender Fassaden- oder Dachsanierung und leerer Rücklage verliert schnell fünfstellig an Wert — die künftige Sonderumlage wird schlicht vom Kaufpreis abgezogen.",
+  "a2": "Die Protokolle der letzten drei Eigentümerversammlungen sind deshalb keine Formsache. Dort steht, was beschlossen und was vertagt wurde. Wer sie erst auf Nachfrage liefert, weckt Misstrauen; wer sie von Anfang an vorlegt, verhandelt aus einer stärkeren Position. Dasselbe gilt für den Wirtschaftsplan und die Höhe des Hausgelds samt Aufteilung in umlagefähige und nicht umlagefähige Anteile.",
+  "a3": "Für die Preisfindung nutzen wir die notariellen Kaufpreise des Gutachterausschusses, die für 79 Kölner Stadtteile vorliegen — beurkundete Preise, keine Angebotspreise. Dazu die Bodenrichtwerte zum Stichtag 1. Januar 2026 und Vergleichsobjekte aus der Nachbarschaft.",
+  "faq1_f": "Was ist bei einer vermieteten Eigentumswohnung anders?",
+  "faq1_a": "Der Käuferkreis verengt sich auf Kapitalanleger, weil Selbstnutzer nicht einziehen können — Kauf bricht nicht Miete. Der Preis richtet sich dann nach dem Ertrag, nicht nach dem Wohnwert. Dazu kommt das Vorkaufsrecht des Mieters nach § 577 BGB, wenn die Wohnung erst im Zuge der Umwandlung in Eigentum entstanden ist. Bei langjährigen Mietverhältnissen unter Marktniveau liegt der erzielbare Preis oft 15 bis 25 Prozent unter dem einer freien Wohnung.",
+  "faq2_f": "Brauche ich einen Energieausweis?",
+  "faq2_a": "Ja. Er muss spätestens bei der Besichtigung unaufgefordert vorgelegt und im Exposé mit Kennwerten angegeben werden. Bei Wohnungen stellt ihn in der Regel die Verwaltung für das Gesamtgebäude aus. Fehlt er, drohen Bußgelder bis 10.000 Euro, und der Verkauf verzögert sich — Banken verlangen ihn für die Finanzierung des Käufers.",
+  "bullet1": "Prüfung von Teilungserklärung, Protokollen und Rücklage",
+  "bullet2": "Preisfindung aus notariellen Kaufpreisen Ihres Stadtteils",
+  "bullet3": "Käufer auf Finanzierbarkeit geprüft, bevor besichtigt wird"
+ },
+ "grundstueck-verkaufen-koeln": {
+  "titel": "Grundstück verkaufen in Köln | Bodenrichtwert & Baurecht",
+  "h1": "Grundstück in Köln verkaufen",
+  "besch": "Grundstück in Köln verkaufen: Bodenrichtwerte aller Stadtteile, Bebaubarkeit, Erschließung und Ablauf. Bewertung kostenlos und unverbindlich.",
+  "kurz": "Beim Grundstück entscheidet nicht die Fläche, sondern was darauf gebaut werden darf.",
+  "a1": "Der Wert eines Grundstücks ergibt sich aus dem Bodenrichtwert der Zone, in der es liegt, angepasst an seine konkreten Eigenschaften. Der amtliche Wert zum Stichtag 1. Januar 2026 ist dabei nur der Ausgangspunkt: Er bezieht sich auf ein Richtwertgrundstück mit bestimmter Größe, Tiefe und Ausnutzbarkeit. Weicht Ihr Grundstück davon ab, muss umgerechnet werden — bei Zuschnitt, Erschließungszustand und Geschossflächenzahl.",
+  "a2": "Entscheidend ist das Baurecht. Liegt ein Bebauungsplan vor, steht dort, was zulässig ist: Art der Nutzung, Grundflächen- und Geschossflächenzahl, Bauweise, Höhe. Ohne Bebauungsplan richtet sich die Bebaubarkeit nach § 34 BauGB, also danach, was sich in die nähere Umgebung einfügt. Diese Frage entscheidet über den Wert stärker als jede andere — ein Grundstück, auf dem drei Wohneinheiten möglich sind, ist ein Vielfaches dessen wert, auf dem nur eines steht.",
+  "a3": "Ebenso prüfen wir Erschließung und Altlasten. Ein nicht erschlossenes Grundstück trägt die Erschließungsbeiträge noch vor sich her; ein Eintrag im Altlastenkataster kann Untersuchungskosten auslösen. Beides gehört vor die Vermarktung, nicht in die Nachverhandlung.",
+  "faq1_f": "Was ist ein Baulastenverzeichnis und warum ist es wichtig?",
+  "faq1_a": "In Nordrhein-Westfalen werden Baulasten nicht im Grundbuch, sondern in einem eigenen Verzeichnis bei der Bauaufsicht geführt. Dort können Verpflichtungen stehen, die die Bebaubarkeit einschränken — Abstandsflächen zugunsten des Nachbarn, Zufahrtsrechte, Stellplatzverpflichtungen. Ein Käufer, der nach dem Kauf davon erfährt, hat einen Grund zur Minderung. Wir holen den Auszug vor der Vermarktung ein.",
+  "faq2_f": "Fällt beim Grundstücksverkauf Spekulationssteuer an?",
+  "faq2_a": "Bei unbebauten Grundstücken gilt die Zehnjahresfrist des § 23 EStG ohne die Ausnahme für selbstgenutztes Wohneigentum — diese greift nur bei bewohnten Immobilien. Verkaufen Sie innerhalb von zehn Jahren nach Anschaffung, ist der Gewinn mit Ihrem persönlichen Steuersatz zu versteuern. Bei geerbten Grundstücken zählt die Haltedauer des Erblassers mit. Das ist eine steuerliche Frage — für die verbindliche Auskunft ist Ihr Steuerberater zuständig.",
+  "bullet1": "Bodenrichtwert amtlich, umgerechnet auf Ihr Grundstück",
+  "bullet2": "Prüfung von Bebaubarkeit, Baulasten und Erschließung",
+  "bullet3": "Ansprache von Bauträgern und privaten Bauherren getrennt"
+ }
+}

@@ -852,6 +852,18 @@
   force = true
 
 [[redirects]]
+  from = "/wohnung-kaufen-koeln"
+  to = "/wohnung-kaufen-koeln.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/haus-kaufen-koeln"
+  to = "/haus-kaufen-koeln.html"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/immobilienmakler-koeln-suelz"
   to = "/immobilienmakler-koeln-suelz.html"
   status = 301

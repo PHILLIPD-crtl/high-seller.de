@@ -47,5 +47,53 @@
   "bullet1": "Bodenrichtwert amtlich, umgerechnet auf Ihr Grundstück",
   "bullet2": "Prüfung von Bebaubarkeit, Baulasten und Erschließung",
   "bullet3": "Ansprache von Bauträgern und privaten Bauherren getrennt"
+ },
+ "reihenhaus-verkaufen-koeln": {
+  "titel": "Reihenhaus verkaufen in Köln | Wert & Ablauf",
+  "h1": "Reihenhaus in Köln verkaufen",
+  "besch": "Reihenhaus in Köln verkaufen: was Mittel- und Endhaus unterscheidet, Bodenwertanteil, Unterlagen und Ablauf. Bewertung kostenlos.",
+  "kurz": "Beim Reihenhaus entscheidet die Position in der Zeile über den Preis.",
+  "a1": "Mittelhaus oder Endhaus — das ist beim Reihenhaus die erste Frage, und sie bewegt den Preis um zehn bis zwanzig Prozent. Das Endhaus hat mehr Fensterfläche, mehr Grundstück und keinen zweiten Nachbarn an der Wand. Dafür trägt es die Außenwand allein, was sich bei der Dämmung bemerkbar macht. Wir bewerten die Position ausdrücklich, statt einen Zeilenmittelwert zu bilden.",
+  "a2": "Der Bodenwertanteil ist beim Reihenhaus höher, als viele erwarten. Bei einem Grundstück von 200 m² und einem Bodenrichtwert von 1.000 € je m² stecken 200.000 € allein im Boden — unabhängig vom Zustand des Hauses. Deshalb prüfen wir immer beides getrennt: Bodenwert nach amtlichem Richtwert und Gebäudewert nach Baujahr, Zustand und durchgeführten Modernisierungen.",
+  "a3": "Baujahr und Modernisierungsstand entscheiden den Rest. Reihenhäuser der 1960er und 1970er Jahre haben oft Sanierungsbedarf bei Fenstern, Heizung und Dämmung; ein Käufer rechnet diese Kosten vom Preis ab. Wer die letzten Modernisierungen belegen kann — mit Rechnungen und Datum — verhandelt spürbar besser.",
+  "faq1_f": "Muss ich eine Gemeinschaftsordnung beachten?",
+  "faq1_a": "Bei echten Reihenhäusern auf eigenem Grundstück in der Regel nicht. Häufig bestehen aber Grunddienstbarkeiten für gemeinsame Zuwege, Leitungen oder Stellplätze, die im Grundbuch in Abteilung II stehen. Bei Reihenhäusern in einer Wohnungseigentümergemeinschaft — das kommt bei jüngeren Anlagen vor — gilt dagegen die Teilungserklärung mit allem, was dazugehört: Hausgeld, Rücklage, Beschlüsse.",
+  "faq2_f": "Wie wirkt sich eine gemeinsame Heizung aus?",
+  "faq2_a": "Zentralheizungen für mehrere Häuser waren in den 1960ern und 1970ern verbreitet. Für Käufer ist das ein Unsicherheitsfaktor: Die Erneuerung wird gemeinschaftlich beschlossen und finanziert, die Kosten lassen sich nicht allein steuern. Wer verkauft, sollte den Zustand der Anlage, das Alter und etwaige Beschlüsse zur Erneuerung offenlegen — das nimmt dem Thema die Schärfe.",
+  "bullet1": "Bewertung nach Position in der Zeile, nicht nach Zeilenmittel",
+  "bullet2": "Boden- und Gebäudewert getrennt ausgewiesen",
+  "bullet3": "Prüfung von Dienstbarkeiten und gemeinsamen Anlagen"
+ },
+ "doppelhaushaelfte-verkaufen-koeln": {
+  "titel": "Doppelhaushälfte verkaufen in Köln | Wert & Ablauf",
+  "h1": "Doppelhaushälfte in Köln verkaufen",
+  "besch": "Doppelhaushälfte in Köln verkaufen: Bodenwert, Trennwand, Dienstbarkeiten und Ablauf. Bewertung kostenlos und unverbindlich.",
+  "kurz": "Bei der Doppelhaushälfte ist die gemeinsame Wand der Punkt, an dem Käufer nachfragen.",
+  "a1": "Die Doppelhaushälfte liegt zwischen Reihenhaus und freistehendem Haus — mit dem Vorteil eines eigenen Grundstücks auf drei Seiten und dem Nachteil einer gemeinsamen Wand. Für den Preis heißt das: Sie erzielt deutlich mehr als ein Reihenmittelhaus vergleichbarer Größe, bleibt aber unter dem freistehenden Haus. Der Abstand zum freistehenden Haus beträgt in Köln je nach Lage zehn bis fünfundzwanzig Prozent.",
+  "a2": "Rechtlich zu klären ist der Status der Trennwand. Bei einer echten Grenzbebauung steht sie auf der Grundstücksgrenze und gehört beiden Eigentümern gemeinsam — Instandhaltung und Kosten teilen sich. Bei einer Bebauung mit zwei getrennten Wänden liegt jede auf eigenem Grund. Der Unterschied steht in den Bauunterlagen und ist für Käufer relevant, weil er über künftige Abstimmungen mit dem Nachbarn entscheidet.",
+  "a3": "Der Bodenwert trägt einen erheblichen Anteil. Bei einem typischen Grundstück von 250 bis 350 m² und Kölner Bodenrichtwerten zwischen 600 und über 2.800 € je m² reicht der Bodenanteil von 150.000 bis weit über 700.000 €. Deshalb steht am Anfang jeder Bewertung der amtliche Richtwert der Zone, nicht der Quadratmeterpreis der Wohnfläche.",
+  "faq1_f": "Was ist, wenn die Nachbarhälfte schlecht gepflegt ist?",
+  "faq1_a": "Das wirkt sich auf den Preis aus, und zwar spürbar. Ein Käufer sieht das Gesamtbild, nicht die Grundstücksgrenze. Verschweigen hilft nicht — spätestens bei der Besichtigung fällt es auf. Sinnvoller ist, die eigene Hälfte in einen einwandfreien Zustand zu bringen und den Preis realistisch anzusetzen. Bei Streitigkeiten mit dem Nachbarn über gemeinsame Bauteile gilt eine Offenbarungspflicht, wenn sie den Wert beeinflussen.",
+  "faq2_f": "Kann ich anbauen oder aufstocken?",
+  "faq2_a": "Das hängt vom Baurecht ab und ist ein starkes Verkaufsargument, wenn es geklärt ist. Maßgeblich sind der Bebauungsplan oder, wo keiner existiert, das Einfügungsgebot nach § 34 BauGB. Bei Doppelhäusern kommt hinzu, dass eine einseitige Aufstockung das Gesamtbild verändert und deshalb häufig nicht genehmigt wird. Eine Bauvoranfrage schafft Klarheit und kostet wenige hundert Euro — sie kann den Preis deutlich heben.",
+  "bullet1": "Bodenrichtwert amtlich, auf Ihr Grundstück umgerechnet",
+  "bullet2": "Klärung von Trennwand-Status und Dienstbarkeiten",
+  "bullet3": "Prüfung von Anbau- und Aufstockungspotenzial"
+ },
+ "vermietete-wohnung-verkaufen-koeln": {
+  "titel": "Vermietete Wohnung verkaufen in Köln | Preis & Recht",
+  "h1": "Vermietete Eigentumswohnung in Köln verkaufen",
+  "besch": "Vermietete Wohnung in Köln verkaufen: Ertragswert, Vorkaufsrecht des Mieters, Kündigungssperrfrist und Käuferkreis. Bewertung kostenlos.",
+  "kurz": "Kauf bricht nicht Miete — das bestimmt Preis und Käuferkreis.",
+  "a1": "Wer eine vermietete Wohnung verkauft, verkauft an Kapitalanleger, nicht an Selbstnutzer. Das folgt aus § 566 BGB: Der Käufer tritt in das bestehende Mietverhältnis ein, er kann nicht einfach einziehen. Der Preis richtet sich deshalb nach dem Ertrag, nicht nach dem Wohnwert. In Köln liegt der erzielbare Preis bei langjährigen Mietverhältnissen unter Marktniveau typischerweise fünfzehn bis fünfundzwanzig Prozent unter dem einer vergleichbaren freien Wohnung.",
+  "a2": "Entscheidend ist die Höhe der Ist-Miete im Verhältnis zur ortsüblichen Vergleichsmiete. Eine Wohnung mit marktgerechter Miete ist für Anleger attraktiv und erzielt fast das Niveau einer freien Wohnung. Eine mit stark untersetzter Miete wird über den Faktor bewertet — und der fällt entsprechend niedriger aus. Wir rechnen beides durch und weisen aus, welches Mietsteigerungspotenzial rechtlich tatsächlich besteht.",
+  "a3": "Rechtlich zu beachten sind zwei Punkte, die Käufer prüfen. Erstens das Vorkaufsrecht des Mieters nach § 577 BGB, wenn die Wohnung erst nach Überlassung an den Mieter in Wohneigentum umgewandelt wurde. Zweitens die Kündigungssperrfrist nach § 577a BGB: In Köln gilt eine Sperrfrist von fünf Jahren, in der eine Eigenbedarfskündigung nach Umwandlung ausgeschlossen ist. Beides gehört ins Exposé, nicht in die Nachverhandlung.",
+  "faq1_f": "Muss ich dem Mieter den Verkauf anbieten?",
+  "faq1_a": "Nur wenn ein Vorkaufsrecht nach § 577 BGB besteht — also bei Umwandlung in Wohneigentum nach Überlassung an den Mieter. Dann muss der Mieter über den Inhalt des Kaufvertrags informiert werden und hat zwei Monate Zeit, in den Vertrag einzutreten. Wird das übergangen, macht sich der Verkäufer schadensersatzpflichtig. Ohne Umwandlungsfall gibt es kein gesetzliches Vorkaufsrecht.",
+  "faq2_f": "Lohnt es sich, vor dem Verkauf zu entmieten?",
+  "faq2_a": "Rechnerisch oft ja, praktisch selten. Eine Eigenbedarfskündigung setzt einen echten Eigenbedarf voraus und ist bei einer reinen Verkaufsabsicht unzulässig. Aufhebungsverträge gegen Abfindung sind möglich, aber teuer und ungewiss — Mieter müssen nicht zustimmen. Wer die Zeit hat, wartet auf eine natürliche Kündigung. Wer verkaufen will, verkauft besser vermietet zum realistischen Preis als mit einem rechtlich riskanten Umweg.",
+  "bullet1": "Ertragswert und Mietsteigerungspotenzial getrennt ausgewiesen",
+  "bullet2": "Prüfung von Vorkaufsrecht und Kündigungssperrfrist",
+  "bullet3": "Gezielte Ansprache von Kapitalanlegern aus der Käuferkartei"
  }
 }

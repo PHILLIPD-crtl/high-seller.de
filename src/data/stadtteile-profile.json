@@ -103,5 +103,55 @@
   "_stadtteil": "Poll",
   "bebauung": "Direkt am Rhein südöstlich der Innenstadt gelegen, 1888 gemeinsam mit Deutz eingemeindet. Seit der Neugliederung von 1975 ist Poll der einzige Stadtteil aus dem älteren Kölner Stadtgebiet, der vom Stadtbezirk Porz verwaltet wird. Erhalten sind alte Fischerhäuser an der Poller Hauptstraße samt Notwasserpumpe, die erste und die alte Poller Schule sowie der alte Friedhof.",
   "lage": "Drei Autobahnanschlüsse an die A 4 und A 559, dazu vier Haltestellen der Stadtbahnlinie 7 — Baumschulenweg, Poll Salmstraße, Raiffeisenstraße und Poller Kirchweg — sowie die Buslinie 159 Richtung Kalk. Sechs Kindertagesstätten, zwei Grundschulen und eine Förderschule, dazu das Bürgerzentrum Ahl Poller Schull und ein Seniorenzentrum."
+ },
+ "bocklemuend-mengenich": {
+  "_stadtteil": "Bocklemünd/Mengenich",
+  "bebauung": "1950 verwaltungstechnisch aus den zusammengewachsenen Dörfern Bocklemünd und Mengenich gebildet. Die Besiedlung reicht weit zurück: In Mengenich fanden Archäologen Reste einer bedeutenden bandkeramischen Siedlung aus der Jungsteinzeit, dazu Funde der Glockenbecher-Kultur sowie der Bronze- und Eisenzeit. Prägend ist heute der WDR mit seinen großen Produktionsstätten.",
+  "lage": "Am nordwestlichen Stadtrand im Stadtbezirk Ehrenfeld. Die Produktionsstätten des Westdeutschen Rundfunks sind der größte Arbeitgeber vor Ort und machen den Stadtteil über Köln hinaus bekannt."
+ },
+ "neubrueck": {
+  "_stadtteil": "Neubrück",
+  "bebauung": "Eine geplante Großsiedlung, von 1965 bis 1970 auf dem Rollfeld des ehemaligen Fliegerhorstes Ostheim errichtet. Der Grundstein vom 26. August 1965 ist an der Briandstraße 13 bis heute eingraviert. Damit ist der Bestand außergewöhnlich einheitlich: keine gewachsene Ortsmitte, sondern ein durchgeplantes Quartier aus einem Guss — was Käufer entweder überzeugt oder abschreckt.",
+  "lage": "Europaring und Neubrücker Ring umschließen das Siedlungsgebiet ringförmig, die Wohngebäude hängen an Sackgassen. Von Norden nach Süden zieht sich eine Fußgängerzone mit Marktplatz als Ortsmitte. Zwei Grundschulen für rund 400 Kinder, dazu die Kurt-Tucholsky-Schule. Ein Rest der alten Flughafenringstraße dient heute als Radweg."
+ },
+ "loevenich": {
+  "_stadtteil": "Lövenich",
+  "bebauung": "Der Name geht auf ein keltisches Landgut mit lateinischem Namen zurück: Luviniacum, erstmals 1028 erwähnt. Das landwirtschaftlich geprägte Dorf gehörte seit dem Mittelalter zum Machtbereich des Johanniter-Ordens und des Kölner Erzbischofs. Ältestes Bauwerk ist die romanische Kirche St. Severin, seit 1124 belegt.",
+  "lage": "Vom Haltepunkt Köln-Lövenich erreicht man den Hauptbahnhof in einer Viertelstunde, bedient von den S-Bahn-Linien S 12 und S 19. In Gehweite liegt die Stadtbahnhaltestelle Weiden Zentrum. Die Johanniter-Schule ist die Grundschule vor Ort; von 1925 bis 1967 war Lövenich Sitz der rheinischen Landwirtschaftsschule."
+ },
+ "buchheim": {
+  "_stadtteil": "Buchheim",
+  "bebauung": "Schon 1160 wird eine Pfarrkirche erwähnt, manche Quellen deuten auf Besiedlung bereits zur Karolingerzeit. 1663 entstand die Wasserburg Herl, im 18. Jahrhundert kam ein Park mit der Kapelle St. Johann Nepomuk hinzu. Erhalten sind außerdem St. Mauritius mit dem Kirchturm, den die Kölner „Herjottszejefinger\" nennen, die Herler Mühle und zwei preußische Zwischenwerke der Festungsanlagen.",
+  "lage": "Rechtsrheinisch im Bezirk Mülheim gelegen, seit dem Mittelalter zum Amt Porz im Herzogtum Berg gehörig. Die Denkmäler liegen verstreut im Ortsbild — Burg Herl, das Buchheimer Kreuz und die Kreuzkirche prägen die Wohnstraßen bis heute."
+ },
+ "westhoven": {
+  "_stadtteil": "Westhoven",
+  "bebauung": "Die Besiedlung reicht bis in die Jungsteinzeit zurück: In einer Ziegeleigrube am heutigen Ziegeleiweg fand sich ein verziertes Schälchen der Rössener Kultur aus dem dritten Jahrtausend vor Christus. Der Ort liegt tiefer als das benachbarte Ensen, was ihn historisch anfällig für Rheinhochwasser machte — ein Punkt, der bei der Bewertung von Kellern und Untergeschossen zählt.",
+  "lage": "Im Südosten der Stadt im Stadtbezirk Porz, direkt am Rhein. Die Nachbarschaft zu Ensen ist eng; beide Orte teilen sich Infrastruktur und Wege."
+ },
+ "bickendorf": {
+  "_stadtteil": "Bickendorf",
+  "bebauung": "Aus einem Dorf durch ausgedehnte Arbeitersiedlungen des frühen 20. Jahrhunderts gewachsen. Herzstück ist die ab 1923 errichtete Rosenhof-Siedlung, entworfen von Caspar Maria Grod und Wilhelm Riphahn im Stil der Neuen Sachlichkeit — ein bemerkenswertes Beispiel für den Siedlungsbau der zwanziger Jahre, mit der katholischen Kirche St. Dreikönigen als Mittelpunkt. Besiedelt war das Gebiet schon zur Zeit der Ubier, ein römischer Gutshof wird vermutet.",
+  "lage": "Im Nordwesten im Stadtbezirk Ehrenfeld. Der Bahnhof Köln-Bickendorf an der Strecke nach Frechen dient dem Güterverkehr. Der Name geht vermutlich auf das fränkische „beck\" für Gerichtsstätte zurück."
+ },
+ "ensen": {
+  "_stadtteil": "Ensen",
+  "bebauung": "Der Name ist vermutlich keltischen Ursprungs und bedeutet fließendes Wasser; die Ableitung von „Insel\" liegt ebenso nahe, weil Ensen höher liegt als das eng benachbarte Westhoven und vom Rheinhochwasser weniger betroffen ist. Diese Höhenlage ist der eigentliche Unterschied zwischen den beiden Nachbarorten und wirkt sich bis heute auf die Bebauung aus.",
+  "lage": "Rechtsrheinisch im Stadtbezirk Porz, unmittelbar an Westhoven angrenzend. Beide Orte sind so eng verzahnt, dass sie im Alltag als ein Wohngebiet wahrgenommen werden."
+ },
+ "longerich": {
+  "_stadtteil": "Longerich",
+  "bebauung": "Auf Kölsch Lunke, abgeleitet von den älteren Formen Lunrike und Lunreke mit lateinischer Endung -iacum — ein Hinweis auf römische Zeit. Städtebaulich auffällig ist die Ungarnsiedlung zwischen Johannes-Rings-Straße und Militärring: Reihenhauszeilen, die nach dem Ungarnaufstand von 1956 für Flüchtlinge entstanden und bewusst abwechselnd mit ungarischen und deutschen Bewohnern belegt wurden. 1959 kam das neue Mutterhaus der Cellitinnen an der Graseggerstraße hinzu.",
+  "lage": "Der Bahnhof Köln-Longerich liegt an der Strecke nach Kleve, dazu S-Bahn und die Stadtbahnlinien 12 und 15. Buslinien binden den Stadtteil von der Haltestelle Longericher Straße und vom S-Bahnhof an die Nachbarschaft an."
+ },
+ "merheim": {
+  "_stadtteil": "Merheim",
+  "bebauung": "Kern des Ortes ist der Fronhof am Von-Eltz-Platz, ursprünglich eine fränkische Hofanlage aus dem 7. oder 8. Jahrhundert. Die katholische Pfarrkirche St. Gereon war zunächst dessen Hofkapelle. Erhalten sind außerdem die katholische Grundschule an der Fußfallstraße von 1959 unter Denkmalschutz und mit „Em ahle Kohberg\" an der Ostmerheimer Straße die älteste Gaststätte im rechtsrheinischen Köln.",
+  "lage": "Rechtsrheinisch im Stadtbezirk Kalk. Der Kalker Friedhof am Kratzweg liegt auf Merheimer Gebiet; die Ostmerheimer Straße ist die historische Achse des Ortes."
+ },
+ "grengel": {
+  "_stadtteil": "Grengel",
+  "bebauung": "Ab 1932 als gartenstadtähnliche Siedlung „Am Grengel\" nach Plänen von Ludwig Paffendorf geplant, formal aber erst 1948 als Stadtteil von Porz gegründet. Anlass waren die Aufgabe eines Kriegsgefangenenlagers und Wohnraummangel, unter anderem für die Landespolizei. Der Gartenstadtgedanke ist an den Grundstückszuschnitten bis heute ablesbar.",
+  "lage": "Im Südosten des Stadtbezirks Porz, unmittelbar am Flughafen Köln/Bonn. Drei Grundschulen entstanden 1953 auf Elternentscheid; heute ist die Förderschule Eduard Mörike im Ort ansässig. Die Flughafennähe ist das bestimmende Lagemerkmal — für Berufspendler ein Vorteil, beim Verkauf ein Punkt, der offen angesprochen gehört."
  }
 }

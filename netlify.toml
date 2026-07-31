@@ -1068,6 +1068,48 @@
   force = true
 
 [[redirects]]
+  from = "/bonitaetspruefung-immobilienkauf-koeln"
+  to = "/bonitaetspruefung-immobilienkauf-koeln.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/modernisierungskredit-koeln"
+  to = "/modernisierungskredit-koeln.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/finanzierung-ohne-eigenkapital-koeln"
+  to = "/finanzierung-ohne-eigenkapital-koeln.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/gewerbeimmobilie-verkaufen-koeln"
+  to = "/gewerbeimmobilie-verkaufen-koeln.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/erbbaurecht-immobilie-verkaufen-koeln"
+  to = "/erbbaurecht-immobilie-verkaufen-koeln.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/vermieten-oder-verkaufen-koeln"
+  to = "/vermieten-oder-verkaufen-koeln.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/immobilienbewertung-online-oder-vor-ort-koeln"
+  to = "/immobilienbewertung-online-oder-vor-ort-koeln.html"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/immobilienmakler-koeln-suelz"
   to = "/immobilienmakler-koeln-suelz.html"
   status = 301

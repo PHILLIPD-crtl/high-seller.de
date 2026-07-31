@@ -79,5 +79,53 @@
   "bullet1": "Prüfung, welche Programme aktuell passen",
   "bullet2": "Beachtung der Reihenfolge: Antrag vor Vertragsschluss",
   "bullet3": "Verzahnung von Fördermitteln und Bankdarlehen"
+ },
+ "bonitaetspruefung-immobilienkauf-koeln": {
+  "titel": "Bonitätsprüfung beim Immobilienkauf | Köln",
+  "h1": "Bonitätsprüfung: was Banken und Verkäufer prüfen",
+  "besch": "Bonitätsprüfung beim Immobilienkauf: Schufa, Haushaltsrechnung, Beleihungswert und warum Verkäufer sie verlangen sollten.",
+  "kurz": "Eine geprüfte Finanzierung ist im Kölner Markt oft wichtiger als das höchste Gebot.",
+  "a1": "Banken prüfen drei Dinge: die Bonität des Käufers über Schufa und Einkommensnachweise, die Tragfähigkeit über eine Haushaltsrechnung, und die Immobilie selbst über den Beleihungswert. Letzterer liegt regelmäßig zehn bis fünfzehn Prozent unter dem Kaufpreis, weil die Bank einen Sicherheitsabschlag ansetzt. Wer zum Höchstpreis kauft, muss diese Differenz aus Eigenkapital decken.",
+  "a2": "Für Verkäufer ist das der entscheidende Punkt. Ein Interessent mit dem höchsten Gebot nützt nichts, wenn seine Finanzierung vier Wochen später platzt — dann beginnt die Vermarktung von vorn, mit einem Objekt, das inzwischen als Ladenhüter gilt. Deshalb prüfen wir vor der Besichtigung, ob die Finanzierung realistisch trägt, statt darauf zu vertrauen, dass es schon klappt.",
+  "a3": "Was Käufer vorlegen sollten: eine Finanzierungsbestätigung ihrer Bank, keine unverbindliche Machbarkeitsauskunft. Der Unterschied ist erheblich — die eine beruht auf geprüften Unterlagen, die andere auf Selbstauskunft. Als Darlehensvermittler nach § 34i GewO erkennen wir den Unterschied auf den ersten Blick, was uns von Maklern unterscheidet, die nur ein Dokument entgegennehmen.",
+  "faq1_f": "Was ist der Beleihungswert und warum ist er niedriger?",
+  "faq1_a": "Der Beleihungswert ist der Wert, den die Bank dauerhaft und unabhängig von Marktschwankungen als gesichert ansieht. Er wird nach der Beleihungswertermittlungsverordnung bestimmt und liegt unter dem Verkehrswert. Finanziert wird ein Prozentsatz davon — bei achtzig Prozent Beleihungsauslauf und einem Abschlag von zehn Prozent finanziert die Bank effektiv rund zweiundsiebzig Prozent des Kaufpreises. Die Differenz ist Eigenkapital.",
+  "faq2_f": "Schadet eine Schufa-Anfrage meiner Bonität?",
+  "faq2_a": "Eine Konditionenanfrage nicht — sie wird als solche gekennzeichnet und ist für andere Banken nicht sichtbar. Eine Kreditanfrage dagegen wird gespeichert und ist ein Jahr lang einsehbar. Wer bei fünf Banken direkt Kredite anfragt, verschlechtert seinen Score. Deshalb läuft ein Vergleich über einen Vermittler günstiger: eine Konditionenanfrage, viele Angebote.",
+  "bullet1": "Prüfung der Käuferfinanzierung vor der Besichtigung",
+  "bullet2": "Unterscheidung von Bestätigung und Machbarkeitsauskunft",
+  "bullet3": "Konditionenanfrage statt mehrfacher Kreditanfragen"
+ },
+ "modernisierungskredit-koeln": {
+  "titel": "Modernisierungskredit in Köln | Sanierung finanzieren",
+  "h1": "Modernisierung finanzieren",
+  "besch": "Modernisierungskredit: Bankdarlehen, KfW-Mittel oder Ratenkredit? Was sich wann rechnet und wie die Wertsteigerung einzuordnen ist.",
+  "kurz": "Nicht jede Modernisierung erhöht den Wert um das, was sie kostet.",
+  "a1": "Für Modernisierungen gibt es drei Wege. Ein grundpfandrechtlich besichertes Darlehen ist am günstigsten, verlangt aber eine Grundschuld und lohnt erst ab etwa dreißigtausend Euro. Ein Ratenkredit ohne Sicherheit ist teurer, dafür schnell und formlos — sinnvoll bei kleineren Beträgen. KfW-Mittel sind bei energetischen Maßnahmen oft am günstigsten, verlangen aber Energieberater und die richtige Antragsreihenfolge.",
+  "a2": "Wirtschaftlich entscheidend ist die Frage, ob sich die Maßnahme im Wert niederschlägt. Heizungstausch, Fenster und Dämmung senken die Betriebskosten und verbessern die Energieklasse — beides zahlen Käufer. Ein hochwertiges Bad oder eine Designerküche dagegen holen ihre Kosten am Markt selten vollständig ein, weil Geschmack individuell ist. Wer für den Verkauf modernisiert, sollte das im Blick behalten.",
+  "a3": "Bei vermieteten Objekten kommt die Umlage nach § 559 BGB hinzu: Modernisierungskosten können mit acht Prozent jährlich auf die Miete umgelegt werden, begrenzt durch Kappungsgrenzen. Das verbessert den Ertragswert dauerhaft und ist bei Kapitalanlagen oft der eigentliche Hebel. Wir rechnen durch, was sich in Ihrem Fall trägt — als Makler und Darlehensvermittler in einem.",
+  "faq1_f": "Erhöht eine neue Heizung den Verkaufspreis?",
+  "faq1_a": "Sie verhindert vor allem einen Abschlag. Käufer rechnen bei alten Heizungen mit Ersatzkosten und ziehen sie vom Preis ab, oft großzügiger als die tatsächlichen Kosten. Kommt die Nachrüstpflicht des GEG hinzu — Kessel älter als dreißig Jahre —, wird daraus ein harter Verhandlungspunkt. Eine neue Anlage nimmt dem Käufer dieses Argument, erhöht den Preis aber selten um mehr als ihre Kosten.",
+  "faq2_f": "Kann ich Modernisierung und Kauf zusammen finanzieren?",
+  "faq2_a": "Ja, und das ist meist die günstigste Variante. Der Modernisierungsbedarf wird in die Finanzierung eingerechnet, die Bank berücksichtigt den Wert nach Sanierung — allerdings nur gegen Vorlage konkreter Angebote, nicht auf Zuruf. Bei energetischen Maßnahmen lässt sich das mit KfW-Mitteln kombinieren. Wichtig ist auch hier: erst beantragen, dann beauftragen.",
+  "bullet1": "Vergleich von Bankdarlehen, KfW und Ratenkredit",
+  "bullet2": "Einschätzung, welche Maßnahme sich im Preis niederschlägt",
+  "bullet3": "Kombination von Kauf- und Modernisierungsfinanzierung"
+ },
+ "finanzierung-ohne-eigenkapital-koeln": {
+  "titel": "Immobilienfinanzierung ohne Eigenkapital | Köln",
+  "h1": "Finanzierung ohne Eigenkapital",
+  "besch": "Vollfinanzierung: Voraussetzungen, Zinsaufschlag, Risiken und wann sie trotzdem sinnvoll ist. Ehrliche Beratung in Köln.",
+  "kurz": "Es geht — aber nicht für jeden, und selten günstig.",
+  "a1": "Eine Vollfinanzierung über hundert Prozent des Kaufpreises setzt drei Dinge voraus: ein sicheres, überdurchschnittliches Einkommen, eine einwandfreie Bonität und eine gut verwertbare Immobilie in nachgefragter Lage. Die Kaufnebenkosten von rund zehn Prozent müssen dabei fast immer aus Eigenkapital kommen — echte Hundertzehn-Prozent-Finanzierungen sind selten und teuer.",
+  "a2": "Der Preis ist ein Zinsaufschlag, der je nach Anbieter und Bonität zwischen einem halben und anderthalb Prozentpunkten liegt. Über zwanzig Jahre summiert sich das erheblich: Bei 400.000 Euro Darlehen und einem Prozentpunkt Unterschied sind das rund achtzigtausend Euro Mehrkosten. Dazu kommt eine längere Laufzeit, weil bei gleicher Rate weniger für die Tilgung bleibt.",
+  "a3": "Das eigentliche Risiko ist die fehlende Reserve. Wer sein gesamtes Kapital in die Nebenkosten steckt, hat keinen Puffer für Reparaturen, Arbeitslosigkeit oder Zinsanstieg bei der Anschlussfinanzierung. Deshalb sagen wir manchmal: noch nicht. Zwei Jahre sparen kostet Miete, spart aber oft mehr an Zinsen — wir rechnen beide Wege durch, statt zum Abschluss zu drängen.",
+  "faq1_f": "Für wen kann eine Vollfinanzierung sinnvoll sein?",
+  "faq1_a": "Für Berufseinsteiger mit gesichertem, steigendem Einkommen, etwa Beamte oder Ärzte, deren Kapitalaufbau erst beginnt. Ebenso für Käufer, deren Vermögen gebunden ist und die nicht zur Unzeit verkaufen wollen. Was in beiden Fällen zählt, ist die Tragfähigkeit über die gesamte Laufzeit — nicht die Frage, ob eine Bank zusagt. Zusagen bekommt man mehr, als gut ist.",
+  "faq2_f": "Was passiert, wenn ich früh verkaufen muss?",
+  "faq2_a": "Das ist das Kernrisiko. Ohne Eigenkapital ist die Restschuld in den ersten Jahren höher als bei einer normalen Finanzierung, während der erzielbare Preis schwanken kann. Sinkt der Marktwert oder muss unter Zeitdruck verkauft werden, bleibt eine Restschuld ohne Gegenwert. Deshalb ist bei einer Vollfinanzierung eine höhere Anfangstilgung wichtiger als ein niedriger Zins.",
+  "bullet1": "Ehrliche Prüfung der Tragfähigkeit, auch mit Ergebnis Nein",
+  "bullet2": "Vergleich mit dem Szenario zwei Jahre später",
+  "bullet3": "Empfehlung zur Tilgungshöhe, nicht nur zum Zins"
  }
 }

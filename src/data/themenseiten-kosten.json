@@ -1,0 +1,51 @@
+{
+ "_hinweis": "Fachinhalte zu Kosten, Steuern und Unterlagen. Handarbeit. Steuerliche Aussagen sind als Information gekennzeichnet und verweisen auf den Steuerberater - eine Maklerseite darf informieren, aber keine Steuerberatung ersetzen (Paragraf 5 StBerG).",
+ "spekulationssteuer-immobilie-koeln": {
+  "titel": "Spekulationssteuer beim Immobilienverkauf | Köln",
+  "h1": "Spekulationssteuer beim Immobilienverkauf",
+  "besch": "Spekulationssteuer nach § 23 EStG: Zehnjahresfrist, Ausnahme bei Selbstnutzung, Berechnung und typische Fallen. Information, keine Steuerberatung.",
+  "kurz": "Die Zehnjahresfrist entscheidet — und die Ausnahme für Selbstnutzung wird oft falsch verstanden.",
+  "a1": "Nach § 23 Abs. 1 Nr. 1 EStG ist der Gewinn aus dem Verkauf einer Immobilie steuerpflichtig, wenn zwischen Anschaffung und Veräußerung nicht mehr als zehn Jahre liegen. Maßgeblich sind die Daten der notariellen Beurkundung, nicht die der Übergabe oder Grundbucheintragung. Wer am 15. März 2016 gekauft hat, kann ab dem 16. März 2026 steuerfrei verkaufen — auf den Tag genau.",
+  "a2": "Die wichtigste Ausnahme betrifft selbstgenutztes Wohneigentum. Steuerfrei ist der Verkauf, wenn die Immobilie entweder im gesamten Zeitraum zwischen Anschaffung und Verkauf oder im Verkaufsjahr und den beiden vorangegangenen Kalenderjahren zu eigenen Wohnzwecken genutzt wurde. Die zweite Variante wird häufig unterschätzt: Es genügt eine Nutzung in Teilen dieser Jahre — der Bundesfinanzhof lässt für das mittlere Jahr eine durchgängige, für die Randjahre eine tageweise Nutzung genügen.",
+  "a3": "Der zu versteuernde Gewinn errechnet sich aus dem Verkaufspreis abzüglich der Anschaffungskosten samt Nebenkosten und abzüglich der Veräußerungskosten. Bei vermieteten Objekten mindern die in Anspruch genommenen Abschreibungen die Anschaffungskosten und erhöhen damit den Gewinn — ein Punkt, der regelmäßig übersehen wird. Versteuert wird mit dem persönlichen Einkommensteuersatz, nicht pauschal.",
+  "faq1_f": "Zählt bei einer geerbten Immobilie mein Erwerb oder der des Erblassers?",
+  "faq1_a": "Der des Erblassers. Erbschaft und Schenkung sind unentgeltliche Erwerbe; die Haltedauer des Rechtsvorgängers wird nach § 23 Abs. 1 Satz 3 EStG angerechnet. Hat der Erblasser die Immobilie vor mehr als zehn Jahren erworben, ist Ihr Verkauf steuerfrei — auch wenn Sie erst gestern geerbt haben. Umgekehrt beginnt keine neue Frist.",
+  "faq2_f": "Was gilt bei einem Arbeitszimmer oder vermieteten Teilen?",
+  "faq2_a": "Anteilig genutzte Flächen können die Steuerfreiheit teilweise aufheben. Beim häuslichen Arbeitszimmer hat der Bundesfinanzhof 2021 entschieden, dass es der Steuerfreiheit bei Selbstnutzung nicht entgegensteht. Bei dauerhaft vermieteten Wohnungsteilen ist der auf diese Fläche entfallende Gewinn dagegen steuerpflichtig. Die Abgrenzung ist Einzelfallsache — dafür ist Ihr Steuerberater zuständig, wir liefern die Zahlen zur Immobilie.",
+  "bullet1": "Prüfung der Fristen anhand der Beurkundungsdaten",
+  "bullet2": "Wertermittlung als Grundlage für Ihre Steuerberechnung",
+  "bullet3": "Zusammenarbeit mit Ihrem Steuerberater auf Wunsch"
+ },
+ "maklerprovision-koeln": {
+  "titel": "Maklerprovision in Köln | Höhe, Teilung, Fälligkeit",
+  "h1": "Maklerprovision beim Immobilienverkauf",
+  "besch": "Maklerprovision in Köln: Höhe, gesetzliche Teilung seit 2020, Fälligkeit und was im Maklervertrag stehen muss. Transparent erklärt.",
+  "kurz": "Seit Dezember 2020 teilen sich Käufer und Verkäufer die Provision bei Wohnimmobilien.",
+  "a1": "Mit dem Gesetz über die Verteilung der Maklerkosten vom 23. Dezember 2020 gilt für Einfamilienhäuser und Eigentumswohnungen, die an Verbraucher verkauft werden: Beauftragt eine Partei den Makler, darf sie höchstens die Hälfte der Provision auf die andere abwälzen — und muss ihren eigenen Anteil nachweislich zuerst gezahlt haben. Vereinbarungen, die davon abweichen, sind unwirksam. In Nordrhein-Westfalen liegt die Gesamtprovision üblicherweise bei 7,14 Prozent inklusive Umsatzsteuer, also 3,57 Prozent je Seite.",
+  "a2": "Die Provision wird erst mit dem wirksamen Abschluss des Kaufvertrags fällig, also mit der notariellen Beurkundung. Kommt kein Vertrag zustande, entsteht kein Anspruch — unabhängig davon, wie viele Besichtigungen stattgefunden haben. Das ist der entscheidende Unterschied zu Dienstleistungen, die nach Aufwand abrechnen: Der Makler trägt das volle wirtschaftliche Risiko der Vermarktung.",
+  "a3": "Der Maklervertrag bedarf bei Wohnimmobilien seit 2020 der Textform, § 656a BGB — ein Handschlag genügt nicht mehr. Enthalten sein müssen Höhe und Verteilung der Provision. Bei Gewerbeimmobilien und dem Verkauf an Nichtverbraucher gelten die Teilungsregeln nicht; dort ist die Verteilung frei verhandelbar.",
+  "faq1_f": "Kann ich die Provision verhandeln?",
+  "faq1_a": "Ja, sie ist gesetzlich nicht festgelegt. Zu beachten ist aber die Teilungsregel: Was mit einer Seite vereinbart wird, bestimmt die Obergrenze für die andere. Ein Verkäufer, der seinen Anteil drückt, senkt damit automatisch auch den des Käufers — die Gesamtprovision sinkt also doppelt. Seriöse Anbieter erklären, welche Leistungen im Preis stecken; ein Vergleich lohnt eher über den Leistungsumfang als über den Prozentsatz.",
+  "faq2_f": "Wann muss ich zahlen, wenn der Käufer abspringt?",
+  "faq2_a": "Gar nicht, solange kein Kaufvertrag beurkundet ist. Springt ein Käufer nach der Beurkundung ab, ist der Provisionsanspruch bereits entstanden — dann geht es um die Rückabwicklung des Kaufvertrags, für die im Vertrag Regelungen stehen sollten. Wird der Kaufvertrag später wegen eines Mangels rückabgewickelt, entfällt die Provision je nach Konstellation; das ist Einzelfallsache.",
+  "bullet1": "Provision erst bei notarieller Beurkundung fällig",
+  "bullet2": "Gesetzliche Teilung nach § 656c BGB eingehalten",
+  "bullet3": "Maklervertrag in Textform mit klarer Leistungsbeschreibung"
+ },
+ "energieausweis-koeln": {
+  "titel": "Energieausweis beim Immobilienverkauf | Köln",
+  "h1": "Energieausweis beim Verkauf",
+  "besch": "Energieausweis: Pflicht, Bedarf oder Verbrauch, Kosten, Bußgelder und Fristen nach GEG. Was Verkäufer in Köln wissen müssen.",
+  "kurz": "Ohne Energieausweis keine Besichtigung — und Bußgelder bis 10.000 Euro.",
+  "a1": "Nach § 80 GEG muss der Energieausweis Kaufinteressenten spätestens bei der Besichtigung unaufgefordert vorgelegt und spätestens bei Vertragsabschluss übergeben werden. Bereits in der Immobilienanzeige sind Pflichtangaben zu machen: Art des Ausweises, wesentlicher Energieträger, Baujahr, Energiekennwert und Effizienzklasse. Fehlen sie, drohen Bußgelder bis 10.000 Euro nach § 108 GEG — und Käufer wie Banken fragen ohnehin danach.",
+  "a2": "Zwei Arten sind zu unterscheiden. Der Verbrauchsausweis stützt sich auf die tatsächlichen Verbrauchsdaten der letzten drei Jahre und ist günstiger, aber vom Heizverhalten der Bewohner abhängig. Der Bedarfsausweis berechnet den theoretischen Bedarf aus Bausubstanz und Anlagentechnik und ist damit vergleichbarer. Für Wohngebäude mit bis zu vier Wohnungen, deren Bauantrag vor dem 1. November 1977 gestellt wurde und die nicht auf den Stand der ersten Wärmeschutzverordnung gebracht wurden, ist der Bedarfsausweis Pflicht.",
+  "a3": "Der Ausweis gilt zehn Jahre ab Ausstellung. Für Wohnungen in Mehrfamilienhäusern wird er für das Gesamtgebäude erstellt, üblicherweise von der Verwaltung — fragen Sie dort zuerst, bevor Sie einen eigenen beauftragen. Kosten: Verbrauchsausweise beginnen im niedrigen dreistelligen Bereich, Bedarfsausweise liegen darüber, weil eine Aufnahme der Bausubstanz nötig ist.",
+  "faq1_f": "Gibt es Ausnahmen von der Pflicht?",
+  "faq1_a": "Ja, wenige. Ausgenommen sind Baudenkmäler nach § 79 Abs. 4 GEG sowie kleine Gebäude mit weniger als 50 Quadratmetern Nutzfläche. Auch bei Gebäuden, die nicht regelmäßig beheizt oder gekühlt werden, entfällt die Pflicht. Für alle anderen gilt sie, auch bei sanierungsbedürftigen Häusern — gerade dort fragen Käufer besonders genau nach.",
+  "faq2_f": "Schadet eine schlechte Effizienzklasse dem Preis?",
+  "faq2_a": "Sie beeinflusst ihn, aber weniger dramatisch als oft angenommen. Käufer rechnen mit Sanierungskosten und ziehen sie vom Preis ab — bei einem unsanierten Haus ohnehin. Wichtiger ist, dass der Ausweis vorliegt und die Zahlen zum sichtbaren Zustand passen. Ein guter Kennwert bei erkennbar altem Fensterbestand weckt Misstrauen; ein schlechter Wert mit belegten Sanierungsangeboten schafft Klarheit.",
+  "bullet1": "Prüfung, welcher Ausweistyp für Ihr Objekt Pflicht ist",
+  "bullet2": "Pflichtangaben im Exposé vollständig und korrekt",
+  "bullet3": "Vermittlung an Aussteller, wenn kein Ausweis vorliegt"
+ }
+}

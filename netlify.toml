@@ -966,6 +966,24 @@
   force = true
 
 [[redirects]]
+  from = "/spekulationssteuer-immobilie-koeln"
+  to = "/spekulationssteuer-immobilie-koeln.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/maklerprovision-koeln"
+  to = "/maklerprovision-koeln.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/energieausweis-koeln"
+  to = "/energieausweis-koeln.html"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/immobilienmakler-koeln-suelz"
   to = "/immobilienmakler-koeln-suelz.html"
   status = 301

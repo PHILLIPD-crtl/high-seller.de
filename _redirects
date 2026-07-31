@@ -1,10 +1,20 @@
-/immobilie-verkaufen-koeln /immobilie-verkaufen.html 301!
-/immobilien-kaufen-koeln-umgebung /immobilien-angebote.html 301!
-/baufinanzierung-koeln /baufinanzierung.html 301!
-/karriere-seite /karriere.html 301!
-/datenschutzerklaerung /datenschutz.html 301!
-/widerrufsbelehrung /widerruf.html 301!
-/baris-olmez /ueber-uns.html 301!
-/serhad-mendekli /ueber-uns.html 301!
-/agb /impressum.html 301!
-/tippgeberprovision /tippgeberprovision.html 301!
+# Diese Datei ist absichtlich leer.
+#
+# Netlify wertet _redirects VOR netlify.toml aus. Hier standen bis zuletzt
+# pfadbasierte Regeln wie
+#
+#     /karriere-seite /karriere.html 301!
+#
+# Solche Regeln kennen den Host nicht. Sobald die alte Domain
+# highseller-immobilien.koeln als Alias auf dieses Projekt zeigt, greifen sie
+# auch dort - und leiten dann von
+#     highseller-immobilien.koeln/karriere-seite
+# auf
+#     highseller-immobilien.koeln/karriere.html
+# weil das Ziel relativ ist. Der Besucher bliebe also auf der alten Domain
+# haengen, und die Weiterleitung auf high-seller.de in netlify.toml kaeme nie
+# zum Zug.
+#
+# Deshalb stehen ALLE Weiterleitungen in netlify.toml, in einer dort
+# dokumentierten Reihenfolge. Wer hier wieder eine Regel eintraegt, hebelt
+# diese Reihenfolge aus.

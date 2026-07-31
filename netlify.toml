@@ -984,6 +984,24 @@
   force = true
 
 [[redirects]]
+  from = "/notarkosten-immobilienverkauf-koeln"
+  to = "/notarkosten-immobilienverkauf-koeln.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/grundbuchauszug-koeln"
+  to = "/grundbuchauszug-koeln.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/teilungserklaerung-koeln"
+  to = "/teilungserklaerung-koeln.html"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/immobilienmakler-koeln-suelz"
   to = "/immobilienmakler-koeln-suelz.html"
   status = 301

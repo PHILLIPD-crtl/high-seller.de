@@ -810,6 +810,48 @@
   force = true
 
 [[redirects]]
+  from = "/immobilienmakler-huerth"
+  to = "/immobilienmakler-huerth.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/immobilienmakler-frechen"
+  to = "/immobilienmakler-frechen.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/immobilienmakler-pulheim"
+  to = "/immobilienmakler-pulheim.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/immobilienmakler-bruehl"
+  to = "/immobilienmakler-bruehl.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/immobilienmakler-wesseling"
+  to = "/immobilienmakler-wesseling.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/immobilienmakler-leverkusen"
+  to = "/immobilienmakler-leverkusen.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/immobilienmakler-bergisch-gladbach"
+  to = "/immobilienmakler-bergisch-gladbach.html"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/immobilienmakler-koeln-suelz"
   to = "/immobilienmakler-koeln-suelz.html"
   status = 301

@@ -1218,6 +1218,84 @@
   force = true
 
 [[redirects]]
+  from = "/immobilienmakler-niederkassel"
+  to = "/immobilienmakler-niederkassel.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/immobilienmakler-odenthal"
+  to = "/immobilienmakler-odenthal.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/immobilienmakler-roesrath"
+  to = "/immobilienmakler-roesrath.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/immobilienmakler-bergheim"
+  to = "/immobilienmakler-bergheim.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/immobilienmakler-langenfeld"
+  to = "/immobilienmakler-langenfeld.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/immobilienmakler-bornheim"
+  to = "/immobilienmakler-bornheim.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/immobilienmakler-erftstadt"
+  to = "/immobilienmakler-erftstadt.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/immobilienmakler-kerpen"
+  to = "/immobilienmakler-kerpen.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/immobilienmakler-leichlingen"
+  to = "/immobilienmakler-leichlingen.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/immobilienmakler-burscheid"
+  to = "/immobilienmakler-burscheid.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/immobilienmakler-overath"
+  to = "/immobilienmakler-overath.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/immobilienmakler-kuerten"
+  to = "/immobilienmakler-kuerten.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/immobilienmakler-lohmar"
+  to = "/immobilienmakler-lohmar.html"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/immobilienmakler-koeln-suelz"
   to = "/immobilienmakler-koeln-suelz.html"
   status = 301

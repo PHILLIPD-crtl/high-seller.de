@@ -1,4 +1,12 @@
 {
+ "Bergheim": {
+  "brw": [
+   150,
+   600
+  ],
+  "brwMedian": 330,
+  "brwZonen": 71
+ },
  "Bergisch Gladbach": {
   "brw": [
    270,
@@ -6,6 +14,14 @@
   ],
   "brwMedian": 600,
   "brwZonen": 286
+ },
+ "Bornheim": {
+  "brw": [
+   440,
+   690
+  ],
+  "brwMedian": 510,
+  "brwZonen": 31
  },
  "Brühl": {
   "brw": [
@@ -15,6 +31,14 @@
   "brwMedian": 560,
   "brwZonen": 51
  },
+ "Burscheid": {
+  "brw": [
+   210,
+   420
+  ],
+  "brwMedian": 360,
+  "brwZonen": 47
+ },
  "Dormagen": {
   "brw": [
    125,
@@ -22,6 +46,14 @@
   ],
   "brwMedian": 410,
   "brwZonen": 26
+ },
+ "Erftstadt": {
+  "brw": [
+   140,
+   460
+  ],
+  "brwMedian": 325,
+  "brwZonen": 44
  },
  "Frechen": {
   "brw": [
@@ -39,6 +71,38 @@
   "brwMedian": 470,
   "brwZonen": 56
  },
+ "Kerpen": {
+  "brw": [
+   140,
+   440
+  ],
+  "brwMedian": 340,
+  "brwZonen": 61
+ },
+ "Kürten": {
+  "brw": [
+   150,
+   390
+  ],
+  "brwMedian": 280,
+  "brwZonen": 70
+ },
+ "Langenfeld": {
+  "brw": [
+   315,
+   820
+  ],
+  "brwMedian": 620,
+  "brwZonen": 97
+ },
+ "Leichlingen": {
+  "brw": [
+   260,
+   650
+  ],
+  "brwMedian": 440,
+  "brwZonen": 95
+ },
  "Leverkusen": {
   "brw": [
    280,
@@ -46,6 +110,14 @@
   ],
   "brwMedian": 460,
   "brwZonen": 291
+ },
+ "Lohmar": {
+  "brw": [
+   260,
+   470
+  ],
+  "brwMedian": 370,
+  "brwZonen": 40
  },
  "Monheim am Rhein": {
   "brw": [
@@ -55,6 +127,30 @@
   "brwMedian": 570,
   "brwZonen": 50
  },
+ "Niederkassel": {
+  "brw": [
+   470,
+   700
+  ],
+  "brwMedian": 605,
+  "brwZonen": 8
+ },
+ "Odenthal": {
+  "brw": [
+   245,
+   525
+  ],
+  "brwMedian": 470,
+  "brwZonen": 50
+ },
+ "Overath": {
+  "brw": [
+   185,
+   440
+  ],
+  "brwMedian": 310,
+  "brwZonen": 75
+ },
  "Pulheim": {
   "brw": [
    260,
@@ -62,6 +158,14 @@
   ],
   "brwMedian": 610,
   "brwZonen": 34
+ },
+ "Rösrath": {
+  "brw": [
+   290,
+   725
+  ],
+  "brwMedian": 500,
+  "brwZonen": 59
  },
  "Troisdorf": {
   "brw": [

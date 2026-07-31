@@ -26,9 +26,14 @@ from pathlib import Path
 import geopandas as gpd
 import pandas as pd
 
+# Gemeinden im 20-km-Radius um den Koelner Dom, bestimmt ueber die
+# Zonenschwerpunkte des BORIS-Datensatzes (EPSG:25832, Dom bei 356800/5645400).
 STAEDTE = ["Hürth", "Frechen", "Pulheim", "Brühl", "Wesseling",
            "Leverkusen", "Bergisch Gladbach",
-           "Dormagen", "Monheim am Rhein", "Troisdorf"]
+           "Dormagen", "Monheim am Rhein", "Troisdorf",
+           "Niederkassel", "Odenthal", "Rösrath", "Bergheim", "Langenfeld",
+           "Bornheim", "Erftstadt", "Kerpen", "Leichlingen", "Burscheid",
+           "Overath", "Kürten", "Lohmar"]
 NUTZUNGEN = ("W", "WA", "WR", "WB")
 
 WURZEL = Path(__file__).resolve().parents[2]

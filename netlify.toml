@@ -1511,6 +1511,158 @@
   status = 301
   force = true
 
+# ---------------------------------------------------------------------------
+# Naheliegende Adressen, die Besucher und Suchmaschinen erwarten
+# ---------------------------------------------------------------------------
+# Aus der Search Console: sechs Adressen lieferten 404. Interne Verweise
+# darauf gibt es keine - sie stammen aus alten Verlinkungen, Lesezeichen
+# oder schlicht daraus, dass Menschen /immobilienbewertung oder /team
+# direkt eintippen. Jede 404 ist ein verlorener Besucher.
+
+[[redirects]]
+  from = "/immobilienbewertung"
+  to = "/immobilie-bewerten.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/immobilienbewertung-koeln"
+  to = "/immobilie-bewerten.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/bewertung"
+  to = "/immobilie-bewerten.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/team"
+  to = "/ueber-uns.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/leistungen"
+  to = "/immobilie-verkaufen.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/bewertungen"
+  to = "/kundenstimmen-highseller-koeln.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/kundenstimmen"
+  to = "/kundenstimmen-highseller-koeln.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/angebote"
+  to = "/immobilien-angebote.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/immobilien"
+  to = "/immobilien-angebote.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/objekte"
+  to = "/verkaufte-objekte.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/verkauft"
+  to = "/verkaufte-objekte.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/suche"
+  to = "/kaeuferkartei.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/home"
+  to = "/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/startseite"
+  to = "/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/blog"
+  to = "/ratgeber.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/news"
+  to = "/ratgeber.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/aktuelles"
+  to = "/ratgeber.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/wissen"
+  to = "/wissen.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/finanzierung"
+  to = "/baufinanzierung.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/verkaufen"
+  to = "/immobilie-verkaufen.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/kaufen"
+  to = "/immobilien-angebote.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/stadtteile"
+  to = "/immobilienmakler-koeln.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/standorte"
+  to = "/immobilienmakler-koeln.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/marktdaten"
+  to = "/marktdaten-koeln.html"
+  status = 301
+  force = true
+
 [[redirects]]
   from = "/immobilienmakler-koeln-suelz"
   to = "/immobilienmakler-koeln-suelz.html"

@@ -153,5 +153,55 @@
   "_stadtteil": "Grengel",
   "bebauung": "Ab 1932 als gartenstadtähnliche Siedlung „Am Grengel\" nach Plänen von Ludwig Paffendorf geplant, formal aber erst 1948 als Stadtteil von Porz gegründet. Anlass waren die Aufgabe eines Kriegsgefangenenlagers und Wohnraummangel, unter anderem für die Landespolizei. Der Gartenstadtgedanke ist an den Grundstückszuschnitten bis heute ablesbar.",
   "lage": "Im Südosten des Stadtbezirks Porz, unmittelbar am Flughafen Köln/Bonn. Drei Grundschulen entstanden 1953 auf Elternentscheid; heute ist die Förderschule Eduard Mörike im Ort ansässig. Die Flughafennähe ist das bestimmende Lagemerkmal — für Berufspendler ein Vorteil, beim Verkauf ein Punkt, der offen angesprochen gehört."
+ },
+ "muengersdorf": {
+  "_stadtteil": "Müngersdorf",
+  "bebauung": "Werkzeugfunde einer linienbandkeramischen Ansiedlung aus dem 5. Jahrtausend vor Christus deuten auf eine sehr lange Siedlungsgeschichte. Der alte Ortskern um die Wendelinstraße ist erhalten geblieben — dort stand ab 1806 die erste Schule, ein kleines Haus, in dem zugleich Polizeistation und Lehrerwohnung untergebracht waren, bis 1858 ein Neubau folgte.",
+  "lage": "Bundesweit bekannt durch das Rheinenergiestadion, die Spielstätte des 1. FC Köln, und die Deutsche Sporthochschule. Hauptverkehrsader ist die Aachener Straße, gekreuzt vom Alten Militärring durch den alten Ortskern. Stadtbahnlinie 1, die Buslinien 141, 143 und 144, dazu der S-Bahn-Haltepunkt Köln-Müngersdorf Technologiepark."
+ },
+ "vingst": {
+  "_stadtteil": "Vingst",
+  "bebauung": "1003 in einer Schenkungsurkunde des Erzbischofs Heribert an die Abtei Deutz als Vinhem erwähnt, mit Hinweisen auf römische Besiedlung schon davor. Der Bestand ist dicht und öffentlich geprägt: 71 Prozent der 1,1 Quadratkilometer sind Wohnbaufläche, Gewerbefläche ist im Flächennutzungsplan gar keine ausgewiesen. Von den rund 6.000 Wohnungen wurde etwa jede vierte öffentlich gefördert.",
+  "lage": "Über den Vingster Ring erreicht man die Autobahnen 4 und 559, der Hauptbahnhof liegt 8 Kilometer entfernt, der Flughafen 10. Seit 1904 besteht die Straßenbahnverbindung in die Innenstadt. Sechs Schulen im Ort, darunter die Katharina-Henoth-Gesamtschule und eine Montessori-Grundschule. Im Süden und Osten umgeben weitläufige Grünflächen des alten Festungsrings den Stadtteil, dazu das Gremberger Wäldchen und die Anlagen um Fort X."
+ },
+ "rondorf": {
+  "_stadtteil": "Rondorf",
+  "bebauung": "941 erstmals als Rumenthorp erwähnt, im Mittelalter zum Kölngau, später zum Amt Brühl im Kurfürstentum Köln gehörig. 1794 besetzten französische Revolutionstruppen den Ort. Aus dem alten Dorf ist ein Wohnort im Kölner Süden geworden, geprägt von Ein- und Zweifamilienhäusern.",
+  "lage": "Unmittelbar an der A 555 und am Kreuz Köln-Süd — für Berufspendler nach Bonn ein deutlicher Vorteil. Landstraßen verbinden Rondorf mit Immendorf, Meschenich, Hürth, Raderthal und Rodenkirchen, dazu zwei Buslinien; eine Schienenanbindung gibt es nicht. Die Anne-Frank-Schule ist die Gemeinschaftsgrundschule mit offener Ganztagsbetreuung."
+ },
+ "widdersdorf": {
+  "_stadtteil": "Widdersdorf",
+  "bebauung": "Schon zur Römerzeit und durchgehend seit dem achten Jahrhundert besiedelt, 1109 erstmals als Wedersdorp urkundlich erwähnt. Über Jahrhunderte war der Ort ein Außenhof der Benediktinerabtei Brauweiler. Aus dem Dorf ist ein Wohnstandort am westlichen Stadtrand geworden, in dem Neubaugebiete auf den alten Kern treffen.",
+  "lage": "Im Westen der Stadt im Stadtbezirk Lindenthal. Das Ortsleben ist ausgeprägt: Ein Dorfgemeinschaftsverein von 1978 pflegt Brauchtum, Maifeier und Karneval, seit 1991 kümmert sich die Widdersdorfer Interessengemeinschaft um Denkmal- und Heimatpflege."
+ },
+ "wahn": {
+  "_stadtteil": "Wahn",
+  "bebauung": "Eine Urkunde von 1100 nennt einen Conradus ab Wanda als Herrn der späteren Burg Wahn; das Dorf entstand vermutlich als Ansiedlung von Dienstmannen der Burg. Seit dem Mittelalter zum Amt Porz im Herzogtum Berg gehörig. Der Ortskern ist um die Burg gewachsen und hat seine Struktur behalten.",
+  "lage": "Der S-Bahnhof Porz-Wahn wird von den Linien S 12 und S 19 bedient, werktags im Zehn-Minuten-Takt Richtung Hauptbahnhof — der erste Bahnhof der Gegend stand hier bereits 1859. Drei weiterführende Angebote im Ort: die Gemeinschaftsgrundschule Adolph-Kolping-Straße, die Otto-Lilienthal-Realschule und das Maximilian-Kolbe-Gymnasium."
+ },
+ "finkenberg": {
+  "_stadtteil": "Finkenberg",
+  "bebauung": "Eine Großwohnsiedlung, Mitte der 1960er Jahre als Demonstrativ-Bauvorhaben des Bundes konzipiert und ab Ende des Jahrzehnts errichtet. In Porz heißt das Gebiet bis heute schlicht Demo-Gebiet. Der Bestand ist damit einheitlich und aus einem Planungsguss — flächenmäßig ist Finkenberg nach Mauenheim der zweitkleinste Stadtteil Kölns.",
+  "lage": "Im Stadtbezirk Porz gelegen. Die kompakte Fläche bei gleichzeitig hoher Wohnungszahl macht den Stadtteil zu einem der am dichtesten bebauten Kölns — was den Wohnungsmarkt hier von den umliegenden Porzer Orten deutlich unterscheidet."
+ },
+ "weiss": {
+  "_stadtteil": "Weiß",
+  "bebauung": "1130 erstmals verlässlich erwähnt, im Zusammenhang mit einer Entscheidung des Kölner Erzbischofs Friedrich I. 1238 vermachte der Kanoniker Bertolfus von St. Georg seinem Stift eine Menge Wein zu Wise bei Soride — Weiß bei Sürth. Der Weinbau ist verschwunden, die Lage am Rhein im linksrheinischen Süden geblieben.",
+  "lage": "Im Stadtbezirk Rodenkirchen, direkt am Rhein zwischen Sürth und Rodenkirchen. Die Rheinlage und die Nähe zu den gehobenen Nachbarorten bestimmen das Preisniveau stärker als die Verkehrsanbindung."
+ },
+ "lind": {
+  "_stadtteil": "Lind",
+  "bebauung": "1165 erstmals erwähnt, seit dem Mittelalter zum Amt Porz im Herzogtum Berg. 1795 von französischen Revolutionstruppen besetzt, danach zur Mairie Wahn im Département Rhin, ab 1815 preußisch. Der Ort ist klein geblieben und über die Jahrhunderte kaum über seinen Kern hinausgewachsen.",
+  "lage": "Angebunden an die A 59 mit eigener Anschlussstelle und an die B 8. Es verkehren die KVB-Buslinien 160 und 162 sowie die 505 der RSVG; der S-Bahnhof Wahn mit den Linien S 12 und S 19 liegt in unmittelbarer Nähe."
+ },
+ "rath-heumar": {
+  "_stadtteil": "Rath/Heumar",
+  "bebauung": "Als Doppelort 1975 aus Rath und Heumar geschaffen, Teil des Bergischen Landes. Zwei Schlösser rahmen die Orte: Haus Röttgen im Süden, Haus Rath im Norden, dazwischen weite Grünflächen und Waldungen. Über tausend Jahre lebten die Menschen hier von Ackerbau, Viehzucht und Forstwirtschaft; neben den beiden Rittergütern prägten große Höfe das Bild, um die sich Häuser gruppierten. Funde belegen Besiedlung bis in die Steinzeit.",
+  "lage": "Seit 1904 fährt die Stadtbahnlinie 9 bis zur Endhaltestelle im Ort. Die Erschließung begann 1857 mit dem Ausbau der Rösrather Straße; seit 1936 zerschneidet die Autobahn nach Süden den Ort, im Westen liegt das Heumarer Dreieck. Die Waldlage ist das prägende Merkmal — Naherholung direkt vor der Haustür."
+ },
+ "ostheim": {
+  "_stadtteil": "Ostheim",
+  "bebauung": "Bis ins 19. Jahrhundert landwirtschaftlich geprägt, 1147 als Heimstätte Oestheim urkundlich genannt. Der heutige Bestand erzählt Siedlungsgeschichte in vier Kapiteln: die Saarsiedlung der frühen 1930er als erstes einheitliches Wohngebiet, die Humboldtsiedlung aus zu Wohnhäusern umgebauten Baracken der 1940er, die Siedlung Buchheimer Weg von 1954 bis 1958 mit 1.037 Wohnungen in bis zu achtgeschossigen Bauten, und die Hochhausbebauung an der Gernsheimer Straße für 2.500 Menschen aus den frühen 1970ern. Rund 5.500 Wohnungen, davon knapp 30 Prozent öffentlich gefördert, im Schnitt 73 Quadratmeter.",
+  "lage": "Angeschlossen über Frankfurter Straße, Ostheimer Straße und Rösrather Straße; einen eigenen Autobahnanschluss gibt es trotz dreier nahe liegender Autobahnen nicht. Im Schulzentrum von 1981 sind das Heinrich-Heine-Gymnasium und die Albert-Schweitzer-Realschule untergebracht. Der 64 Meter hohe Vingster Berg, aus Kriegstrümmern aufgeschüttet und bewaldet, gehört zu einem Grüngürtel, der bis Merheim, Höhenberg und Vingst reicht."
  }
 }

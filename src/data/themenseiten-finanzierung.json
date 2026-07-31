@@ -19,7 +19,7 @@
  "forward-darlehen-koeln": {
   "titel": "Forward-Darlehen in Köln | Zinsen sichern",
   "h1": "Forward-Darlehen: Zinsen im Voraus sichern",
-  "besch": "Forward-Darlehen: bis zu 60 Monate Vorlauf, Zinsaufschlag, Abnahmepflicht und wann es sich lohnt. Beratung in Köln.",
+  "besch": "Forward-Darlehen: bis zu 60 Monate Vorlauf, Zinsaufschlag je Monat, Abnahmepflicht auch bei fallenden Zinsen — und wann sich der Abschluss wirklich lohnt.",
   "kurz": "Ein Forward-Darlehen sichert den heutigen Zins für später — gegen Aufschlag und mit Abnahmepflicht.",
   "a1": "Mit einem Forward-Darlehen vereinbaren Sie heute die Konditionen für eine Anschlussfinanzierung, die erst in bis zu sechzig Monaten beginnt. Der Preis dafür ist ein Zinsaufschlag, der sich nach der Vorlaufzeit richtet — üblich sind grob 0,01 bis 0,03 Prozentpunkte je Monat. Bei drei Jahren Vorlauf summiert sich das auf etwa 0,4 bis 1,0 Prozentpunkte gegenüber dem aktuellen Zins.",
   "a2": "Die Rechnung ist eine Wette auf die Zinsentwicklung. Steigen die Zinsen stärker als der Aufschlag, haben Sie gewonnen. Bleiben sie gleich oder fallen sie, haben Sie zu viel gezahlt. Wichtig ist die Abnahmepflicht: Sie müssen das Darlehen abnehmen, auch wenn die Zinsen inzwischen gefallen sind. Treten Sie zurück, verlangt die Bank eine Nichtabnahmeentschädigung, die erheblich sein kann.",
@@ -131,7 +131,7 @@
  "kapitalbeschaffung-immobilie-koeln": {
   "titel": "Kapitalbeschaffung über die Immobilie | Köln",
   "h1": "Kapital aus der Immobilie beschaffen",
-  "besch": "Kapitalbeschaffung über Immobilien: Beleihung ohne Verkauf, Voraussetzungen, Kosten und Alternativen. Beratung in Köln.",
+  "besch": "Kapital über die Immobilie beschaffen, ohne zu verkaufen: Beleihungsgrenzen, Verwendungszweck, Kosten und Alternativen wie Teilverkauf. Beratung in Köln.",
   "kurz": "Wer Eigentum hat, kann Kapital aufnehmen, ohne zu verkaufen.",
   "a1": "Eine lastenfreie oder gering belastete Immobilie ist eine Sicherheit. Über eine Grundschuld lässt sich Kapital aufnehmen, das frei verwendbar ist — für eine Renovierung, den Kauf einer zweiten Immobilie, die Ablösung teurer Konsumkredite oder eine Beteiligung. Die Zinsen liegen deutlich unter denen eines Ratenkredits, weil die Bank besichert ist.",
   "a2": "Die Beleihungsgrenze liegt üblicherweise bei sechzig bis achtzig Prozent des Beleihungswerts, der selbst schon unter dem Marktwert liegt. Bei einer Immobilie mit 600.000 Euro Verkehrswert und einem Beleihungswert von 540.000 Euro sind also grob 320.000 bis 430.000 Euro darstellbar — abzüglich bestehender Belastungen. Die Bank prüft zusätzlich, ob die Rate aus dem laufenden Einkommen tragbar ist.",
@@ -147,7 +147,7 @@
  "umschuldung-immobilienkredit-koeln": {
   "titel": "Umschuldung Immobilienkredit | Köln",
   "h1": "Immobilienkredit umschulden",
-  "besch": "Umschuldung: wann sie sich lohnt, Kündigungsrecht nach zehn Jahren, Kosten der Grundschuldabtretung und Rechenbeispiel.",
+  "besch": "Immobilienkredit umschulden: Kündigungsrecht nach zehn Jahren ohne Vorfälligkeitsentschädigung, Kosten der Grundschuldabtretung und Rechenbeispiel für Köln.",
   "kurz": "Nach zehn Jahren dürfen Sie kündigen — ohne Vorfälligkeitsentschädigung.",
   "a1": "Das Sonderkündigungsrecht nach § 489 Abs. 1 Nr. 2 BGB ist der stärkste Hebel: Zehn Jahre nach vollständiger Auszahlung dürfen Sie mit sechs Monaten Frist kündigen, unabhängig von der vereinbarten Zinsbindung und ohne Vorfälligkeitsentschädigung. Dieses Recht ist unabdingbar, es kann vertraglich nicht ausgeschlossen werden. Wer 2011 einen Fünfzehnjahresvertrag abgeschlossen hat, kann seit 2021 wechseln.",
   "a2": "Die Rechnung ist einfach: Zinsersparnis über die Restlaufzeit gegen die Wechselkosten. Letztere bestehen im Wesentlichen aus der Grundschuldabtretung, die im niedrigen dreistelligen Bereich liegt und von der neuen Bank oft übernommen wird. Bei 250.000 Euro Restschuld, zehn Jahren Restlaufzeit und einem halben Prozentpunkt Zinsunterschied sparen Sie grob 12.000 Euro.",

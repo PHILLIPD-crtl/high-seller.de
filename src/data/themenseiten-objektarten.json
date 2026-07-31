@@ -191,5 +191,53 @@
   "bullet1": "Erste Orientierung mit amtlichen Daten statt Angebotspreisen",
   "bullet2": "Kostenlose Besichtigung für den belastbaren Preis",
   "bullet3": "Begründete Spanne statt einer einzelnen Zahl"
+ },
+ "immobilie-mit-niessbrauch-verkaufen-koeln": {
+  "titel": "Immobilie mit Nießbrauch verkaufen | Köln",
+  "h1": "Immobilie mit Nießbrauch verkaufen",
+  "besch": "Immobilie mit Nießbrauch verkaufen: Wertminderung berechnen, Käuferkreis, Ablösung und Löschung. Bewertung kostenlos in Köln.",
+  "kurz": "Der Nießbrauch mindert den Wert — berechenbar, aber oft unterschätzt.",
+  "a1": "Ein im Grundbuch eingetragener Nießbrauch gibt dem Berechtigten das Recht, die Immobilie zu nutzen und die Erträge zu ziehen. Der Käufer erwirbt Eigentum, aber keine Nutzung — entsprechend niedriger ist der Preis. Die Minderung errechnet sich aus dem Jahreswert der Nutzung, kapitalisiert über die statistische Lebenserwartung des Berechtigten nach den Sterbetafeln des Statistischen Bundesamts.",
+  "a2": "Konkret: Bei einer Wohnung mit 1.200 Euro monatlicher Marktmiete beträgt der Jahreswert 14.400 Euro. Ist der Nießbraucher 70 Jahre alt, liegt der Kapitalwert nach dem Vervielfältiger des Bewertungsgesetzes bei etwa dem Zehnfachen — also rund 144.000 Euro Abzug. Bei einem 85-Jährigen ist es weniger als die Hälfte davon. Das Alter des Berechtigten ist damit die wichtigste Größe.",
+  "a3": "Der Käuferkreis ist entsprechend eng: Kapitalanleger mit langem Horizont, oft mit steuerlichem Motiv, gelegentlich Angehörige. Selbstnutzer scheiden aus. Ein Verkauf ohne Ablösung des Nießbrauchs ist deshalb ein Spezialgeschäft — wir sprechen die passenden Käufer gezielt an, statt breit zu inserieren.",
+  "faq1_f": "Kann der Nießbrauch abgelöst werden?",
+  "faq1_a": "Ja, aber nur mit Zustimmung des Berechtigten — ein einseitiges Recht darauf gibt es nicht. Üblich ist eine Abfindung in Höhe des kapitalisierten Werts, die aus dem Kaufpreis gezahlt wird. Die Löschung erfolgt dann im Zuge der Beurkundung. Für den Verkaufspreis ist das fast immer die bessere Lösung, weil der Käuferkreis sich schlagartig erweitert. Steuerlich kann die Ablösung Folgen haben — das klärt Ihr Steuerberater.",
+  "faq2_f": "Was ist der Unterschied zum Wohnrecht?",
+  "faq2_a": "Der Nießbrauch ist weiter: Er umfasst auch das Recht zu vermieten und die Mieten zu behalten. Ein Wohnungsrecht nach § 1093 BGB berechtigt dagegen nur zum eigenen Bewohnen; vermieten darf der Berechtigte in der Regel nicht. Für den Wert bedeutet das: Der Nießbrauch mindert stärker, weil er dem Eigentümer mehr entzieht. Welches Recht eingetragen ist, steht in Abteilung II des Grundbuchs.",
+  "bullet1": "Berechnung der Wertminderung nach Alter und Jahreswert",
+  "bullet2": "Prüfung, ob eine Ablösung wirtschaftlich sinnvoll ist",
+  "bullet3": "Gezielte Ansprache von Kapitalanlegern mit langem Horizont"
+ },
+ "immobilie-mit-wohnrecht-verkaufen-koeln": {
+  "titel": "Immobilie mit Wohnrecht verkaufen | Köln",
+  "h1": "Immobilie mit Wohnrecht verkaufen",
+  "besch": "Immobilie mit eingetragenem Wohnrecht verkaufen: Wertminderung, Unterschied zum Nießbrauch, Ablösung und Käuferkreis.",
+  "kurz": "Ein Wohnrecht ist verkäuflich — der Preis richtet sich nach Alter und Wohnwert.",
+  "a1": "Das Wohnungsrecht nach § 1093 BGB gibt dem Berechtigten das Recht, die Immobilie oder Teile davon selbst zu bewohnen. Es ist höchstpersönlich: Der Berechtigte darf in der Regel nicht vermieten und das Recht nicht übertragen. Eingetragen wird es in Abteilung II des Grundbuchs und wirkt damit gegen jeden Käufer.",
+  "a2": "Für die Wertminderung gilt dieselbe Systematik wie beim Nießbrauch: Jahreswert der Nutzung mal Vervielfältiger nach Lebenserwartung. Der Jahreswert entspricht der ortsüblichen Miete für die betroffene Fläche. Ist nur ein Teil der Immobilie betroffen — etwa eine Einliegerwohnung —, wird anteilig gerechnet. Bei einem 75-jährigen Berechtigten und 900 Euro Monatswert liegt der Abzug grob bei 80.000 bis 90.000 Euro.",
+  "a3": "Praktisch entscheidend ist, wie belastbar das Recht ist. Manche Wohnrechte erlöschen bei dauerhaftem Auszug ins Pflegeheim, andere nicht — das steht in der Bewilligung. Ist eine solche Klausel vereinbart, mindert das den Abzug spürbar, weil der Käufer mit einer früheren Nutzung rechnen kann. Wir lesen die Eintragungsbewilligung, bevor wir einen Preis nennen.",
+  "faq1_f": "Kann ich das Wohnrecht ablösen lassen?",
+  "faq1_a": "Nur einvernehmlich. Der Berechtigte muss der Löschung zustimmen, üblicherweise gegen eine Abfindung in Höhe des kapitalisierten Werts. Da das Recht höchstpersönlich ist, kann er es nicht verkaufen, wohl aber gegen Zahlung darauf verzichten. Für den Verkaufspreis lohnt sich das meist: Ohne Belastung verdoppelt sich der Käuferkreis, und der Aufschlag übersteigt die Abfindung häufig.",
+  "faq2_f": "Zahlt der Wohnrechtsinhaber Nebenkosten?",
+  "faq2_a": "Das hängt von der Vereinbarung ab. Nach der gesetzlichen Grundregel trägt der Berechtigte die Kosten des gewöhnlichen Unterhalts, der Eigentümer die außergewöhnlichen Instandsetzungen. Häufig ist im Übertragungsvertrag etwas anderes geregelt. Für Käufer ist das ein wichtiger Punkt: Ein Wohnrecht, bei dem der Eigentümer auch Heizung und Grundsteuer trägt, ist deutlich teurer als eines, bei dem der Berechtigte alles zahlt.",
+  "bullet1": "Prüfung der Eintragungsbewilligung vor der Preisfindung",
+  "bullet2": "Berechnung der Minderung nach Alter und Wohnwert",
+  "bullet3": "Einschätzung, ob eine Ablösung sich rechnet"
+ },
+ "immobilie-diskret-verkaufen-koeln": {
+  "titel": "Immobilie diskret verkaufen in Köln | Off-Market",
+  "h1": "Immobilie diskret verkaufen",
+  "besch": "Off-Market-Verkauf in Köln: ohne Portal, ohne Schild, ohne Exposé im Netz. Wann sich das lohnt und wo die Grenzen liegen.",
+  "kurz": "Diskret verkaufen heißt: kein Portal, kein Schild — aber trotzdem der richtige Preis.",
+  "a1": "Ein Off-Market-Verkauf läuft ohne öffentliche Vermarktung. Das Objekt erscheint in keinem Portal, es gibt kein Schild und kein frei zugängliches Exposé. Angesprochen werden ausschließlich vorgemerkte Interessenten aus der Käuferkartei, deren Suchprofil passt und deren Finanzierung geprüft ist. Für Verkäufer, die Diskretion brauchen, ist das der einzige gangbare Weg.",
+  "a2": "Die Gründe sind meist persönlich: eine Trennung, die im Umfeld noch nicht bekannt ist, ein Mieter, der nicht beunruhigt werden soll, ein Arbeitgeber oder Geschäftspartner, der nichts erfahren soll, oder schlicht der Wunsch, keine Nachbarn durch die Wohnung laufen zu lassen. Bei hochpreisigen Objekten kommt hinzu, dass eine lange öffentliche Vermarktung als Makel gilt.",
+  "a3": "Ehrlich zur Grenze: Off-Market kostet in der Regel Reichweite und damit potenziell Preis. Wer die maximale Zahl an Interessenten erreichen will, muss öffentlich vermarkten. Der Unterschied fällt umso kleiner aus, je gefragter Lage und Objekt sind — in Sülz oder Bayenthal reicht die Kartei oft aus, in Randlagen eher nicht. Wir sagen Ihnen vorher, was in Ihrem Fall realistisch ist.",
+  "faq1_f": "Wie viele Interessenten habt ihr in der Kartei?",
+  "faq1_a": "Die Zahl allein sagt wenig — entscheidend ist, wie viele davon zu Ihrem Objekt passen und finanziert sind. Vor jedem Off-Market-Verkauf prüfen wir konkret, wie viele Vorgemerkte in Frage kommen. Sind es zu wenige, sagen wir das und empfehlen den öffentlichen Weg. Eine diskrete Vermarktung, die mangels Interessenten monatelang liegen bleibt, hilft niemandem.",
+  "faq2_f": "Kann ich später doch öffentlich vermarkten?",
+  "faq2_a": "Ja, das ist der übliche Ablauf: erst zwei bis vier Wochen Off-Market, dann bei Bedarf öffentlich. Umgekehrt geht es nicht — was einmal in einem Portal stand, ist im Netz und in Preisdatenbanken auffindbar. Deshalb beginnt man, wenn Diskretion überhaupt eine Rolle spielt, immer mit dem geschlossenen Kreis.",
+  "bullet1": "Vermarktung ausschließlich über geprüfte Vorgemerkte",
+  "bullet2": "Ehrliche Einschätzung, ob die Kartei für Ihr Objekt reicht",
+  "bullet3": "Übergang zur öffentlichen Vermarktung jederzeit möglich"
  }
 }

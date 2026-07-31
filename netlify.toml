@@ -1110,6 +1110,42 @@
   force = true
 
 [[redirects]]
+  from = "/immobilie-mit-niessbrauch-verkaufen-koeln"
+  to = "/immobilie-mit-niessbrauch-verkaufen-koeln.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/immobilie-mit-wohnrecht-verkaufen-koeln"
+  to = "/immobilie-mit-wohnrecht-verkaufen-koeln.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/immobilie-diskret-verkaufen-koeln"
+  to = "/immobilie-diskret-verkaufen-koeln.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/kapitalbeschaffung-immobilie-koeln"
+  to = "/kapitalbeschaffung-immobilie-koeln.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/umschuldung-immobilienkredit-koeln"
+  to = "/umschuldung-immobilienkredit-koeln.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/baufinanzierung-selbststaendige-koeln"
+  to = "/baufinanzierung-selbststaendige-koeln.html"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/immobilienmakler-koeln-suelz"
   to = "/immobilienmakler-koeln-suelz.html"
   status = 301

@@ -95,5 +95,37 @@
   "bullet1": "Ertragswert und Mietsteigerungspotenzial getrennt ausgewiesen",
   "bullet2": "Prüfung von Vorkaufsrecht und Kündigungssperrfrist",
   "bullet3": "Gezielte Ansprache von Kapitalanlegern aus der Käuferkartei"
+ },
+ "sanierungsbeduerftiges-haus-verkaufen-koeln": {
+  "titel": "Sanierungsbedürftiges Haus verkaufen in Köln",
+  "h1": "Sanierungsbedürftiges Haus in Köln verkaufen",
+  "besch": "Sanierungsbedürftiges Haus in Köln verkaufen: Sanierungspflichten nach GEG, Offenbarungspflicht, realistischer Preis und Käuferkreis. Bewertung kostenlos.",
+  "kurz": "Ein sanierungsbedürftiges Haus verkauft sich — zum richtigen Preis und mit offenen Karten.",
+  "a1": "Der häufigste Fehler ist der Versuch, den Sanierungsstau zu überspielen. Käufer und deren Gutachter sehen ihn ohnehin, und was erst in der Besichtigung auffällt, wird in der Verhandlung doppelt abgezogen. Wer den Zustand von Anfang an benennt und mit Kostenschätzungen unterlegt, verkauft schneller und näher am Angebotspreis. Bei arglistig verschwiegenen Mängeln haftet der Verkäufer trotz Gewährleistungsausschluss.",
+  "a2": "Rechtlich relevant sind die Nachrüstpflichten des Gebäudeenergiegesetzes. Beim Eigentümerwechsel eines Ein- oder Zweifamilienhauses muss der neue Eigentümer binnen zwei Jahren erfüllen: Dämmung der obersten Geschossdecke oder des Dachs, Dämmung zugänglicher Wärmeverteilungsleitungen in unbeheizten Räumen, und der Austausch von Heizkesseln, die älter als dreißig Jahre sind. Diese Pflichten trägt der Käufer — er rechnet sie aber vom Preis ab, also sollten sie beziffert sein.",
+  "a3": "Der Käuferkreis ist ein anderer. Selbstnutzer mit knapper Finanzierung scheiden aus, weil Banken Sanierungskosten nur begrenzt mitfinanzieren. Gefragt sind Käufer mit Eigenkapital, Handwerkern im Umfeld oder Sanierungserfahrung, dazu Bauträger bei entsprechendem Grundstückszuschnitt. Wir sprechen diese Gruppen gezielt an, statt breit zu streuen.",
+  "faq1_f": "Muss ich Mängel offenlegen?",
+  "faq1_a": "Ja, und zwar alle, die Sie kennen und die für die Kaufentscheidung erheblich sind — auch wenn im Vertrag ein Gewährleistungsausschluss steht. Der schützt nur vor unbekannten Mängeln. Bekannte, verschwiegene Mängel gelten als arglistige Täuschung; der Käufer kann dann noch Jahre später mindern oder zurücktreten. Feuchtigkeit, Schwamm, Schädlingsbefall, Statikprobleme und Altlasten gehören in jedem Fall auf den Tisch.",
+  "faq2_f": "Lohnt sich eine Sanierung vor dem Verkauf?",
+  "faq2_a": "In den meisten Fällen nicht. Vollsanierungen holen ihre Kosten am Markt selten vollständig ein, und Sie tragen Vorfinanzierung wie Ausführungsrisiko. Was sich rechnet, sind kleine Maßnahmen mit großer Wirkung: Entrümpelung, Reinigung, Reparatur offensichtlicher Schäden, ein aktueller Energieausweis. Alles darüber hinaus überlässt man besser dem Käufer, der ohnehin nach eigenem Geschmack umbaut.",
+  "bullet1": "Zustand offen benannt und mit Kostenschätzung unterlegt",
+  "bullet2": "Gezielte Ansprache von Sanierern und Bauträgern",
+  "bullet3": "Prüfung der Nachrüstpflichten nach GEG"
+ },
+ "denkmalimmobilie-verkaufen-koeln": {
+  "titel": "Denkmalgeschützte Immobilie verkaufen in Köln",
+  "h1": "Denkmalgeschützte Immobilie in Köln verkaufen",
+  "besch": "Denkmalimmobilie in Köln verkaufen: Auflagen, Steuervorteile für Käufer, Denkmalbehörde und Käuferkreis. Bewertung kostenlos und unverbindlich.",
+  "kurz": "Denkmalschutz ist beim Verkauf beides: Auflage und Verkaufsargument.",
+  "a1": "Ein eingetragenes Baudenkmal unterliegt der Erlaubnispflicht: Jede Veränderung an Substanz und Erscheinungsbild braucht die Zustimmung der Unteren Denkmalbehörde. Für Käufer bedeutet das weniger Gestaltungsfreiheit und längere Genehmigungswege. Das schreckt einen Teil des Marktes ab — und macht die Immobilie für einen anderen Teil erst interessant.",
+  "a2": "Der steuerliche Vorteil ist das stärkste Argument. Nach den §§ 7i und 10f EStG können Käufer die Kosten begünstigter Sanierungsmaßnahmen über zwölf Jahre abschreiben, bei Vermietung mit neun Prozent jährlich in den ersten acht Jahren und sieben Prozent in den folgenden vier. Bei Selbstnutzung sind es zehn Jahre mit je neun Prozent als Sonderausgaben. Voraussetzung ist eine Bescheinigung der Denkmalbehörde, die vor Beginn der Maßnahmen abgestimmt sein muss.",
+  "a3": "Für die Vermarktung heißt das: Wir sprechen gezielt Kapitalanleger mit hoher Steuerlast an, für die genau diese Abschreibung den Ausschlag gibt. Voraussetzung ist, dass die Denkmaleigenschaft belegt und der Umfang möglicher Maßnahmen grob abgestimmt ist. Eine Immobilie, bei der unklar bleibt, was genehmigungsfähig wäre, verliert dieses Argument.",
+  "faq1_f": "Bekomme ich Zuschüsse für die Sanierung?",
+  "faq1_a": "Möglich sind Zuschüsse des Landes Nordrhein-Westfalen und der Stadt Köln, dazu zinsgünstige Darlehen der KfW für Denkmäler mit besonderen Anforderungen. Die Mittel sind begrenzt und werden im Voraus beantragt — nach Beginn der Arbeiten gibt es nichts mehr. Für den Verkauf ist relevant: Bereits bewilligte, noch nicht abgerufene Zuschüsse können unter Umständen übergehen und sind ein konkretes Verkaufsargument.",
+  "faq2_f": "Mindert der Denkmalschutz den Wert?",
+  "faq2_a": "Das kommt auf den Käufer an. Für Selbstnutzer, die frei gestalten wollen, mindert er ihn — Auflagen, teurere Materialien, längere Verfahren. Für Kapitalanleger mit Steuerlast hebt er ihn, weil die Abschreibung nach §§ 7i EStG einen erheblichen Teil der Sanierungskosten trägt. Der erzielbare Preis hängt deshalb stärker als sonst davon ab, ob die richtige Käufergruppe erreicht wird.",
+  "bullet1": "Klärung von Denkmaleigenschaft und Auflagenumfang",
+  "bullet2": "Gezielte Ansprache steueraffiner Kapitalanleger",
+  "bullet3": "Abstimmung mit der Unteren Denkmalbehörde vorbereitet"
  }
 }

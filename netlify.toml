@@ -588,6 +588,66 @@
   force = true
 
 [[redirects]]
+  from = "/immobilienmakler-koeln-muengersdorf"
+  to = "/immobilienmakler-koeln-muengersdorf.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/immobilienmakler-koeln-vingst"
+  to = "/immobilienmakler-koeln-vingst.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/immobilienmakler-koeln-rondorf"
+  to = "/immobilienmakler-koeln-rondorf.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/immobilienmakler-koeln-widdersdorf"
+  to = "/immobilienmakler-koeln-widdersdorf.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/immobilienmakler-koeln-wahn"
+  to = "/immobilienmakler-koeln-wahn.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/immobilienmakler-koeln-finkenberg"
+  to = "/immobilienmakler-koeln-finkenberg.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/immobilienmakler-koeln-weiss"
+  to = "/immobilienmakler-koeln-weiss.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/immobilienmakler-koeln-lind"
+  to = "/immobilienmakler-koeln-lind.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/immobilienmakler-koeln-rath-heumar"
+  to = "/immobilienmakler-koeln-rath-heumar.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/immobilienmakler-koeln-ostheim"
+  to = "/immobilienmakler-koeln-ostheim.html"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/immobilienmakler-koeln-suelz"
   to = "/immobilienmakler-koeln-suelz.html"
   status = 301

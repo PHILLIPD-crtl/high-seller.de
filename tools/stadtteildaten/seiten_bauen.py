@@ -195,6 +195,15 @@ def markt_absatz(s):
     return " ".join(teile)
 
 
+def abschluss(s):
+    """Absatz ueber dem Wertrechner. Fasst den Stadtteil in einem Satz, ohne
+    die Formulierungen der Abschnitte darueber zu wiederholen."""
+    lage_erster = s.profil["lage"].split(". ")[0].rstrip(".")
+    return (f"{s.anzeige} im Stadtbezirk {s.bezirk}: {lage_erster}. Was Ihre Immobilie "
+            f"hier wert ist, hängt von Lage, Zustand und Schnitt ab — die Einschätzung "
+            f"ist kostenlos und unverbindlich.")
+
+
 def preisfrage(s):
     """Antwort auf die Preisfrage. Stuetzt sich auf die eigenen Zahlen des
     Stadtteils statt auf allgemeine Marktprosa."""
@@ -319,6 +328,16 @@ def bauen(s, vorlage, koeln):
         (r'<h3>Warum steigen die Preise in Nippes\?</h3>\n(\s*)<p>.*?</p>',
          lambda m: (f'<h3>Wie entwickeln sich die Preise in {s.anzeige}?</h3>\n'
                     f'{m.group(1)}<p>{preisfrage(s)}</p>')),
+        (r'<h3>Mehrfamilienhaus in Nippes verkaufen, wie läuft die Bewertung\?</h3>',
+         f'<h3>Mehrfamilienhaus in {s.anzeige} verkaufen, wie läuft die Bewertung?</h3>'),
+        # Abschlussabsatz ueber dem Wertrechner
+        (r'(<p>)Nippes ist das aufstrebende Veedel im Kölner Norden:.*?(</p>)',
+         lambda m: m.group(1) + abschluss(s) + m.group(2)),
+        # Einstiegstext des Wertrechners
+        (r'(<p class="lead" style="max-width:58ch;margin-bottom:20px">Sie überlegen zu '
+         r'verkaufen\? Starten Sie mit einer kostenlosen Einschätzung für Ihre Immobilie in )'
+         r'Nippes(\.)',
+         rf'\1{s.anzeige}\2'),
         (r'<h3>Immobilie in Köln-Nippes verkaufen oder bewerten\?</h3>',
          f'<h3>Immobilie in Köln-{s.anzeige} verkaufen oder bewerten?</h3>'),
         (r'(<h2 class="headline">)Immobilienpreise in Köln-Nippes(</h2>)',
@@ -355,9 +374,17 @@ def bauen(s, vorlage, koeln):
     h = h.replace("Köln-Nippes", f"Köln-{s.anzeige}")
     h = h.replace("Köln Nippes", f"Köln {s.anzeige}")
 
-    rest = h.count("Nippes")
+    # Der Bezirksname darf stehen bleiben: Riehl LIEGT im Stadtbezirk Nippes,
+    # "Riehl gehoert zum Stadtbezirk Nippes" ist richtig und kein Rest der
+    # Vorlage. Nur Vorkommen ausserhalb dieser Wendungen zaehlen.
+    pruef = h
+    if s.bezirk == "Nippes":
+        pruef = pruef.replace(f"zum Stadtbezirk {s.bezirk}", "")
+        pruef = pruef.replace(f"im Stadtbezirk {s.bezirk}", "")
+        pruef = pruef.replace(f"Stadtbezirk {s.bezirk} und Umgebung", "")
+    rest = pruef.count("Nippes")
     if rest and s.kuerzel != "nippes":
-        stellen = [m.group(0) for m in re.finditer(r'.{40}Nippes.{40}', h)][:3]
+        stellen = [z.strip()[:120] for z in pruef.split("\n") if "Nippes" in z][:3]
         raise SystemExit(f"{s.kuerzel}: {rest} Reste der Vorlage uebrig -> {stellen}")
 
     return h

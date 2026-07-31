@@ -53,10 +53,24 @@ def bauen(kuerzel, c, vorlage):
          "Ersteinschätzung ist kostenlos und unverbindlich — sie verpflichtet Sie zu "
          "nichts." + m.group(2)),
         # Kennzahlenkacheln entfallen auf Themenseiten - der ganze Block wird ersetzt
-        (r'<div class="marktdaten">.*?</div>\n\s*</div>',
-         lambda m: (f'<div class="stadtteil-profil">\n      <h3>{c["faq1_f"]}</h3>\n'
-                    f'      <p>{c["faq1_a"]}</p>\n      <h3>{c["faq2_f"]}</h3>\n'
-                    f'      <p>{c["faq2_a"]}</p>\n    </div>')),
+        # Kennzahlenblock wird zum Fragenblock, statt ihn zu entfernen. Ein
+        # Entfernen ueber den div-Bereich greift zu weit und nimmt nachfolgende
+        # Abschnitte mit - die Vorlage ist dort verschachtelt.
+        (r'<h3>Marktdaten Köln-Nippes</h3>', '<h3>Fragen, die immer kommen</h3>'),
+        (r'(<dl>\n)(?:\s*<div><dt>.*?</div>\n)+(\s*</dl>)',
+         lambda m: (m.group(1)
+                    + f'<div><dt>{c["faq1_f"]}</dt><dd>{c["faq1_a"]}</dd></div>'
+                    + f'<div><dt>{c["faq2_f"]}</dt><dd>{c["faq2_a"]}</dd></div>\n'
+                    + m.group(2))),
+        (r'(<h3>Bebauung in Köln-)Nippes(</h3>\n\s*<p>).*?(</p>)',
+         lambda m: '<h3>Was wir übernehmen</h3>\n      <p>'
+         "Bewertung, Unterlagen, Exposé, Vermarktung, Besichtigungen mit geprüften "
+         "Interessenten, Verhandlung, Notartermin und Übergabe." + m.group(3)),
+        (r'(<h3>Lage und Infrastruktur</h3>\n\s*<p>).*?(</p>)',
+         lambda m: '<h3>Makler und Finanzierer in einem</h3>\n      <p>'
+         "Erlaubnis nach § 34c GewO als Immobilienmakler und nach § 34i GewO als "
+         "Darlehensvermittler. Dadurch erkennen wir früh, welche Interessenten "
+         "realistisch finanzieren können." + m.group(2)),
         (r'<ul class="bullets">.*?</ul>',
          f'<ul class="bullets"><li>{c["bullet1"]}</li><li>{c["bullet2"]}</li>'
          f'<li>{c["bullet3"]}</li><li>Kostenlose Ersteinschätzung, unverbindlich</li></ul>'),
@@ -64,6 +78,21 @@ def bauen(kuerzel, c, vorlage):
          f'<h3>{c["h1"]}? Wir schätzen kostenlos ein</h3>'),
         (r'(<h2 class="headline">)Immobilienpreise in Köln-Nippes(</h2>)',
          rf'\1Häufige Fragen\2'),
+        (r'<h3>Warum steigen die Preise in Nippes\?</h3>\n(\s*)<p>.*?</p>',
+         lambda m: (f'<h3>Was kostet mich der Verkauf?</h3>\n{m.group(1)}<p>'
+                    "Die Ersteinschätzung ist kostenlos. Provision fällt erst an, wenn "
+                    "der Kaufvertrag beurkundet ist — bei Wohnimmobilien teilen sich "
+                    "Käufer und Verkäufer die Courtage seit Dezember 2020 zu gleichen "
+                    "Teilen. Kosten für Unterlagen wie Grundbuchauszug oder "
+                    "Energieausweis fallen unabhängig davon an und liegen im niedrigen "
+                    "dreistelligen Bereich.</p>")),
+        (r'<h3>Mehrfamilienhaus in Nippes verkaufen, wie läuft die Bewertung\?</h3>\n(\s*)<p>.*?</p>',
+         lambda m: (f'<h3>Wie lange dauert ein Verkauf?</h3>\n{m.group(1)}<p>'
+                    "Von der Bewertung bis zur Beurkundung sind in Köln je nach Objekt "
+                    "und Preisvorstellung acht bis sechzehn Wochen üblich. Den größten "
+                    "Zeitverlust verursachen fehlende Unterlagen und Interessenten, deren "
+                    "Finanzierung am Ende doch nicht steht — beides fangen wir vorher "
+                    "ab.</p>")),
         (r'(<p>)Nippes ist das aufstrebende Veedel im Kölner Norden:.*?(</p>)',
          lambda m: m.group(1) + c["kurz"] + " Für eine erste Einschätzung genügen wenige "
          "Angaben — kostenlos und unverbindlich." + m.group(2)),

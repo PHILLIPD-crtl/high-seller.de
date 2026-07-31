@@ -864,6 +864,24 @@
   force = true
 
 [[redirects]]
+  from = "/mehrfamilienhaus-verkaufen-koeln"
+  to = "/mehrfamilienhaus-verkaufen-koeln.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/eigentumswohnung-verkaufen-koeln"
+  to = "/eigentumswohnung-verkaufen-koeln.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/grundstueck-verkaufen-koeln"
+  to = "/grundstueck-verkaufen-koeln.html"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/immobilienmakler-koeln-suelz"
   to = "/immobilienmakler-koeln-suelz.html"
   status = 301

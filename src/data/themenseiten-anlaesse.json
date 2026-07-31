@@ -47,5 +47,53 @@
   "bullet1": "Prüfung von Vollmacht, Betreuung und Genehmigungserfordernis",
   "bullet2": "Wertermittlung, die einer gerichtlichen Prüfung standhält",
   "bullet3": "Diskrete Abwicklung, auf Wunsch mit den Angehörigen"
+ },
+ "zwangsversteigerung-abwenden-koeln": {
+  "titel": "Zwangsversteigerung abwenden in Köln | Freihändiger Verkauf",
+  "h1": "Zwangsversteigerung abwenden",
+  "besch": "Zwangsversteigerung abwenden: freihändiger Verkauf statt Versteigerung, Fristen, Verhandlung mit der Bank. Diskret und schnell.",
+  "kurz": "Ein freihändiger Verkauf bringt fast immer mehr als die Versteigerung — wenn er rechtzeitig kommt.",
+  "a1": "Bei einer Zwangsversteigerung wird die Immobilie durch das Amtsgericht verwertet. Im ersten Termin gilt die Sieben-Zehntel-Grenze: Gebote unter siebzig Prozent des festgesetzten Verkehrswerts kann der Gläubiger zu Fall bringen. Im zweiten Termin entfallen die Wertgrenzen — dann sind Zuschläge weit unter Wert möglich. Die Differenz zum freihändigen Verkauf liegt erfahrungsgemäß bei zwanzig bis dreißig Prozent, und die Verfahrenskosten kommen obendrauf.",
+  "a2": "Ein freihändiger Verkauf ist bis zum Zuschlag möglich, praktisch aber nur, solange Zeit für eine ordentliche Vermarktung bleibt. Die Bank muss mitspielen: Sie gibt die Grundschuld gegen Ablösung frei und stellt das Verfahren still, wenn ein belastbarer Kaufvertrag absehbar ist. Diese Verhandlung führen wir für Sie — Banken haben ein eigenes Interesse an der besseren Verwertung, sie brauchen nur eine verlässliche Perspektive.",
+  "a3": "Entscheidend ist der Zeitpunkt. Wer sich meldet, sobald das Darlehen notleidend wird, hat mehrere Monate für eine reguläre Vermarktung. Wer erst nach dem Versteigerungstermin im Amtsblatt kommt, hat kaum noch Spielraum. Das Gespräch ist vertraulich und kostet nichts — auch wenn Sie sich danach anders entscheiden.",
+  "faq1_f": "Kann ich noch verkaufen, wenn der Termin schon feststeht?",
+  "faq1_a": "Ja. Der Zuschlag beendet das Verfahren, nicht die Terminierung. Bis dahin kann der Gläubiger das Verfahren einstweilen einstellen lassen, wenn ein Kaufvertrag vorliegt oder greifbar ist. Auch der Schuldner kann nach § 30a ZVG eine einstweilige Einstellung beantragen, wenn Aussicht besteht, die Schuld binnen sechs Monaten zu tilgen. Beides braucht Vorbereitung, deshalb zählt jede Woche.",
+  "faq2_f": "Was passiert mit den Schulden, die nach dem Verkauf bleiben?",
+  "faq2_a": "Reicht der Erlös nicht, bleibt eine Restschuld bestehen. Bei einem freihändigen Verkauf ist sie regelmäßig deutlich kleiner als nach einer Versteigerung — schon das ist ein Argument. Über die Restschuld lässt sich mit der Bank verhandeln, häufig über Ratenvereinbarungen oder einen Vergleich. Für die rechtliche Bewertung Ihrer Gesamtsituation ist eine Schuldnerberatung oder ein Anwalt zuständig.",
+  "bullet1": "Verhandlung mit der Gläubigerbank über Stillhalten",
+  "bullet2": "Diskrete Vermarktung, ohne Schild und ohne Portal",
+  "bullet3": "Realistische Einschätzung, ob die Zeit noch reicht"
+ },
+ "immobilie-verkaufen-berufliche-veraenderung-koeln": {
+  "titel": "Immobilie verkaufen bei Umzug oder Jobwechsel | Köln",
+  "h1": "Immobilie verkaufen bei beruflichem Umzug",
+  "besch": "Immobilie verkaufen bei Jobwechsel oder Versetzung: Zeitplan, Zwischenfinanzierung, Vermieten als Alternative. Bewertung kostenlos.",
+  "kurz": "Beim beruflichen Umzug ist der Zeitplan das Problem, nicht der Preis.",
+  "a1": "Ein Jobwechsel gibt den Takt vor, und der passt selten zum Immobilienmarkt. Von der Bewertung bis zur Beurkundung sind in Köln acht bis sechzehn Wochen üblich, dazu kommt die Zeit bis zur Kaufpreiszahlung und Übergabe — realistisch also drei bis fünf Monate. Wer früher wegmuss, hat drei Möglichkeiten: verkaufen und zwischenzeitlich mieten, vermieten und später verkaufen, oder mit Zwischenfinanzierung parallel kaufen.",
+  "a2": "Die Zwischenfinanzierung überbrückt die Lücke zwischen dem Kauf am neuen Ort und dem Verkaufserlös am alten. Sie ist teurer als eine normale Finanzierung, weil sie variabel verzinst und kurzfristig ist, aber sie verhindert den schlechtesten Fall: unter Zeitdruck zu verkaufen. Voraussetzung ist eine belastbare Einschätzung des Verkaufswerts — die liefern wir, weil wir Makler und Darlehensvermittler in einem sind.",
+  "a3": "Vermieten statt verkaufen ist die naheliegende Alternative, hat aber zwei Haken. Erstens sinkt der erzielbare Preis später, weil vermietete Objekte nur an Kapitalanleger gehen. Zweitens läuft die Zehnjahresfrist der Spekulationssteuer nach § 23 EStG weiter, und die Ausnahme für Selbstnutzung entfällt, sobald Sie ausziehen und vermieten. Wer innerhalb der Frist verkauft, sollte das vorher durchrechnen lassen.",
+  "faq1_f": "Wie schnell geht ein Verkauf, wenn es eilt?",
+  "faq1_a": "Mit vollständigen Unterlagen und realistischem Preis sind sechs bis acht Wochen bis zur Beurkundung machbar. Die Beschleuniger sind: alle Unterlagen von Anfang an vorliegend, Interessenten mit geprüfter Finanzierung statt langer Besichtigungsreihen, und ein Preis, der nicht erst über zwei Runden korrigiert werden muss. Die Zweiwochenfrist zwischen Vertragsentwurf und Beurkundung gilt bei Verbrauchern und lässt sich nicht abkürzen.",
+  "faq2_f": "Was ist mit der Spekulationssteuer bei einem schnellen Verkauf?",
+  "faq2_a": "Haben Sie die Immobilie im Verkaufsjahr und den beiden vorangegangenen Kalenderjahren selbst bewohnt, ist der Gewinn nach § 23 EStG steuerfrei — unabhängig von der Zehnjahresfrist. Das ist bei beruflich bedingten Umzügen der Regelfall. Kritisch wird es, wenn Sie zwischenzeitlich vermietet haben oder die Immobilie nie selbst bewohnt war. Die verbindliche Auskunft gibt Ihr Steuerberater.",
+  "bullet1": "Realistischer Zeitplan statt Wunschtermin",
+  "bullet2": "Zwischenfinanzierung durchgerechnet, bevor Sie sich binden",
+  "bullet3": "Vergleich von Verkauf und Vermietung mit Zahlen"
+ },
+ "immobilie-zu-gross-verkaufen-koeln": {
+  "titel": "Haus zu groß geworden? Verkaufen in Köln",
+  "h1": "Wenn das Haus zu groß geworden ist",
+  "besch": "Zu großes Haus verkaufen und kleiner wohnen: Ablauf, Wohnrecht, Verkauf gegen Leibrente, Zeitplan. Bewertung kostenlos und unverbindlich.",
+  "kurz": "Kleiner zu wohnen ist eine Entscheidung, die Zeit braucht — und Optionen, die viele nicht kennen.",
+  "a1": "Wenn die Kinder aus dem Haus sind, steht oft ein Haus mit 140 Quadratmetern für zwei Personen. Die Gründe für einen Wechsel sind praktisch: Treppen, Gartenarbeit, Heizkosten, Instandhaltung. Der häufigste Fehler ist, den Verkauf zu lange aufzuschieben — bis Instandhaltungsstau und ein schwieriger gewordener Umzug den Preis drücken und die Auswahl an Alternativen kleiner wird.",
+  "a2": "Es gibt mehr Wege als den geraden Verkauf. Der Verkauf mit vereinbartem Wohnrecht lässt Sie wohnen bleiben, mindert aber den Preis um den kapitalisierten Wert des Wohnrechts. Die Leibrente zahlt monatlich statt einmalig — attraktiv bei geringer Rente, aber der Anbieterkreis ist klein und die Konditionen unterscheiden sich stark. Der Verkauf mit anschließender Miete im selben Objekt kommt bei Anlegern vor. Welcher Weg passt, hängt von Alter, Rente und Wünschen ab.",
+  "a3": "Praktisch bewährt hat sich, zuerst die Alternative zu klären und dann zu verkaufen. Wer weiß, wohin er zieht — Eigentumswohnung, Miete, betreutes Wohnen —, verhandelt entspannter und muss keinen Termin erzwingen. Wir stimmen den Zeitplan darauf ab und suchen auf Wunsch parallel die kleinere Wohnung; im Kölner Markt ist das der zeitkritischere Teil.",
+  "faq1_f": "Kann ich verkaufen und wohnen bleiben?",
+  "faq1_a": "Ja, über ein im Grundbuch eingetragenes Wohnrecht oder einen Nießbrauch. Beides mindert den Kaufpreis, weil der Käufer die Immobilie zunächst nicht nutzen kann. Die Höhe der Minderung richtet sich nach dem Kapitalwert, der sich aus dem Jahreswert der Nutzung und der statistischen Lebenserwartung ergibt. Bei einem 70-Jährigen kann das ein Drittel des Werts ausmachen. Die Alternative ist ein normaler Mietvertrag mit dem Käufer — flexibler, aber weniger sicher.",
+  "faq2_f": "Lohnt sich eine Leibrente?",
+  "faq2_a": "Das hängt an drei Zahlen: Ihrem Alter, dem Wert der Immobilie und den Konditionen des Anbieters. Die monatliche Rente errechnet sich aus dem Verkehrswert abzüglich des Wohnrechts, verteilt über die statistische Lebenserwartung. Wer lange lebt, gewinnt; wer früh stirbt, hat wirtschaftlich verloren — Erben gehen leer aus. Der Markt ist klein und die Angebote unterscheiden sich erheblich. Wir rechnen Ihnen den Verkehrswert aus, damit Sie ein Angebot überhaupt beurteilen können.",
+  "bullet1": "Vergleich von Verkauf, Wohnrecht und Leibrente mit Zahlen",
+  "bullet2": "Zeitplan abgestimmt auf die neue Wohnung",
+  "bullet3": "Auf Wunsch parallele Suche nach der kleineren Immobilie"
  }
 }

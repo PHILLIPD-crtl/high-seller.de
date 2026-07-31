@@ -1050,6 +1050,24 @@
   force = true
 
 [[redirects]]
+  from = "/eigenkapital-immobilienkauf-koeln"
+  to = "/eigenkapital-immobilienkauf-koeln.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/zwischenfinanzierung-koeln"
+  to = "/zwischenfinanzierung-koeln.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/kfw-foerderung-koeln"
+  to = "/kfw-foerderung-koeln.html"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/immobilienmakler-koeln-suelz"
   to = "/immobilienmakler-koeln-suelz.html"
   status = 301
